@@ -1,0 +1,48 @@
+{
+  "area_cd": "POI021",
+  "area_nm": "군자역",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "한산한",
+  "payment_count": 13.0,
+  "payment_amount_min": 90000.0,
+  "payment_amount_max": 100000.0,
+  "payment_amount_midpoint": 95000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 89,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 9,
+      "RSB_SH_PAYMENT_AMT_MIN": 60000,
+      "RSB_SH_PAYMENT_AMT_MAX": 70000,
+      "RSB_MCT_CNT": 16,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI021",
+    "area_nm": "군자역",
+    "assigned_district": "광진구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "광진구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

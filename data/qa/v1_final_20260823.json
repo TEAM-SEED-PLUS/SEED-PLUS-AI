@@ -1,0 +1,3875 @@
+{
+  "generated_at": "2026-08-23T16:55:32+09:00",
+  "method": {
+    "entrypoint": "market_feed_pipeline.generate_market_feed",
+    "collection": "stored_snapshot_replay",
+    "query": {
+      "date": "2026-08-22",
+      "time": "21:25",
+      "time_band": "저녁"
+    },
+    "note": "Missing observations remain no_data; no values were synthesized."
+  },
+  "production_config": {
+    "opportunity_weights": {
+      "inflow": 0.35,
+      "spending": 0.3,
+      "inverse_competition": 0.15,
+      "inverse_risk": 0.2
+    },
+    "weather_thresholds": {
+      "clear": 80,
+      "cloud": 65,
+      "overcast": 50,
+      "rain": 35
+    },
+    "time_bands": {
+      "심야": [
+        0,
+        6
+      ],
+      "아침": [
+        6,
+        12
+      ],
+      "점심": [
+        12,
+        17
+      ],
+      "오후": [
+        17,
+        20
+      ],
+      "저녁": [
+        20,
+        24
+      ]
+    },
+    "deep_night": {
+      "range": "00:00-06:00",
+      "reference": "previous_calendar_day 20:00",
+      "badge": "심야 시간대는 데이터가 제한적입니다 (06시부터 갱신)"
+    },
+    "missing_data": "base retained; unavailable source bonus skipped; explicit legacy fallback only",
+    "feature_flags": {
+      "tourism": true,
+      "oa21285_footfall": true,
+      "commercial_store_competition": true,
+      "consumption_hybrid": true,
+      "structural_closure_risk": false
+    },
+    "caps": {
+      "inflow": {
+        "content": 26,
+        "oa_level": 22.0,
+        "oa_peak": 8.0,
+        "tourapi": 10.0
+      },
+      "spending": {
+        "content": 24,
+        "weather_positive": 10,
+        "special_day": 10,
+        "sales_baseline": 7.0,
+        "realtime_commerce": 3.0,
+        "tourapi": 10.0
+      },
+      "competition": {
+        "content": 25,
+        "commercial_store": 12.0,
+        "sdot_realtime": 4.0
+      },
+      "risk": {
+        "base": 20,
+        "content": 12,
+        "weather": 54,
+        "special_day": 8
+      }
+    }
+  },
+  "source_freshness": {
+    "oa21285": {
+      "latest_population_time": "2026-08-22 21:25",
+      "band_snapshot_count": 5,
+      "age_minutes_at_qa": 1170.54,
+      "available_district_count": 24,
+      "unavailable_districts": [
+        "중랑구"
+      ]
+    },
+    "commercial_store": {
+      "source_quarter": "2026Q3",
+      "snapshot_id": "commercial-stores-2026Q3",
+      "snapshot_quarter": "2026Q3",
+      "started_at": "2026-08-23T14:53:03+09:00",
+      "completed_at": "2026-08-23T14:58:35+09:00",
+      "district_count": 25,
+      "completed_district_count": 25,
+      "partial_district_count": 0,
+      "failed_district_count": 0,
+      "api_call_count": 568,
+      "raw_record_count": 554092,
+      "deduplicated_record_count": 554092,
+      "duplicate_count": 0,
+      "null_coordinate_count": 0,
+      "null_industry_count": 0,
+      "unknown_district_count": 0,
+      "large_count": 10,
+      "middle_count": 75,
+      "small_count": 247,
+      "source_status": "complete"
+    },
+    "consumption_baseline": {
+      "source": "OA-22176+OA-22173",
+      "denominator_source": "seoul_commercial_analysis_OA22173",
+      "requested_quarter": "2026Q3",
+      "source_quarter": "2026Q1",
+      "age_quarters": 2,
+      "source_status": "fallback",
+      "sales_per_matched_store": 58563166.544240184,
+      "percentile": 83.33,
+      "bonus": 5.8331,
+      "semantics": "서울시 추정매출과 동일 업종 모집단 점포수를 이용한 자치구 상대 소비 수준"
+    },
+    "oa22385": {
+      "latest_commerce_time": "20260823 1600",
+      "received_at": "2026-08-23T16:14:32+09:00",
+      "place_count": 82,
+      "valid_place_count": 82,
+      "failed_place_count": 0,
+      "source_status": "ok",
+      "age_minutes_at_qa": 55.54,
+      "district_coverage": 24,
+      "no_data_districts": [
+        "중랑구"
+      ]
+    },
+    "tourapi": {
+      "requested_month": "202608",
+      "source_month": "202509",
+      "fallback_month_distance": 11,
+      "district_coverage": 25,
+      "snapshot_status": "complete"
+    },
+    "structural_risk": {
+      "enabled": false,
+      "status": "deferred",
+      "production_applied": false,
+      "recommended_metric": "recent_4_complete_quarters_pooled_closure_rate_percentile",
+      "recommended_base_structure": "fixed10_plus_structural_max10",
+      "reason_codes": [
+        "no_current_official_district_refresh_source",
+        "kosis_no_seoul_district_grain",
+        "legacy_seoul_dataset_discontinued"
+      ]
+    }
+  },
+  "districts": [
+    {
+      "district": "강남구",
+      "scores": {
+        "inflow_pressure": 48,
+        "spending_intent": 30,
+        "competition_pressure": 29,
+        "operational_risk": 20,
+        "opportunity_score": 52
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 17.7914,
+          "oa_peak": 6.6088,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 5.8331,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 11.4996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "강동구",
+      "scores": {
+        "inflow_pressure": 28,
+        "spending_intent": 28,
+        "competition_pressure": 22,
+        "operational_risk": 20,
+        "opportunity_score": 46
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 2.6774,
+          "oa_peak": 1.0432,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 3.5,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 4.5,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "강북구",
+      "scores": {
+        "inflow_pressure": 36,
+        "spending_intent": 28,
+        "competition_pressure": 19,
+        "operational_risk": 20,
+        "opportunity_score": 49
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 8.4172,
+          "oa_peak": 3.4784,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 4.375,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 0.9996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "강서구",
+      "scores": {
+        "inflow_pressure": 25,
+        "spending_intent": 25,
+        "competition_pressure": 20,
+        "operational_risk": 20,
+        "opportunity_score": 44
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 0.5742,
+          "oa_peak": 0.348,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 1.1669,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 2.4996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "관악구",
+      "scores": {
+        "inflow_pressure": 38,
+        "spending_intent": 25,
+        "competition_pressure": 21,
+        "operational_risk": 20,
+        "opportunity_score": 49
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 10.1398,
+          "oa_peak": 4.1736,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 0.875,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 3.0,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "광진구",
+      "scores": {
+        "inflow_pressure": 46,
+        "spending_intent": 28,
+        "competition_pressure": 27,
+        "operational_risk": 20,
+        "opportunity_score": 51
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 16.2602,
+          "oa_peak": 5.9128,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 3.7919,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 9.0,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "구로구",
+      "scores": {
+        "inflow_pressure": 30,
+        "spending_intent": 26,
+        "competition_pressure": 26,
+        "operational_risk": 20,
+        "opportunity_score": 45
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 3.8258,
+          "oa_peak": 1.7392,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 2.0419,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 7.5,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "금천구",
+      "scores": {
+        "inflow_pressure": 34,
+        "spending_intent": 30,
+        "competition_pressure": 29,
+        "operational_risk": 20,
+        "opportunity_score": 48
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 6.886,
+          "oa_peak": 2.7824,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 6.4169,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 11.0004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "노원구",
+      "scores": {
+        "inflow_pressure": 48,
+        "spending_intent": 27,
+        "competition_pressure": 18,
+        "operational_risk": 20,
+        "opportunity_score": 53
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 17.6,
+          "oa_peak": 6.6088,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 3.2081,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 0.0,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "도봉구",
+      "scores": {
+        "inflow_pressure": 25,
+        "spending_intent": 27,
+        "competition_pressure": 19,
+        "operational_risk": 20,
+        "opportunity_score": 45
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 0.3828,
+          "oa_peak": 0.348,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 2.9169,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 0.5004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "동대문구",
+      "scores": {
+        "inflow_pressure": 32,
+        "spending_intent": 31,
+        "competition_pressure": 28,
+        "operational_risk": 20,
+        "opportunity_score": 47
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 5.7398,
+          "oa_peak": 2.0872,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 6.7081,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 9.9996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "동작구",
+      "scores": {
+        "inflow_pressure": 43,
+        "spending_intent": 31,
+        "competition_pressure": 24,
+        "operational_risk": 20,
+        "opportunity_score": 52
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 14.157,
+          "oa_peak": 5.2176,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 7.0,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 6.0,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "마포구",
+      "scores": {
+        "inflow_pressure": 52,
+        "spending_intent": 25,
+        "competition_pressure": 28,
+        "operational_risk": 20,
+        "opportunity_score": 52
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 20.086,
+          "oa_peak": 7.652,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 1.4581,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 10.5,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "서대문구",
+      "scores": {
+        "inflow_pressure": 45,
+        "spending_intent": 26,
+        "competition_pressure": 22,
+        "operational_risk": 20,
+        "opportunity_score": 51
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 15.3054,
+          "oa_peak": 5.5656,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 2.3331,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 3.9996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "서초구",
+      "scores": {
+        "inflow_pressure": 36,
+        "spending_intent": 29,
+        "competition_pressure": 23,
+        "operational_risk": 20,
+        "opportunity_score": 49
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 8.2258,
+          "oa_peak": 3.8264,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 4.6669,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 5.4996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "성동구",
+      "scores": {
+        "inflow_pressure": 42,
+        "spending_intent": 25,
+        "competition_pressure": 26,
+        "operational_risk": 20,
+        "opportunity_score": 49
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 13.0086,
+          "oa_peak": 4.8696,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 0.5831,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 8.4996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "성북구",
+      "scores": {
+        "inflow_pressure": 28,
+        "spending_intent": 24,
+        "competition_pressure": 20,
+        "operational_risk": 20,
+        "opportunity_score": 45
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 2.2968,
+          "oa_peak": 1.3912,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 0.0,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 2.0004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "송파구",
+      "scores": {
+        "inflow_pressure": 53,
+        "spending_intent": 30,
+        "competition_pressure": 26,
+        "operational_risk": 20,
+        "opportunity_score": 55
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 20.8516,
+          "oa_peak": 7.652,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 5.5419,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 8.0004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "양천구",
+      "scores": {
+        "inflow_pressure": 54,
+        "spending_intent": 26,
+        "competition_pressure": 25,
+        "operational_risk": 20,
+        "opportunity_score": 54
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 22.0,
+          "oa_peak": 8.0,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 1.75,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 6.9996,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "영등포구",
+      "scores": {
+        "inflow_pressure": 51,
+        "spending_intent": 29,
+        "competition_pressure": 28,
+        "operational_risk": 20,
+        "opportunity_score": 53
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 19.3226,
+          "oa_peak": 7.304,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 5.25,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 9.5004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "용산구",
+      "scores": {
+        "inflow_pressure": 39,
+        "spending_intent": 30,
+        "competition_pressure": 22,
+        "operational_risk": 20,
+        "opportunity_score": 50
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 11.286,
+          "oa_peak": 4.1736,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 6.125,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 3.5004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "은평구",
+      "scores": {
+        "inflow_pressure": 30,
+        "spending_intent": 24,
+        "competition_pressure": 20,
+        "operational_risk": 20,
+        "opportunity_score": 46
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 4.5914,
+          "oa_peak": 1.7392,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 0.2919,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 1.5,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "종로구",
+      "scores": {
+        "inflow_pressure": 37,
+        "spending_intent": 29,
+        "competition_pressure": 25,
+        "operational_risk": 20,
+        "opportunity_score": 49
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 9.5656,
+          "oa_peak": 3.8264,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 4.9581,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 6.5004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "중구",
+      "scores": {
+        "inflow_pressure": 42,
+        "spending_intent": 28,
+        "competition_pressure": 30,
+        "operational_risk": 20,
+        "opportunity_score": 50
+      },
+      "weather_grade": "흐림",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 13.0086,
+          "oa_peak": 5.2176,
+          "sdot_fallback": 0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 4.0831,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 12.0,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "oa21285",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "ok",
+          "provider": "oa21285",
+          "snapshot_count": 5,
+          "normalization": "seoul_district_percentile",
+          "fallback": false,
+          "latest_population_time": "2026-08-22 21:25",
+          "latest_received_at": "2026-08-22T21:56:06+09:00",
+          "population_age_minutes": 1170.54,
+          "first_population_time": "2026-08-22 20:30",
+          "last_population_time": "2026-08-22 21:25"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    },
+    {
+      "district": "중랑구",
+      "scores": {
+        "inflow_pressure": 24,
+        "spending_intent": 27,
+        "competition_pressure": 23,
+        "operational_risk": 20,
+        "opportunity_score": 44
+      },
+      "weather_grade": "비",
+      "tags": [
+        "관망 권장"
+      ],
+      "contributions": {
+        "inflow": {
+          "base": 24,
+          "content": 0.0,
+          "oa_level": 0,
+          "oa_peak": 0,
+          "sdot_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "spending": {
+          "base": 24,
+          "content": 0.0,
+          "consumption_baseline": 2.625,
+          "realtime_commerce": 0,
+          "oa_legacy_fallback": 0.0,
+          "weather": 0.0,
+          "holiday": 0.0,
+          "tourapi": 0.0
+        },
+        "competition": {
+          "base": 18,
+          "content": 0.0,
+          "commercial_store": 5.0004,
+          "sdot_realtime": 0.0
+        },
+        "risk": {
+          "base": 20,
+          "content": 0.0,
+          "weather": 0.0,
+          "special_day": 0.0,
+          "structural": 0.0
+        }
+      },
+      "providers": {
+        "footfall": "sdot",
+        "spending": "sales_baseline_only",
+        "competition": "commercial_only"
+      },
+      "source_statuses": {
+        "weather": {
+          "status": "no_data",
+          "source": "weather"
+        },
+        "festival": {
+          "status": "no_data",
+          "source": "festival"
+        },
+        "event": {
+          "status": "no_data",
+          "source": "event"
+        },
+        "performance": {
+          "status": "no_data",
+          "source": "performance"
+        },
+        "sports": {
+          "status": "no_data",
+          "source": "sports"
+        },
+        "footfall": {
+          "status": "no_data",
+          "source": "footfall",
+          "provider": "sdot",
+          "fallback": true,
+          "fallback_reason": "oa_current_date_time_band_unavailable"
+        },
+        "special_day": {
+          "status": "no_data",
+          "source": "special_day"
+        },
+        "tourism_baseline": {
+          "status": "no_data",
+          "requested_month": "202608",
+          "source_month": "202509",
+          "age_months": 11,
+          "fallback_reason": "fallback_age_exceeded"
+        },
+        "commercial_store_competition": {
+          "status": "complete",
+          "mode": "commercial_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q3",
+          "age_quarters": 0,
+          "snapshot_status": "complete",
+          "closure_filter_applied": false
+        },
+        "consumption_hybrid": {
+          "status": "partial",
+          "mode": "sales_baseline_only",
+          "requested_quarter": "2026Q3",
+          "source_quarter": "2026Q1",
+          "age_quarters": 2,
+          "latest_commerce_time": "20260823 1600",
+          "age_minutes": 55.54,
+          "valid_place_count": 0
+        }
+      },
+      "fallbacks": {
+        "has_fallback": true,
+        "fallback_sources": [
+          "weather",
+          "festival",
+          "event",
+          "performance",
+          "sports",
+          "footfall",
+          "special_day",
+          "tourism_baseline",
+          "consumption_hybrid"
+        ],
+        "data_insufficient": true
+      },
+      "generation_mode": "rule_fallback"
+    }
+  ],
+  "fallback_matrix": {
+    "A_oa_failure_to_sdot": {
+      "scores": {
+        "inflow": 52,
+        "spending": 34,
+        "competition": 32,
+        "risk": 20
+      },
+      "footfall_provider": "sdot",
+      "spending_mode": "legacy_oa_spending_fallback",
+      "competition_mode": "commercial_plus_realtime",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    },
+    "B_oa_no_data_district_to_sdot": {
+      "scores": {
+        "inflow": 52,
+        "spending": 34,
+        "competition": 25,
+        "risk": 20
+      },
+      "footfall_provider": "sdot",
+      "spending_mode": "legacy_oa_spending_fallback",
+      "competition_mode": "commercial_plus_realtime",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    },
+    "C_baseline_failure_to_oa_legacy": {
+      "scores": {
+        "inflow": 39,
+        "spending": 29,
+        "competition": 29,
+        "risk": 20
+      },
+      "footfall_provider": "oa21285",
+      "spending_mode": "legacy_oa_spending_fallback",
+      "competition_mode": "commercial_only",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    },
+    "D_realtime_failure_baseline_only": {
+      "scores": {
+        "inflow": 24,
+        "spending": 31,
+        "competition": 29,
+        "risk": 20
+      },
+      "footfall_provider": "sdot",
+      "spending_mode": "sales_baseline_only",
+      "competition_mode": "commercial_only",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    },
+    "E_commercial_failure_legacy_sdot": {
+      "scores": {
+        "inflow": 24,
+        "spending": 24,
+        "competition": 34,
+        "risk": 20
+      },
+      "footfall_provider": "sdot",
+      "spending_mode": "legacy_oa_spending_fallback",
+      "competition_mode": "legacy_sdot_fallback",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    },
+    "F_sdot_failure_commercial_only": {
+      "scores": {
+        "inflow": 24,
+        "spending": 24,
+        "competition": 29,
+        "risk": 20
+      },
+      "footfall_provider": "sdot",
+      "spending_mode": "legacy_oa_spending_fallback",
+      "competition_mode": "commercial_only",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    },
+    "G_tourapi_failure_bonus_skip": {
+      "scores": {
+        "inflow": 24,
+        "spending": 24,
+        "competition": 29,
+        "risk": 20
+      },
+      "footfall_provider": "sdot",
+      "spending_mode": "legacy_oa_spending_fallback",
+      "competition_mode": "commercial_only",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    },
+    "H_all_external_failure_feed_survives": {
+      "scores": {
+        "inflow": 24,
+        "spending": 24,
+        "competition": 18,
+        "risk": 20
+      },
+      "footfall_provider": "sdot",
+      "spending_mode": "legacy_oa_spending_fallback",
+      "competition_mode": "base_only",
+      "tourism_status": "no_data",
+      "data_insufficient": true
+    }
+  },
+  "score_reconstruction": {
+    "mismatch_count": 0,
+    "mismatches": []
+  },
+  "cap_violation_count": 0,
+  "distributions": {
+    "inflow_pressure": {
+      "mean": 38.64,
+      "median": 38,
+      "std": 9.23,
+      "min": 24,
+      "max": 54,
+      "p25": 30,
+      "p75": 46,
+      "near_zero_count": 0,
+      "near_100_count": 0,
+      "largest_tie_count": 2,
+      "unique_count": 19,
+      "near_zero_variance": false,
+      "serious_saturation": false
+    },
+    "spending_intent": {
+      "mean": 27.52,
+      "median": 28,
+      "std": 2.138,
+      "min": 24,
+      "max": 31,
+      "p25": 26,
+      "p75": 29,
+      "near_zero_count": 0,
+      "near_100_count": 0,
+      "largest_tie_count": 4,
+      "unique_count": 8,
+      "near_zero_variance": false,
+      "serious_saturation": false
+    },
+    "competition_pressure": {
+      "mean": 24,
+      "median": 24,
+      "std": 3.544,
+      "min": 18,
+      "max": 30,
+      "p25": 21,
+      "p75": 27,
+      "near_zero_count": 0,
+      "near_100_count": 0,
+      "largest_tie_count": 3,
+      "unique_count": 13,
+      "near_zero_variance": false,
+      "serious_saturation": false
+    },
+    "operational_risk": {
+      "mean": 20,
+      "median": 20,
+      "std": 0.0,
+      "min": 20,
+      "max": 20,
+      "p25": 20,
+      "p75": 20,
+      "near_zero_count": 0,
+      "near_100_count": 0,
+      "largest_tie_count": 25,
+      "unique_count": 1,
+      "near_zero_variance": true,
+      "serious_saturation": false
+    }
+  },
+  "top_bottom": {
+    "inflow_pressure": {
+      "top": [
+        {
+          "district": "양천구",
+          "score": 54
+        },
+        {
+          "district": "송파구",
+          "score": 53
+        },
+        {
+          "district": "마포구",
+          "score": 52
+        },
+        {
+          "district": "영등포구",
+          "score": 51
+        },
+        {
+          "district": "강남구",
+          "score": 48
+        }
+      ],
+      "bottom": [
+        {
+          "district": "중랑구",
+          "score": 24
+        },
+        {
+          "district": "강서구",
+          "score": 25
+        },
+        {
+          "district": "도봉구",
+          "score": 25
+        },
+        {
+          "district": "강동구",
+          "score": 28
+        },
+        {
+          "district": "성북구",
+          "score": 28
+        }
+      ]
+    },
+    "spending_intent": {
+      "top": [
+        {
+          "district": "동대문구",
+          "score": 31
+        },
+        {
+          "district": "동작구",
+          "score": 31
+        },
+        {
+          "district": "강남구",
+          "score": 30
+        },
+        {
+          "district": "금천구",
+          "score": 30
+        },
+        {
+          "district": "송파구",
+          "score": 30
+        }
+      ],
+      "bottom": [
+        {
+          "district": "성북구",
+          "score": 24
+        },
+        {
+          "district": "은평구",
+          "score": 24
+        },
+        {
+          "district": "강서구",
+          "score": 25
+        },
+        {
+          "district": "관악구",
+          "score": 25
+        },
+        {
+          "district": "마포구",
+          "score": 25
+        }
+      ]
+    },
+    "competition_pressure": {
+      "top": [
+        {
+          "district": "중구",
+          "score": 30
+        },
+        {
+          "district": "강남구",
+          "score": 29
+        },
+        {
+          "district": "금천구",
+          "score": 29
+        },
+        {
+          "district": "동대문구",
+          "score": 28
+        },
+        {
+          "district": "마포구",
+          "score": 28
+        }
+      ],
+      "bottom": [
+        {
+          "district": "노원구",
+          "score": 18
+        },
+        {
+          "district": "강북구",
+          "score": 19
+        },
+        {
+          "district": "도봉구",
+          "score": 19
+        },
+        {
+          "district": "강서구",
+          "score": 20
+        },
+        {
+          "district": "성북구",
+          "score": 20
+        }
+      ]
+    },
+    "operational_risk": {
+      "top": [
+        {
+          "district": "강남구",
+          "score": 20
+        },
+        {
+          "district": "강동구",
+          "score": 20
+        },
+        {
+          "district": "강북구",
+          "score": 20
+        },
+        {
+          "district": "강서구",
+          "score": 20
+        },
+        {
+          "district": "관악구",
+          "score": 20
+        }
+      ],
+      "bottom": [
+        {
+          "district": "강남구",
+          "score": 20
+        },
+        {
+          "district": "강동구",
+          "score": 20
+        },
+        {
+          "district": "강북구",
+          "score": 20
+        },
+        {
+          "district": "강서구",
+          "score": 20
+        },
+        {
+          "district": "관악구",
+          "score": 20
+        }
+      ]
+    }
+  },
+  "correlations": {
+    "inflow_pressure_vs_spending_intent": {
+      "pearson": 0.2082,
+      "spearman": 0.2152
+    },
+    "inflow_pressure_vs_competition_pressure": {
+      "pearson": 0.4378,
+      "spearman": 0.4186
+    },
+    "spending_intent_vs_competition_pressure": {
+      "pearson": 0.4277,
+      "spearman": 0.434
+    },
+    "spending_intent_vs_operational_risk": {
+      "pearson": null,
+      "spearman": null
+    },
+    "competition_pressure_vs_operational_risk": {
+      "pearson": null,
+      "spearman": null
+    }
+  },
+  "warnings": [
+    "risk variance is near zero in stored-snapshot replay because weather/content are unavailable and structural risk is deferred"
+  ],
+  "blockers": [],
+  "v1_production_readiness": "ready"
+}

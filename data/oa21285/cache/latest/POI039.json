@@ -1,0 +1,102 @@
+{
+  "area_cd": "POI039",
+  "area_nm": "신림역",
+  "received_at": "2026-08-22T21:56:01+09:00",
+  "population_time": "2026-08-22 21:25",
+  "source_status": "ok",
+  "current": {
+    "population": {
+      "min": 14000,
+      "max": 16000
+    },
+    "congestion": {
+      "level": "약간 붐빔",
+      "message": "사람들이 몰려있을 가능성이 크고 붐빈다고 느낄 수 있어요. 인구밀도가 높은 구간에서는 도보 이동시 부딪힘이 발생할 수 있어요."
+    },
+    "population_time": "2026-08-22 21:25",
+    "replace_yn": "N"
+  },
+  "forecast_yn": "Y",
+  "forecast": [
+    {
+      "time": "2026-08-22 22:00",
+      "population_min": 14000,
+      "population_max": 16000,
+      "congestion_level": "약간 붐빔"
+    },
+    {
+      "time": "2026-08-22 23:00",
+      "population_min": 12000,
+      "population_max": 14000,
+      "congestion_level": "약간 붐빔"
+    },
+    {
+      "time": "2026-08-23 00:00",
+      "population_min": 10000,
+      "population_max": 12000,
+      "congestion_level": "보통"
+    },
+    {
+      "time": "2026-08-23 01:00",
+      "population_min": 10000,
+      "population_max": 12000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 02:00",
+      "population_min": 9000,
+      "population_max": 9500,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 03:00",
+      "population_min": 8000,
+      "population_max": 8500,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 04:00",
+      "population_min": 7500,
+      "population_max": 8000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 05:00",
+      "population_min": 7000,
+      "population_max": 7500,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 06:00",
+      "population_min": 6500,
+      "population_max": 7000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 07:00",
+      "population_min": 6000,
+      "population_max": 6500,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 08:00",
+      "population_min": 6500,
+      "population_max": 7000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 09:00",
+      "population_min": 7500,
+      "population_max": 8000,
+      "congestion_level": "여유"
+    }
+  ],
+  "result_code": "INFO-000",
+  "result_message": "정상 처리되었습니다.",
+  "http_status": 200,
+  "diagnostics": {
+    "reference_name": "신림역",
+    "live_name": "신림역",
+    "name_mismatch": false
+  }
+}

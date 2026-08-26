@@ -1,0 +1,8 @@
+{
+  "collection_method": "official_publication",
+  "publication": "2024년 기업생멸행정통계(잠정)",
+  "published_at": "2025-10-23",
+  "source_url": "https://www.kostat.go.kr/boardDownload.es?bid=11469&list_no=438913&seq=1",
+  "api_live_status": "blocked_missing_KOSIS_API_KEY",
+  "note": "API 응답 원문이 아니라 공식 보도자료 표 1.1 및 3.1을 전사한 연구 스냅샷이다."
+}

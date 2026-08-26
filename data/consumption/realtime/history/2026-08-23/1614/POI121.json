@@ -1,0 +1,88 @@
+{
+  "area_cd": "POI121",
+  "area_nm": "송리단길·호수단길",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "바쁜",
+  "payment_count": 56.0,
+  "payment_amount_min": 1200000.0,
+  "payment_amount_max": 1300000.0,
+  "payment_amount_midpoint": 1250000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 350000,
+      "RSB_SH_PAYMENT_AMT_MAX": 400000,
+      "RSB_MCT_CNT": 141,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "일식/중식/양식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 8,
+      "RSB_SH_PAYMENT_AMT_MIN": 250000,
+      "RSB_SH_PAYMENT_AMT_MAX": 300000,
+      "RSB_MCT_CNT": 109,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 13,
+      "RSB_SH_PAYMENT_AMT_MIN": 200000,
+      "RSB_SH_PAYMENT_AMT_MAX": 250000,
+      "RSB_MCT_CNT": 67,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 18,
+      "RSB_SH_PAYMENT_AMT_MIN": 300000,
+      "RSB_SH_PAYMENT_AMT_MAX": 350000,
+      "RSB_MCT_CNT": 166,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 9,
+      "RSB_SH_PAYMENT_AMT_MIN": 50000,
+      "RSB_SH_PAYMENT_AMT_MAX": 60000,
+      "RSB_MCT_CNT": 25,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "여가·오락",
+      "RSB_MID_CTGR": "스포츠/문화/레저",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 20000,
+      "RSB_SH_PAYMENT_AMT_MAX": 30000,
+      "RSB_MCT_CNT": 94,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI121",
+    "area_nm": "송리단길·호수단길",
+    "assigned_district": "송파구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "송파구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

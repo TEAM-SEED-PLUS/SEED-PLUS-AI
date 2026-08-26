@@ -1,0 +1,68 @@
+{
+  "area_cd": "POI060",
+  "area_nm": "광장(전통)시장",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "보통",
+  "payment_count": 34.0,
+  "payment_amount_min": 1200000.0,
+  "payment_amount_max": 1300000.0,
+  "payment_amount_midpoint": 1250000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 11,
+      "RSB_SH_PAYMENT_AMT_MIN": 650000,
+      "RSB_SH_PAYMENT_AMT_MAX": 700000,
+      "RSB_MCT_CNT": 90,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 7,
+      "RSB_SH_PAYMENT_AMT_MIN": 50000,
+      "RSB_SH_PAYMENT_AMT_MAX": 60000,
+      "RSB_MCT_CNT": 60,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "여가·오락",
+      "RSB_MID_CTGR": "스포츠/문화/레저",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 10,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 6,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "의료",
+      "RSB_MID_CTGR": "약국",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 6,
+      "RSB_SH_PAYMENT_AMT_MIN": 450000,
+      "RSB_SH_PAYMENT_AMT_MAX": 500000,
+      "RSB_MCT_CNT": 28,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI060",
+    "area_nm": "광장(전통)시장",
+    "assigned_district": "종로구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "종로구",
+        "intersection_ratio": 0.999999
+      }
+    ]
+  },
+  "source_status": "ok"
+}

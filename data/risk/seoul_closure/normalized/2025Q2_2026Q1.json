@@ -1,0 +1,1187 @@
+{
+  "production_scoring_connected": false,
+  "production_readiness": "blocked",
+  "future_source_available": false,
+  "schema": {
+    "encoding": "cp949",
+    "csv_name": "서울시 상권분석서비스(점포-행정동)_2025년.csv",
+    "actual_fields": [
+      "기준_년분기_코드",
+      "행정동_코드",
+      "행정동_코드_명",
+      "서비스_업종_코드",
+      "서비스_업종_코드_명",
+      "점포_수",
+      "유사_업종_점포_수",
+      "개업_율",
+      "개업_점포_수",
+      "폐업_률",
+      "폐업_점포_수",
+      "프랜차이즈_점포_수"
+    ],
+    "normalized_fields": [
+      "STDR_YYQU_CD",
+      "ADSTRD_CD",
+      "ADSTRD_CD_NM",
+      "SVC_INDUTY_CD",
+      "SVC_INDUTY_CD_NM",
+      "STOR_CO",
+      "SIMILR_INDUTY_STOR_CO",
+      "OPBIZ_RT",
+      "OPBIZ_STOR_CO",
+      "CLSBIZ_RT",
+      "CLSBIZ_STOR_CO",
+      "FRC_STOR_CO"
+    ],
+    "row_count": 141218
+  },
+  "source_comparison": {
+    "district_count": 25,
+    "exact_near_match_count": 25,
+    "mean_rate_difference_pp": 0.0,
+    "max_rate_difference_pp": 0.0
+  },
+  "stability": {
+    "quarters": [
+      "2025Q2",
+      "2025Q3",
+      "2025Q4",
+      "2026Q1"
+    ],
+    "adjacent_spearman": {
+      "2025Q2_2025Q3": 0.7353684679893979,
+      "2025Q3_2025Q4": 0.8338426626519485,
+      "2025Q4_2026Q1": 0.7276914644609112
+    },
+    "latest_vs_pooled_spearman": 0.8830640704750201,
+    "largest_latest_pooled_differences": [
+      {
+        "district": "서대문구",
+        "latest_percentile": 25.0,
+        "pooled_percentile": 62.5,
+        "difference": -37.5
+      },
+      {
+        "district": "양천구",
+        "latest_percentile": 66.67,
+        "pooled_percentile": 33.33,
+        "difference": 33.34
+      },
+      {
+        "district": "광진구",
+        "latest_percentile": 37.5,
+        "pooled_percentile": 66.67,
+        "difference": -29.17
+      },
+      {
+        "district": "도봉구",
+        "latest_percentile": 70.83,
+        "pooled_percentile": 45.83,
+        "difference": 25.0
+      },
+      {
+        "district": "성북구",
+        "latest_percentile": 75.0,
+        "pooled_percentile": 58.33,
+        "difference": 16.67
+      }
+    ],
+    "districts": {
+      "강남구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.244698924054615,
+          "2025Q3": 2.415237493084644,
+          "2025Q4": 2.0288891000665212,
+          "2026Q1": 2.4886661132750145
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 12.5,
+          "2025Q3": 33.33,
+          "2025Q4": 16.67,
+          "2026Q1": 20.83
+        },
+        "mean": 2.2943729076201986,
+        "std": 0.17699382369138528,
+        "min": 2.0288891000665212,
+        "max": 2.4886661132750145,
+        "rank_min": 17,
+        "rank_max": 22,
+        "rank_range": 5,
+        "pooled_closure_rate": 2.2939683871759446,
+        "pooled_percentile": 16.67
+      },
+      "강동구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.738149077005304,
+          "2025Q3": 2.6589833299032724,
+          "2025Q4": 2.6045548654244306,
+          "2026Q1": 2.8518936072487366
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 66.67,
+          "2025Q3": 62.5,
+          "2025Q4": 79.17,
+          "2026Q1": 62.5
+        },
+        "mean": 2.713395219895436,
+        "std": 0.09300730250251064,
+        "min": 2.6045548654244306,
+        "max": 2.8518936072487366,
+        "rank_min": 6,
+        "rank_max": 10,
+        "rank_range": 4,
+        "pooled_closure_rate": 2.713070091090501,
+        "pooled_percentile": 75.0
+      },
+      "강북구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 3.4245593924631037,
+          "2025Q3": 2.8526148969889067,
+          "2025Q4": 2.9036004645760745,
+          "2026Q1": 3.2660550458715596
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 100.0,
+          "2025Q3": 87.5,
+          "2025Q4": 100.0,
+          "2026Q1": 95.83
+        },
+        "mean": 3.111707449974911,
+        "std": 0.2409029818528133,
+        "min": 2.8526148969889067,
+        "max": 3.4245593924631037,
+        "rank_min": 1,
+        "rank_max": 4,
+        "rank_range": 3,
+        "pooled_closure_rate": 3.1118191198566283,
+        "pooled_percentile": 100.0
+      },
+      "강서구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 3.0833674529936066,
+          "2025Q3": 2.86687482259438,
+          "2025Q4": 2.6632465640635887,
+          "2026Q1": 3.0694617274496667
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 91.67,
+          "2025Q3": 91.67,
+          "2025Q4": 87.5,
+          "2026Q1": 83.33
+        },
+        "mean": 2.9207376417753106,
+        "std": 0.17158829181199503,
+        "min": 2.6632465640635887,
+        "max": 3.0833674529936066,
+        "rank_min": 3,
+        "rank_max": 5,
+        "rank_range": 2,
+        "pooled_closure_rate": 2.9206263798001215,
+        "pooled_percentile": 91.67
+      },
+      "관악구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 3.128578626723467,
+          "2025Q3": 2.9112817918410525,
+          "2025Q4": 2.7003282933370327,
+          "2026Q1": 3.328502641297742
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 95.83,
+          "2025Q3": 95.83,
+          "2025Q4": 91.67,
+          "2026Q1": 100.0
+        },
+        "mean": 3.0171728382998237,
+        "std": 0.23502174118676117,
+        "min": 2.7003282933370327,
+        "max": 3.328502641297742,
+        "rank_min": 1,
+        "rank_max": 3,
+        "rank_range": 2,
+        "pooled_closure_rate": 3.016444937176644,
+        "pooled_percentile": 95.83
+      },
+      "광진구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.5397900440230274,
+          "2025Q3": 2.8325182782162397,
+          "2025Q4": 2.620575651497472,
+          "2026Q1": 2.6242350061199513
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 45.83,
+          "2025Q3": 83.33,
+          "2025Q4": 83.33,
+          "2026Q1": 37.5
+        },
+        "mean": 2.654279744964173,
+        "std": 0.10829995222306267,
+        "min": 2.5397900440230274,
+        "max": 2.8325182782162397,
+        "rank_min": 5,
+        "rank_max": 16,
+        "rank_range": 11,
+        "pooled_closure_rate": 2.654372729812797,
+        "pooled_percentile": 66.67
+      },
+      "구로구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.362549800796813,
+          "2025Q3": 2.597141939627489,
+          "2025Q4": 2.2628830506416224,
+          "2026Q1": 2.377450980392157
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 20.83,
+          "2025Q3": 54.17,
+          "2025Q4": 33.33,
+          "2026Q1": 16.67
+        },
+        "mean": 2.4000064428645205,
+        "std": 0.12204197812743328,
+        "min": 2.2628830506416224,
+        "max": 2.597141939627489,
+        "rank_min": 12,
+        "rank_max": 21,
+        "rank_range": 9,
+        "pooled_closure_rate": 2.400322596905086,
+        "pooled_percentile": 25.0
+      },
+      "금천구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.3771957504996317,
+          "2025Q3": 2.5206087507926442,
+          "2025Q4": 2.2756273925988943,
+          "2026Q1": 2.5734701552678234
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 25.0,
+          "2025Q3": 45.83,
+          "2025Q4": 41.67,
+          "2026Q1": 33.33
+        },
+        "mean": 2.4367255122897484,
+        "std": 0.11750733146452148,
+        "min": 2.2756273925988943,
+        "max": 2.5734701552678234,
+        "rank_min": 14,
+        "rank_max": 19,
+        "rank_range": 5,
+        "pooled_closure_rate": 2.436338061810799,
+        "pooled_percentile": 29.17
+      },
+      "노원구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.7998065764023212,
+          "2025Q3": 2.684955493944258,
+          "2025Q4": 2.3831661365304626,
+          "2026Q1": 2.8073810933491217
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 70.83,
+          "2025Q3": 70.83,
+          "2025Q4": 58.33,
+          "2026Q1": 54.17
+        },
+        "mean": 2.668827325056541,
+        "std": 0.17191214576999614,
+        "min": 2.3831661365304626,
+        "max": 2.8073810933491217,
+        "rank_min": 8,
+        "rank_max": 12,
+        "rank_range": 4,
+        "pooled_closure_rate": 2.6689609723951087,
+        "pooled_percentile": 70.83
+      },
+      "도봉구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.537347046017566,
+          "2025Q3": 2.3147801333433216,
+          "2025Q4": 2.4274406332453826,
+          "2026Q1": 2.9463399740477825
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 41.67,
+          "2025Q3": 16.67,
+          "2025Q4": 62.5,
+          "2026Q1": 70.83
+        },
+        "mean": 2.5564769466635133,
+        "std": 0.2384464578105685,
+        "min": 2.3147801333433216,
+        "max": 2.9463399740477825,
+        "rank_min": 8,
+        "rank_max": 21,
+        "rank_range": 13,
+        "pooled_closure_rate": 2.554868391281394,
+        "pooled_percentile": 45.83
+      },
+      "동대문구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.8360670759644457,
+          "2025Q3": 2.47293081299321,
+          "2025Q4": 2.1055535123207063,
+          "2026Q1": 2.7242033208454743
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 79.17,
+          "2025Q3": 41.67,
+          "2025Q4": 25.0,
+          "2026Q1": 45.83
+        },
+        "mean": 2.534688680530959,
+        "std": 0.2804976661780162,
+        "min": 2.1055535123207063,
+        "max": 2.8360670759644457,
+        "rank_min": 6,
+        "rank_max": 19,
+        "rank_range": 13,
+        "pooled_closure_rate": 2.5346284269210875,
+        "pooled_percentile": 37.5
+      },
+      "동작구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.5883875522089537,
+          "2025Q3": 2.440606024877675,
+          "2025Q4": 2.439313905869785,
+          "2026Q1": 2.8335230336069013
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 54.17,
+          "2025Q3": 37.5,
+          "2025Q4": 66.67,
+          "2026Q1": 58.33
+        },
+        "mean": 2.5754576291408284,
+        "std": 0.16084542614823874,
+        "min": 2.439313905869785,
+        "max": 2.8335230336069013,
+        "rank_min": 9,
+        "rank_max": 16,
+        "rank_range": 7,
+        "pooled_closure_rate": 2.574662242237497,
+        "pooled_percentile": 54.17
+      },
+      "마포구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.8349490810116516,
+          "2025Q3": 2.8125955365331703,
+          "2025Q4": 2.542710793485262,
+          "2026Q1": 3.182351850707533
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 75.0,
+          "2025Q3": 79.17,
+          "2025Q4": 75.0,
+          "2026Q1": 91.67
+        },
+        "mean": 2.843151815434404,
+        "std": 0.22711365141236942,
+        "min": 2.542710793485262,
+        "max": 3.182351850707533,
+        "rank_min": 3,
+        "rank_max": 7,
+        "rank_range": 4,
+        "pooled_closure_rate": 2.8425041034530367,
+        "pooled_percentile": 83.33
+      },
+      "서대문구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.471360535461449,
+          "2025Q3": 2.726978998384491,
+          "2025Q4": 2.7234818868908004,
+          "2026Q1": 2.515846566032804
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 29.17,
+          "2025Q3": 75.0,
+          "2025Q4": 95.83,
+          "2026Q1": 25.0
+        },
+        "mean": 2.609416996692386,
+        "std": 0.11688309907687641,
+        "min": 2.471360535461449,
+        "max": 2.726978998384491,
+        "rank_min": 2,
+        "rank_max": 19,
+        "rank_range": 17,
+        "pooled_closure_rate": 2.6093020238713027,
+        "pooled_percentile": 62.5
+      },
+      "서초구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 1.8853368050532813,
+          "2025Q3": 2.2543114916672713,
+          "2025Q4": 1.7654476670870116,
+          "2026Q1": 2.2854773403580664
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 4.17,
+          "2025Q3": 12.5,
+          "2025Q4": 0.0,
+          "2026Q1": 4.17
+        },
+        "mean": 2.0476433260414075,
+        "std": 0.22652513422196163,
+        "min": 1.7654476670870116,
+        "max": 2.2854773403580664,
+        "rank_min": 22,
+        "rank_max": 25,
+        "rank_range": 3,
+        "pooled_closure_rate": 2.047196389082427,
+        "pooled_percentile": 4.17
+      },
+      "성동구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.52356780275562,
+          "2025Q3": 2.375423318819545,
+          "2025Q4": 2.097766581076498,
+          "2026Q1": 2.5730994152046787
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 37.5,
+          "2025Q3": 25.0,
+          "2025Q4": 20.83,
+          "2026Q1": 29.17
+        },
+        "mean": 2.3924642794640856,
+        "std": 0.18503669491354052,
+        "min": 2.097766581076498,
+        "max": 2.5730994152046787,
+        "rank_min": 16,
+        "rank_max": 20,
+        "rank_range": 4,
+        "pooled_closure_rate": 2.3922633186291145,
+        "pooled_percentile": 20.83
+      },
+      "성북구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.6813047608993985,
+          "2025Q3": 2.385233763486355,
+          "2025Q4": 2.3444544634806133,
+          "2026Q1": 2.958040833824554
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 62.5,
+          "2025Q3": 29.17,
+          "2025Q4": 45.83,
+          "2026Q1": 75.0
+        },
+        "mean": 2.59225845542273,
+        "std": 0.24798792025123867,
+        "min": 2.3444544634806133,
+        "max": 2.958040833824554,
+        "rank_min": 7,
+        "rank_max": 18,
+        "rank_range": 11,
+        "pooled_closure_rate": 2.591285426175565,
+        "pooled_percentile": 58.33
+      },
+      "송파구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.482752255474284,
+          "2025Q3": 2.578012704594983,
+          "2025Q4": 2.369225741696039,
+          "2026Q1": 2.744175100023535
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 33.33,
+          "2025Q3": 50.0,
+          "2025Q4": 54.17,
+          "2026Q1": 50.0
+        },
+        "mean": 2.5435414504472105,
+        "std": 0.13740762464990386,
+        "min": 2.369225741696039,
+        "max": 2.744175100023535,
+        "rank_min": 12,
+        "rank_max": 17,
+        "rank_range": 5,
+        "pooled_closure_rate": 2.5430141323834135,
+        "pooled_percentile": 41.67
+      },
+      "양천구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.5633441782510107,
+          "2025Q3": 2.36426456071076,
+          "2025Q4": 2.227293020487127,
+          "2026Q1": 2.908872059782336
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 50.0,
+          "2025Q3": 20.83,
+          "2025Q4": 29.17,
+          "2026Q1": 66.67
+        },
+        "mean": 2.5159434548078083,
+        "std": 0.2564007007294388,
+        "min": 2.227293020487127,
+        "max": 2.908872059782336,
+        "rank_min": 9,
+        "rank_max": 20,
+        "rank_range": 11,
+        "pooled_closure_rate": 2.51475621248946,
+        "pooled_percentile": 33.33
+      },
+      "영등포구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.6671538180489587,
+          "2025Q3": 2.661913646055437,
+          "2025Q4": 2.26512312633833,
+          "2026Q1": 2.633353563962506
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 58.33,
+          "2025Q3": 66.67,
+          "2025Q4": 37.5,
+          "2026Q1": 41.67
+        },
+        "mean": 2.556886038601308,
+        "std": 0.16893982724545298,
+        "min": 2.26512312633833,
+        "max": 2.6671538180489587,
+        "rank_min": 9,
+        "rank_max": 16,
+        "rank_range": 7,
+        "pooled_closure_rate": 2.557053205090708,
+        "pooled_percentile": 50.0
+      },
+      "용산구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.306532663316583,
+          "2025Q3": 2.1780684104627768,
+          "2025Q4": 1.8249647106271427,
+          "2026Q1": 2.299725860493451
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 16.67,
+          "2025Q3": 0.0,
+          "2025Q4": 8.33,
+          "2026Q1": 12.5
+        },
+        "mean": 2.152322911224988,
+        "std": 0.19578974649024292,
+        "min": 1.8249647106271427,
+        "max": 2.306532663316583,
+        "rank_min": 21,
+        "rank_max": 25,
+        "rank_range": 4,
+        "pooled_closure_rate": 2.1522051592404874,
+        "pooled_percentile": 12.5
+      },
+      "은평구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.905388626769307,
+          "2025Q3": 3.0102679689456546,
+          "2025Q4": 2.4751726571558197,
+          "2026Q1": 3.0800611932687403
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 83.33,
+          "2025Q3": 100.0,
+          "2025Q4": 70.83,
+          "2026Q1": 87.5
+        },
+        "mean": 2.86772261153488,
+        "std": 0.23501119526458478,
+        "min": 2.4751726571558197,
+        "max": 3.0800611932687403,
+        "rank_min": 1,
+        "rank_max": 8,
+        "rank_range": 7,
+        "pooled_closure_rate": 2.8674871459640214,
+        "pooled_percentile": 87.5
+      },
+      "종로구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 1.8562874251497008,
+          "2025Q3": 2.187850617086071,
+          "2025Q4": 1.8953539734168574,
+          "2026Q1": 2.288597376387487
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 0.0,
+          "2025Q3": 4.17,
+          "2025Q4": 12.5,
+          "2026Q1": 8.33
+        },
+        "mean": 2.057022348010029,
+        "std": 0.18518517918342833,
+        "min": 1.8562874251497008,
+        "max": 2.288597376387487,
+        "rank_min": 22,
+        "rank_max": 25,
+        "rank_range": 3,
+        "pooled_closure_rate": 2.056498535371775,
+        "pooled_percentile": 8.33
+      },
+      "중구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 1.944401464748053,
+          "2025Q3": 2.236338548853193,
+          "2025Q4": 1.7912792981537256,
+          "2026Q1": 2.167354715782788
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 8.33,
+          "2025Q3": 8.33,
+          "2025Q4": 4.17,
+          "2026Q1": 0.0
+        },
+        "mean": 2.0348435068844397,
+        "std": 0.1772447172570386,
+        "min": 1.7912792981537256,
+        "max": 2.236338548853193,
+        "rank_min": 23,
+        "rank_max": 25,
+        "rank_range": 2,
+        "pooled_closure_rate": 2.0344471866389835,
+        "pooled_percentile": 0.0
+      },
+      "중랑구": {
+        "quarterly_closure_rates": {
+          "2025Q2": 2.9834990832824047,
+          "2025Q3": 2.655509065550907,
+          "2025Q4": 2.3472074393591393,
+          "2026Q1": 3.0474359699214113
+        },
+        "quarterly_percentiles": {
+          "2025Q2": 87.5,
+          "2025Q3": 58.33,
+          "2025Q4": 50.0,
+          "2026Q1": 79.17
+        },
+        "mean": 2.7584128895284654,
+        "std": 0.28012374714428695,
+        "min": 2.3472074393591393,
+        "max": 3.0474359699214113,
+        "rank_min": 4,
+        "rank_max": 13,
+        "rank_range": 9,
+        "pooled_closure_rate": 2.7581092048921105,
+        "pooled_percentile": 79.17
+      }
+    }
+  },
+  "budget_preview": {
+    "fixed_short_term_contribution": 23.0,
+    "districts": {
+      "강남구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 26.334,
+        "candidate_b_fixed10_structural_max10": 34.667,
+        "candidate_c_fixed15_structural_max5": 38.8335
+      },
+      "강동구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 38.0,
+        "candidate_b_fixed10_structural_max10": 40.5,
+        "candidate_c_fixed15_structural_max5": 41.75
+      },
+      "강북구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 43.0,
+        "candidate_b_fixed10_structural_max10": 43.0,
+        "candidate_c_fixed15_structural_max5": 43.0
+      },
+      "강서구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 41.334,
+        "candidate_b_fixed10_structural_max10": 42.167,
+        "candidate_c_fixed15_structural_max5": 42.5835
+      },
+      "관악구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 42.166,
+        "candidate_b_fixed10_structural_max10": 42.583,
+        "candidate_c_fixed15_structural_max5": 42.7915
+      },
+      "광진구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 36.334,
+        "candidate_b_fixed10_structural_max10": 39.667,
+        "candidate_c_fixed15_structural_max5": 41.3335
+      },
+      "구로구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 28.0,
+        "candidate_b_fixed10_structural_max10": 35.5,
+        "candidate_c_fixed15_structural_max5": 39.25
+      },
+      "금천구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 28.834,
+        "candidate_b_fixed10_structural_max10": 35.917,
+        "candidate_c_fixed15_structural_max5": 39.4585
+      },
+      "노원구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 37.166,
+        "candidate_b_fixed10_structural_max10": 40.083,
+        "candidate_c_fixed15_structural_max5": 41.5415
+      },
+      "도봉구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 32.166,
+        "candidate_b_fixed10_structural_max10": 37.583,
+        "candidate_c_fixed15_structural_max5": 40.2915
+      },
+      "동대문구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 30.5,
+        "candidate_b_fixed10_structural_max10": 36.75,
+        "candidate_c_fixed15_structural_max5": 39.875
+      },
+      "동작구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 33.834,
+        "candidate_b_fixed10_structural_max10": 38.417,
+        "candidate_c_fixed15_structural_max5": 40.7085
+      },
+      "마포구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 39.666,
+        "candidate_b_fixed10_structural_max10": 41.333,
+        "candidate_c_fixed15_structural_max5": 42.1665
+      },
+      "서대문구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 35.5,
+        "candidate_b_fixed10_structural_max10": 39.25,
+        "candidate_c_fixed15_structural_max5": 41.125
+      },
+      "서초구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 23.834,
+        "candidate_b_fixed10_structural_max10": 33.417,
+        "candidate_c_fixed15_structural_max5": 38.2085
+      },
+      "성동구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 27.166,
+        "candidate_b_fixed10_structural_max10": 35.083,
+        "candidate_c_fixed15_structural_max5": 39.0415
+      },
+      "성북구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 34.666,
+        "candidate_b_fixed10_structural_max10": 38.833,
+        "candidate_c_fixed15_structural_max5": 40.9165
+      },
+      "송파구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 31.334000000000003,
+        "candidate_b_fixed10_structural_max10": 37.167,
+        "candidate_c_fixed15_structural_max5": 40.0835
+      },
+      "양천구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 29.666,
+        "candidate_b_fixed10_structural_max10": 36.333,
+        "candidate_c_fixed15_structural_max5": 39.6665
+      },
+      "영등포구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 33.0,
+        "candidate_b_fixed10_structural_max10": 38.0,
+        "candidate_c_fixed15_structural_max5": 40.5
+      },
+      "용산구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 25.5,
+        "candidate_b_fixed10_structural_max10": 34.25,
+        "candidate_c_fixed15_structural_max5": 38.625
+      },
+      "은평구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 40.5,
+        "candidate_b_fixed10_structural_max10": 41.75,
+        "candidate_c_fixed15_structural_max5": 42.375
+      },
+      "종로구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 24.666,
+        "candidate_b_fixed10_structural_max10": 33.833,
+        "candidate_c_fixed15_structural_max5": 38.4165
+      },
+      "중구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 23.0,
+        "candidate_b_fixed10_structural_max10": 33.0,
+        "candidate_c_fixed15_structural_max5": 38.0
+      },
+      "중랑구": {
+        "existing_base20": 43.0,
+        "candidate_a_structural_max20": 38.834,
+        "candidate_b_fixed10_structural_max10": 40.917,
+        "candidate_c_fixed15_structural_max5": 41.9585
+      }
+    },
+    "distribution": {
+      "existing_base20": {
+        "mean": 43.0,
+        "median": 43.0,
+        "std": 0.0,
+        "min": 43.0,
+        "max": 43.0
+      },
+      "candidate_a_structural_max20": {
+        "mean": 33.0,
+        "median": 33.0,
+        "std": 6.009222565357352,
+        "min": 23.0,
+        "max": 43.0
+      },
+      "candidate_b_fixed10_structural_max10": {
+        "mean": 38.0,
+        "median": 38.0,
+        "std": 3.004611282678676,
+        "min": 33.0,
+        "max": 43.0
+      },
+      "candidate_c_fixed15_structural_max5": {
+        "mean": 40.5,
+        "median": 40.5,
+        "std": 1.502305641339338,
+        "min": 38.0,
+        "max": 43.0
+      }
+    },
+    "recommended_candidate": "candidate_b_fixed10_structural_max10"
+  },
+  "districts": {
+    "강남구": {
+      "district": "강남구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 252619.0,
+      "pooled_closed_store_count": 5795.0,
+      "pooled_closure_rate": 2.2939683871759446,
+      "pooled_percentile": 16.67
+    },
+    "강동구": {
+      "district": "강동구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 96717.0,
+      "pooled_closed_store_count": 2624.0,
+      "pooled_closure_rate": 2.713070091090501,
+      "pooled_percentile": 75.0
+    },
+    "강북구": {
+      "district": "강북구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 55241.0,
+      "pooled_closed_store_count": 1719.0,
+      "pooled_closure_rate": 3.1118191198566283,
+      "pooled_percentile": 100.0
+    },
+    "강서구": {
+      "district": "강서구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 126377.0,
+      "pooled_closed_store_count": 3691.0,
+      "pooled_closure_rate": 2.9206263798001215,
+      "pooled_percentile": 91.67
+    },
+    "관악구": {
+      "district": "관악구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 86592.0,
+      "pooled_closed_store_count": 2612.0,
+      "pooled_closure_rate": 3.016444937176644,
+      "pooled_percentile": 95.83
+    },
+    "광진구": {
+      "district": "광진구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 82317.0,
+      "pooled_closed_store_count": 2185.0,
+      "pooled_closure_rate": 2.654372729812797,
+      "pooled_percentile": 66.67
+    },
+    "구로구": {
+      "district": "구로구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 99195.0,
+      "pooled_closed_store_count": 2381.0,
+      "pooled_closure_rate": 2.400322596905086,
+      "pooled_percentile": 25.0
+    },
+    "금천구": {
+      "district": "금천구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 75359.0,
+      "pooled_closed_store_count": 1836.0,
+      "pooled_closure_rate": 2.436338061810799,
+      "pooled_percentile": 29.17
+    },
+    "노원구": {
+      "district": "노원구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 81942.0,
+      "pooled_closed_store_count": 2187.0,
+      "pooled_closure_rate": 2.6689609723951087,
+      "pooled_percentile": 70.83
+    },
+    "도봉구": {
+      "district": "도봉구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 53036.0,
+      "pooled_closed_store_count": 1355.0,
+      "pooled_closure_rate": 2.554868391281394,
+      "pooled_percentile": 45.83
+    },
+    "동대문구": {
+      "district": "동대문구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 86995.0,
+      "pooled_closed_store_count": 2205.0,
+      "pooled_closure_rate": 2.5346284269210875,
+      "pooled_percentile": 37.5
+    },
+    "동작구": {
+      "district": "동작구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 67504.0,
+      "pooled_closed_store_count": 1738.0,
+      "pooled_closure_rate": 2.574662242237497,
+      "pooled_percentile": 54.17
+    },
+    "마포구": {
+      "district": "마포구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 130378.0,
+      "pooled_closed_store_count": 3706.0,
+      "pooled_closure_rate": 2.8425041034530367,
+      "pooled_percentile": 83.33
+    },
+    "서대문구": {
+      "district": "서대문구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 61664.0,
+      "pooled_closed_store_count": 1609.0,
+      "pooled_closure_rate": 2.6093020238713027,
+      "pooled_percentile": 62.5
+    },
+    "서초구": {
+      "district": "서초구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 165055.0,
+      "pooled_closed_store_count": 3379.0,
+      "pooled_closure_rate": 2.047196389082427,
+      "pooled_percentile": 4.17
+    },
+    "성동구": {
+      "district": "성동구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 82516.0,
+      "pooled_closed_store_count": 1974.0,
+      "pooled_closure_rate": 2.3922633186291145,
+      "pooled_percentile": 20.83
+    },
+    "성북구": {
+      "district": "성북구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 75368.0,
+      "pooled_closed_store_count": 1953.0,
+      "pooled_closure_rate": 2.591285426175565,
+      "pooled_percentile": 58.33
+    },
+    "송파구": {
+      "district": "송파구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 171804.0,
+      "pooled_closed_store_count": 4369.0,
+      "pooled_closure_rate": 2.5430141323834135,
+      "pooled_percentile": 41.67
+    },
+    "양천구": {
+      "district": "양천구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 80644.0,
+      "pooled_closed_store_count": 2028.0,
+      "pooled_closure_rate": 2.51475621248946,
+      "pooled_percentile": 33.33
+    },
+    "영등포구": {
+      "district": "영등포구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 119669.0,
+      "pooled_closed_store_count": 3060.0,
+      "pooled_closure_rate": 2.557053205090708,
+      "pooled_percentile": 50.0
+    },
+    "용산구": {
+      "district": "용산구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 79314.0,
+      "pooled_closed_store_count": 1707.0,
+      "pooled_closure_rate": 2.1522051592404874,
+      "pooled_percentile": 12.5
+    },
+    "은평구": {
+      "district": "은평구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 79547.0,
+      "pooled_closed_store_count": 2281.0,
+      "pooled_closure_rate": 2.8674871459640214,
+      "pooled_percentile": 87.5
+    },
+    "종로구": {
+      "district": "종로구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 99684.0,
+      "pooled_closed_store_count": 2050.0,
+      "pooled_closure_rate": 2.056498535371775,
+      "pooled_percentile": 8.33
+    },
+    "중구": {
+      "district": "중구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 153162.0,
+      "pooled_closed_store_count": 3116.0,
+      "pooled_closure_rate": 2.0344471866389835,
+      "pooled_percentile": 0.0
+    },
+    "중랑구": {
+      "district": "중랑구",
+      "available_quarters": [
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1"
+      ],
+      "pooled_total_store_count": 71462.0,
+      "pooled_closed_store_count": 1971.0,
+      "pooled_closure_rate": 2.7581092048921105,
+      "pooled_percentile": 79.17
+    }
+  },
+  "structural_risk_status": "deferred",
+  "production_applied": false,
+  "reason_codes": [
+    "no_current_official_district_refresh_source",
+    "kosis_no_seoul_district_grain",
+    "legacy_seoul_dataset_discontinued"
+  ]
+}

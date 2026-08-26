@@ -1,0 +1,68 @@
+{
+  "area_cd": "POI081",
+  "area_nm": "청량리 제기동 일대 전통시장",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "보통",
+  "payment_count": 32.0,
+  "payment_amount_min": 550000.0,
+  "payment_amount_max": 600000.0,
+  "payment_amount_midpoint": 575000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 14,
+      "RSB_SH_PAYMENT_AMT_MIN": 300000,
+      "RSB_SH_PAYMENT_AMT_MAX": 350000,
+      "RSB_MCT_CNT": 202,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 80000,
+      "RSB_SH_PAYMENT_AMT_MAX": 90000,
+      "RSB_MCT_CNT": 100,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 9,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 37,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "의료",
+      "RSB_MID_CTGR": "약국",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 20000,
+      "RSB_SH_PAYMENT_AMT_MAX": 30000,
+      "RSB_MCT_CNT": 34,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI081",
+    "area_nm": "청량리 제기동 일대 전통시장",
+    "assigned_district": "동대문구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "동대문구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

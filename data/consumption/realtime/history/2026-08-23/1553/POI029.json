@@ -1,0 +1,86 @@
+{
+  "area_cd": "POI029",
+  "area_nm": "사당역",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "보통",
+  "payment_count": 43.0,
+  "payment_amount_min": 650000.0,
+  "payment_amount_max": 700000.0,
+  "payment_amount_midpoint": 675000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 7,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 308,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 8,
+      "RSB_SH_PAYMENT_AMT_MIN": 60000,
+      "RSB_SH_PAYMENT_AMT_MAX": 70000,
+      "RSB_MCT_CNT": 56,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 13,
+      "RSB_SH_PAYMENT_AMT_MIN": 200000,
+      "RSB_SH_PAYMENT_AMT_MAX": 250000,
+      "RSB_MCT_CNT": 222,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 11,
+      "RSB_SH_PAYMENT_AMT_MIN": 70000,
+      "RSB_SH_PAYMENT_AMT_MAX": 80000,
+      "RSB_MCT_CNT": 27,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "여가·오락",
+      "RSB_MID_CTGR": "스포츠/문화/레저",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 78,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI029",
+    "area_nm": "사당역",
+    "assigned_district": "동작구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "동작구",
+        "intersection_ratio": 0.42652
+      },
+      {
+        "district": "서초구",
+        "intersection_ratio": 0.365843
+      },
+      {
+        "district": "관악구",
+        "intersection_ratio": 0.20409
+      }
+    ]
+  },
+  "source_status": "ok"
+}

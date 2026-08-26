@@ -1,0 +1,21 @@
+{
+  "area_cd": "POI080",
+  "area_nm": "청담동 명품거리",
+  "source_timestamp": "20260823 1520",
+  "received_at": "2026-08-23T15:37:30+09:00",
+  "AREA_CMRCL_LVL": "한산한",
+  "district_mapping": {
+    "area_cd": "POI080",
+    "area_nm": "청담동 명품거리",
+    "assigned_district": "강남구",
+    "mapping_source": "OA-21285 verified geometry",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "강남구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

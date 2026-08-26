@@ -1,0 +1,52 @@
+{
+  "area_cd": "POI026",
+  "area_nm": "미아사거리역",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "한산한",
+  "payment_count": 8.0,
+  "payment_amount_min": 60000.0,
+  "payment_amount_max": 70000.0,
+  "payment_amount_midpoint": 65000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 35,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 20000,
+      "RSB_SH_PAYMENT_AMT_MAX": 30000,
+      "RSB_MCT_CNT": 15,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI026",
+    "area_nm": "미아사거리역",
+    "assigned_district": "강북구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "강북구",
+        "intersection_ratio": 0.741668
+      },
+      {
+        "district": "성북구",
+        "intersection_ratio": 0.2595
+      }
+    ]
+  },
+  "source_status": "ok"
+}

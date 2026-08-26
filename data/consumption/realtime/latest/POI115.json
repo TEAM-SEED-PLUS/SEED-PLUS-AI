@@ -1,0 +1,78 @@
+{
+  "area_cd": "POI115",
+  "area_nm": "남대문시장",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "보통",
+  "payment_count": 25.0,
+  "payment_amount_min": 500000.0,
+  "payment_amount_max": 550000.0,
+  "payment_amount_midpoint": 525000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 50000,
+      "RSB_SH_PAYMENT_AMT_MAX": 60000,
+      "RSB_MCT_CNT": 22,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 8,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 78,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 20000,
+      "RSB_SH_PAYMENT_AMT_MAX": 30000,
+      "RSB_MCT_CNT": 14,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "의복/의류",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 1059,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "패션/잡화",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 498,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI115",
+    "area_nm": "남대문시장",
+    "assigned_district": "중구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "중구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

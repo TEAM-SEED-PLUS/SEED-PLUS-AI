@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "statistic": "기업생멸행정통계",
+  "provider": "국가데이터처",
+  "frequency": "annual",
+  "requested_year": 2026,
+  "source_year": 2023,
+  "age_years_as_of_2026": 3,
+  "source_status": "publication_verified_api_not_probed",
+  "role": "annual_industry_benchmark",
+  "production_district_score_applied": false,
+  "provisional": true,
+  "district_level_available": false,
+  "available_region_level": "시도",
+  "mapping_required": true,
+  "industry_table": {"org_id": "101", "table_id": "DT_1BD1001", "name": "산업별 기업수(활동/신생/소멸)"},
+  "region_table": {"org_id": "101", "table_id": "DT_1BD1007", "name": "지역별 기업수(활동/신생/소멸)"},
+  "definition": "소멸률은 당해 연도(t-1년) 활동기업에 대한 소멸기업의 비율이다.",
+  "national": {"active_enterprises_2024": 7641749, "new_enterprises_2024": 922447, "birth_rate_pct_2024": 12.1, "dead_enterprises_2023": 790540, "enterprise_death_rate_pct_2023": 10.5},
+  "industries_ksic10_broad": [
+    {"code":"A","name":"농림어업","enterprise_death_rate_pct":13.0},{"code":"B","name":"광업","enterprise_death_rate_pct":11.8},
+    {"code":"C","name":"제조업","enterprise_death_rate_pct":6.8},{"code":"D","name":"전기·가스·증기","enterprise_death_rate_pct":2.8},
+    {"code":"E","name":"수도·하수·폐기","enterprise_death_rate_pct":5.2},{"code":"F","name":"건설업","enterprise_death_rate_pct":7.6},
+    {"code":"G","name":"도·소매업","enterprise_death_rate_pct":13.0},{"code":"H","name":"운수·창고업","enterprise_death_rate_pct":8.8},
+    {"code":"I","name":"숙박·음식점업","enterprise_death_rate_pct":14.7},{"code":"J","name":"정보통신업","enterprise_death_rate_pct":11.0},
+    {"code":"K","name":"금융·보험업","enterprise_death_rate_pct":9.7},{"code":"L","name":"부동산업","enterprise_death_rate_pct":8.9},
+    {"code":"M","name":"전문·과학·기술","enterprise_death_rate_pct":9.7},{"code":"N","name":"사업시설관리","enterprise_death_rate_pct":12.2},
+    {"code":"P","name":"교육서비스업","enterprise_death_rate_pct":12.9},{"code":"Q","name":"보건·사회복지","enterprise_death_rate_pct":3.2},
+    {"code":"R","name":"예술·스포츠·여가","enterprise_death_rate_pct":13.5},{"code":"S","name":"개인서비스업","enterprise_death_rate_pct":10.0}
+  ],
+  "regions_sido": [
+    {"name":"서울","active_enterprises_2023":1530152,"dead_enterprises_2023":156148},{"name":"부산","active_enterprises_2023":462846,"dead_enterprises_2023":56124},
+    {"name":"대구","active_enterprises_2023":321960,"dead_enterprises_2023":32151},{"name":"인천","active_enterprises_2023":420566,"dead_enterprises_2023":47078},
+    {"name":"광주","active_enterprises_2023":189290,"dead_enterprises_2023":19962},{"name":"대전","active_enterprises_2023":195421,"dead_enterprises_2023":20917},
+    {"name":"울산","active_enterprises_2023":134683,"dead_enterprises_2023":14580},{"name":"세종","active_enterprises_2023":46678,"dead_enterprises_2023":5389},
+    {"name":"경기","active_enterprises_2023":2060511,"dead_enterprises_2023":217386},{"name":"강원","active_enterprises_2023":224708,"dead_enterprises_2023":22265},
+    {"name":"충북","active_enterprises_2023":226187,"dead_enterprises_2023":23375},{"name":"충남","active_enterprises_2023":305084,"dead_enterprises_2023":29998},
+    {"name":"전북","active_enterprises_2023":252334,"dead_enterprises_2023":27267},{"name":"전남","active_enterprises_2023":252791,"dead_enterprises_2023":24633},
+    {"name":"경북","active_enterprises_2023":355455,"dead_enterprises_2023":34938},{"name":"경남","active_enterprises_2023":443383,"dead_enterprises_2023":45269},
+    {"name":"제주","active_enterprises_2023":116687,"dead_enterprises_2023":13060}
+  ]
+}

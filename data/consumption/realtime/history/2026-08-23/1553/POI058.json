@@ -1,0 +1,38 @@
+{
+  "area_cd": "POI058",
+  "area_nm": "가락시장",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "보통",
+  "payment_count": 11.0,
+  "payment_amount_min": 600000.0,
+  "payment_amount_max": 650000.0,
+  "payment_amount_midpoint": 625000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 11,
+      "RSB_SH_PAYMENT_AMT_MIN": 600000,
+      "RSB_SH_PAYMENT_AMT_MAX": 650000,
+      "RSB_MCT_CNT": 12,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI058",
+    "area_nm": "가락시장",
+    "assigned_district": "송파구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "송파구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

@@ -1,0 +1,1674 @@
+{
+  "snapshot_quarter": "2026Q3",
+  "large": [
+    {
+      "code": "G2",
+      "name": "소매",
+      "store_count": 111306
+    },
+    {
+      "code": "I1",
+      "name": "숙박",
+      "store_count": 12409
+    },
+    {
+      "code": "I2",
+      "name": "음식",
+      "store_count": 141126
+    },
+    {
+      "code": "L1",
+      "name": "부동산",
+      "store_count": 24714
+    },
+    {
+      "code": "M1",
+      "name": "과학·기술",
+      "store_count": 100549
+    },
+    {
+      "code": "N1",
+      "name": "시설관리·임대",
+      "store_count": 26296
+    },
+    {
+      "code": "P1",
+      "name": "교육",
+      "store_count": 44215
+    },
+    {
+      "code": "Q1",
+      "name": "보건의료",
+      "store_count": 18700
+    },
+    {
+      "code": "R1",
+      "name": "예술·스포츠",
+      "store_count": 21061
+    },
+    {
+      "code": "S2",
+      "name": "수리·개인",
+      "store_count": 53716
+    }
+  ],
+  "middle": [
+    {
+      "code": "G202",
+      "name": "자동차 부품 소매",
+      "store_count": 902
+    },
+    {
+      "code": "G203",
+      "name": "모터사이클 소매",
+      "store_count": 427
+    },
+    {
+      "code": "G204",
+      "name": "종합 소매",
+      "store_count": 18597
+    },
+    {
+      "code": "G205",
+      "name": "식료품 소매",
+      "store_count": 12620
+    },
+    {
+      "code": "G206",
+      "name": "음료 소매",
+      "store_count": 758
+    },
+    {
+      "code": "G207",
+      "name": "담배 소매",
+      "store_count": 796
+    },
+    {
+      "code": "G208",
+      "name": "가전·통신 소매",
+      "store_count": 6472
+    },
+    {
+      "code": "G209",
+      "name": "섬유·의복·신발 소매",
+      "store_count": 26299
+    },
+    {
+      "code": "G210",
+      "name": "철물·건설자재 소매",
+      "store_count": 3143
+    },
+    {
+      "code": "G211",
+      "name": "가구 소매",
+      "store_count": 1306
+    },
+    {
+      "code": "G212",
+      "name": "기타 생활용품 소매",
+      "store_count": 3105
+    },
+    {
+      "code": "G213",
+      "name": "오락용품 소매",
+      "store_count": 6146
+    },
+    {
+      "code": "G214",
+      "name": "연료 소매",
+      "store_count": 909
+    },
+    {
+      "code": "G215",
+      "name": "의약·화장품 소매",
+      "store_count": 12548
+    },
+    {
+      "code": "G216",
+      "name": "안경·정밀기기 소매",
+      "store_count": 2717
+    },
+    {
+      "code": "G217",
+      "name": "시계·귀금속 소매",
+      "store_count": 2506
+    },
+    {
+      "code": "G218",
+      "name": "장식품 소매",
+      "store_count": 2890
+    },
+    {
+      "code": "G219",
+      "name": "식물 소매",
+      "store_count": 4016
+    },
+    {
+      "code": "G220",
+      "name": "애완동물·용품 소매",
+      "store_count": 1574
+    },
+    {
+      "code": "G221",
+      "name": "기타 상품 소매",
+      "store_count": 2073
+    },
+    {
+      "code": "G222",
+      "name": "중고 상품 소매",
+      "store_count": 1502
+    },
+    {
+      "code": "I101",
+      "name": "일반 숙박",
+      "store_count": 9216
+    },
+    {
+      "code": "I102",
+      "name": "기타 숙박",
+      "store_count": 3193
+    },
+    {
+      "code": "I201",
+      "name": "한식",
+      "store_count": 51622
+    },
+    {
+      "code": "I202",
+      "name": "중식",
+      "store_count": 5517
+    },
+    {
+      "code": "I203",
+      "name": "일식",
+      "store_count": 7277
+    },
+    {
+      "code": "I204",
+      "name": "서양식",
+      "store_count": 6900
+    },
+    {
+      "code": "I205",
+      "name": "동남아시아",
+      "store_count": 1751
+    },
+    {
+      "code": "I206",
+      "name": "기타 외국",
+      "store_count": 36
+    },
+    {
+      "code": "I207",
+      "name": "구내식당·뷔페",
+      "store_count": 1067
+    },
+    {
+      "code": "I210",
+      "name": "기타 간이",
+      "store_count": 28094
+    },
+    {
+      "code": "I211",
+      "name": "주점",
+      "store_count": 16123
+    },
+    {
+      "code": "I212",
+      "name": "비알코올",
+      "store_count": 22739
+    },
+    {
+      "code": "L102",
+      "name": "부동산 서비스",
+      "store_count": 24714
+    },
+    {
+      "code": "M103",
+      "name": "법무관련",
+      "store_count": 9886
+    },
+    {
+      "code": "M104",
+      "name": "회계·세무",
+      "store_count": 7125
+    },
+    {
+      "code": "M105",
+      "name": "광고",
+      "store_count": 18444
+    },
+    {
+      "code": "M106",
+      "name": "시장 조사",
+      "store_count": 739
+    },
+    {
+      "code": "M107",
+      "name": "본사·경영 컨설팅",
+      "store_count": 24073
+    },
+    {
+      "code": "M109",
+      "name": "기술 서비스",
+      "store_count": 11714
+    },
+    {
+      "code": "M111",
+      "name": "수의",
+      "store_count": 905
+    },
+    {
+      "code": "M112",
+      "name": "전문 디자인",
+      "store_count": 15006
+    },
+    {
+      "code": "M113",
+      "name": "사진 촬영",
+      "store_count": 6682
+    },
+    {
+      "code": "M114",
+      "name": "인쇄·제품제작",
+      "store_count": 3702
+    },
+    {
+      "code": "M115",
+      "name": "기타 전문 과학",
+      "store_count": 2273
+    },
+    {
+      "code": "N101",
+      "name": "시설관리",
+      "store_count": 1625
+    },
+    {
+      "code": "N102",
+      "name": "청소·방제",
+      "store_count": 5720
+    },
+    {
+      "code": "N103",
+      "name": "조경·유지",
+      "store_count": 130
+    },
+    {
+      "code": "N104",
+      "name": "고용 알선",
+      "store_count": 3819
+    },
+    {
+      "code": "N105",
+      "name": "여행사·보조",
+      "store_count": 5734
+    },
+    {
+      "code": "N107",
+      "name": "사무 지원",
+      "store_count": 1080
+    },
+    {
+      "code": "N108",
+      "name": "기타 사업 서비스",
+      "store_count": 4405
+    },
+    {
+      "code": "N109",
+      "name": "운송장비 대여",
+      "store_count": 725
+    },
+    {
+      "code": "N110",
+      "name": "가정용품 대여",
+      "store_count": 1655
+    },
+    {
+      "code": "N111",
+      "name": "산업용품 대여",
+      "store_count": 1403
+    },
+    {
+      "code": "P105",
+      "name": "일반 교육",
+      "store_count": 14852
+    },
+    {
+      "code": "P106",
+      "name": "기타 교육",
+      "store_count": 23756
+    },
+    {
+      "code": "P107",
+      "name": "교육 지원",
+      "store_count": 5607
+    },
+    {
+      "code": "Q101",
+      "name": "병원",
+      "store_count": 663
+    },
+    {
+      "code": "Q102",
+      "name": "의원",
+      "store_count": 17423
+    },
+    {
+      "code": "Q104",
+      "name": "기타 보건",
+      "store_count": 614
+    },
+    {
+      "code": "R102",
+      "name": "도서관·사적지",
+      "store_count": 2728
+    },
+    {
+      "code": "R103",
+      "name": "스포츠 서비스",
+      "store_count": 8789
+    },
+    {
+      "code": "R104",
+      "name": "유원지·오락",
+      "store_count": 9544
+    },
+    {
+      "code": "S201",
+      "name": "컴퓨터 수리",
+      "store_count": 1688
+    },
+    {
+      "code": "S202",
+      "name": "통신장비 수리",
+      "store_count": 342
+    },
+    {
+      "code": "S203",
+      "name": "자동차 수리·세차",
+      "store_count": 4969
+    },
+    {
+      "code": "S204",
+      "name": "모터사이클 수리",
+      "store_count": 550
+    },
+    {
+      "code": "S205",
+      "name": "가전제품 수리",
+      "store_count": 2175
+    },
+    {
+      "code": "S206",
+      "name": "기타 가정용품 수리",
+      "store_count": 3820
+    },
+    {
+      "code": "S207",
+      "name": "이용·미용",
+      "store_count": 31887
+    },
+    {
+      "code": "S208",
+      "name": "욕탕·신체관리",
+      "store_count": 2426
+    },
+    {
+      "code": "S209",
+      "name": "세탁",
+      "store_count": 4740
+    },
+    {
+      "code": "S210",
+      "name": "장례식장",
+      "store_count": 477
+    },
+    {
+      "code": "S211",
+      "name": "기타 개인",
+      "store_count": 642
+    }
+  ],
+  "small": [
+    {
+      "code": "G20201",
+      "name": "타이어 소매업",
+      "store_count": 100
+    },
+    {
+      "code": "G20202",
+      "name": "자동차 부품 소매업",
+      "store_count": 802
+    },
+    {
+      "code": "G20301",
+      "name": "모터사이클 및 부품 소매업",
+      "store_count": 427
+    },
+    {
+      "code": "G20404",
+      "name": "슈퍼마켓",
+      "store_count": 8229
+    },
+    {
+      "code": "G20405",
+      "name": "편의점",
+      "store_count": 9395
+    },
+    {
+      "code": "G20499",
+      "name": "그 외 기타 종합 소매업",
+      "store_count": 973
+    },
+    {
+      "code": "G20501",
+      "name": "곡물/곡분 소매업",
+      "store_count": 296
+    },
+    {
+      "code": "G20502",
+      "name": "가축 사료 소매업",
+      "store_count": 61
+    },
+    {
+      "code": "G20503",
+      "name": "정육점",
+      "store_count": 2760
+    },
+    {
+      "code": "G20504",
+      "name": "건어물/젓갈 소매업",
+      "store_count": 627
+    },
+    {
+      "code": "G20505",
+      "name": "수산물 소매업",
+      "store_count": 1255
+    },
+    {
+      "code": "G20506",
+      "name": "채소/과일 소매업",
+      "store_count": 2588
+    },
+    {
+      "code": "G20507",
+      "name": "아이스크림 할인점",
+      "store_count": 35
+    },
+    {
+      "code": "G20508",
+      "name": "건강보조식품 소매업",
+      "store_count": 2719
+    },
+    {
+      "code": "G20509",
+      "name": "반찬/식료품 소매업",
+      "store_count": 2279
+    },
+    {
+      "code": "G20601",
+      "name": "얼음 소매업",
+      "store_count": 24
+    },
+    {
+      "code": "G20602",
+      "name": "주류 소매업",
+      "store_count": 425
+    },
+    {
+      "code": "G20603",
+      "name": "생수/음료 소매업",
+      "store_count": 236
+    },
+    {
+      "code": "G20604",
+      "name": "우유 소매업",
+      "store_count": 73
+    },
+    {
+      "code": "G20701",
+      "name": "담배/전자담배 소매업",
+      "store_count": 796
+    },
+    {
+      "code": "G20801",
+      "name": "컴퓨터/소프트웨어 소매업",
+      "store_count": 1423
+    },
+    {
+      "code": "G20802",
+      "name": "핸드폰 소매업",
+      "store_count": 3780
+    },
+    {
+      "code": "G20803",
+      "name": "가전제품 소매업",
+      "store_count": 1269
+    },
+    {
+      "code": "G20901",
+      "name": "남성 의류 소매업",
+      "store_count": 1762
+    },
+    {
+      "code": "G20902",
+      "name": "여성 의류 소매업",
+      "store_count": 6847
+    },
+    {
+      "code": "G20903",
+      "name": "유아용 의류 소매업",
+      "store_count": 742
+    },
+    {
+      "code": "G20904",
+      "name": "한복 소매업",
+      "store_count": 237
+    },
+    {
+      "code": "G20905",
+      "name": "기타 의류 소매업",
+      "store_count": 10208
+    },
+    {
+      "code": "G20906",
+      "name": "침구류/커튼 소매업",
+      "store_count": 1159
+    },
+    {
+      "code": "G20907",
+      "name": "액세서리/잡화 소매업",
+      "store_count": 1627
+    },
+    {
+      "code": "G20908",
+      "name": "가발 소매업",
+      "store_count": 233
+    },
+    {
+      "code": "G20909",
+      "name": "실/섬유제품 소매업",
+      "store_count": 653
+    },
+    {
+      "code": "G20910",
+      "name": "신발 소매업",
+      "store_count": 1690
+    },
+    {
+      "code": "G20911",
+      "name": "가방 소매업",
+      "store_count": 1141
+    },
+    {
+      "code": "G21001",
+      "name": "철물/공구 소매업",
+      "store_count": 1893
+    },
+    {
+      "code": "G21002",
+      "name": "벽지/장판/마루 소매업",
+      "store_count": 876
+    },
+    {
+      "code": "G21003",
+      "name": "건설/건축자재 소매업",
+      "store_count": 149
+    },
+    {
+      "code": "G21099",
+      "name": "기타 건설/건축자재 소매업",
+      "store_count": 225
+    },
+    {
+      "code": "G21101",
+      "name": "가구 소매업",
+      "store_count": 1306
+    },
+    {
+      "code": "G21201",
+      "name": "전기용품/조명장치 소매업",
+      "store_count": 902
+    },
+    {
+      "code": "G21202",
+      "name": "주방/가정용품 소매업",
+      "store_count": 1819
+    },
+    {
+      "code": "G21203",
+      "name": "악기 소매업",
+      "store_count": 384
+    },
+    {
+      "code": "G21301",
+      "name": "서점",
+      "store_count": 1524
+    },
+    {
+      "code": "G21302",
+      "name": "문구/회화용품 소매업",
+      "store_count": 1657
+    },
+    {
+      "code": "G21303",
+      "name": "음반/비디오물 소매업",
+      "store_count": 131
+    },
+    {
+      "code": "G21304",
+      "name": "운동용품 소매업",
+      "store_count": 1648
+    },
+    {
+      "code": "G21305",
+      "name": "자전거 소매업",
+      "store_count": 463
+    },
+    {
+      "code": "G21306",
+      "name": "장난감 소매업",
+      "store_count": 723
+    },
+    {
+      "code": "G21401",
+      "name": "주유소",
+      "store_count": 593
+    },
+    {
+      "code": "G21402",
+      "name": "가스 충전소",
+      "store_count": 79
+    },
+    {
+      "code": "G21403",
+      "name": "가정용 연료 소매업",
+      "store_count": 237
+    },
+    {
+      "code": "G21501",
+      "name": "약국",
+      "store_count": 5611
+    },
+    {
+      "code": "G21502",
+      "name": "의료기기 소매업",
+      "store_count": 1420
+    },
+    {
+      "code": "G21503",
+      "name": "화장품 소매업",
+      "store_count": 5517
+    },
+    {
+      "code": "G21601",
+      "name": "사무기기 소매업",
+      "store_count": 342
+    },
+    {
+      "code": "G21602",
+      "name": "안경렌즈 소매업",
+      "store_count": 2136
+    },
+    {
+      "code": "G21603",
+      "name": "사진기/기타 광학기기 소매업",
+      "store_count": 239
+    },
+    {
+      "code": "G21701",
+      "name": "시계/귀금속 소매업",
+      "store_count": 2506
+    },
+    {
+      "code": "G21801",
+      "name": "예술품 소매업",
+      "store_count": 1892
+    },
+    {
+      "code": "G21802",
+      "name": "기념품점",
+      "store_count": 998
+    },
+    {
+      "code": "G21901",
+      "name": "꽃집",
+      "store_count": 4016
+    },
+    {
+      "code": "G22001",
+      "name": "애완동물/애완용품 소매업",
+      "store_count": 1574
+    },
+    {
+      "code": "G22199",
+      "name": "그 외 기타 상품 전문 소매업",
+      "store_count": 2073
+    },
+    {
+      "code": "G22201",
+      "name": "중고 상품 소매업",
+      "store_count": 1502
+    },
+    {
+      "code": "I10101",
+      "name": "호텔/리조트",
+      "store_count": 415
+    },
+    {
+      "code": "I10102",
+      "name": "여관/모텔",
+      "store_count": 2078
+    },
+    {
+      "code": "I10103",
+      "name": "펜션",
+      "store_count": 6705
+    },
+    {
+      "code": "I10104",
+      "name": "캠핑/글램핑",
+      "store_count": 18
+    },
+    {
+      "code": "I10201",
+      "name": "기숙사/고시원",
+      "store_count": 3061
+    },
+    {
+      "code": "I10299",
+      "name": "그 외 기타 숙박업",
+      "store_count": 132
+    },
+    {
+      "code": "I20101",
+      "name": "백반/한정식",
+      "store_count": 26446
+    },
+    {
+      "code": "I20102",
+      "name": "국/탕/찌개류",
+      "store_count": 4788
+    },
+    {
+      "code": "I20103",
+      "name": "족발/보쌈",
+      "store_count": 1196
+    },
+    {
+      "code": "I20104",
+      "name": "전/부침개",
+      "store_count": 188
+    },
+    {
+      "code": "I20105",
+      "name": "국수/칼국수",
+      "store_count": 2934
+    },
+    {
+      "code": "I20106",
+      "name": "냉면/밀면",
+      "store_count": 637
+    },
+    {
+      "code": "I20107",
+      "name": "돼지고기 구이/찜",
+      "store_count": 7834
+    },
+    {
+      "code": "I20108",
+      "name": "소고기 구이/찜",
+      "store_count": 911
+    },
+    {
+      "code": "I20109",
+      "name": "곱창 전골/구이",
+      "store_count": 1335
+    },
+    {
+      "code": "I20110",
+      "name": "닭/오리고기 구이/찜",
+      "store_count": 1249
+    },
+    {
+      "code": "I20111",
+      "name": "횟집",
+      "store_count": 1985
+    },
+    {
+      "code": "I20112",
+      "name": "해산물 구이/찜",
+      "store_count": 1763
+    },
+    {
+      "code": "I20113",
+      "name": "복 요리 전문",
+      "store_count": 78
+    },
+    {
+      "code": "I20199",
+      "name": "기타 한식 음식점",
+      "store_count": 278
+    },
+    {
+      "code": "I20201",
+      "name": "중국집",
+      "store_count": 4716
+    },
+    {
+      "code": "I20202",
+      "name": "마라탕/훠궈",
+      "store_count": 801
+    },
+    {
+      "code": "I20301",
+      "name": "일식 회/초밥",
+      "store_count": 5989
+    },
+    {
+      "code": "I20302",
+      "name": "일식 카레/돈가스/덮밥",
+      "store_count": 552
+    },
+    {
+      "code": "I20303",
+      "name": "일식 면 요리",
+      "store_count": 603
+    },
+    {
+      "code": "I20399",
+      "name": "기타 일식 음식점",
+      "store_count": 133
+    },
+    {
+      "code": "I20401",
+      "name": "경양식",
+      "store_count": 5941
+    },
+    {
+      "code": "I20402",
+      "name": "파스타/스테이크",
+      "store_count": 523
+    },
+    {
+      "code": "I20403",
+      "name": "패밀리레스토랑",
+      "store_count": 89
+    },
+    {
+      "code": "I20499",
+      "name": "기타 서양식 음식점",
+      "store_count": 347
+    },
+    {
+      "code": "I20501",
+      "name": "베트남식 전문",
+      "store_count": 1621
+    },
+    {
+      "code": "I20599",
+      "name": "기타 동남아식 전문",
+      "store_count": 130
+    },
+    {
+      "code": "I20601",
+      "name": "분류 안된 외국식 음식점",
+      "store_count": 36
+    },
+    {
+      "code": "I20701",
+      "name": "구내식당",
+      "store_count": 899
+    },
+    {
+      "code": "I20702",
+      "name": "뷔페",
+      "store_count": 168
+    },
+    {
+      "code": "I21001",
+      "name": "빵/도넛",
+      "store_count": 6119
+    },
+    {
+      "code": "I21002",
+      "name": "떡/한과",
+      "store_count": 1063
+    },
+    {
+      "code": "I21003",
+      "name": "피자",
+      "store_count": 3436
+    },
+    {
+      "code": "I21004",
+      "name": "버거",
+      "store_count": 1051
+    },
+    {
+      "code": "I21005",
+      "name": "토스트/샌드위치/샐러드",
+      "store_count": 811
+    },
+    {
+      "code": "I21006",
+      "name": "치킨",
+      "store_count": 5560
+    },
+    {
+      "code": "I21007",
+      "name": "김밥/만두/분식",
+      "store_count": 8097
+    },
+    {
+      "code": "I21008",
+      "name": "아이스크림/빙수",
+      "store_count": 531
+    },
+    {
+      "code": "I21099",
+      "name": "그 외 기타 간이 음식점",
+      "store_count": 1426
+    },
+    {
+      "code": "I21101",
+      "name": "일반 유흥 주점",
+      "store_count": 2386
+    },
+    {
+      "code": "I21102",
+      "name": "무도 유흥 주점",
+      "store_count": 98
+    },
+    {
+      "code": "I21103",
+      "name": "생맥주 전문",
+      "store_count": 2908
+    },
+    {
+      "code": "I21104",
+      "name": "요리 주점",
+      "store_count": 10731
+    },
+    {
+      "code": "I21201",
+      "name": "카페",
+      "store_count": 22739
+    },
+    {
+      "code": "L10203",
+      "name": "부동산 중개/대리업",
+      "store_count": 24714
+    },
+    {
+      "code": "M10301",
+      "name": "변호사",
+      "store_count": 4737
+    },
+    {
+      "code": "M10302",
+      "name": "변리사",
+      "store_count": 850
+    },
+    {
+      "code": "M10303",
+      "name": "법무사",
+      "store_count": 2172
+    },
+    {
+      "code": "M10306",
+      "name": "행정사",
+      "store_count": 1267
+    },
+    {
+      "code": "M10307",
+      "name": "공인노무사",
+      "store_count": 723
+    },
+    {
+      "code": "M10399",
+      "name": "기타 법무관련 서비스업",
+      "store_count": 137
+    },
+    {
+      "code": "M10401",
+      "name": "공인회계사",
+      "store_count": 818
+    },
+    {
+      "code": "M10402",
+      "name": "세무사",
+      "store_count": 6277
+    },
+    {
+      "code": "M10499",
+      "name": "기타 회계 관련 서비스업",
+      "store_count": 30
+    },
+    {
+      "code": "M10501",
+      "name": "광고 대행업",
+      "store_count": 14617
+    },
+    {
+      "code": "M10502",
+      "name": "옥외/전시 광고 대행업",
+      "store_count": 416
+    },
+    {
+      "code": "M10503",
+      "name": "광고 매체 판매업",
+      "store_count": 197
+    },
+    {
+      "code": "M10504",
+      "name": "광고물 설계/제작업",
+      "store_count": 2625
+    },
+    {
+      "code": "M10599",
+      "name": "기타 광고 관련 서비스업",
+      "store_count": 589
+    },
+    {
+      "code": "M10601",
+      "name": "시장 조사 및 여론 조사업",
+      "store_count": 739
+    },
+    {
+      "code": "M10703",
+      "name": "경영 컨설팅업",
+      "store_count": 24073
+    },
+    {
+      "code": "M10901",
+      "name": "건축 설계 및 관련 서비스업",
+      "store_count": 6842
+    },
+    {
+      "code": "M10902",
+      "name": "도시 계획 및 조경 설계 서비스업",
+      "store_count": 527
+    },
+    {
+      "code": "M10903",
+      "name": "건물 및 토목 엔지니어링 서비스업",
+      "store_count": 1611
+    },
+    {
+      "code": "M10904",
+      "name": "환경 관련 엔지니어링 서비스업",
+      "store_count": 530
+    },
+    {
+      "code": "M10999",
+      "name": "기타 엔지니어링 서비스업",
+      "store_count": 2204
+    },
+    {
+      "code": "M11101",
+      "name": "동물병원",
+      "store_count": 905
+    },
+    {
+      "code": "M11201",
+      "name": "인테리어 디자인업",
+      "store_count": 5729
+    },
+    {
+      "code": "M11202",
+      "name": "제품 디자인업",
+      "store_count": 1703
+    },
+    {
+      "code": "M11203",
+      "name": "시각 디자인업",
+      "store_count": 6131
+    },
+    {
+      "code": "M11204",
+      "name": "패션/섬유/기타 전문 디자인업",
+      "store_count": 1443
+    },
+    {
+      "code": "M11301",
+      "name": "사진촬영업",
+      "store_count": 6682
+    },
+    {
+      "code": "M11401",
+      "name": "명함/간판/광고물 제작",
+      "store_count": 3702
+    },
+    {
+      "code": "M11502",
+      "name": "번역/통역 서비스업",
+      "store_count": 1074
+    },
+    {
+      "code": "M11504",
+      "name": "사업/무형 재산권 중개업",
+      "store_count": 1199
+    },
+    {
+      "code": "N10101",
+      "name": "사업시설 유지·관리 서비스업",
+      "store_count": 1625
+    },
+    {
+      "code": "N10201",
+      "name": "건축물 일반 청소업",
+      "store_count": 4592
+    },
+    {
+      "code": "N10202",
+      "name": "산업설비, 운송장비 및 공공장소 청소업",
+      "store_count": 503
+    },
+    {
+      "code": "N10203",
+      "name": "소독, 구충 및 방제 서비스업",
+      "store_count": 625
+    },
+    {
+      "code": "N10301",
+      "name": "조경 유지·관리 서비스업",
+      "store_count": 130
+    },
+    {
+      "code": "N10401",
+      "name": "고용 알선업",
+      "store_count": 2177
+    },
+    {
+      "code": "N10402",
+      "name": "임시/일용 인력 공급업",
+      "store_count": 1138
+    },
+    {
+      "code": "N10403",
+      "name": "상용 인력 공급 및 인사관리 서비스업",
+      "store_count": 504
+    },
+    {
+      "code": "N10501",
+      "name": "여행사",
+      "store_count": 5163
+    },
+    {
+      "code": "N10599",
+      "name": "기타 여행 보조/예약 서비스업",
+      "store_count": 571
+    },
+    {
+      "code": "N10703",
+      "name": "복사업",
+      "store_count": 651
+    },
+    {
+      "code": "N10799",
+      "name": "기타 사무 지원 서비스업",
+      "store_count": 429
+    },
+    {
+      "code": "N10802",
+      "name": "전시/컨벤션/행사 대행 서비스업",
+      "store_count": 3968
+    },
+    {
+      "code": "N10805",
+      "name": "포장/충전업",
+      "store_count": 437
+    },
+    {
+      "code": "N10901",
+      "name": "자동차 대여업",
+      "store_count": 548
+    },
+    {
+      "code": "N10999",
+      "name": "기타 운송장비 대여업",
+      "store_count": 177
+    },
+    {
+      "code": "N11001",
+      "name": "스포츠/레크리에이션 용품 대여업",
+      "store_count": 176
+    },
+    {
+      "code": "N11002",
+      "name": "음반/비디오물 대여업",
+      "store_count": 31
+    },
+    {
+      "code": "N11003",
+      "name": "만화방",
+      "store_count": 125
+    },
+    {
+      "code": "N11004",
+      "name": "의류 대여업",
+      "store_count": 475
+    },
+    {
+      "code": "N11099",
+      "name": "기타 개인/가정용품 대여업",
+      "store_count": 848
+    },
+    {
+      "code": "N11101",
+      "name": "건설기계/장비 대여업",
+      "store_count": 273
+    },
+    {
+      "code": "N11102",
+      "name": "컴퓨터/사무기기 대여업",
+      "store_count": 478
+    },
+    {
+      "code": "N11199",
+      "name": "기타 산업용 기계/장비 대여업",
+      "store_count": 652
+    },
+    {
+      "code": "P10501",
+      "name": "입시·교과학원",
+      "store_count": 14852
+    },
+    {
+      "code": "P10601",
+      "name": "태권도/무술학원",
+      "store_count": 2150
+    },
+    {
+      "code": "P10603",
+      "name": "요가/필라테스 학원",
+      "store_count": 5290
+    },
+    {
+      "code": "P10605",
+      "name": "레크리에이션 교육기관",
+      "store_count": 939
+    },
+    {
+      "code": "P10607",
+      "name": "청소년 수련시설",
+      "store_count": 67
+    },
+    {
+      "code": "P10609",
+      "name": "음악학원",
+      "store_count": 3723
+    },
+    {
+      "code": "P10611",
+      "name": "미술학원",
+      "store_count": 2393
+    },
+    {
+      "code": "P10613",
+      "name": "기타 예술/스포츠 교육기관",
+      "store_count": 1235
+    },
+    {
+      "code": "P10615",
+      "name": "외국어학원",
+      "store_count": 1253
+    },
+    {
+      "code": "P10617",
+      "name": "전문자격/고시학원",
+      "store_count": 180
+    },
+    {
+      "code": "P10619",
+      "name": "사회교육시설",
+      "store_count": 231
+    },
+    {
+      "code": "P10621",
+      "name": "직원 훈련기관",
+      "store_count": 852
+    },
+    {
+      "code": "P10623",
+      "name": "운전학원",
+      "store_count": 79
+    },
+    {
+      "code": "P10625",
+      "name": "기타 기술/직업 훈련학원",
+      "store_count": 3036
+    },
+    {
+      "code": "P10627",
+      "name": "컴퓨터 학원",
+      "store_count": 287
+    },
+    {
+      "code": "P10629",
+      "name": "그 외 기타 교육기관",
+      "store_count": 2041
+    },
+    {
+      "code": "P10701",
+      "name": "교육컨설팅업",
+      "store_count": 2282
+    },
+    {
+      "code": "P10799",
+      "name": "기타 교육지원 서비스업",
+      "store_count": 3325
+    },
+    {
+      "code": "Q10101",
+      "name": "종합병원",
+      "store_count": 74
+    },
+    {
+      "code": "Q10102",
+      "name": "일반병원",
+      "store_count": 235
+    },
+    {
+      "code": "Q10103",
+      "name": "치과병원",
+      "store_count": 110
+    },
+    {
+      "code": "Q10104",
+      "name": "한방병원",
+      "store_count": 92
+    },
+    {
+      "code": "Q10105",
+      "name": "요양병원",
+      "store_count": 152
+    },
+    {
+      "code": "Q10201",
+      "name": "내과/소아과 의원",
+      "store_count": 2419
+    },
+    {
+      "code": "Q10202",
+      "name": "외과 의원",
+      "store_count": 1249
+    },
+    {
+      "code": "Q10203",
+      "name": "신경/정신과 의원",
+      "store_count": 681
+    },
+    {
+      "code": "Q10204",
+      "name": "피부/비뇨기과 의원",
+      "store_count": 1829
+    },
+    {
+      "code": "Q10205",
+      "name": "안과 의원",
+      "store_count": 439
+    },
+    {
+      "code": "Q10206",
+      "name": "이비인후과 의원",
+      "store_count": 669
+    },
+    {
+      "code": "Q10207",
+      "name": "산부인과 의원",
+      "store_count": 499
+    },
+    {
+      "code": "Q10208",
+      "name": "성형외과 의원",
+      "store_count": 842
+    },
+    {
+      "code": "Q10209",
+      "name": "기타 의원",
+      "store_count": 909
+    },
+    {
+      "code": "Q10210",
+      "name": "치과의원",
+      "store_count": 4406
+    },
+    {
+      "code": "Q10211",
+      "name": "한의원",
+      "store_count": 3369
+    },
+    {
+      "code": "Q10212",
+      "name": "방사선 진단/병리 검사 의원",
+      "store_count": 112
+    },
+    {
+      "code": "Q10402",
+      "name": "유사 의료업",
+      "store_count": 614
+    },
+    {
+      "code": "R10202",
+      "name": "독서실/스터디 카페",
+      "store_count": 2728
+    },
+    {
+      "code": "R10306",
+      "name": "종합 스포츠시설",
+      "store_count": 132
+    },
+    {
+      "code": "R10307",
+      "name": "헬스장",
+      "store_count": 3570
+    },
+    {
+      "code": "R10308",
+      "name": "수영장",
+      "store_count": 72
+    },
+    {
+      "code": "R10309",
+      "name": "볼링장",
+      "store_count": 116
+    },
+    {
+      "code": "R10310",
+      "name": "당구장",
+      "store_count": 1975
+    },
+    {
+      "code": "R10311",
+      "name": "골프 연습장",
+      "store_count": 1483
+    },
+    {
+      "code": "R10312",
+      "name": "테니스장",
+      "store_count": 721
+    },
+    {
+      "code": "R10313",
+      "name": "탁구장",
+      "store_count": 290
+    },
+    {
+      "code": "R10314",
+      "name": "기타 스포츠시설 운영업",
+      "store_count": 390
+    },
+    {
+      "code": "R10316",
+      "name": "스쿼시/라켓볼장",
+      "store_count": 40
+    },
+    {
+      "code": "R10402",
+      "name": "비디오방",
+      "store_count": 25
+    },
+    {
+      "code": "R10404",
+      "name": "전자 게임장",
+      "store_count": 491
+    },
+    {
+      "code": "R10405",
+      "name": "기타 오락장",
+      "store_count": 1054
+    },
+    {
+      "code": "R10406",
+      "name": "PC방",
+      "store_count": 1133
+    },
+    {
+      "code": "R10407",
+      "name": "노래방",
+      "store_count": 5053
+    },
+    {
+      "code": "R10408",
+      "name": "낚시터 운영업",
+      "store_count": 23
+    },
+    {
+      "code": "R10409",
+      "name": "수상/해양 레저업",
+      "store_count": 31
+    },
+    {
+      "code": "R10410",
+      "name": "복권 발행/판매업",
+      "store_count": 1157
+    },
+    {
+      "code": "R10414",
+      "name": "바둑/장기/체스 경기 운영업",
+      "store_count": 151
+    },
+    {
+      "code": "R10499",
+      "name": "기타 오락관련 서비스업",
+      "store_count": 426
+    },
+    {
+      "code": "S20101",
+      "name": "컴퓨터/노트북/프린터 수리업",
+      "store_count": 1688
+    },
+    {
+      "code": "S20201",
+      "name": "핸드폰/통신장비 수리업",
+      "store_count": 342
+    },
+    {
+      "code": "S20301",
+      "name": "자동차 정비소",
+      "store_count": 3644
+    },
+    {
+      "code": "S20302",
+      "name": "자동차 세차장",
+      "store_count": 1325
+    },
+    {
+      "code": "S20401",
+      "name": "모터사이클 수리업",
+      "store_count": 550
+    },
+    {
+      "code": "S20501",
+      "name": "가전제품 수리업",
+      "store_count": 2175
+    },
+    {
+      "code": "S20601",
+      "name": "의류/이불 수선업",
+      "store_count": 1563
+    },
+    {
+      "code": "S20602",
+      "name": "가죽/가방/신발 수선업",
+      "store_count": 342
+    },
+    {
+      "code": "S20603",
+      "name": "시계/귀금속/악기 수리업",
+      "store_count": 241
+    },
+    {
+      "code": "S20699",
+      "name": "그 외 기타 개인/가정용품 수리업",
+      "store_count": 1674
+    },
+    {
+      "code": "S20701",
+      "name": "미용실",
+      "store_count": 20278
+    },
+    {
+      "code": "S20702",
+      "name": "피부 관리실",
+      "store_count": 6770
+    },
+    {
+      "code": "S20703",
+      "name": "네일숍",
+      "store_count": 4839
+    },
+    {
+      "code": "S20801",
+      "name": "목욕탕/사우나",
+      "store_count": 529
+    },
+    {
+      "code": "S20802",
+      "name": "마사지/안마",
+      "store_count": 1000
+    },
+    {
+      "code": "S20803",
+      "name": "체형/비만 관리",
+      "store_count": 897
+    },
+    {
+      "code": "S20901",
+      "name": "세탁소",
+      "store_count": 3869
+    },
+    {
+      "code": "S20902",
+      "name": "셀프 빨래방",
+      "store_count": 871
+    },
+    {
+      "code": "S21001",
+      "name": "장례식장",
+      "store_count": 420
+    },
+    {
+      "code": "S21002",
+      "name": "화장터/묘지/납골당",
+      "store_count": 57
+    },
+    {
+      "code": "S21101",
+      "name": "예식장업",
+      "store_count": 155
+    },
+    {
+      "code": "S21105",
+      "name": "결혼 상담 서비스업",
+      "store_count": 487
+    }
+  ],
+  "diagnostics": {
+    "large_count": 10,
+    "middle_count": 75,
+    "small_count": 247
+  }
+}

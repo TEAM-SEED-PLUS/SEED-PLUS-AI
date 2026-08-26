@@ -1,0 +1,68 @@
+{
+  "area_cd": "POI013",
+  "area_nm": "가산디지털단지역",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "보통",
+  "payment_count": 64.0,
+  "payment_amount_min": 1700000.0,
+  "payment_amount_max": 1800000.0,
+  "payment_amount_midpoint": 1750000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 19,
+      "RSB_SH_PAYMENT_AMT_MIN": 90000,
+      "RSB_SH_PAYMENT_AMT_MAX": 100000,
+      "RSB_MCT_CNT": 119,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 50000,
+      "RSB_SH_PAYMENT_AMT_MAX": 60000,
+      "RSB_MCT_CNT": 224,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 18,
+      "RSB_SH_PAYMENT_AMT_MIN": 70000,
+      "RSB_SH_PAYMENT_AMT_MAX": 80000,
+      "RSB_MCT_CNT": 74,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "의복/의류",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 22,
+      "RSB_SH_PAYMENT_AMT_MIN": 1500000,
+      "RSB_SH_PAYMENT_AMT_MAX": 1600000,
+      "RSB_MCT_CNT": 41,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI013",
+    "area_nm": "가산디지털단지역",
+    "assigned_district": "금천구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "금천구",
+        "intersection_ratio": 0.999923
+      }
+    ]
+  },
+  "source_status": "ok"
+}

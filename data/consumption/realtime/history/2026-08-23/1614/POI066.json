@@ -1,0 +1,98 @@
+{
+  "area_cd": "POI066",
+  "area_nm": "북촌한옥마을",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "바쁜",
+  "payment_count": 72.0,
+  "payment_amount_min": 1000000.0,
+  "payment_amount_max": 1100000.0,
+  "payment_amount_midpoint": 1050000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 8,
+      "RSB_SH_PAYMENT_AMT_MIN": 200000,
+      "RSB_SH_PAYMENT_AMT_MAX": 250000,
+      "RSB_MCT_CNT": 130,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 8,
+      "RSB_SH_PAYMENT_AMT_MIN": 80000,
+      "RSB_SH_PAYMENT_AMT_MAX": 90000,
+      "RSB_MCT_CNT": 40,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 27,
+      "RSB_SH_PAYMENT_AMT_MIN": 400000,
+      "RSB_SH_PAYMENT_AMT_MAX": 450000,
+      "RSB_MCT_CNT": 184,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 50000,
+      "RSB_SH_PAYMENT_AMT_MAX": 60000,
+      "RSB_MCT_CNT": 18,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 16,
+      "RSB_SH_PAYMENT_AMT_MIN": 50000,
+      "RSB_SH_PAYMENT_AMT_MAX": 60000,
+      "RSB_MCT_CNT": 16,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "패션/잡화",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 60000,
+      "RSB_SH_PAYMENT_AMT_MAX": 70000,
+      "RSB_MCT_CNT": 79,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "여가·오락",
+      "RSB_MID_CTGR": "스포츠/문화/레저",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 59,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI066",
+    "area_nm": "북촌한옥마을",
+    "assigned_district": "종로구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "종로구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

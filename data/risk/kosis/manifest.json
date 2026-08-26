@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "latest_source_year": 2023,
+  "snapshots": [{"year": 2023, "status": "publication_verified_api_not_probed", "provisional": true}],
+  "production_enabled": false,
+  "role": "annual_industry_benchmark",
+  "production_district_score_applied": false,
+  "semantics": "기업 소멸률; 서울 상권분석 점포 폐업률과 결합하지 않음",
+  "fallback": "keep_existing_risk_unchanged",
+  "refresh_policy": "annual_snapshot_after_official_release"
+}

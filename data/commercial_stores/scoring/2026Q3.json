@@ -1,0 +1,189 @@
+{
+  "snapshot_quarter": "2026Q3",
+  "collected_at": "2026-08-23T15:03:51+09:00",
+  "started_at": "2026-08-23T15:03:46+09:00",
+  "district_count": 25,
+  "api_call_count": 25,
+  "successful_district_count": 25,
+  "failed_district_count": 0,
+  "source_status": "complete",
+  "closure_filter_applied": false,
+  "closure_filter_reason": "business_registration_number_unavailable",
+  "districts": {
+    "강남구": {
+      "store_count": 66269,
+      "district_area_km2": 39.5,
+      "stores_per_km2": 1677.6962,
+      "density_percentile": 95.83,
+      "source_status": "ok"
+    },
+    "강동구": {
+      "store_count": 19748,
+      "district_area_km2": 24.59,
+      "stores_per_km2": 803.0907,
+      "density_percentile": 37.5,
+      "source_status": "ok"
+    },
+    "강북구": {
+      "store_count": 12604,
+      "district_area_km2": 23.6,
+      "stores_per_km2": 534.0678,
+      "density_percentile": 8.33,
+      "source_status": "ok"
+    },
+    "강서구": {
+      "store_count": 27098,
+      "district_area_km2": 41.45,
+      "stores_per_km2": 653.7515,
+      "density_percentile": 20.83,
+      "source_status": "ok"
+    },
+    "관악구": {
+      "store_count": 20325,
+      "district_area_km2": 29.57,
+      "stores_per_km2": 687.352,
+      "density_percentile": 25.0,
+      "source_status": "ok"
+    },
+    "광진구": {
+      "store_count": 18877,
+      "district_area_km2": 17.06,
+      "stores_per_km2": 1106.5064,
+      "density_percentile": 75.0,
+      "source_status": "ok"
+    },
+    "구로구": {
+      "store_count": 18559,
+      "district_area_km2": 20.12,
+      "stores_per_km2": 922.4155,
+      "density_percentile": 62.5,
+      "source_status": "ok"
+    },
+    "금천구": {
+      "store_count": 18353,
+      "district_area_km2": 13.02,
+      "stores_per_km2": 1409.6006,
+      "density_percentile": 91.67,
+      "source_status": "ok"
+    },
+    "노원구": {
+      "store_count": 15686,
+      "district_area_km2": 35.44,
+      "stores_per_km2": 442.6072,
+      "density_percentile": 0.0,
+      "source_status": "ok"
+    },
+    "도봉구": {
+      "store_count": 10610,
+      "district_area_km2": 20.65,
+      "stores_per_km2": 513.8015,
+      "density_percentile": 4.17,
+      "source_status": "ok"
+    },
+    "동대문구": {
+      "store_count": 17303,
+      "district_area_km2": 14.22,
+      "stores_per_km2": 1216.8073,
+      "density_percentile": 83.33,
+      "source_status": "ok"
+    },
+    "동작구": {
+      "store_count": 14187,
+      "district_area_km2": 16.35,
+      "stores_per_km2": 867.7064,
+      "density_percentile": 50.0,
+      "source_status": "ok"
+    },
+    "마포구": {
+      "store_count": 32102,
+      "district_area_km2": 23.85,
+      "stores_per_km2": 1345.9958,
+      "density_percentile": 87.5,
+      "source_status": "ok"
+    },
+    "서대문구": {
+      "store_count": 14152,
+      "district_area_km2": 17.63,
+      "stores_per_km2": 802.7226,
+      "density_percentile": 33.33,
+      "source_status": "ok"
+    },
+    "서초구": {
+      "store_count": 40115,
+      "district_area_km2": 46.98,
+      "stores_per_km2": 853.874,
+      "density_percentile": 45.83,
+      "source_status": "ok"
+    },
+    "성동구": {
+      "store_count": 17782,
+      "district_area_km2": 16.86,
+      "stores_per_km2": 1054.6856,
+      "density_percentile": 70.83,
+      "source_status": "ok"
+    },
+    "성북구": {
+      "store_count": 15889,
+      "district_area_km2": 24.58,
+      "stores_per_km2": 646.4199,
+      "density_percentile": 16.67,
+      "source_status": "ok"
+    },
+    "송파구": {
+      "store_count": 34860,
+      "district_area_km2": 33.88,
+      "stores_per_km2": 1028.9256,
+      "density_percentile": 66.67,
+      "source_status": "ok"
+    },
+    "양천구": {
+      "store_count": 16015,
+      "district_area_km2": 17.41,
+      "stores_per_km2": 919.8736,
+      "density_percentile": 58.33,
+      "source_status": "ok"
+    },
+    "영등포구": {
+      "store_count": 29425,
+      "district_area_km2": 24.55,
+      "stores_per_km2": 1198.5743,
+      "density_percentile": 79.17,
+      "source_status": "ok"
+    },
+    "용산구": {
+      "store_count": 16301,
+      "district_area_km2": 21.87,
+      "stores_per_km2": 745.3589,
+      "density_percentile": 29.17,
+      "source_status": "ok"
+    },
+    "은평구": {
+      "store_count": 16363,
+      "district_area_km2": 29.71,
+      "stores_per_km2": 550.7573,
+      "density_percentile": 12.5,
+      "source_status": "ok"
+    },
+    "종로구": {
+      "store_count": 21616,
+      "district_area_km2": 23.91,
+      "stores_per_km2": 904.0569,
+      "density_percentile": 54.17,
+      "source_status": "ok"
+    },
+    "중구": {
+      "store_count": 24801,
+      "district_area_km2": 9.96,
+      "stores_per_km2": 2490.0602,
+      "density_percentile": 100.0,
+      "source_status": "ok"
+    },
+    "중랑구": {
+      "store_count": 15052,
+      "district_area_km2": 18.5,
+      "stores_per_km2": 813.6216,
+      "density_percentile": 41.67,
+      "source_status": "ok"
+    }
+  }
+}

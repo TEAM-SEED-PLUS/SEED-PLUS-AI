@@ -1,0 +1,66 @@
+{
+  "area_cd": "POI052",
+  "area_nm": "충정로역",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "바쁜",
+  "payment_count": 16.0,
+  "payment_amount_min": 100000.0,
+  "payment_amount_max": 150000.0,
+  "payment_amount_midpoint": 125000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 19,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 60000,
+      "RSB_SH_PAYMENT_AMT_MAX": 70000,
+      "RSB_MCT_CNT": 6,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 6,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 13,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI052",
+    "area_nm": "충정로역",
+    "assigned_district": "서대문구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "서대문구",
+        "intersection_ratio": 0.487891
+      },
+      {
+        "district": "중구",
+        "intersection_ratio": 0.380067
+      },
+      {
+        "district": "마포구",
+        "intersection_ratio": 0.131223
+      }
+    ]
+  },
+  "source_status": "ok"
+}

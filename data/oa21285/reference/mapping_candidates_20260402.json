@@ -1,0 +1,5362 @@
+{
+  "mappings": [
+    {
+      "area_cd": "POI001",
+      "area_nm": "강남 MICE 관광특구",
+      "category": "관광특구",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI002",
+      "area_nm": "동대문 관광특구",
+      "category": "관광특구",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999521
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.000557
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999521
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.000557
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999521
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI003",
+      "area_nm": "명동 관광특구",
+      "category": "관광특구",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999561
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.00073
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999561
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.00073
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999561
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI004",
+      "area_nm": "이태원 관광특구",
+      "category": "관광특구",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI005",
+      "area_nm": "잠실 관광특구",
+      "category": "관광특구",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI006",
+      "area_nm": "종로·청계 관광특구",
+      "category": "관광특구",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.997785
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.002487
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.997785
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.002487
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.997785
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI007",
+      "area_nm": "홍대 관광특구",
+      "category": "관광특구",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999958
+        },
+        {
+          "district": "서대문구",
+          "intersection_ratio": 3e-06
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999958
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 3e-06
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999958
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI008",
+      "area_nm": "경복궁",
+      "category": "고궁·문화유산",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI010",
+      "area_nm": "보신각",
+      "category": "고궁·문화유산",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI011",
+      "area_nm": "서울 암사동 유적",
+      "category": "고궁·문화유산",
+      "raw_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI012",
+      "area_nm": "창덕궁·종묘",
+      "category": "고궁·문화유산",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI013",
+      "area_nm": "가산디지털단지역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "금천구",
+          "intersection_ratio": 0.999923
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.000548
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "금천구",
+          "intersection_ratio": 0.999923
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.000548
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "금천구",
+          "intersection_ratio": 0.999923
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI014",
+      "area_nm": "강남역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.664823
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.335179
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.664823
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.335179
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.664823
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.335179
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI015",
+      "area_nm": "건대입구역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 0.999896
+        },
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.1e-05
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 0.999896
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.1e-05
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 0.999896
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI016",
+      "area_nm": "고덕역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI017",
+      "area_nm": "고속터미널역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI018",
+      "area_nm": "교대역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI019",
+      "area_nm": "구로디지털단지역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.96176
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.038124
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.96176
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.038124
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.96176
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.038124
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI020",
+      "area_nm": "구로역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI021",
+      "area_nm": "군자역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI023",
+      "area_nm": "대림역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 0.551063
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.449081
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 0.551063
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.449081
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 0.551063
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.449081
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI024",
+      "area_nm": "동대문역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999336
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.000347
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999336
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.000347
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999336
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI025",
+      "area_nm": "뚝섬역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI026",
+      "area_nm": "미아사거리역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.741668
+        },
+        {
+          "district": "성북구",
+          "intersection_ratio": 0.2595
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.741668
+        },
+        {
+          "district": "성북구",
+          "intersection_ratio": 0.2595
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.741668
+        },
+        {
+          "district": "성북구",
+          "intersection_ratio": 0.2595
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI027",
+      "area_nm": "발산역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 0.999965
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 0.999965
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 0.999965
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI029",
+      "area_nm": "사당역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.42652
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.365843
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.20409
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.42652
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.365843
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.20409
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.42652
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.365843
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.20409
+        }
+      ],
+      "raw_candidate_count": 3,
+      "candidate_count": 3,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI030",
+      "area_nm": "삼각지역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI031",
+      "area_nm": "서울대입구역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI032",
+      "area_nm": "서울식물원·마곡나루역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI033",
+      "area_nm": "서울역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.952059
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.048043
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.952059
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.048043
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.952059
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.048043
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI034",
+      "area_nm": "선릉역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI035",
+      "area_nm": "성신여대입구역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "성북구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "성북구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "성북구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI036",
+      "area_nm": "수유역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.999877
+        },
+        {
+          "district": "도봉구",
+          "intersection_ratio": 4.2e-05
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.999877
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "도봉구",
+          "intersection_ratio": 4.2e-05
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.999877
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI037",
+      "area_nm": "신논현역·논현역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.721971
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.278029
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.721971
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.278029
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.721971
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.278029
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI038",
+      "area_nm": "신도림역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        },
+        {
+          "district": "영등포구",
+          "intersection_ratio": 9.2e-05
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 9.2e-05
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI039",
+      "area_nm": "신림역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI040",
+      "area_nm": "신촌·이대역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.77503
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.225079
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.77503
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.225079
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.77503
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.225079
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI041",
+      "area_nm": "양재역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.604964
+        },
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.395039
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.604964
+        },
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.395039
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.604964
+        },
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.395039
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI042",
+      "area_nm": "역삼역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI043",
+      "area_nm": "연신내역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "은평구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "은평구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "은평구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI044",
+      "area_nm": "오목교역·목동운동장",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI045",
+      "area_nm": "왕십리역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.999992
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.999992
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.999992
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI046",
+      "area_nm": "용산역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI047",
+      "area_nm": "이태원역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI048",
+      "area_nm": "장지역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI049",
+      "area_nm": "장한평역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 0.59652
+        },
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.403485
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 0.59652
+        },
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.403485
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 0.59652
+        },
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.403485
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI050",
+      "area_nm": "천호역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 0.93952
+        },
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.060154
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 0.93952
+        },
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.060154
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 0.93952
+        },
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.060154
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI051",
+      "area_nm": "총신대입구(이수)역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.792135
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.206206
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.792135
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.206206
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.792135
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.206206
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI052",
+      "area_nm": "충정로역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.487891
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.380067
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.131223
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.487891
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.380067
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.131223
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.487891
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.380067
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.131223
+        }
+      ],
+      "raw_candidate_count": 3,
+      "candidate_count": 3,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI053",
+      "area_nm": "합정역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI054",
+      "area_nm": "혜화역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI055",
+      "area_nm": "홍대입구역(2호선)",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI056",
+      "area_nm": "회기역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI058",
+      "area_nm": "가락시장",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI059",
+      "area_nm": "가로수길",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 2e-06
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 2e-06
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI072",
+      "area_nm": "여의도",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI060",
+      "area_nm": "광장(전통)시장",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999999
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 6.4e-05
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999999
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 6.4e-05
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999999
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI061",
+      "area_nm": "김포공항",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI063",
+      "area_nm": "노량진",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI064",
+      "area_nm": "덕수궁길·정동길",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.942259
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.058628
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.942259
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.058628
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.942259
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.058628
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI090",
+      "area_nm": "난지한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI091",
+      "area_nm": "남산공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.585166
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.414608
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.585166
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.414608
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.585166
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.414608
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI066",
+      "area_nm": "북촌한옥마을",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI067",
+      "area_nm": "서촌",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI068",
+      "area_nm": "성수카페거리",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI070",
+      "area_nm": "쌍문역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.999998
+        },
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.000121
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.999998
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.000121
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.999998
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI071",
+      "area_nm": "압구정로데오거리",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI073",
+      "area_nm": "연남동",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999929
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999929
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999929
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI074",
+      "area_nm": "영등포 타임스퀘어",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI076",
+      "area_nm": "용리단길",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI077",
+      "area_nm": "이태원 앤틱가구거리",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI078",
+      "area_nm": "인사동",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI079",
+      "area_nm": "창동 신경제 중심지",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "노원구",
+          "intersection_ratio": 0.59961
+        },
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.398896
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "노원구",
+          "intersection_ratio": 0.59961
+        },
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.398896
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "노원구",
+          "intersection_ratio": 0.59961
+        },
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.398896
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI080",
+      "area_nm": "청담동 명품거리",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI081",
+      "area_nm": "청량리 제기동 일대 전통시장",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI082",
+      "area_nm": "해방촌·경리단길",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI083",
+      "area_nm": "DDP(동대문디자인플라자)",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI084",
+      "area_nm": "DMC(디지털미디어시티)",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999353
+        },
+        {
+          "district": "은평구",
+          "intersection_ratio": 5.9e-05
+        },
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999353
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "은평구",
+          "intersection_ratio": 5.9e-05
+        },
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.0
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999353
+        }
+      ],
+      "raw_candidate_count": 3,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI085",
+      "area_nm": "강서한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI086",
+      "area_nm": "고척돔",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI087",
+      "area_nm": "광나루한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 0.77754
+        },
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.222423
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 0.77754
+        },
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.222423
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 0.77754
+        },
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.222423
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI088",
+      "area_nm": "광화문광장",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI089",
+      "area_nm": "국립중앙박물관·용산가족공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI092",
+      "area_nm": "노들섬",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI093",
+      "area_nm": "뚝섬한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI094",
+      "area_nm": "망원한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI095",
+      "area_nm": "반포한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.992439
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.007674
+        },
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.000162
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.992439
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.007674
+        },
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.000162
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.992439
+        }
+      ],
+      "raw_candidate_count": 3,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI096",
+      "area_nm": "북서울꿈의숲",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.996345
+        },
+        {
+          "district": "성북구",
+          "intersection_ratio": 0.000341
+        },
+        {
+          "district": "노원구",
+          "intersection_ratio": 7e-06
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.996345
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "성북구",
+          "intersection_ratio": 0.000341
+        },
+        {
+          "district": "노원구",
+          "intersection_ratio": 7e-06
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.996345
+        }
+      ],
+      "raw_candidate_count": 3,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI098",
+      "area_nm": "서리풀공원·몽마르뜨공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI100",
+      "area_nm": "서울대공원",
+      "category": "공원",
+      "raw_candidates": [],
+      "effective_candidates": [],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [],
+      "raw_candidate_count": 0,
+      "candidate_count": 0,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": false,
+      "unmatched": true,
+      "out_of_service_area": true
+    },
+    {
+      "area_cd": "POI101",
+      "area_nm": "서울숲공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI102",
+      "area_nm": "아차산",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 0.408682
+        },
+        {
+          "district": "중랑구",
+          "intersection_ratio": 0.136853
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 0.408682
+        },
+        {
+          "district": "중랑구",
+          "intersection_ratio": 0.136853
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 0.408682
+        },
+        {
+          "district": "중랑구",
+          "intersection_ratio": 0.136853
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI112",
+      "area_nm": "청계산",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.983779
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.983779
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.983779
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI103",
+      "area_nm": "양화한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI104",
+      "area_nm": "어린이대공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI105",
+      "area_nm": "여의도한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI106",
+      "area_nm": "월드컵공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.976449
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.976449
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.976449
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI107",
+      "area_nm": "응봉산",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI108",
+      "area_nm": "이촌한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI109",
+      "area_nm": "잠실종합운동장",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI110",
+      "area_nm": "잠실한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.999728
+        },
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.00021
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.999728
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.00021
+        }
+      ],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.999728
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI111",
+      "area_nm": "잠원한강공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.507474
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.493463
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.507474
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.493463
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.507474
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.493463
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI114",
+      "area_nm": "북창동 먹자골목",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI115",
+      "area_nm": "남대문시장",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI116",
+      "area_nm": "익선동",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI127",
+      "area_nm": "올림픽공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI117",
+      "area_nm": "신정네거리역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI118",
+      "area_nm": "잠실새내역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI119",
+      "area_nm": "잠실역",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI120",
+      "area_nm": "잠실롯데타워·석촌호수",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI121",
+      "area_nm": "송리단길·호수단길",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI122",
+      "area_nm": "신촌 스타광장",
+      "category": "발달상권",
+      "raw_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI123",
+      "area_nm": "보라매공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI124",
+      "area_nm": "서대문독립공원",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.938139
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.061841
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.938139
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.061841
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.938139
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.061841
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI125",
+      "area_nm": "안양천",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 0.474046
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.286866
+        },
+        {
+          "district": "양천구",
+          "intersection_ratio": 0.21225
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 0.474046
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.286866
+        },
+        {
+          "district": "양천구",
+          "intersection_ratio": 0.21225
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 0.474046
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.286866
+        },
+        {
+          "district": "양천구",
+          "intersection_ratio": 0.21225
+        }
+      ],
+      "raw_candidate_count": 3,
+      "candidate_count": 3,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI128",
+      "area_nm": "홍제폭포",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI129",
+      "area_nm": "송현녹지광장",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI130",
+      "area_nm": "시의회 앞",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.839418
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.160714
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.839418
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.160714
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.839418
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.160714
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI131",
+      "area_nm": "숭례문",
+      "category": "인구밀집지역",
+      "raw_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI009",
+      "area_nm": "광화문·덕수궁",
+      "category": "고궁·문화유산",
+      "raw_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.605948
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.394132
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.605948
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.394132
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.605948
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.394132
+        }
+      ],
+      "raw_candidate_count": 2,
+      "candidate_count": 2,
+      "single_district_candidate": false,
+      "single_district": false,
+      "cross_boundary": true,
+      "unmatched": false,
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI126",
+      "area_nm": "여의서로",
+      "category": "공원",
+      "raw_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "district_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "raw_candidate_count": 1,
+      "candidate_count": 1,
+      "single_district_candidate": true,
+      "single_district": true,
+      "cross_boundary": false,
+      "unmatched": false,
+      "out_of_service_area": false
+    }
+  ],
+  "diagnostics": {
+    "total_poi_count": 121,
+    "single_district_count": 95,
+    "cross_boundary_count": 23,
+    "unmatched_count": 1,
+    "out_of_service_area_count": 1,
+    "raw_cross_boundary_count": 39,
+    "ignored_sliver_candidate_count": 19,
+    "partial_single_candidate_count": 2,
+    "min_intersection_ratio": 0.01,
+    "single_district_ratio": 0.99,
+    "district_candidate_poi_counts": {
+      "강남구": 10,
+      "강동구": 4,
+      "강북구": 3,
+      "강서구": 4,
+      "관악구": 4,
+      "광진구": 5,
+      "구로구": 6,
+      "금천구": 1,
+      "노원구": 1,
+      "도봉구": 2,
+      "동대문구": 3,
+      "동작구": 4,
+      "마포구": 10,
+      "서대문구": 5,
+      "서초구": 11,
+      "성동구": 6,
+      "성북구": 2,
+      "송파구": 12,
+      "양천구": 3,
+      "영등포구": 7,
+      "용산구": 12,
+      "은평구": 1,
+      "종로구": 17,
+      "중구": 12,
+      "중랑구": 1
+    },
+    "category_poi_counts": {
+      "고궁·문화유산": 5,
+      "공원": 33,
+      "관광특구": 7,
+      "발달상권": 28,
+      "인구밀집지역": 48
+    },
+    "cross_boundary_pois": [
+      {
+        "area_cd": "POI014",
+        "area_nm": "강남역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.664823
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.335179
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.664823
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.335179
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.664823
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.335179
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI019",
+        "area_nm": "구로디지털단지역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.96176
+          },
+          {
+            "district": "관악구",
+            "intersection_ratio": 0.038124
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.96176
+          },
+          {
+            "district": "관악구",
+            "intersection_ratio": 0.038124
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.96176
+          },
+          {
+            "district": "관악구",
+            "intersection_ratio": 0.038124
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI023",
+        "area_nm": "대림역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "영등포구",
+            "intersection_ratio": 0.551063
+          },
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.449081
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "영등포구",
+            "intersection_ratio": 0.551063
+          },
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.449081
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "영등포구",
+            "intersection_ratio": 0.551063
+          },
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.449081
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI026",
+        "area_nm": "미아사거리역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "강북구",
+            "intersection_ratio": 0.741668
+          },
+          {
+            "district": "성북구",
+            "intersection_ratio": 0.2595
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "강북구",
+            "intersection_ratio": 0.741668
+          },
+          {
+            "district": "성북구",
+            "intersection_ratio": 0.2595
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "강북구",
+            "intersection_ratio": 0.741668
+          },
+          {
+            "district": "성북구",
+            "intersection_ratio": 0.2595
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI029",
+        "area_nm": "사당역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "동작구",
+            "intersection_ratio": 0.42652
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.365843
+          },
+          {
+            "district": "관악구",
+            "intersection_ratio": 0.20409
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "동작구",
+            "intersection_ratio": 0.42652
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.365843
+          },
+          {
+            "district": "관악구",
+            "intersection_ratio": 0.20409
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "동작구",
+            "intersection_ratio": 0.42652
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.365843
+          },
+          {
+            "district": "관악구",
+            "intersection_ratio": 0.20409
+          }
+        ],
+        "raw_candidate_count": 3,
+        "candidate_count": 3,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI033",
+        "area_nm": "서울역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.952059
+          },
+          {
+            "district": "용산구",
+            "intersection_ratio": 0.048043
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.952059
+          },
+          {
+            "district": "용산구",
+            "intersection_ratio": 0.048043
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.952059
+          },
+          {
+            "district": "용산구",
+            "intersection_ratio": 0.048043
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI037",
+        "area_nm": "신논현역·논현역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.721971
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.278029
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.721971
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.278029
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.721971
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.278029
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI040",
+        "area_nm": "신촌·이대역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.77503
+          },
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.225079
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.77503
+          },
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.225079
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.77503
+          },
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.225079
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI041",
+        "area_nm": "양재역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.604964
+          },
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.395039
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.604964
+          },
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.395039
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.604964
+          },
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.395039
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI049",
+        "area_nm": "장한평역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "동대문구",
+            "intersection_ratio": 0.59652
+          },
+          {
+            "district": "성동구",
+            "intersection_ratio": 0.403485
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "동대문구",
+            "intersection_ratio": 0.59652
+          },
+          {
+            "district": "성동구",
+            "intersection_ratio": 0.403485
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "동대문구",
+            "intersection_ratio": 0.59652
+          },
+          {
+            "district": "성동구",
+            "intersection_ratio": 0.403485
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI050",
+        "area_nm": "천호역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "강동구",
+            "intersection_ratio": 0.93952
+          },
+          {
+            "district": "송파구",
+            "intersection_ratio": 0.060154
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "강동구",
+            "intersection_ratio": 0.93952
+          },
+          {
+            "district": "송파구",
+            "intersection_ratio": 0.060154
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "강동구",
+            "intersection_ratio": 0.93952
+          },
+          {
+            "district": "송파구",
+            "intersection_ratio": 0.060154
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI051",
+        "area_nm": "총신대입구(이수)역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "동작구",
+            "intersection_ratio": 0.792135
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.206206
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "동작구",
+            "intersection_ratio": 0.792135
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.206206
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "동작구",
+            "intersection_ratio": 0.792135
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.206206
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI052",
+        "area_nm": "충정로역",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.487891
+          },
+          {
+            "district": "중구",
+            "intersection_ratio": 0.380067
+          },
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.131223
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.487891
+          },
+          {
+            "district": "중구",
+            "intersection_ratio": 0.380067
+          },
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.131223
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.487891
+          },
+          {
+            "district": "중구",
+            "intersection_ratio": 0.380067
+          },
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.131223
+          }
+        ],
+        "raw_candidate_count": 3,
+        "candidate_count": 3,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI064",
+        "area_nm": "덕수궁길·정동길",
+        "category": "발달상권",
+        "raw_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.942259
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.058628
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.942259
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.058628
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.942259
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.058628
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI091",
+        "area_nm": "남산공원",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.585166
+          },
+          {
+            "district": "용산구",
+            "intersection_ratio": 0.414608
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.585166
+          },
+          {
+            "district": "용산구",
+            "intersection_ratio": 0.414608
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.585166
+          },
+          {
+            "district": "용산구",
+            "intersection_ratio": 0.414608
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI079",
+        "area_nm": "창동 신경제 중심지",
+        "category": "발달상권",
+        "raw_candidates": [
+          {
+            "district": "노원구",
+            "intersection_ratio": 0.59961
+          },
+          {
+            "district": "도봉구",
+            "intersection_ratio": 0.398896
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "노원구",
+            "intersection_ratio": 0.59961
+          },
+          {
+            "district": "도봉구",
+            "intersection_ratio": 0.398896
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "노원구",
+            "intersection_ratio": 0.59961
+          },
+          {
+            "district": "도봉구",
+            "intersection_ratio": 0.398896
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI087",
+        "area_nm": "광나루한강공원",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "강동구",
+            "intersection_ratio": 0.77754
+          },
+          {
+            "district": "송파구",
+            "intersection_ratio": 0.222423
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "강동구",
+            "intersection_ratio": 0.77754
+          },
+          {
+            "district": "송파구",
+            "intersection_ratio": 0.222423
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "강동구",
+            "intersection_ratio": 0.77754
+          },
+          {
+            "district": "송파구",
+            "intersection_ratio": 0.222423
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI102",
+        "area_nm": "아차산",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "광진구",
+            "intersection_ratio": 0.408682
+          },
+          {
+            "district": "중랑구",
+            "intersection_ratio": 0.136853
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "광진구",
+            "intersection_ratio": 0.408682
+          },
+          {
+            "district": "중랑구",
+            "intersection_ratio": 0.136853
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "광진구",
+            "intersection_ratio": 0.408682
+          },
+          {
+            "district": "중랑구",
+            "intersection_ratio": 0.136853
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI111",
+        "area_nm": "잠원한강공원",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.507474
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.493463
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.507474
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.493463
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "강남구",
+            "intersection_ratio": 0.507474
+          },
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.493463
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI124",
+        "area_nm": "서대문독립공원",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.938139
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.061841
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.938139
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.061841
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "서대문구",
+            "intersection_ratio": 0.938139
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.061841
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI125",
+        "area_nm": "안양천",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "영등포구",
+            "intersection_ratio": 0.474046
+          },
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.286866
+          },
+          {
+            "district": "양천구",
+            "intersection_ratio": 0.21225
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "영등포구",
+            "intersection_ratio": 0.474046
+          },
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.286866
+          },
+          {
+            "district": "양천구",
+            "intersection_ratio": 0.21225
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "영등포구",
+            "intersection_ratio": 0.474046
+          },
+          {
+            "district": "구로구",
+            "intersection_ratio": 0.286866
+          },
+          {
+            "district": "양천구",
+            "intersection_ratio": 0.21225
+          }
+        ],
+        "raw_candidate_count": 3,
+        "candidate_count": 3,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI130",
+        "area_nm": "시의회 앞",
+        "category": "인구밀집지역",
+        "raw_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.839418
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.160714
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.839418
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.160714
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "중구",
+            "intersection_ratio": 0.839418
+          },
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.160714
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI009",
+        "area_nm": "광화문·덕수궁",
+        "category": "고궁·문화유산",
+        "raw_candidates": [
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.605948
+          },
+          {
+            "district": "중구",
+            "intersection_ratio": 0.394132
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.605948
+          },
+          {
+            "district": "중구",
+            "intersection_ratio": 0.394132
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "종로구",
+            "intersection_ratio": 0.605948
+          },
+          {
+            "district": "중구",
+            "intersection_ratio": 0.394132
+          }
+        ],
+        "raw_candidate_count": 2,
+        "candidate_count": 2,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": true,
+        "unmatched": false,
+        "out_of_service_area": false
+      }
+    ],
+    "partial_single_candidate_pois": [
+      {
+        "area_cd": "POI112",
+        "area_nm": "청계산",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.983779
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.983779
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "서초구",
+            "intersection_ratio": 0.983779
+          }
+        ],
+        "raw_candidate_count": 1,
+        "candidate_count": 1,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": false,
+        "unmatched": false,
+        "out_of_service_area": false
+      },
+      {
+        "area_cd": "POI106",
+        "area_nm": "월드컵공원",
+        "category": "공원",
+        "raw_candidates": [
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.976449
+          }
+        ],
+        "effective_candidates": [
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.976449
+          }
+        ],
+        "ignored_sliver_candidates": [],
+        "district_candidates": [
+          {
+            "district": "마포구",
+            "intersection_ratio": 0.976449
+          }
+        ],
+        "raw_candidate_count": 1,
+        "candidate_count": 1,
+        "single_district_candidate": false,
+        "single_district": false,
+        "cross_boundary": false,
+        "unmatched": false,
+        "out_of_service_area": false
+      }
+    ]
+  },
+  "reference_date": "2026-04-02",
+  "sources": {
+    "poi_geometry": "서울 열린데이터광장 OA-21285 서울시 주요 121장소 영역 (2026-04-02)",
+    "district_geometry": "서울 데이터 허브 행정구역 법정동 경계 (dataset 10080, 2025-11-24 snapshot; EMD_CD 5자리 dissolve)"
+  }
+}

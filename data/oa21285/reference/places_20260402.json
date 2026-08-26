@@ -1,0 +1,854 @@
+{
+  "reference_date": "2026-04-02",
+  "source": "서울 열린데이터광장 OA-21285 공식 장소 목록 XLSX",
+  "place_count": 121,
+  "places": [
+    {
+      "area_cd": "POI001",
+      "area_nm": "강남 MICE 관광특구",
+      "category": "관광특구",
+      "eng_nm": "Gangnam MICE Special Tourist Zone",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI002",
+      "area_nm": "동대문 관광특구",
+      "category": "관광특구",
+      "eng_nm": "Dongdaemun Fashion Town Special Tourist Zone",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI003",
+      "area_nm": "명동 관광특구",
+      "category": "관광특구",
+      "eng_nm": "Myeong-dong Namdaemun Bukchang-dong Da-dong Mugyo-dong Special Tourist Zone",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI004",
+      "area_nm": "이태원 관광특구",
+      "category": "관광특구",
+      "eng_nm": "Itaewon Special Tourist Zone",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI005",
+      "area_nm": "잠실 관광특구",
+      "category": "관광특구",
+      "eng_nm": "Jamsil Special Tourist Zone",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI006",
+      "area_nm": "종로·청계 관광특구",
+      "category": "관광특구",
+      "eng_nm": "Jongno Cheonggye Special Toruist Zone",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI007",
+      "area_nm": "홍대 관광특구",
+      "category": "관광특구",
+      "eng_nm": "HongDae Culture & Arts Special Tourist Zone",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI008",
+      "area_nm": "경복궁",
+      "category": "고궁·문화유산",
+      "eng_nm": "Gyeongbokgung Palace",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI009",
+      "area_nm": "광화문·덕수궁",
+      "category": "고궁·문화유산",
+      "eng_nm": "Gwanghwamun & Deoksugung Palace",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI010",
+      "area_nm": "보신각",
+      "category": "고궁·문화유산",
+      "eng_nm": "Bosingak",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI011",
+      "area_nm": "서울 암사동 유적",
+      "category": "고궁·문화유산",
+      "eng_nm": "Amsa Prehistoric Settlement Site",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI012",
+      "area_nm": "창덕궁·종묘",
+      "category": "고궁·문화유산",
+      "eng_nm": "Changdeokgung Palace & Jongmyo Shrine",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI013",
+      "area_nm": "가산디지털단지역",
+      "category": "인구밀집지역",
+      "eng_nm": "Gasan Digital Complex station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI014",
+      "area_nm": "강남역",
+      "category": "인구밀집지역",
+      "eng_nm": "Gangnam station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI015",
+      "area_nm": "건대입구역",
+      "category": "인구밀집지역",
+      "eng_nm": "Konkuk University station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI016",
+      "area_nm": "고덕역",
+      "category": "인구밀집지역",
+      "eng_nm": "Godeok station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI017",
+      "area_nm": "고속터미널역",
+      "category": "인구밀집지역",
+      "eng_nm": "Express Bus Terminal station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI018",
+      "area_nm": "교대역",
+      "category": "인구밀집지역",
+      "eng_nm": "Seoul National University of Education station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI019",
+      "area_nm": "구로디지털단지역",
+      "category": "인구밀집지역",
+      "eng_nm": "Guro Digital Complex station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI020",
+      "area_nm": "구로역",
+      "category": "인구밀집지역",
+      "eng_nm": "Guro station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI021",
+      "area_nm": "군자역",
+      "category": "인구밀집지역",
+      "eng_nm": "Gunja station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI023",
+      "area_nm": "대림역",
+      "category": "인구밀집지역",
+      "eng_nm": "Daerim station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI024",
+      "area_nm": "동대문역",
+      "category": "인구밀집지역",
+      "eng_nm": "Dongdaemun station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI025",
+      "area_nm": "뚝섬역",
+      "category": "인구밀집지역",
+      "eng_nm": "Ttukseom station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI026",
+      "area_nm": "미아사거리역",
+      "category": "인구밀집지역",
+      "eng_nm": "Miasageori station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI027",
+      "area_nm": "발산역",
+      "category": "인구밀집지역",
+      "eng_nm": "Balsan station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI029",
+      "area_nm": "사당역",
+      "category": "인구밀집지역",
+      "eng_nm": "Sadang station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI030",
+      "area_nm": "삼각지역",
+      "category": "인구밀집지역",
+      "eng_nm": "Samgakji station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI031",
+      "area_nm": "서울대입구역",
+      "category": "인구밀집지역",
+      "eng_nm": "Seoul National University station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI032",
+      "area_nm": "서울식물원·마곡나루역",
+      "category": "인구밀집지역",
+      "eng_nm": "Seoul Botanic Park·Magongnaru station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI033",
+      "area_nm": "서울역",
+      "category": "인구밀집지역",
+      "eng_nm": "Seoul station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI034",
+      "area_nm": "선릉역",
+      "category": "인구밀집지역",
+      "eng_nm": "Seolleung station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI035",
+      "area_nm": "성신여대입구역",
+      "category": "인구밀집지역",
+      "eng_nm": "Sungshin Women's University station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI036",
+      "area_nm": "수유역",
+      "category": "인구밀집지역",
+      "eng_nm": "Suyu station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI037",
+      "area_nm": "신논현역·논현역",
+      "category": "인구밀집지역",
+      "eng_nm": "Sinnonhyeon·Nonhyeon station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI038",
+      "area_nm": "신도림역",
+      "category": "인구밀집지역",
+      "eng_nm": "Sindorim station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI039",
+      "area_nm": "신림역",
+      "category": "인구밀집지역",
+      "eng_nm": "Sillim station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI040",
+      "area_nm": "신촌·이대역",
+      "category": "인구밀집지역",
+      "eng_nm": "Sinchon·Ewha Womans University station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI041",
+      "area_nm": "양재역",
+      "category": "인구밀집지역",
+      "eng_nm": "Yangjae station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI042",
+      "area_nm": "역삼역",
+      "category": "인구밀집지역",
+      "eng_nm": "Yeoksam station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI043",
+      "area_nm": "연신내역",
+      "category": "인구밀집지역",
+      "eng_nm": "Yeonsinnae station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI044",
+      "area_nm": "오목교역·목동운동장",
+      "category": "인구밀집지역",
+      "eng_nm": "Omokgyo·Mok-dong Stadium station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI045",
+      "area_nm": "왕십리역",
+      "category": "인구밀집지역",
+      "eng_nm": "Wangsimni station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI046",
+      "area_nm": "용산역",
+      "category": "인구밀집지역",
+      "eng_nm": "Yongsan station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI047",
+      "area_nm": "이태원역",
+      "category": "인구밀집지역",
+      "eng_nm": "Itaewon station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI048",
+      "area_nm": "장지역",
+      "category": "인구밀집지역",
+      "eng_nm": "Jangji station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI049",
+      "area_nm": "장한평역",
+      "category": "인구밀집지역",
+      "eng_nm": "Janghanpyeong station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI050",
+      "area_nm": "천호역",
+      "category": "인구밀집지역",
+      "eng_nm": "Cheonho station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI051",
+      "area_nm": "총신대입구(이수)역",
+      "category": "인구밀집지역",
+      "eng_nm": "Chongshin University(Isu) station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI052",
+      "area_nm": "충정로역",
+      "category": "인구밀집지역",
+      "eng_nm": "Chungjeongno station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI053",
+      "area_nm": "합정역",
+      "category": "인구밀집지역",
+      "eng_nm": "Hapjeong station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI054",
+      "area_nm": "혜화역",
+      "category": "인구밀집지역",
+      "eng_nm": "Hyehwa station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI055",
+      "area_nm": "홍대입구역(2호선)",
+      "category": "인구밀집지역",
+      "eng_nm": "Hongik University station(Line 2)",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI056",
+      "area_nm": "회기역",
+      "category": "인구밀집지역",
+      "eng_nm": "Hoegi station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI058",
+      "area_nm": "가락시장",
+      "category": "발달상권",
+      "eng_nm": "Garak Market",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI059",
+      "area_nm": "가로수길",
+      "category": "발달상권",
+      "eng_nm": "Garosu-gil",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI060",
+      "area_nm": "광장(전통)시장",
+      "category": "발달상권",
+      "eng_nm": "Gwangjang(Traditional) Market",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI061",
+      "area_nm": "김포공항",
+      "category": "발달상권",
+      "eng_nm": "Gimpo Airport",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI063",
+      "area_nm": "노량진",
+      "category": "발달상권",
+      "eng_nm": "Noryangjin",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI064",
+      "area_nm": "덕수궁길·정동길",
+      "category": "발달상권",
+      "eng_nm": "Deoksugung-gil·Jeongdong-gil",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI066",
+      "area_nm": "북촌한옥마을",
+      "category": "발달상권",
+      "eng_nm": "Bukchon Hanok Village",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI067",
+      "area_nm": "서촌",
+      "category": "발달상권",
+      "eng_nm": "Seochon",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI068",
+      "area_nm": "성수카페거리",
+      "category": "발달상권",
+      "eng_nm": "Seongsu Cafe Street",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI070",
+      "area_nm": "쌍문역",
+      "category": "인구밀집지역",
+      "eng_nm": "Ssangmun-dong station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI071",
+      "area_nm": "압구정로데오거리",
+      "category": "발달상권",
+      "eng_nm": "Apgujeong Rodeo Street",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI072",
+      "area_nm": "여의도",
+      "category": "발달상권",
+      "eng_nm": "Yeouido",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI073",
+      "area_nm": "연남동",
+      "category": "발달상권",
+      "eng_nm": "Yeonnam-dong",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI074",
+      "area_nm": "영등포 타임스퀘어",
+      "category": "발달상권",
+      "eng_nm": "Yeongdeungpo Time square",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI076",
+      "area_nm": "용리단길",
+      "category": "발달상권",
+      "eng_nm": "Yongnidan-gil",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI077",
+      "area_nm": "이태원 앤틱가구거리",
+      "category": "발달상권",
+      "eng_nm": "Itaewon Antiques street",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI078",
+      "area_nm": "인사동",
+      "category": "발달상권",
+      "eng_nm": "Insa-dong",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI079",
+      "area_nm": "창동 신경제 중심지",
+      "category": "발달상권",
+      "eng_nm": "Changdong New Economic Center",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI080",
+      "area_nm": "청담동 명품거리",
+      "category": "발달상권",
+      "eng_nm": "Cheongdam-dong Luxury Fashion street",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI081",
+      "area_nm": "청량리 제기동 일대 전통시장",
+      "category": "발달상권",
+      "eng_nm": "Traditional market in Cheongnyangni Jegi-dong",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI082",
+      "area_nm": "해방촌·경리단길",
+      "category": "발달상권",
+      "eng_nm": "Haebangchon·Gyeongnidan-gil",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI083",
+      "area_nm": "DDP(동대문디자인플라자)",
+      "category": "발달상권",
+      "eng_nm": "DDP(Dongdaemun Design Plaza)",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI084",
+      "area_nm": "DMC(디지털미디어시티)",
+      "category": "발달상권",
+      "eng_nm": "DMC(Digital Media City)",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI085",
+      "area_nm": "강서한강공원",
+      "category": "공원",
+      "eng_nm": "Gangseo Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI086",
+      "area_nm": "고척돔",
+      "category": "공원",
+      "eng_nm": "Gocheok Dome",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI087",
+      "area_nm": "광나루한강공원",
+      "category": "공원",
+      "eng_nm": "Gwangnaru Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI088",
+      "area_nm": "광화문광장",
+      "category": "공원",
+      "eng_nm": "Gwanghwamun Square",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI089",
+      "area_nm": "국립중앙박물관·용산가족공원",
+      "category": "공원",
+      "eng_nm": "The National Museum of Korea·Yongsan Family Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI090",
+      "area_nm": "난지한강공원",
+      "category": "공원",
+      "eng_nm": "Nanji Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI091",
+      "area_nm": "남산공원",
+      "category": "공원",
+      "eng_nm": "Namsan Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI092",
+      "area_nm": "노들섬",
+      "category": "공원",
+      "eng_nm": "Nodeul island",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI093",
+      "area_nm": "뚝섬한강공원",
+      "category": "공원",
+      "eng_nm": "Ttukseom Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI094",
+      "area_nm": "망원한강공원",
+      "category": "공원",
+      "eng_nm": "Mangwon Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI095",
+      "area_nm": "반포한강공원",
+      "category": "공원",
+      "eng_nm": "Banpo Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI096",
+      "area_nm": "북서울꿈의숲",
+      "category": "공원",
+      "eng_nm": "Dream Forest",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI098",
+      "area_nm": "서리풀공원·몽마르뜨공원",
+      "category": "공원",
+      "eng_nm": "Seoripul Park·Montmartre Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI100",
+      "area_nm": "서울대공원",
+      "category": "공원",
+      "eng_nm": "Seoul Grand Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI101",
+      "area_nm": "서울숲공원",
+      "category": "공원",
+      "eng_nm": "Seoul Forest",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI102",
+      "area_nm": "아차산",
+      "category": "공원",
+      "eng_nm": "Achasan",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI103",
+      "area_nm": "양화한강공원",
+      "category": "공원",
+      "eng_nm": "Yanghwa Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI104",
+      "area_nm": "어린이대공원",
+      "category": "공원",
+      "eng_nm": "Children's Grand Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI105",
+      "area_nm": "여의도한강공원",
+      "category": "공원",
+      "eng_nm": "Yeouido Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI106",
+      "area_nm": "월드컵공원",
+      "category": "공원",
+      "eng_nm": "World Cup Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI107",
+      "area_nm": "응봉산",
+      "category": "공원",
+      "eng_nm": "Eungbongsan",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI108",
+      "area_nm": "이촌한강공원",
+      "category": "공원",
+      "eng_nm": "Ichon Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI109",
+      "area_nm": "잠실종합운동장",
+      "category": "공원",
+      "eng_nm": "Jamsil (Seoul) Sports Complex",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI110",
+      "area_nm": "잠실한강공원",
+      "category": "공원",
+      "eng_nm": "Jamsil Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI111",
+      "area_nm": "잠원한강공원",
+      "category": "공원",
+      "eng_nm": "Jamwon Hangang Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI112",
+      "area_nm": "청계산",
+      "category": "공원",
+      "eng_nm": "Cheonggyesan",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI114",
+      "area_nm": "북창동 먹자골목",
+      "category": "발달상권",
+      "eng_nm": "Bukchang-dong food alley",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI115",
+      "area_nm": "남대문시장",
+      "category": "발달상권",
+      "eng_nm": "Namdaemun Market",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI116",
+      "area_nm": "익선동",
+      "category": "발달상권",
+      "eng_nm": "Ikseon-dong",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI117",
+      "area_nm": "신정네거리역",
+      "category": "인구밀집지역",
+      "eng_nm": "Shinjeongnegeori Station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI118",
+      "area_nm": "잠실새내역",
+      "category": "인구밀집지역",
+      "eng_nm": "Jamsil Saenae Station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI119",
+      "area_nm": "잠실역",
+      "category": "인구밀집지역",
+      "eng_nm": "Jamsil Station",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI120",
+      "area_nm": "잠실롯데타워·석촌호수",
+      "category": "발달상권",
+      "eng_nm": "Jamsil Lotte Tower·SeokchonhosuLake",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI121",
+      "area_nm": "송리단길·호수단길",
+      "category": "발달상권",
+      "eng_nm": "Songridan-gil·Hosudan-gil",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI122",
+      "area_nm": "신촌 스타광장",
+      "category": "발달상권",
+      "eng_nm": "Shinchon Star Plaza",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI123",
+      "area_nm": "보라매공원",
+      "category": "공원",
+      "eng_nm": "Boramae Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI124",
+      "area_nm": "서대문독립공원",
+      "category": "공원",
+      "eng_nm": "Seodaemun Independence Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI125",
+      "area_nm": "안양천",
+      "category": "공원",
+      "eng_nm": "Anyangcheon River",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI126",
+      "area_nm": "여의서로",
+      "category": "공원",
+      "eng_nm": "Yeouiseoro",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI127",
+      "area_nm": "올림픽공원",
+      "category": "공원",
+      "eng_nm": "Olympic Park",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI128",
+      "area_nm": "홍제폭포",
+      "category": "공원",
+      "eng_nm": "Hongje Waterfall",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI129",
+      "area_nm": "송현녹지광장",
+      "category": "공원",
+      "eng_nm": "Songhyeon Green Plaza",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI130",
+      "area_nm": "시의회 앞",
+      "category": "인구밀집지역",
+      "eng_nm": "City Council",
+      "reference_date": "2026-04-02"
+    },
+    {
+      "area_cd": "POI131",
+      "area_nm": "숭례문",
+      "category": "인구밀집지역",
+      "eng_nm": "Sungnyemun Gate",
+      "reference_date": "2026-04-02"
+    }
+  ]
+}

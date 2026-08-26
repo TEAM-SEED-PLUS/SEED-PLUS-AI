@@ -1,0 +1,33 @@
+{
+  "district": "성북구",
+  "district_code": "11290",
+  "status": "complete",
+  "expected_pages": 16,
+  "collected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "failed_pages": [],
+  "api_call_count": 16,
+  "started_at": "2026-08-23T14:56:40+09:00",
+  "expected_total_count": 15889,
+  "updated_at": "2026-08-23T14:56:50+09:00",
+  "completed_at": "2026-08-23T14:56:50+09:00",
+  "raw_count": 15889,
+  "deduplicated_count": 15889,
+  "duplicate_count": 0
+}

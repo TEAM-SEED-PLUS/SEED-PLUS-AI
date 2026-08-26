@@ -1,0 +1,564 @@
+{
+  "snapshot_quarter": "2026Q1",
+  "realtime_reference_date": "2026-08-23",
+  "hybrid_status": "preview_only",
+  "production_scoring_connected": false,
+  "districts": {
+    "강남구": {
+      "district": "강남구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 3134652052447,
+        "sales_per_store": 47301936.83995533,
+        "percentile": 66.67,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 8,
+        "commercial_level": [
+          "바쁜",
+          "보통",
+          "보통",
+          "한산한",
+          "보통",
+          "한산한",
+          "보통",
+          "한산한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "강동구": {
+      "district": "강동구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 834711278348,
+        "sales_per_store": 42268142.513064615,
+        "percentile": 58.33,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 2,
+        "commercial_level": [
+          "한산한",
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "강북구": {
+      "district": "강북구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 498009325449,
+        "sales_per_store": 39512006.144795306,
+        "percentile": 45.83,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 2,
+        "commercial_level": [
+          "한산한",
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "강서구": {
+      "district": "강서구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 984131724147,
+        "sales_per_store": 36317504.02786183,
+        "percentile": 29.17,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "바쁜",
+          "분주한",
+          "분주한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "관악구": {
+      "district": "관악구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 662080665152,
+        "sales_per_store": 32574694.472423125,
+        "percentile": 16.67,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 2,
+        "commercial_level": [
+          "보통",
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "광진구": {
+      "district": "광진구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 673581089000,
+        "sales_per_store": 35682634.36986809,
+        "percentile": 25.0,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 2,
+        "commercial_level": [
+          "보통",
+          "한산한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "구로구": {
+      "district": "구로구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 758811556786,
+        "sales_per_store": 40886446.29484347,
+        "percentile": 54.17,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "보통",
+          "한산한",
+          "분주한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "금천구": {
+      "district": "금천구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1284086041442,
+        "sales_per_store": 69966002.36702447,
+        "percentile": 91.67,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 1,
+        "commercial_level": [
+          "바쁜"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "노원구": {
+      "district": "노원구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 669998312943,
+        "sales_per_store": 42713139.93006503,
+        "percentile": 62.5,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 1,
+        "commercial_level": [
+          "바쁜"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "도봉구": {
+      "district": "도봉구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 422698371040,
+        "sales_per_store": 39839620.26767201,
+        "percentile": 50.0,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 1,
+        "commercial_level": [
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "동대문구": {
+      "district": "동대문구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1627795326882,
+        "sales_per_store": 94075901.68652835,
+        "percentile": 95.83,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "한산한",
+          "보통",
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "동작구": {
+      "district": "동작구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1576750931349,
+        "sales_per_store": 111140546.36984563,
+        "percentile": 100.0,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "바쁜",
+          "한산한",
+          "바쁜"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "마포구": {
+      "district": "마포구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1002687670181,
+        "sales_per_store": 31234429.947697964,
+        "percentile": 4.17,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 5,
+        "commercial_level": [
+          "바쁜",
+          "보통",
+          "보통",
+          "바쁜",
+          "한산한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "서대문구": {
+      "district": "서대문구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 468155031617,
+        "sales_per_store": 33080485.558013003,
+        "percentile": 20.83,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "보통",
+          "한산한",
+          "한산한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "서초구": {
+      "district": "서초구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1515381182252,
+        "sales_per_store": 37775923.775445595,
+        "percentile": 37.5,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "보통",
+          "한산한",
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "성동구": {
+      "district": "성동구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 578947305236,
+        "sales_per_store": 32558053.38184681,
+        "percentile": 12.5,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "바쁜",
+          "보통",
+          "바쁜"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "성북구": {
+      "district": "성북구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 467607899419,
+        "sales_per_store": 29429661.993769273,
+        "percentile": 0.0,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 1,
+        "commercial_level": [
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "송파구": {
+      "district": "송파구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1956040655237,
+        "sales_per_store": 56111321.14850832,
+        "percentile": 83.33,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 7,
+        "commercial_level": [
+          "보통",
+          "분주한",
+          "한산한",
+          "보통",
+          "보통",
+          "보통",
+          "한산한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "양천구": {
+      "district": "양천구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 608187977176,
+        "sales_per_store": 37976145.936684355,
+        "percentile": 41.67,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 2,
+        "commercial_level": [
+          "보통",
+          "한산한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "영등포구": {
+      "district": "영등포구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1414986812521,
+        "sales_per_store": 48087912.065284625,
+        "percentile": 70.83,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 3,
+        "commercial_level": [
+          "보통",
+          "보통",
+          "바쁜"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "용산구": {
+      "district": "용산구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1134163438543,
+        "sales_per_store": 69576310.56640697,
+        "percentile": 87.5,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 6,
+        "commercial_level": [
+          "바쁜",
+          "바쁜",
+          "보통",
+          "보통",
+          "한산한",
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "은평구": {
+      "district": "은평구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 518044335214,
+        "sales_per_store": 31659496.132371813,
+        "percentile": 8.33,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 1,
+        "commercial_level": [
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "종로구": {
+      "district": "종로구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1075284195267,
+        "sales_per_store": 49744827.686297186,
+        "percentile": 75.0,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 10,
+        "commercial_level": [
+          "바쁜",
+          "보통",
+          "바쁜",
+          "바쁜",
+          "보통",
+          "보통",
+          "바쁜",
+          "바쁜",
+          "바쁜",
+          "한산한"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "중구": {
+      "district": "중구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 1384767601799,
+        "sales_per_store": 55835151.88093222,
+        "percentile": 79.17,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 7,
+        "commercial_level": [
+          "바쁜",
+          "바쁜",
+          "바쁜",
+          "한산한",
+          "한산한",
+          "한산한",
+          "보통"
+        ],
+        "source_status": "ok"
+      },
+      "fallback_mode": "hybrid_preview",
+      "hybrid_status": "preview_only"
+    },
+    "중랑구": {
+      "district": "중랑구",
+      "baseline": {
+        "quarter": "2026Q1",
+        "sales_raw": 567771959184,
+        "sales_per_store": 37720698.85623173,
+        "percentile": 33.33,
+        "source_status": "ok"
+      },
+      "realtime": {
+        "source": "OA-22385",
+        "place_count": 0,
+        "commercial_level": [],
+        "source_status": "no_data"
+      },
+      "fallback_mode": "baseline_only",
+      "hybrid_status": "preview_only"
+    }
+  }
+}

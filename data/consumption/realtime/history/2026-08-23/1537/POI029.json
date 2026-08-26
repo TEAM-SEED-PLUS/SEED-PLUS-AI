@@ -1,0 +1,29 @@
+{
+  "area_cd": "POI029",
+  "area_nm": "사당역",
+  "source_timestamp": "20260823 1520",
+  "received_at": "2026-08-23T15:37:30+09:00",
+  "AREA_CMRCL_LVL": "바쁜",
+  "district_mapping": {
+    "area_cd": "POI029",
+    "area_nm": "사당역",
+    "assigned_district": null,
+    "mapping_source": "OA-21285 verified geometry",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "동작구",
+        "intersection_ratio": 0.42652
+      },
+      {
+        "district": "서초구",
+        "intersection_ratio": 0.365843
+      },
+      {
+        "district": "관악구",
+        "intersection_ratio": 0.20409
+      }
+    ]
+  },
+  "source_status": "ok"
+}

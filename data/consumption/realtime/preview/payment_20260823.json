@@ -1,0 +1,256 @@
+{
+  "hybrid_status": "preview_only",
+  "production_metric_selected": false,
+  "districts": {
+    "강남구": {
+      "assigned_place_count": 8,
+      "valid_place_count": 8,
+      "population_weighted_valid_place_count": 8,
+      "candidate_a_amount_simple_mean": 4693750.0,
+      "candidate_b_population_weighted_mean": 6653073.089700997,
+      "candidate_c_amount_percentile_mean": 63.503750000000004,
+      "candidate_d_count_amount_percentile_mean": 59.14375,
+      "source_status": "ok"
+    },
+    "강동구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "population_weighted_valid_place_count": 2,
+      "candidate_a_amount_simple_mean": 500000.0,
+      "candidate_b_population_weighted_mean": 670000.0,
+      "candidate_c_amount_percentile_mean": 29.32,
+      "candidate_d_count_amount_percentile_mean": 29.7825,
+      "source_status": "ok"
+    },
+    "강북구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "population_weighted_valid_place_count": 2,
+      "candidate_a_amount_simple_mean": 657500.0,
+      "candidate_b_population_weighted_mean": 797989.6907216494,
+      "candidate_c_amount_percentile_mean": 36.11,
+      "candidate_d_count_amount_percentile_mean": 35.64750000000001,
+      "source_status": "ok"
+    },
+    "강서구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 375000.0,
+      "candidate_b_population_weighted_mean": 461956.52173913043,
+      "candidate_c_amount_percentile_mean": 24.073333333333334,
+      "candidate_d_count_amount_percentile_mean": 31.378333333333334,
+      "source_status": "ok"
+    },
+    "관악구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "population_weighted_valid_place_count": 2,
+      "candidate_a_amount_simple_mean": 937500.0,
+      "candidate_b_population_weighted_mean": 952678.5714285715,
+      "candidate_c_amount_percentile_mean": 52.47,
+      "candidate_d_count_amount_percentile_mean": 60.1875,
+      "source_status": "ok"
+    },
+    "광진구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "population_weighted_valid_place_count": 2,
+      "candidate_a_amount_simple_mean": 737500.0,
+      "candidate_b_population_weighted_mean": 1150477.7070063695,
+      "candidate_c_amount_percentile_mean": 36.415,
+      "candidate_d_count_amount_percentile_mean": 40.43,
+      "source_status": "ok"
+    },
+    "구로구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 446666.6666666667,
+      "candidate_b_population_weighted_mean": 267466.6666666667,
+      "candidate_c_amount_percentile_mean": 27.363333333333333,
+      "candidate_d_count_amount_percentile_mean": 27.261666666666667,
+      "source_status": "ok"
+    },
+    "금천구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "population_weighted_valid_place_count": 1,
+      "candidate_a_amount_simple_mean": 2950000.0,
+      "candidate_b_population_weighted_mean": 2950000.0,
+      "candidate_c_amount_percentile_mean": 86.42,
+      "candidate_d_count_amount_percentile_mean": 77.16,
+      "source_status": "ok"
+    },
+    "노원구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "population_weighted_valid_place_count": 1,
+      "candidate_a_amount_simple_mean": 3450000.0,
+      "candidate_b_population_weighted_mean": 3450000.0,
+      "candidate_c_amount_percentile_mean": 87.65,
+      "candidate_d_count_amount_percentile_mean": 88.27000000000001,
+      "source_status": "ok"
+    },
+    "도봉구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "population_weighted_valid_place_count": 1,
+      "candidate_a_amount_simple_mean": 575000.0,
+      "candidate_b_population_weighted_mean": 575000.0,
+      "candidate_c_amount_percentile_mean": 32.1,
+      "candidate_d_count_amount_percentile_mean": 33.644999999999996,
+      "source_status": "ok"
+    },
+    "동대문구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 408333.3333333333,
+      "candidate_b_population_weighted_mean": 404896.90721649484,
+      "candidate_c_amount_percentile_mean": 27.16,
+      "candidate_d_count_amount_percentile_mean": 26.439999999999998,
+      "source_status": "ok"
+    },
+    "동작구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 625000.0,
+      "candidate_b_population_weighted_mean": 584183.6734693878,
+      "candidate_c_amount_percentile_mean": 37.03666666666667,
+      "candidate_d_count_amount_percentile_mean": 41.76833333333334,
+      "source_status": "ok"
+    },
+    "마포구": {
+      "assigned_place_count": 5,
+      "valid_place_count": 5,
+      "population_weighted_valid_place_count": 5,
+      "candidate_a_amount_simple_mean": 2135000.0,
+      "candidate_b_population_weighted_mean": 4700722.543352601,
+      "candidate_c_amount_percentile_mean": 54.322,
+      "candidate_d_count_amount_percentile_mean": 58.334,
+      "source_status": "ok"
+    },
+    "서대문구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 2400000.0,
+      "candidate_b_population_weighted_mean": 5265789.47368421,
+      "candidate_c_amount_percentile_mean": 40.946666666666665,
+      "candidate_d_count_amount_percentile_mean": 41.255,
+      "source_status": "ok"
+    },
+    "서초구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 483333.3333333333,
+      "candidate_b_population_weighted_mean": 493503.937007874,
+      "candidate_c_amount_percentile_mean": 30.863333333333333,
+      "candidate_d_count_amount_percentile_mean": 35.7,
+      "source_status": "ok"
+    },
+    "성동구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 2841666.6666666665,
+      "candidate_b_population_weighted_mean": 3013742.6900584796,
+      "candidate_c_amount_percentile_mean": 74.28,
+      "candidate_d_count_amount_percentile_mean": 75.0,
+      "source_status": "ok"
+    },
+    "성북구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "population_weighted_valid_place_count": 1,
+      "candidate_a_amount_simple_mean": 575000.0,
+      "candidate_b_population_weighted_mean": 575000.0,
+      "candidate_c_amount_percentile_mean": 32.1,
+      "candidate_d_count_amount_percentile_mean": 39.2,
+      "source_status": "ok"
+    },
+    "송파구": {
+      "assigned_place_count": 7,
+      "valid_place_count": 7,
+      "population_weighted_valid_place_count": 7,
+      "candidate_a_amount_simple_mean": 1700000.0,
+      "candidate_b_population_weighted_mean": 2335949.868073879,
+      "candidate_c_amount_percentile_mean": 67.19714285714285,
+      "candidate_d_count_amount_percentile_mean": 66.44642857142857,
+      "source_status": "ok"
+    },
+    "양천구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "population_weighted_valid_place_count": 2,
+      "candidate_a_amount_simple_mean": 597500.0,
+      "candidate_b_population_weighted_mean": 1129761.9047619049,
+      "candidate_c_amount_percentile_mean": 33.645,
+      "candidate_d_count_amount_percentile_mean": 36.730000000000004,
+      "source_status": "ok"
+    },
+    "영등포구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "population_weighted_valid_place_count": 3,
+      "candidate_a_amount_simple_mean": 2925000.0,
+      "candidate_b_population_weighted_mean": 3237365.5913978494,
+      "candidate_c_amount_percentile_mean": 79.01333333333334,
+      "candidate_d_count_amount_percentile_mean": 74.27833333333332,
+      "source_status": "ok"
+    },
+    "용산구": {
+      "assigned_place_count": 6,
+      "valid_place_count": 6,
+      "population_weighted_valid_place_count": 6,
+      "candidate_a_amount_simple_mean": 1178333.3333333333,
+      "candidate_b_population_weighted_mean": 1817490.4214559386,
+      "candidate_c_amount_percentile_mean": 41.461666666666666,
+      "candidate_d_count_amount_percentile_mean": 38.57916666666667,
+      "source_status": "ok"
+    },
+    "은평구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "population_weighted_valid_place_count": 1,
+      "candidate_a_amount_simple_mean": 775000.0,
+      "candidate_b_population_weighted_mean": 775000.0,
+      "candidate_c_amount_percentile_mean": 45.06,
+      "candidate_d_count_amount_percentile_mean": 52.775000000000006,
+      "source_status": "ok"
+    },
+    "종로구": {
+      "assigned_place_count": 10,
+      "valid_place_count": 10,
+      "population_weighted_valid_place_count": 8,
+      "candidate_a_amount_simple_mean": 1689500.0,
+      "candidate_b_population_weighted_mean": 2688028.846153846,
+      "candidate_c_amount_percentile_mean": 59.937,
+      "candidate_d_count_amount_percentile_mean": 59.722500000000004,
+      "source_status": "ok"
+    },
+    "중구": {
+      "assigned_place_count": 7,
+      "valid_place_count": 7,
+      "population_weighted_valid_place_count": 7,
+      "candidate_a_amount_simple_mean": 1500000.0,
+      "candidate_b_population_weighted_mean": 3270188.679245283,
+      "candidate_c_amount_percentile_mean": 45.76714285714286,
+      "candidate_d_count_amount_percentile_mean": 40.785000000000004,
+      "source_status": "ok"
+    },
+    "중랑구": {
+      "assigned_place_count": 0,
+      "valid_place_count": 0,
+      "population_weighted_valid_place_count": 0,
+      "candidate_a_amount_simple_mean": null,
+      "candidate_b_population_weighted_mean": null,
+      "candidate_c_amount_percentile_mean": null,
+      "candidate_d_count_amount_percentile_mean": null,
+      "source_status": "no_data"
+    }
+  }
+}

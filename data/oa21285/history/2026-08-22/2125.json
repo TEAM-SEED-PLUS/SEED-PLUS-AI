@@ -1,0 +1,4061 @@
+{
+  "received_at": "2026-08-22T21:56:06+09:00",
+  "population_time": "2026-08-22 21:25",
+  "poi_current": [
+    {
+      "area_cd": "POI014",
+      "area_nm": "강남역",
+      "source_status": "ok",
+      "population": {
+        "min": 48000,
+        "max": 50000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI001",
+      "area_nm": "강남 MICE 관광특구",
+      "source_status": "ok",
+      "population": {
+        "min": 9000,
+        "max": 9500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI002",
+      "area_nm": "동대문 관광특구",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI003",
+      "area_nm": "명동 관광특구",
+      "source_status": "ok",
+      "population": {
+        "min": 26000,
+        "max": 28000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI004",
+      "area_nm": "이태원 관광특구",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "약간 붐빔",
+        "message": "사람들이 몰려있을 가능성이 크고 붐빈다고 느낄 수 있어요. 인구밀도가 높은 구간에서는 도보 이동시 부딪힘이 발생할 수 있어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI005",
+      "area_nm": "잠실 관광특구",
+      "source_status": "ok",
+      "population": {
+        "min": 66000,
+        "max": 68000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI006",
+      "area_nm": "종로·청계 관광특구",
+      "source_status": "ok",
+      "population": {
+        "min": 20000,
+        "max": 22000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI007",
+      "area_nm": "홍대 관광특구",
+      "source_status": "ok",
+      "population": {
+        "min": 76000,
+        "max": 78000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI013",
+      "area_nm": "가산디지털단지역",
+      "source_status": "ok",
+      "population": {
+        "min": 9000,
+        "max": 9500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI015",
+      "area_nm": "건대입구역",
+      "source_status": "ok",
+      "population": {
+        "min": 30000,
+        "max": 32000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI016",
+      "area_nm": "고덕역",
+      "source_status": "ok",
+      "population": {
+        "min": 3500,
+        "max": 4000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI017",
+      "area_nm": "고속터미널역",
+      "source_status": "ok",
+      "population": {
+        "min": 10000,
+        "max": 12000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI018",
+      "area_nm": "교대역",
+      "source_status": "ok",
+      "population": {
+        "min": 10000,
+        "max": 12000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI019",
+      "area_nm": "구로디지털단지역",
+      "source_status": "ok",
+      "population": {
+        "min": 9000,
+        "max": 9500
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI020",
+      "area_nm": "구로역",
+      "source_status": "ok",
+      "population": {
+        "min": 2000,
+        "max": 2500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI021",
+      "area_nm": "군자역",
+      "source_status": "ok",
+      "population": {
+        "min": 8000,
+        "max": 8500
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI023",
+      "area_nm": "대림역",
+      "source_status": "ok",
+      "population": {
+        "min": 16000,
+        "max": 18000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI024",
+      "area_nm": "동대문역",
+      "source_status": "ok",
+      "population": {
+        "min": 4000,
+        "max": 4500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI025",
+      "area_nm": "뚝섬역",
+      "source_status": "ok",
+      "population": {
+        "min": 6500,
+        "max": 7000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI026",
+      "area_nm": "미아사거리역",
+      "source_status": "ok",
+      "population": {
+        "min": 9000,
+        "max": 9500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI027",
+      "area_nm": "발산역",
+      "source_status": "ok",
+      "population": {
+        "min": 8000,
+        "max": 8500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI029",
+      "area_nm": "사당역",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI030",
+      "area_nm": "삼각지역",
+      "source_status": "ok",
+      "population": {
+        "min": 2000,
+        "max": 2500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI031",
+      "area_nm": "서울대입구역",
+      "source_status": "ok",
+      "population": {
+        "min": 12000,
+        "max": 14000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI032",
+      "area_nm": "서울식물원·마곡나루역",
+      "source_status": "ok",
+      "population": {
+        "min": 4500,
+        "max": 5000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI033",
+      "area_nm": "서울역",
+      "source_status": "ok",
+      "population": {
+        "min": 7000,
+        "max": 7500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI034",
+      "area_nm": "선릉역",
+      "source_status": "ok",
+      "population": {
+        "min": 24000,
+        "max": 26000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI035",
+      "area_nm": "성신여대입구역",
+      "source_status": "ok",
+      "population": {
+        "min": 6500,
+        "max": 7000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI036",
+      "area_nm": "수유역",
+      "source_status": "ok",
+      "population": {
+        "min": 14000,
+        "max": 16000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI037",
+      "area_nm": "신논현역·논현역",
+      "source_status": "ok",
+      "population": {
+        "min": 10000,
+        "max": 12000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI038",
+      "area_nm": "신도림역",
+      "source_status": "ok",
+      "population": {
+        "min": 7000,
+        "max": 7500
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI039",
+      "area_nm": "신림역",
+      "source_status": "ok",
+      "population": {
+        "min": 14000,
+        "max": 16000
+      },
+      "congestion": {
+        "level": "약간 붐빔",
+        "message": "사람들이 몰려있을 가능성이 크고 붐빈다고 느낄 수 있어요. 인구밀도가 높은 구간에서는 도보 이동시 부딪힘이 발생할 수 있어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI040",
+      "area_nm": "신촌·이대역",
+      "source_status": "ok",
+      "population": {
+        "min": 28000,
+        "max": 30000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI041",
+      "area_nm": "양재역",
+      "source_status": "ok",
+      "population": {
+        "min": 9500,
+        "max": 10000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI042",
+      "area_nm": "역삼역",
+      "source_status": "ok",
+      "population": {
+        "min": 14000,
+        "max": 16000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI043",
+      "area_nm": "연신내역",
+      "source_status": "ok",
+      "population": {
+        "min": 8000,
+        "max": 8500
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI044",
+      "area_nm": "오목교역·목동운동장",
+      "source_status": "ok",
+      "population": {
+        "min": 66000,
+        "max": 68000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI045",
+      "area_nm": "왕십리역",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI046",
+      "area_nm": "용산역",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI047",
+      "area_nm": "이태원역",
+      "source_status": "ok",
+      "population": {
+        "min": 10000,
+        "max": 12000
+      },
+      "congestion": {
+        "level": "붐빔",
+        "message": "사람들이 몰려있을 가능성이 매우 크고 많이 붐빈다고 느낄 수 있어요. 인구밀도가 높은 구간에서는 도보 이동시 부딪힘이 발생할 수 있어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI048",
+      "area_nm": "장지역",
+      "source_status": "ok",
+      "population": {
+        "min": 10000,
+        "max": 12000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI049",
+      "area_nm": "장한평역",
+      "source_status": "ok",
+      "population": {
+        "min": 6500,
+        "max": 7000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI050",
+      "area_nm": "천호역",
+      "source_status": "ok",
+      "population": {
+        "min": 8500,
+        "max": 9000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI051",
+      "area_nm": "총신대입구(이수)역",
+      "source_status": "ok",
+      "population": {
+        "min": 10000,
+        "max": 12000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI052",
+      "area_nm": "충정로역",
+      "source_status": "ok",
+      "population": {
+        "min": 5500,
+        "max": 6000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI053",
+      "area_nm": "합정역",
+      "source_status": "ok",
+      "population": {
+        "min": 10000,
+        "max": 12000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI054",
+      "area_nm": "혜화역",
+      "source_status": "ok",
+      "population": {
+        "min": 16000,
+        "max": 18000
+      },
+      "congestion": {
+        "level": "약간 붐빔",
+        "message": "사람들이 몰려있을 가능성이 크고 붐빈다고 느낄 수 있어요. 인구밀도가 높은 구간에서는 도보 이동시 부딪힘이 발생할 수 있어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI055",
+      "area_nm": "홍대입구역(2호선)",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI056",
+      "area_nm": "회기역",
+      "source_status": "ok",
+      "population": {
+        "min": 9500,
+        "max": 10000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI058",
+      "area_nm": "가락시장",
+      "source_status": "ok",
+      "population": {
+        "min": 4500,
+        "max": 5000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI059",
+      "area_nm": "가로수길",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI072",
+      "area_nm": "여의도",
+      "source_status": "ok",
+      "population": {
+        "min": 54000,
+        "max": 56000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI060",
+      "area_nm": "광장(전통)시장",
+      "source_status": "ok",
+      "population": {
+        "min": 2000,
+        "max": 2500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI061",
+      "area_nm": "김포공항",
+      "source_status": "ok",
+      "population": {
+        "min": 4000,
+        "max": 4500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI063",
+      "area_nm": "노량진",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI064",
+      "area_nm": "덕수궁길·정동길",
+      "source_status": "ok",
+      "population": {
+        "min": 1500,
+        "max": 2000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI066",
+      "area_nm": "북촌한옥마을",
+      "source_status": "ok",
+      "population": {
+        "min": 6000,
+        "max": 6500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI067",
+      "area_nm": "서촌",
+      "source_status": "ok",
+      "population": {
+        "min": 9500,
+        "max": 10000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI068",
+      "area_nm": "성수카페거리",
+      "source_status": "ok",
+      "population": {
+        "min": 16000,
+        "max": 18000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI070",
+      "area_nm": "쌍문역",
+      "source_status": "ok",
+      "population": {
+        "min": 6000,
+        "max": 6500
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI071",
+      "area_nm": "압구정로데오거리",
+      "source_status": "ok",
+      "population": {
+        "min": 18000,
+        "max": 20000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI073",
+      "area_nm": "연남동",
+      "source_status": "ok",
+      "population": {
+        "min": 9500,
+        "max": 10000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI074",
+      "area_nm": "영등포 타임스퀘어",
+      "source_status": "ok",
+      "population": {
+        "min": 20000,
+        "max": 22000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI076",
+      "area_nm": "용리단길",
+      "source_status": "ok",
+      "population": {
+        "min": 4000,
+        "max": 4500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI077",
+      "area_nm": "이태원 앤틱가구거리",
+      "source_status": "ok",
+      "population": {
+        "min": 6500,
+        "max": 7000
+      },
+      "congestion": {
+        "level": "약간 붐빔",
+        "message": "사람들이 몰려있을 가능성이 크고 붐빈다고 느낄 수 있어요. 인구밀도가 높은 구간에서는 도보 이동시 부딪힘이 발생할 수 있어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI078",
+      "area_nm": "인사동",
+      "source_status": "ok",
+      "population": {
+        "min": 8500,
+        "max": 9000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI079",
+      "area_nm": "창동 신경제 중심지",
+      "source_status": "ok",
+      "population": {
+        "min": 28000,
+        "max": 30000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI080",
+      "area_nm": "청담동 명품거리",
+      "source_status": "ok",
+      "population": {
+        "min": 3000,
+        "max": 3500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI081",
+      "area_nm": "청량리 제기동 일대 전통시장",
+      "source_status": "ok",
+      "population": {
+        "min": 7500,
+        "max": 8000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI082",
+      "area_nm": "해방촌·경리단길",
+      "source_status": "ok",
+      "population": {
+        "min": 5000,
+        "max": 5500
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI083",
+      "area_nm": "DDP(동대문디자인플라자)",
+      "source_status": "ok",
+      "population": {
+        "min": 3000,
+        "max": 3500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI084",
+      "area_nm": "DMC(디지털미디어시티)",
+      "source_status": "ok",
+      "population": {
+        "min": 12000,
+        "max": 14000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI114",
+      "area_nm": "북창동 먹자골목",
+      "source_status": "ok",
+      "population": {
+        "min": 3500,
+        "max": 4000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI115",
+      "area_nm": "남대문시장",
+      "source_status": "ok",
+      "population": {
+        "min": 4000,
+        "max": 4500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI116",
+      "area_nm": "익선동",
+      "source_status": "ok",
+      "population": {
+        "min": 8500,
+        "max": 9000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI117",
+      "area_nm": "신정네거리역",
+      "source_status": "ok",
+      "population": {
+        "min": 1000,
+        "max": 1500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI118",
+      "area_nm": "잠실새내역",
+      "source_status": "ok",
+      "population": {
+        "min": 12000,
+        "max": 14000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI119",
+      "area_nm": "잠실역",
+      "source_status": "ok",
+      "population": {
+        "min": 26000,
+        "max": 28000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI120",
+      "area_nm": "잠실롯데타워·석촌호수",
+      "source_status": "ok",
+      "population": {
+        "min": 58000,
+        "max": 60000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI121",
+      "area_nm": "송리단길·호수단길",
+      "source_status": "ok",
+      "population": {
+        "min": 7500,
+        "max": 8000
+      },
+      "congestion": {
+        "level": "보통",
+        "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI122",
+      "area_nm": "신촌 스타광장",
+      "source_status": "ok",
+      "population": {
+        "min": 3000,
+        "max": 3500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI130",
+      "area_nm": "시의회 앞",
+      "source_status": "ok",
+      "population": {
+        "min": 3500,
+        "max": 4000
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    },
+    {
+      "area_cd": "POI131",
+      "area_nm": "숭례문",
+      "source_status": "ok",
+      "population": {
+        "min": 3000,
+        "max": 3500
+      },
+      "congestion": {
+        "level": "여유",
+        "message": "사람이 몰려있을 가능성이 낮고 붐빔은 거의 느껴지지 않아요. 도보 이동이 자유로워요."
+      },
+      "replace_yn": "N",
+      "population_time": "2026-08-22 21:25"
+    }
+  ],
+  "district_mapping": [
+    {
+      "area_cd": "POI001",
+      "area_nm": "강남 MICE 관광특구",
+      "category": "관광특구",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI002",
+      "area_nm": "동대문 관광특구",
+      "category": "관광특구",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999521
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.000557
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI003",
+      "area_nm": "명동 관광특구",
+      "category": "관광특구",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.999561
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.00073
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI004",
+      "area_nm": "이태원 관광특구",
+      "category": "관광특구",
+      "assigned_district": "용산구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI005",
+      "area_nm": "잠실 관광특구",
+      "category": "관광특구",
+      "assigned_district": "송파구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI006",
+      "area_nm": "종로·청계 관광특구",
+      "category": "관광특구",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.997785
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.002487
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI007",
+      "area_nm": "홍대 관광특구",
+      "category": "관광특구",
+      "assigned_district": "마포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999958
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 3e-06
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI013",
+      "area_nm": "가산디지털단지역",
+      "category": "인구밀집지역",
+      "assigned_district": "금천구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "금천구",
+          "intersection_ratio": 0.999923
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.000548
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI014",
+      "area_nm": "강남역",
+      "category": "인구밀집지역",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.664823
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.335179
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI015",
+      "area_nm": "건대입구역",
+      "category": "인구밀집지역",
+      "assigned_district": "광진구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 0.999896
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.1e-05
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI016",
+      "area_nm": "고덕역",
+      "category": "인구밀집지역",
+      "assigned_district": "강동구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI017",
+      "area_nm": "고속터미널역",
+      "category": "인구밀집지역",
+      "assigned_district": "서초구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI018",
+      "area_nm": "교대역",
+      "category": "인구밀집지역",
+      "assigned_district": "서초구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI019",
+      "area_nm": "구로디지털단지역",
+      "category": "인구밀집지역",
+      "assigned_district": "구로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.96176
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.038124
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI020",
+      "area_nm": "구로역",
+      "category": "인구밀집지역",
+      "assigned_district": "구로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI021",
+      "area_nm": "군자역",
+      "category": "인구밀집지역",
+      "assigned_district": "광진구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "광진구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI023",
+      "area_nm": "대림역",
+      "category": "인구밀집지역",
+      "assigned_district": "영등포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 0.551063
+        },
+        {
+          "district": "구로구",
+          "intersection_ratio": 0.449081
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI024",
+      "area_nm": "동대문역",
+      "category": "인구밀집지역",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999336
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.000347
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI025",
+      "area_nm": "뚝섬역",
+      "category": "인구밀집지역",
+      "assigned_district": "성동구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI026",
+      "area_nm": "미아사거리역",
+      "category": "인구밀집지역",
+      "assigned_district": "강북구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.741668
+        },
+        {
+          "district": "성북구",
+          "intersection_ratio": 0.2595
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI027",
+      "area_nm": "발산역",
+      "category": "인구밀집지역",
+      "assigned_district": "강서구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 0.999965
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI029",
+      "area_nm": "사당역",
+      "category": "인구밀집지역",
+      "assigned_district": "동작구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.42652
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.365843
+        },
+        {
+          "district": "관악구",
+          "intersection_ratio": 0.20409
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI030",
+      "area_nm": "삼각지역",
+      "category": "인구밀집지역",
+      "assigned_district": "용산구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI031",
+      "area_nm": "서울대입구역",
+      "category": "인구밀집지역",
+      "assigned_district": "관악구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI032",
+      "area_nm": "서울식물원·마곡나루역",
+      "category": "인구밀집지역",
+      "assigned_district": "강서구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI033",
+      "area_nm": "서울역",
+      "category": "인구밀집지역",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.952059
+        },
+        {
+          "district": "용산구",
+          "intersection_ratio": 0.048043
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI034",
+      "area_nm": "선릉역",
+      "category": "인구밀집지역",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI035",
+      "area_nm": "성신여대입구역",
+      "category": "인구밀집지역",
+      "assigned_district": "성북구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "성북구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI036",
+      "area_nm": "수유역",
+      "category": "인구밀집지역",
+      "assigned_district": "강북구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.999877
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "도봉구",
+          "intersection_ratio": 4.2e-05
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI037",
+      "area_nm": "신논현역·논현역",
+      "category": "인구밀집지역",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.721971
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.278029
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI038",
+      "area_nm": "신도림역",
+      "category": "인구밀집지역",
+      "assigned_district": "구로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "구로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 9.2e-05
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI039",
+      "area_nm": "신림역",
+      "category": "인구밀집지역",
+      "assigned_district": "관악구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "관악구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI040",
+      "area_nm": "신촌·이대역",
+      "category": "인구밀집지역",
+      "assigned_district": "서대문구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.77503
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.225079
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI041",
+      "area_nm": "양재역",
+      "category": "인구밀집지역",
+      "assigned_district": "서초구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.604964
+        },
+        {
+          "district": "강남구",
+          "intersection_ratio": 0.395039
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI042",
+      "area_nm": "역삼역",
+      "category": "인구밀집지역",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI043",
+      "area_nm": "연신내역",
+      "category": "인구밀집지역",
+      "assigned_district": "은평구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "은평구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI044",
+      "area_nm": "오목교역·목동운동장",
+      "category": "인구밀집지역",
+      "assigned_district": "양천구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI045",
+      "area_nm": "왕십리역",
+      "category": "인구밀집지역",
+      "assigned_district": "성동구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.999992
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI046",
+      "area_nm": "용산역",
+      "category": "인구밀집지역",
+      "assigned_district": "용산구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI047",
+      "area_nm": "이태원역",
+      "category": "인구밀집지역",
+      "assigned_district": "용산구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI048",
+      "area_nm": "장지역",
+      "category": "인구밀집지역",
+      "assigned_district": "송파구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI049",
+      "area_nm": "장한평역",
+      "category": "인구밀집지역",
+      "assigned_district": "동대문구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 0.59652
+        },
+        {
+          "district": "성동구",
+          "intersection_ratio": 0.403485
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI050",
+      "area_nm": "천호역",
+      "category": "인구밀집지역",
+      "assigned_district": "강동구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강동구",
+          "intersection_ratio": 0.93952
+        },
+        {
+          "district": "송파구",
+          "intersection_ratio": 0.060154
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI051",
+      "area_nm": "총신대입구(이수)역",
+      "category": "인구밀집지역",
+      "assigned_district": "동작구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 0.792135
+        },
+        {
+          "district": "서초구",
+          "intersection_ratio": 0.206206
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI052",
+      "area_nm": "충정로역",
+      "category": "인구밀집지역",
+      "assigned_district": "서대문구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.487891
+        },
+        {
+          "district": "중구",
+          "intersection_ratio": 0.380067
+        },
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.131223
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI053",
+      "area_nm": "합정역",
+      "category": "인구밀집지역",
+      "assigned_district": "마포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI054",
+      "area_nm": "혜화역",
+      "category": "인구밀집지역",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI055",
+      "area_nm": "홍대입구역(2호선)",
+      "category": "인구밀집지역",
+      "assigned_district": "마포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI056",
+      "area_nm": "회기역",
+      "category": "인구밀집지역",
+      "assigned_district": "동대문구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI058",
+      "area_nm": "가락시장",
+      "category": "발달상권",
+      "assigned_district": "송파구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI059",
+      "area_nm": "가로수길",
+      "category": "발달상권",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "서초구",
+          "intersection_ratio": 2e-06
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI072",
+      "area_nm": "여의도",
+      "category": "발달상권",
+      "assigned_district": "영등포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI060",
+      "area_nm": "광장(전통)시장",
+      "category": "발달상권",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.999999
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 6.4e-05
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI061",
+      "area_nm": "김포공항",
+      "category": "발달상권",
+      "assigned_district": "강서구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강서구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI063",
+      "area_nm": "노량진",
+      "category": "발달상권",
+      "assigned_district": "동작구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "동작구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI064",
+      "area_nm": "덕수궁길·정동길",
+      "category": "발달상권",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.942259
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.058628
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI066",
+      "area_nm": "북촌한옥마을",
+      "category": "발달상권",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI067",
+      "area_nm": "서촌",
+      "category": "발달상권",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI068",
+      "area_nm": "성수카페거리",
+      "category": "발달상권",
+      "assigned_district": "성동구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "성동구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI070",
+      "area_nm": "쌍문역",
+      "category": "인구밀집지역",
+      "assigned_district": "도봉구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.999998
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "강북구",
+          "intersection_ratio": 0.000121
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI071",
+      "area_nm": "압구정로데오거리",
+      "category": "발달상권",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI073",
+      "area_nm": "연남동",
+      "category": "발달상권",
+      "assigned_district": "마포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999929
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI074",
+      "area_nm": "영등포 타임스퀘어",
+      "category": "발달상권",
+      "assigned_district": "영등포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "영등포구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI076",
+      "area_nm": "용리단길",
+      "category": "발달상권",
+      "assigned_district": "용산구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI077",
+      "area_nm": "이태원 앤틱가구거리",
+      "category": "발달상권",
+      "assigned_district": "용산구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI078",
+      "area_nm": "인사동",
+      "category": "발달상권",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI079",
+      "area_nm": "창동 신경제 중심지",
+      "category": "발달상권",
+      "assigned_district": "노원구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "노원구",
+          "intersection_ratio": 0.59961
+        },
+        {
+          "district": "도봉구",
+          "intersection_ratio": 0.398896
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI080",
+      "area_nm": "청담동 명품거리",
+      "category": "발달상권",
+      "assigned_district": "강남구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "강남구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI081",
+      "area_nm": "청량리 제기동 일대 전통시장",
+      "category": "발달상권",
+      "assigned_district": "동대문구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "동대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI082",
+      "area_nm": "해방촌·경리단길",
+      "category": "발달상권",
+      "assigned_district": "용산구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "용산구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI083",
+      "area_nm": "DDP(동대문디자인플라자)",
+      "category": "발달상권",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI084",
+      "area_nm": "DMC(디지털미디어시티)",
+      "category": "발달상권",
+      "assigned_district": "마포구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "마포구",
+          "intersection_ratio": 0.999353
+        }
+      ],
+      "ignored_sliver_candidates": [
+        {
+          "district": "은평구",
+          "intersection_ratio": 5.9e-05
+        },
+        {
+          "district": "서대문구",
+          "intersection_ratio": 0.0
+        }
+      ],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI114",
+      "area_nm": "북창동 먹자골목",
+      "category": "발달상권",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI115",
+      "area_nm": "남대문시장",
+      "category": "발달상권",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI116",
+      "area_nm": "익선동",
+      "category": "발달상권",
+      "assigned_district": "종로구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "종로구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI117",
+      "area_nm": "신정네거리역",
+      "category": "인구밀집지역",
+      "assigned_district": "양천구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "양천구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI118",
+      "area_nm": "잠실새내역",
+      "category": "인구밀집지역",
+      "assigned_district": "송파구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI119",
+      "area_nm": "잠실역",
+      "category": "인구밀집지역",
+      "assigned_district": "송파구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI120",
+      "area_nm": "잠실롯데타워·석촌호수",
+      "category": "발달상권",
+      "assigned_district": "송파구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI121",
+      "area_nm": "송리단길·호수단길",
+      "category": "발달상권",
+      "assigned_district": "송파구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "송파구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI122",
+      "area_nm": "신촌 스타광장",
+      "category": "발달상권",
+      "assigned_district": "서대문구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "서대문구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI130",
+      "area_nm": "시의회 앞",
+      "category": "인구밀집지역",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 0.839418
+        },
+        {
+          "district": "종로구",
+          "intersection_ratio": 0.160714
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    },
+    {
+      "area_cd": "POI131",
+      "area_nm": "숭례문",
+      "category": "인구밀집지역",
+      "assigned_district": "중구",
+      "assignment_status": "assigned",
+      "effective_candidates": [
+        {
+          "district": "중구",
+          "intersection_ratio": 1.0
+        }
+      ],
+      "ignored_sliver_candidates": [],
+      "out_of_service_area": false
+    }
+  ],
+  "districts": {
+    "강남구": {
+      "district_population": 28190.6,
+      "district_max_population_reference": 50000,
+      "poi_count": 8,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI001",
+          "area_nm": "강남 MICE 관광특구",
+          "category": "관광특구",
+          "population_min": 9000,
+          "population_max": 9500,
+          "representative_population": 9250.0,
+          "category_weight": 0.7,
+          "final_weight": 6475.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI014",
+          "area_nm": "강남역",
+          "category": "인구밀집지역",
+          "population_min": 48000,
+          "population_max": 50000,
+          "representative_population": 49000.0,
+          "category_weight": 1.0,
+          "final_weight": 49000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI034",
+          "area_nm": "선릉역",
+          "category": "인구밀집지역",
+          "population_min": 24000,
+          "population_max": 26000,
+          "representative_population": 25000.0,
+          "category_weight": 1.0,
+          "final_weight": 25000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI037",
+          "area_nm": "신논현역·논현역",
+          "category": "인구밀집지역",
+          "population_min": 10000,
+          "population_max": 12000,
+          "representative_population": 11000.0,
+          "category_weight": 1.0,
+          "final_weight": 11000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI042",
+          "area_nm": "역삼역",
+          "category": "인구밀집지역",
+          "population_min": 14000,
+          "population_max": 16000,
+          "representative_population": 15000.0,
+          "category_weight": 1.0,
+          "final_weight": 15000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI059",
+          "area_nm": "가로수길",
+          "category": "발달상권",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 1.0,
+          "final_weight": 19000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI071",
+          "area_nm": "압구정로데오거리",
+          "category": "발달상권",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 1.0,
+          "final_weight": 19000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI080",
+          "area_nm": "청담동 명품거리",
+          "category": "발달상권",
+          "population_min": 3000,
+          "population_max": 3500,
+          "representative_population": 3250.0,
+          "category_weight": 1.0,
+          "final_weight": 3250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "강동구": {
+      "district_population": 7250.0,
+      "district_max_population_reference": 9000,
+      "poi_count": 2,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI016",
+          "area_nm": "고덕역",
+          "category": "인구밀집지역",
+          "population_min": 3500,
+          "population_max": 4000,
+          "representative_population": 3750.0,
+          "category_weight": 1.0,
+          "final_weight": 3750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI050",
+          "area_nm": "천호역",
+          "category": "인구밀집지역",
+          "population_min": 8500,
+          "population_max": 9000,
+          "representative_population": 8750.0,
+          "category_weight": 1.0,
+          "final_weight": 8750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "강북구": {
+      "district_population": 12806.7,
+      "district_max_population_reference": 16000,
+      "poi_count": 2,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI026",
+          "area_nm": "미아사거리역",
+          "category": "인구밀집지역",
+          "population_min": 9000,
+          "population_max": 9500,
+          "representative_population": 9250.0,
+          "category_weight": 1.0,
+          "final_weight": 9250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI036",
+          "area_nm": "수유역",
+          "category": "인구밀집지역",
+          "population_min": 14000,
+          "population_max": 16000,
+          "representative_population": 15000.0,
+          "category_weight": 1.0,
+          "final_weight": 15000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "강서구": {
+      "district_population": 6300.72,
+      "district_max_population_reference": 8500,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI027",
+          "area_nm": "발산역",
+          "category": "인구밀집지역",
+          "population_min": 8000,
+          "population_max": 8500,
+          "representative_population": 8250.0,
+          "category_weight": 1.0,
+          "final_weight": 8250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI032",
+          "area_nm": "서울식물원·마곡나루역",
+          "category": "인구밀집지역",
+          "population_min": 4500,
+          "population_max": 5000,
+          "representative_population": 4750.0,
+          "category_weight": 1.0,
+          "final_weight": 4750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI061",
+          "area_nm": "김포공항",
+          "category": "발달상권",
+          "population_min": 4000,
+          "population_max": 4500,
+          "representative_population": 4250.0,
+          "category_weight": 1.0,
+          "final_weight": 4250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "관악구": {
+      "district_population": 14071.43,
+      "district_max_population_reference": 16000,
+      "poi_count": 2,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI031",
+          "area_nm": "서울대입구역",
+          "category": "인구밀집지역",
+          "population_min": 12000,
+          "population_max": 14000,
+          "representative_population": 13000.0,
+          "category_weight": 1.0,
+          "final_weight": 13000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI039",
+          "area_nm": "신림역",
+          "category": "인구밀집지역",
+          "population_min": 14000,
+          "population_max": 16000,
+          "representative_population": 15000.0,
+          "category_weight": 1.0,
+          "final_weight": 15000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "광진구": {
+      "district_population": 26218.15,
+      "district_max_population_reference": 32000,
+      "poi_count": 2,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI015",
+          "area_nm": "건대입구역",
+          "category": "인구밀집지역",
+          "population_min": 30000,
+          "population_max": 32000,
+          "representative_population": 31000.0,
+          "category_weight": 1.0,
+          "final_weight": 31000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI021",
+          "area_nm": "군자역",
+          "category": "인구밀집지역",
+          "population_min": 8000,
+          "population_max": 8500,
+          "representative_population": 8250.0,
+          "category_weight": 1.0,
+          "final_weight": 8250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "구로구": {
+      "district_population": 7636.67,
+      "district_max_population_reference": 9500,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI019",
+          "area_nm": "구로디지털단지역",
+          "category": "인구밀집지역",
+          "population_min": 9000,
+          "population_max": 9500,
+          "representative_population": 9250.0,
+          "category_weight": 1.0,
+          "final_weight": 9250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI020",
+          "area_nm": "구로역",
+          "category": "인구밀집지역",
+          "population_min": 2000,
+          "population_max": 2500,
+          "representative_population": 2250.0,
+          "category_weight": 1.0,
+          "final_weight": 2250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI038",
+          "area_nm": "신도림역",
+          "category": "인구밀집지역",
+          "population_min": 7000,
+          "population_max": 7500,
+          "representative_population": 7250.0,
+          "category_weight": 1.0,
+          "final_weight": 7250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "금천구": {
+      "district_population": 9250.0,
+      "district_max_population_reference": 9500,
+      "poi_count": 1,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI013",
+          "area_nm": "가산디지털단지역",
+          "category": "인구밀집지역",
+          "population_min": 9000,
+          "population_max": 9500,
+          "representative_population": 9250.0,
+          "category_weight": 1.0,
+          "final_weight": 9250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "노원구": {
+      "district_population": 29000.0,
+      "district_max_population_reference": 30000,
+      "poi_count": 1,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI079",
+          "area_nm": "창동 신경제 중심지",
+          "category": "발달상권",
+          "population_min": 28000,
+          "population_max": 30000,
+          "representative_population": 29000.0,
+          "category_weight": 1.0,
+          "final_weight": 29000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "도봉구": {
+      "district_population": 6250.0,
+      "district_max_population_reference": 6500,
+      "poi_count": 1,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI070",
+          "area_nm": "쌍문역",
+          "category": "인구밀집지역",
+          "population_min": 6000,
+          "population_max": 6500,
+          "representative_population": 6250.0,
+          "category_weight": 1.0,
+          "final_weight": 6250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "동대문구": {
+      "district_population": 8275.77,
+      "district_max_population_reference": 10000,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI049",
+          "area_nm": "장한평역",
+          "category": "인구밀집지역",
+          "population_min": 6500,
+          "population_max": 7000,
+          "representative_population": 6750.0,
+          "category_weight": 1.0,
+          "final_weight": 6750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI056",
+          "area_nm": "회기역",
+          "category": "인구밀집지역",
+          "population_min": 9500,
+          "population_max": 10000,
+          "representative_population": 9750.0,
+          "category_weight": 1.0,
+          "final_weight": 9750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI081",
+          "area_nm": "청량리 제기동 일대 전통시장",
+          "category": "발달상권",
+          "population_min": 7500,
+          "population_max": 8000,
+          "representative_population": 7750.0,
+          "category_weight": 1.0,
+          "final_weight": 7750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "동작구": {
+      "district_population": 17204.08,
+      "district_max_population_reference": 20000,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI029",
+          "area_nm": "사당역",
+          "category": "인구밀집지역",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 1.0,
+          "final_weight": 19000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI051",
+          "area_nm": "총신대입구(이수)역",
+          "category": "인구밀집지역",
+          "population_min": 10000,
+          "population_max": 12000,
+          "representative_population": 11000.0,
+          "category_weight": 1.0,
+          "final_weight": 11000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI063",
+          "area_nm": "노량진",
+          "category": "발달상권",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 1.0,
+          "final_weight": 19000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "마포구": {
+      "district_population": 45910.57,
+      "district_max_population_reference": 78000,
+      "poi_count": 5,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI007",
+          "area_nm": "홍대 관광특구",
+          "category": "관광특구",
+          "population_min": 76000,
+          "population_max": 78000,
+          "representative_population": 77000.0,
+          "category_weight": 0.7,
+          "final_weight": 53900.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI053",
+          "area_nm": "합정역",
+          "category": "인구밀집지역",
+          "population_min": 10000,
+          "population_max": 12000,
+          "representative_population": 11000.0,
+          "category_weight": 1.0,
+          "final_weight": 11000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI055",
+          "area_nm": "홍대입구역(2호선)",
+          "category": "인구밀집지역",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 1.0,
+          "final_weight": 19000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI073",
+          "area_nm": "연남동",
+          "category": "발달상권",
+          "population_min": 9500,
+          "population_max": 10000,
+          "representative_population": 9750.0,
+          "category_weight": 1.0,
+          "final_weight": 9750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI084",
+          "area_nm": "DMC(디지털미디어시티)",
+          "category": "발달상권",
+          "population_min": 12000,
+          "population_max": 14000,
+          "representative_population": 13000.0,
+          "category_weight": 1.0,
+          "final_weight": 13000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "서대문구": {
+      "district_population": 23279.61,
+      "district_max_population_reference": 30000,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI040",
+          "area_nm": "신촌·이대역",
+          "category": "인구밀집지역",
+          "population_min": 28000,
+          "population_max": 30000,
+          "representative_population": 29000.0,
+          "category_weight": 1.0,
+          "final_weight": 29000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI052",
+          "area_nm": "충정로역",
+          "category": "인구밀집지역",
+          "population_min": 5500,
+          "population_max": 6000,
+          "representative_population": 5750.0,
+          "category_weight": 1.0,
+          "final_weight": 5750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI122",
+          "area_nm": "신촌 스타광장",
+          "category": "발달상권",
+          "population_min": 3000,
+          "population_max": 3500,
+          "representative_population": 3250.0,
+          "category_weight": 1.0,
+          "final_weight": 3250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "서초구": {
+      "district_population": 10616.14,
+      "district_max_population_reference": 12000,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI017",
+          "area_nm": "고속터미널역",
+          "category": "인구밀집지역",
+          "population_min": 10000,
+          "population_max": 12000,
+          "representative_population": 11000.0,
+          "category_weight": 1.0,
+          "final_weight": 11000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI018",
+          "area_nm": "교대역",
+          "category": "인구밀집지역",
+          "population_min": 10000,
+          "population_max": 12000,
+          "representative_population": 11000.0,
+          "category_weight": 1.0,
+          "final_weight": 11000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI041",
+          "area_nm": "양재역",
+          "category": "인구밀집지역",
+          "population_min": 9500,
+          "population_max": 10000,
+          "representative_population": 9750.0,
+          "category_weight": 1.0,
+          "final_weight": 9750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "성동구": {
+      "district_population": 16270.47,
+      "district_max_population_reference": 20000,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI025",
+          "area_nm": "뚝섬역",
+          "category": "인구밀집지역",
+          "population_min": 6500,
+          "population_max": 7000,
+          "representative_population": 6750.0,
+          "category_weight": 1.0,
+          "final_weight": 6750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI045",
+          "area_nm": "왕십리역",
+          "category": "인구밀집지역",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 1.0,
+          "final_weight": 19000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI068",
+          "area_nm": "성수카페거리",
+          "category": "발달상권",
+          "population_min": 16000,
+          "population_max": 18000,
+          "representative_population": 17000.0,
+          "category_weight": 1.0,
+          "final_weight": 17000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "성북구": {
+      "district_population": 6750.0,
+      "district_max_population_reference": 7000,
+      "poi_count": 1,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI035",
+          "area_nm": "성신여대입구역",
+          "category": "인구밀집지역",
+          "population_min": 6500,
+          "population_max": 7000,
+          "representative_population": 6750.0,
+          "category_weight": 1.0,
+          "final_weight": 6750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "송파구": {
+      "district_population": 45601.68,
+      "district_max_population_reference": 68000,
+      "poi_count": 7,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI005",
+          "area_nm": "잠실 관광특구",
+          "category": "관광특구",
+          "population_min": 66000,
+          "population_max": 68000,
+          "representative_population": 67000.0,
+          "category_weight": 0.7,
+          "final_weight": 46900.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI048",
+          "area_nm": "장지역",
+          "category": "인구밀집지역",
+          "population_min": 10000,
+          "population_max": 12000,
+          "representative_population": 11000.0,
+          "category_weight": 1.0,
+          "final_weight": 11000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI058",
+          "area_nm": "가락시장",
+          "category": "발달상권",
+          "population_min": 4500,
+          "population_max": 5000,
+          "representative_population": 4750.0,
+          "category_weight": 1.0,
+          "final_weight": 4750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI118",
+          "area_nm": "잠실새내역",
+          "category": "인구밀집지역",
+          "population_min": 12000,
+          "population_max": 14000,
+          "representative_population": 13000.0,
+          "category_weight": 1.0,
+          "final_weight": 13000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI119",
+          "area_nm": "잠실역",
+          "category": "인구밀집지역",
+          "population_min": 26000,
+          "population_max": 28000,
+          "representative_population": 27000.0,
+          "category_weight": 1.0,
+          "final_weight": 27000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI120",
+          "area_nm": "잠실롯데타워·석촌호수",
+          "category": "발달상권",
+          "population_min": 58000,
+          "population_max": 60000,
+          "representative_population": 59000.0,
+          "category_weight": 1.0,
+          "final_weight": 59000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI121",
+          "area_nm": "송리단길·호수단길",
+          "category": "발달상권",
+          "population_min": 7500,
+          "population_max": 8000,
+          "representative_population": 7750.0,
+          "category_weight": 1.0,
+          "final_weight": 7750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "양천구": {
+      "district_population": 65795.79,
+      "district_max_population_reference": 68000,
+      "poi_count": 2,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI044",
+          "area_nm": "오목교역·목동운동장",
+          "category": "인구밀집지역",
+          "population_min": 66000,
+          "population_max": 68000,
+          "representative_population": 67000.0,
+          "category_weight": 1.0,
+          "final_weight": 67000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI117",
+          "area_nm": "신정네거리역",
+          "category": "인구밀집지역",
+          "population_min": 1000,
+          "population_max": 1500,
+          "representative_population": 1250.0,
+          "category_weight": 1.0,
+          "final_weight": 1250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "영등포구": {
+      "district_population": 40376.34,
+      "district_max_population_reference": 56000,
+      "poi_count": 3,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI023",
+          "area_nm": "대림역",
+          "category": "인구밀집지역",
+          "population_min": 16000,
+          "population_max": 18000,
+          "representative_population": 17000.0,
+          "category_weight": 1.0,
+          "final_weight": 17000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI072",
+          "area_nm": "여의도",
+          "category": "발달상권",
+          "population_min": 54000,
+          "population_max": 56000,
+          "representative_population": 55000.0,
+          "category_weight": 1.0,
+          "final_weight": 55000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI074",
+          "area_nm": "영등포 타임스퀘어",
+          "category": "발달상권",
+          "population_min": 20000,
+          "population_max": 22000,
+          "representative_population": 21000.0,
+          "category_weight": 1.0,
+          "final_weight": 21000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "용산구": {
+      "district_population": 13445.79,
+      "district_max_population_reference": 20000,
+      "poi_count": 7,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI004",
+          "area_nm": "이태원 관광특구",
+          "category": "관광특구",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 0.7,
+          "final_weight": 13300.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI030",
+          "area_nm": "삼각지역",
+          "category": "인구밀집지역",
+          "population_min": 2000,
+          "population_max": 2500,
+          "representative_population": 2250.0,
+          "category_weight": 1.0,
+          "final_weight": 2250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI046",
+          "area_nm": "용산역",
+          "category": "인구밀집지역",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 1.0,
+          "final_weight": 19000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI047",
+          "area_nm": "이태원역",
+          "category": "인구밀집지역",
+          "population_min": 10000,
+          "population_max": 12000,
+          "representative_population": 11000.0,
+          "category_weight": 1.0,
+          "final_weight": 11000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI076",
+          "area_nm": "용리단길",
+          "category": "발달상권",
+          "population_min": 4000,
+          "population_max": 4500,
+          "representative_population": 4250.0,
+          "category_weight": 1.0,
+          "final_weight": 4250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI077",
+          "area_nm": "이태원 앤틱가구거리",
+          "category": "발달상권",
+          "population_min": 6500,
+          "population_max": 7000,
+          "representative_population": 6750.0,
+          "category_weight": 1.0,
+          "final_weight": 6750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI082",
+          "area_nm": "해방촌·경리단길",
+          "category": "발달상권",
+          "population_min": 5000,
+          "population_max": 5500,
+          "representative_population": 5250.0,
+          "category_weight": 1.0,
+          "final_weight": 5250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "은평구": {
+      "district_population": 8250.0,
+      "district_max_population_reference": 8500,
+      "poi_count": 1,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI043",
+          "area_nm": "연신내역",
+          "category": "인구밀집지역",
+          "population_min": 8000,
+          "population_max": 8500,
+          "representative_population": 8250.0,
+          "category_weight": 1.0,
+          "final_weight": 8250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "종로구": {
+      "district_population": 12664.92,
+      "district_max_population_reference": 22000,
+      "poi_count": 8,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI006",
+          "area_nm": "종로·청계 관광특구",
+          "category": "관광특구",
+          "population_min": 20000,
+          "population_max": 22000,
+          "representative_population": 21000.0,
+          "category_weight": 0.7,
+          "final_weight": 14699.999999999998,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI024",
+          "area_nm": "동대문역",
+          "category": "인구밀집지역",
+          "population_min": 4000,
+          "population_max": 4500,
+          "representative_population": 4250.0,
+          "category_weight": 1.0,
+          "final_weight": 4250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI054",
+          "area_nm": "혜화역",
+          "category": "인구밀집지역",
+          "population_min": 16000,
+          "population_max": 18000,
+          "representative_population": 17000.0,
+          "category_weight": 1.0,
+          "final_weight": 17000.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI060",
+          "area_nm": "광장(전통)시장",
+          "category": "발달상권",
+          "population_min": 2000,
+          "population_max": 2500,
+          "representative_population": 2250.0,
+          "category_weight": 1.0,
+          "final_weight": 2250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI066",
+          "area_nm": "북촌한옥마을",
+          "category": "발달상권",
+          "population_min": 6000,
+          "population_max": 6500,
+          "representative_population": 6250.0,
+          "category_weight": 1.0,
+          "final_weight": 6250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI067",
+          "area_nm": "서촌",
+          "category": "발달상권",
+          "population_min": 9500,
+          "population_max": 10000,
+          "representative_population": 9750.0,
+          "category_weight": 1.0,
+          "final_weight": 9750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI078",
+          "area_nm": "인사동",
+          "category": "발달상권",
+          "population_min": 8500,
+          "population_max": 9000,
+          "representative_population": 8750.0,
+          "category_weight": 1.0,
+          "final_weight": 8750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI116",
+          "area_nm": "익선동",
+          "category": "발달상권",
+          "population_min": 8500,
+          "population_max": 9000,
+          "representative_population": 8750.0,
+          "category_weight": 1.0,
+          "final_weight": 8750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    },
+    "중구": {
+      "district_population": 14902.23,
+      "district_max_population_reference": 28000,
+      "poi_count": 9,
+      "source_status": "ok",
+      "contributions": [
+        {
+          "area_cd": "POI002",
+          "area_nm": "동대문 관광특구",
+          "category": "관광특구",
+          "population_min": 18000,
+          "population_max": 20000,
+          "representative_population": 19000.0,
+          "category_weight": 0.7,
+          "final_weight": 13300.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI003",
+          "area_nm": "명동 관광특구",
+          "category": "관광특구",
+          "population_min": 26000,
+          "population_max": 28000,
+          "representative_population": 27000.0,
+          "category_weight": 0.7,
+          "final_weight": 18900.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI033",
+          "area_nm": "서울역",
+          "category": "인구밀집지역",
+          "population_min": 7000,
+          "population_max": 7500,
+          "representative_population": 7250.0,
+          "category_weight": 1.0,
+          "final_weight": 7250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI064",
+          "area_nm": "덕수궁길·정동길",
+          "category": "발달상권",
+          "population_min": 1500,
+          "population_max": 2000,
+          "representative_population": 1750.0,
+          "category_weight": 1.0,
+          "final_weight": 1750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI083",
+          "area_nm": "DDP(동대문디자인플라자)",
+          "category": "발달상권",
+          "population_min": 3000,
+          "population_max": 3500,
+          "representative_population": 3250.0,
+          "category_weight": 1.0,
+          "final_weight": 3250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI114",
+          "area_nm": "북창동 먹자골목",
+          "category": "발달상권",
+          "population_min": 3500,
+          "population_max": 4000,
+          "representative_population": 3750.0,
+          "category_weight": 1.0,
+          "final_weight": 3750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI115",
+          "area_nm": "남대문시장",
+          "category": "발달상권",
+          "population_min": 4000,
+          "population_max": 4500,
+          "representative_population": 4250.0,
+          "category_weight": 1.0,
+          "final_weight": 4250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI130",
+          "area_nm": "시의회 앞",
+          "category": "인구밀집지역",
+          "population_min": 3500,
+          "population_max": 4000,
+          "representative_population": 3750.0,
+          "category_weight": 1.0,
+          "final_weight": 3750.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        },
+        {
+          "area_cd": "POI131",
+          "area_nm": "숭례문",
+          "category": "인구밀집지역",
+          "population_min": 3000,
+          "population_max": 3500,
+          "representative_population": 3250.0,
+          "category_weight": 1.0,
+          "final_weight": 3250.0,
+          "replace_yn": "N",
+          "population_time": "2026-08-22 21:25"
+        }
+      ]
+    }
+  },
+  "pilot": {
+    "probe_poi": "POI014",
+    "api_call_count": 83,
+    "target_poi_count": 83,
+    "poi_coverage": {
+      "종로구": {
+        "assigned_poi_count": 8,
+        "ok_poi_count": 8,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 12664.92,
+        "source_status": "ok"
+      },
+      "중구": {
+        "assigned_poi_count": 9,
+        "ok_poi_count": 9,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 14902.23,
+        "source_status": "ok"
+      },
+      "용산구": {
+        "assigned_poi_count": 7,
+        "ok_poi_count": 7,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 13445.79,
+        "source_status": "ok"
+      },
+      "성동구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 16270.47,
+        "source_status": "ok"
+      },
+      "광진구": {
+        "assigned_poi_count": 2,
+        "ok_poi_count": 2,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 26218.15,
+        "source_status": "ok"
+      },
+      "동대문구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 8275.77,
+        "source_status": "ok"
+      },
+      "중랑구": {
+        "assigned_poi_count": 0,
+        "ok_poi_count": 0,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": null,
+        "district_population": null,
+        "source_status": "no_data"
+      },
+      "성북구": {
+        "assigned_poi_count": 1,
+        "ok_poi_count": 1,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 6750.0,
+        "source_status": "ok"
+      },
+      "강북구": {
+        "assigned_poi_count": 2,
+        "ok_poi_count": 2,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 12806.7,
+        "source_status": "ok"
+      },
+      "도봉구": {
+        "assigned_poi_count": 1,
+        "ok_poi_count": 1,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 6250.0,
+        "source_status": "ok"
+      },
+      "노원구": {
+        "assigned_poi_count": 1,
+        "ok_poi_count": 1,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 29000.0,
+        "source_status": "ok"
+      },
+      "은평구": {
+        "assigned_poi_count": 1,
+        "ok_poi_count": 1,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 8250.0,
+        "source_status": "ok"
+      },
+      "서대문구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 23279.61,
+        "source_status": "ok"
+      },
+      "마포구": {
+        "assigned_poi_count": 5,
+        "ok_poi_count": 5,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 45910.57,
+        "source_status": "ok"
+      },
+      "양천구": {
+        "assigned_poi_count": 2,
+        "ok_poi_count": 2,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 65795.79,
+        "source_status": "ok"
+      },
+      "강서구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 6300.72,
+        "source_status": "ok"
+      },
+      "구로구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 7636.67,
+        "source_status": "ok"
+      },
+      "금천구": {
+        "assigned_poi_count": 1,
+        "ok_poi_count": 1,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 9250.0,
+        "source_status": "ok"
+      },
+      "영등포구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 40376.34,
+        "source_status": "ok"
+      },
+      "동작구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 17204.08,
+        "source_status": "ok"
+      },
+      "관악구": {
+        "assigned_poi_count": 2,
+        "ok_poi_count": 2,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 14071.43,
+        "source_status": "ok"
+      },
+      "서초구": {
+        "assigned_poi_count": 3,
+        "ok_poi_count": 3,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 10616.14,
+        "source_status": "ok"
+      },
+      "강남구": {
+        "assigned_poi_count": 8,
+        "ok_poi_count": 8,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 28190.6,
+        "source_status": "ok"
+      },
+      "송파구": {
+        "assigned_poi_count": 7,
+        "ok_poi_count": 7,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 45601.68,
+        "source_status": "ok"
+      },
+      "강동구": {
+        "assigned_poi_count": 2,
+        "ok_poi_count": 2,
+        "no_data_poi_count": 0,
+        "failed_poi_count": 0,
+        "coverage_ratio": 1.0,
+        "district_population": 7250.0,
+        "source_status": "ok"
+      }
+    }
+  }
+}

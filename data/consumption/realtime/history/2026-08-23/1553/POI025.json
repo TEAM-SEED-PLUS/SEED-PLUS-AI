@@ -1,0 +1,88 @@
+{
+  "area_cd": "POI025",
+  "area_nm": "뚝섬역",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "분주한",
+  "payment_count": 71.0,
+  "payment_amount_min": 1700000.0,
+  "payment_amount_max": 1800000.0,
+  "payment_amount_midpoint": 1750000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 148,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 26,
+      "RSB_SH_PAYMENT_AMT_MIN": 300000,
+      "RSB_SH_PAYMENT_AMT_MAX": 350000,
+      "RSB_MCT_CNT": 68,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 20,
+      "RSB_SH_PAYMENT_AMT_MIN": 400000,
+      "RSB_SH_PAYMENT_AMT_MAX": 450000,
+      "RSB_MCT_CNT": 191,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 7,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 18,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 10,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 22,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "패션/잡화",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 700000,
+      "RSB_SH_PAYMENT_AMT_MAX": 750000,
+      "RSB_MCT_CNT": 50,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI025",
+    "area_nm": "뚝섬역",
+    "assigned_district": "성동구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "성동구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

@@ -1,0 +1,32 @@
+{
+  "district": "서대문구",
+  "district_code": "11410",
+  "status": "complete",
+  "expected_pages": 15,
+  "collected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "failed_pages": [],
+  "api_call_count": 15,
+  "started_at": "2026-08-23T14:55:58+09:00",
+  "expected_total_count": 14152,
+  "updated_at": "2026-08-23T14:56:07+09:00",
+  "completed_at": "2026-08-23T14:56:07+09:00",
+  "raw_count": 14152,
+  "deduplicated_count": 14152,
+  "duplicate_count": 0
+}

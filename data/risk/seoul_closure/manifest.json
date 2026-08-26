@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "서울시 상권분석서비스 OA-22172/OA-22173",
+  "source_semantics": "분기별 자치구×서비스업종 점포 폐업률",
+  "raw_storage": "reference_only",
+  "raw_reference": "data/consumption/baseline/oa22173_raw/{quarter}.jsonl",
+  "source_dataset": "OA-22173",
+  "source_status": "historical_official",
+  "service_active": false,
+  "oa22172_legacy_endpoint_probe_succeeded": true,
+  "future_refresh_route_confirmed": false,
+  "production_ready_source": false,
+  "available_complete_quarters": ["2025Q2", "2025Q3", "2025Q4", "2026Q1"],
+  "latest_complete_quarter": "2026Q1",
+  "production_enabled": false,
+  "production_readiness": "blocked",
+  "blockers": ["official datasets are terminated", "no confirmed future quarterly replacement source"],
+  "fallback": "keep_existing_risk_base20",
+  "freshness_cutoff": null
+}

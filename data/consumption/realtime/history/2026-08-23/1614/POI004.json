@@ -1,0 +1,98 @@
+{
+  "area_cd": "POI004",
+  "area_nm": "이태원 관광특구",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "분주한",
+  "payment_count": 71.0,
+  "payment_amount_min": 2900000.0,
+  "payment_amount_max": 3000000.0,
+  "payment_amount_midpoint": 2950000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 11,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 53,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 20,
+      "RSB_SH_PAYMENT_AMT_MIN": 350000,
+      "RSB_SH_PAYMENT_AMT_MAX": 400000,
+      "RSB_MCT_CNT": 277,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 6,
+      "RSB_SH_PAYMENT_AMT_MIN": 200000,
+      "RSB_SH_PAYMENT_AMT_MAX": 250000,
+      "RSB_MCT_CNT": 17,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 13,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 18,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "의복/의류",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 12,
+      "RSB_SH_PAYMENT_AMT_MIN": 1300000,
+      "RSB_SH_PAYMENT_AMT_MAX": 1400000,
+      "RSB_MCT_CNT": 241,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "패션/잡화",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 800000,
+      "RSB_SH_PAYMENT_AMT_MAX": 850000,
+      "RSB_MCT_CNT": 98,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "여가·오락",
+      "RSB_MID_CTGR": "스포츠/문화/레저",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 33,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI004",
+    "area_nm": "이태원 관광특구",
+    "assigned_district": "용산구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "용산구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

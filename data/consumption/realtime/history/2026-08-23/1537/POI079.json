@@ -1,0 +1,25 @@
+{
+  "area_cd": "POI079",
+  "area_nm": "창동 신경제 중심지",
+  "source_timestamp": "20260823 1520",
+  "received_at": "2026-08-23T15:37:30+09:00",
+  "AREA_CMRCL_LVL": "바쁜",
+  "district_mapping": {
+    "area_cd": "POI079",
+    "area_nm": "창동 신경제 중심지",
+    "assigned_district": null,
+    "mapping_source": "OA-21285 verified geometry",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "노원구",
+        "intersection_ratio": 0.59961
+      },
+      {
+        "district": "도봉구",
+        "intersection_ratio": 0.398896
+      }
+    ]
+  },
+  "source_status": "ok"
+}

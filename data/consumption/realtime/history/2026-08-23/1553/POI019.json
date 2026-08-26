@@ -1,0 +1,72 @@
+{
+  "area_cd": "POI019",
+  "area_nm": "구로디지털단지역",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "한산한",
+  "payment_count": 39.0,
+  "payment_amount_min": 250000.0,
+  "payment_amount_max": 300000.0,
+  "payment_amount_midpoint": 275000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 15,
+      "RSB_SH_PAYMENT_AMT_MIN": 90000,
+      "RSB_SH_PAYMENT_AMT_MAX": 100000,
+      "RSB_MCT_CNT": 83,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 9,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 196,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 9,
+      "RSB_SH_PAYMENT_AMT_MIN": 10000,
+      "RSB_SH_PAYMENT_AMT_MAX": 20000,
+      "RSB_MCT_CNT": 14,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 6,
+      "RSB_SH_PAYMENT_AMT_MIN": 50000,
+      "RSB_SH_PAYMENT_AMT_MAX": 60000,
+      "RSB_MCT_CNT": 50,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI019",
+    "area_nm": "구로디지털단지역",
+    "assigned_district": "구로구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "구로구",
+        "intersection_ratio": 0.96176
+      },
+      {
+        "district": "관악구",
+        "intersection_ratio": 0.038124
+      }
+    ]
+  },
+  "source_status": "ok"
+}

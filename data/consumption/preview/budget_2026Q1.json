@@ -1,0 +1,287 @@
+{
+  "hybrid_status": "preview_only",
+  "production_formula": false,
+  "warning": "OA-22385 and reduced TourAPI mappings are hypothetical calibration representations",
+  "summaries": {
+    "tour_a_independent_plus10": {
+      "min": 25.007,
+      "median": 30.7,
+      "max": 39.913,
+      "mean": 31.946399999999997,
+      "at_or_above_100_count": 0
+    },
+    "tour_b_reduced_cap3": {
+      "min": 24.507,
+      "median": 29.51,
+      "max": 34.69,
+      "mean": 29.88392,
+      "at_or_above_100_count": 0
+    },
+    "tour_c_replace_base10": {
+      "min": 15.007,
+      "median": 20.7,
+      "max": 29.912999999999997,
+      "mean": 21.946399999999997,
+      "at_or_above_100_count": 0
+    },
+    "all_signals_independent_upper_bound": {
+      "min": 29.21,
+      "median": 41.208,
+      "max": 54.089375,
+      "mean": 41.323261476190474,
+      "at_or_above_100_count": 0
+    }
+  },
+  "districts": {
+    "강남구": {
+      "sales_candidate_bonus_0_10": 8.333,
+      "current_tourapi_bonus": 7.58,
+      "oa21285_proxy_0_10": 7.8260000000000005,
+      "oa22385_proxy_0_10": 6.3503750000000005,
+      "tour_a_independent_plus10": 39.913,
+      "tour_b_reduced_cap3": 34.607,
+      "tour_c_replace_base10": 29.912999999999997,
+      "all_signals_independent_upper_bound": 54.089375
+    },
+    "강동구": {
+      "sales_candidate_bonus_0_10": 5.0,
+      "current_tourapi_bonus": 1.7,
+      "oa21285_proxy_0_10": 1.3039999999999998,
+      "oa22385_proxy_0_10": 2.932,
+      "tour_a_independent_plus10": 30.7,
+      "tour_b_reduced_cap3": 29.51,
+      "tour_c_replace_base10": 20.7,
+      "all_signals_independent_upper_bound": 34.936
+    },
+    "강북구": {
+      "sales_candidate_bonus_0_10": 6.25,
+      "current_tourapi_bonus": 1.56,
+      "oa21285_proxy_0_10": 4.348,
+      "oa22385_proxy_0_10": 3.6109999999999998,
+      "tour_a_independent_plus10": 31.81,
+      "tour_b_reduced_cap3": 30.718,
+      "tour_c_replace_base10": 21.81,
+      "all_signals_independent_upper_bound": 39.769
+    },
+    "강서구": {
+      "sales_candidate_bonus_0_10": 1.6670000000000003,
+      "current_tourapi_bonus": 3.65,
+      "oa21285_proxy_0_10": 0.43499999999999994,
+      "oa22385_proxy_0_10": 2.4073333333333333,
+      "tour_a_independent_plus10": 29.317,
+      "tour_b_reduced_cap3": 26.762,
+      "tour_c_replace_base10": 19.317,
+      "all_signals_independent_upper_bound": 32.15933333333333
+    },
+    "관악구": {
+      "sales_candidate_bonus_0_10": 1.25,
+      "current_tourapi_bonus": 2.02,
+      "oa21285_proxy_0_10": 5.2170000000000005,
+      "oa22385_proxy_0_10": 5.247,
+      "tour_a_independent_plus10": 27.27,
+      "tour_b_reduced_cap3": 25.856,
+      "tour_c_replace_base10": 17.27,
+      "all_signals_independent_upper_bound": 37.734
+    },
+    "광진구": {
+      "sales_candidate_bonus_0_10": 5.417,
+      "current_tourapi_bonus": 2.4,
+      "oa21285_proxy_0_10": 7.391,
+      "oa22385_proxy_0_10": 3.6414999999999997,
+      "tour_a_independent_plus10": 31.817,
+      "tour_b_reduced_cap3": 30.137,
+      "tour_c_replace_base10": 21.817,
+      "all_signals_independent_upper_bound": 42.8495
+    },
+    "구로구": {
+      "sales_candidate_bonus_0_10": 2.9170000000000003,
+      "current_tourapi_bonus": 2.01,
+      "oa21285_proxy_0_10": 1.739,
+      "oa22385_proxy_0_10": 2.7363333333333335,
+      "tour_a_independent_plus10": 28.927,
+      "tour_b_reduced_cap3": 27.520000000000003,
+      "tour_c_replace_base10": 18.927,
+      "all_signals_independent_upper_bound": 33.40233333333333
+    },
+    "금천구": {
+      "sales_candidate_bonus_0_10": 9.167,
+      "current_tourapi_bonus": 2.24,
+      "oa21285_proxy_0_10": 3.043,
+      "oa22385_proxy_0_10": 8.642,
+      "tour_a_independent_plus10": 35.407000000000004,
+      "tour_b_reduced_cap3": 33.839,
+      "tour_c_replace_base10": 25.407000000000004,
+      "all_signals_independent_upper_bound": 47.092
+    },
+    "노원구": {
+      "sales_candidate_bonus_0_10": 4.583,
+      "current_tourapi_bonus": 1.6,
+      "oa21285_proxy_0_10": 8.261,
+      "oa22385_proxy_0_10": 8.765,
+      "tour_a_independent_plus10": 30.183,
+      "tour_b_reduced_cap3": 29.063,
+      "tour_c_replace_base10": 20.183,
+      "all_signals_independent_upper_bound": 47.209
+    },
+    "도봉구": {
+      "sales_candidate_bonus_0_10": 4.167,
+      "current_tourapi_bonus": 1.78,
+      "oa21285_proxy_0_10": 0.0,
+      "oa22385_proxy_0_10": 3.21,
+      "tour_a_independent_plus10": 29.947000000000003,
+      "tour_b_reduced_cap3": 28.701,
+      "tour_c_replace_base10": 19.947000000000003,
+      "all_signals_independent_upper_bound": 33.157000000000004
+    },
+    "동대문구": {
+      "sales_candidate_bonus_0_10": 9.583,
+      "current_tourapi_bonus": 2.3,
+      "oa21285_proxy_0_10": 2.609,
+      "oa22385_proxy_0_10": 2.716,
+      "tour_a_independent_plus10": 35.882999999999996,
+      "tour_b_reduced_cap3": 34.272999999999996,
+      "tour_c_replace_base10": 25.883,
+      "all_signals_independent_upper_bound": 41.208
+    },
+    "동작구": {
+      "sales_candidate_bonus_0_10": 10.0,
+      "current_tourapi_bonus": 2.3,
+      "oa21285_proxy_0_10": 6.522,
+      "oa22385_proxy_0_10": 3.703666666666667,
+      "tour_a_independent_plus10": 36.3,
+      "tour_b_reduced_cap3": 34.69,
+      "tour_c_replace_base10": 26.3,
+      "all_signals_independent_upper_bound": 46.525666666666666
+    },
+    "마포구": {
+      "sales_candidate_bonus_0_10": 2.0829999999999997,
+      "current_tourapi_bonus": 4.36,
+      "oa21285_proxy_0_10": 9.565000000000001,
+      "oa22385_proxy_0_10": 5.4322,
+      "tour_a_independent_plus10": 30.442999999999998,
+      "tour_b_reduced_cap3": 27.391,
+      "tour_c_replace_base10": 20.442999999999998,
+      "all_signals_independent_upper_bound": 45.4402
+    },
+    "서대문구": {
+      "sales_candidate_bonus_0_10": 3.3329999999999997,
+      "current_tourapi_bonus": 2.18,
+      "oa21285_proxy_0_10": 6.956999999999999,
+      "oa22385_proxy_0_10": 4.094666666666667,
+      "tour_a_independent_plus10": 29.512999999999998,
+      "tour_b_reduced_cap3": 27.987,
+      "tour_c_replace_base10": 19.512999999999998,
+      "all_signals_independent_upper_bound": 40.56466666666667
+    },
+    "서초구": {
+      "sales_candidate_bonus_0_10": 6.667,
+      "current_tourapi_bonus": 4.03,
+      "oa21285_proxy_0_10": 3.478,
+      "oa22385_proxy_0_10": 3.086333333333333,
+      "tour_a_independent_plus10": 34.697,
+      "tour_b_reduced_cap3": 31.876,
+      "tour_c_replace_base10": 24.697000000000003,
+      "all_signals_independent_upper_bound": 41.26133333333334
+    },
+    "성동구": {
+      "sales_candidate_bonus_0_10": 0.833,
+      "current_tourapi_bonus": 2.86,
+      "oa21285_proxy_0_10": 6.087,
+      "oa22385_proxy_0_10": 7.428,
+      "tour_a_independent_plus10": 27.692999999999998,
+      "tour_b_reduced_cap3": 25.691,
+      "tour_c_replace_base10": 17.693,
+      "all_signals_independent_upper_bound": 41.208
+    },
+    "성북구": {
+      "sales_candidate_bonus_0_10": 0.0,
+      "current_tourapi_bonus": 1.69,
+      "oa21285_proxy_0_10": 0.8699999999999999,
+      "oa22385_proxy_0_10": 3.21,
+      "tour_a_independent_plus10": 25.69,
+      "tour_b_reduced_cap3": 24.507,
+      "tour_c_replace_base10": 15.69,
+      "all_signals_independent_upper_bound": 29.770000000000003
+    },
+    "송파구": {
+      "sales_candidate_bonus_0_10": 7.917,
+      "current_tourapi_bonus": 3.39,
+      "oa21285_proxy_0_10": 9.129999999999999,
+      "oa22385_proxy_0_10": 6.719714285714285,
+      "tour_a_independent_plus10": 35.307,
+      "tour_b_reduced_cap3": 32.934000000000005,
+      "tour_c_replace_base10": 25.307000000000002,
+      "all_signals_independent_upper_bound": 51.15671428571428
+    },
+    "양천구": {
+      "sales_candidate_bonus_0_10": 2.5,
+      "current_tourapi_bonus": 1.17,
+      "oa21285_proxy_0_10": 10.0,
+      "oa22385_proxy_0_10": 3.3645000000000005,
+      "tour_a_independent_plus10": 27.67,
+      "tour_b_reduced_cap3": 26.851,
+      "tour_c_replace_base10": 17.67,
+      "all_signals_independent_upper_bound": 41.0345
+    },
+    "영등포구": {
+      "sales_candidate_bonus_0_10": 7.5,
+      "current_tourapi_bonus": 4.13,
+      "oa21285_proxy_0_10": 8.696,
+      "oa22385_proxy_0_10": 7.9013333333333335,
+      "tour_a_independent_plus10": 35.63,
+      "tour_b_reduced_cap3": 32.739,
+      "tour_c_replace_base10": 25.63,
+      "all_signals_independent_upper_bound": 52.227333333333334
+    },
+    "용산구": {
+      "sales_candidate_bonus_0_10": 8.75,
+      "current_tourapi_bonus": 3.49,
+      "oa21285_proxy_0_10": 4.7829999999999995,
+      "oa22385_proxy_0_10": 4.146166666666667,
+      "tour_a_independent_plus10": 36.24,
+      "tour_b_reduced_cap3": 33.797,
+      "tour_c_replace_base10": 26.240000000000002,
+      "all_signals_independent_upper_bound": 45.16916666666667
+    },
+    "은평구": {
+      "sales_candidate_bonus_0_10": 0.417,
+      "current_tourapi_bonus": 0.59,
+      "oa21285_proxy_0_10": 2.174,
+      "oa22385_proxy_0_10": 4.506,
+      "tour_a_independent_plus10": 25.007,
+      "tour_b_reduced_cap3": 24.594,
+      "tour_c_replace_base10": 15.007,
+      "all_signals_independent_upper_bound": 31.687
+    },
+    "종로구": {
+      "sales_candidate_bonus_0_10": 7.083,
+      "current_tourapi_bonus": 5.1,
+      "oa21285_proxy_0_10": 3.9130000000000003,
+      "oa22385_proxy_0_10": 5.9937,
+      "tour_a_independent_plus10": 36.183,
+      "tour_b_reduced_cap3": 32.613,
+      "tour_c_replace_base10": 26.183,
+      "all_signals_independent_upper_bound": 46.0897
+    },
+    "중구": {
+      "sales_candidate_bonus_0_10": 5.833,
+      "current_tourapi_bonus": 8.07,
+      "oa21285_proxy_0_10": 5.652,
+      "oa22385_proxy_0_10": 4.576714285714286,
+      "tour_a_independent_plus10": 37.903,
+      "tour_b_reduced_cap3": 32.254,
+      "tour_c_replace_base10": 27.903,
+      "all_signals_independent_upper_bound": 48.13171428571429
+    },
+    "중랑구": {
+      "sales_candidate_bonus_0_10": 3.75,
+      "current_tourapi_bonus": 1.46,
+      "oa21285_proxy_0_10": 0.0,
+      "oa22385_proxy_0_10": 0.0,
+      "tour_a_independent_plus10": 29.21,
+      "tour_b_reduced_cap3": 28.188,
+      "tour_c_replace_base10": 19.21,
+      "all_signals_independent_upper_bound": 29.21
+    }
+  }
+}

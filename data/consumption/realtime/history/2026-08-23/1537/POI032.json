@@ -1,0 +1,21 @@
+{
+  "area_cd": "POI032",
+  "area_nm": "서울식물원·마곡나루역",
+  "source_timestamp": "20260823 1520",
+  "received_at": "2026-08-23T15:37:30+09:00",
+  "AREA_CMRCL_LVL": "분주한",
+  "district_mapping": {
+    "area_cd": "POI032",
+    "area_nm": "서울식물원·마곡나루역",
+    "assigned_district": "강서구",
+    "mapping_source": "OA-21285 verified geometry",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "강서구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

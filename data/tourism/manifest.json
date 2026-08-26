@@ -1,0 +1,18 @@
+{
+  "snapshots": {
+    "202509": {
+      "requested_month": "202509",
+      "generated_at": "2026-08-22T16:43:10+09:00",
+      "snapshot_status": "complete",
+      "expected_indicator_count": 42,
+      "expected_district_count": 25,
+      "api_call_count": 42,
+      "success_value_count": 1050,
+      "fallback_value_count": 0,
+      "no_data_value_count": 0,
+      "failed_value_count": 0,
+      "excluded_aggregate_rows": 42,
+      "unknown_district_codes": []
+    }
+  }
+}

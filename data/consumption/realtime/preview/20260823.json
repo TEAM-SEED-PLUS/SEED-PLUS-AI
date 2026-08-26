@@ -1,0 +1,365 @@
+{
+  "levels": {
+    "observed_unique_values": [
+      "바쁜",
+      "보통",
+      "분주한",
+      "한산한"
+    ],
+    "counts": {
+      "바쁜": 22,
+      "보통": 35,
+      "한산한": 21,
+      "분주한": 4
+    },
+    "official_order": [
+      "한산한",
+      "보통",
+      "바쁜",
+      "분주한"
+    ],
+    "numeric_mapping_applied": false,
+    "meaning": "동일 장소·업종의 과거 동요일·동시간대 결제량 기준 상권 활성 수준"
+  },
+  "source": "OA-22385",
+  "hybrid_status": "preview_only",
+  "production_aggregation_selected": false,
+  "aggregation_candidates": [
+    "simple_average",
+    "oa21285_current_population_weighted_average",
+    "valid_place_percentile_rank_aggregation"
+  ],
+  "districts": {
+    "강남구": {
+      "assigned_place_count": 8,
+      "valid_place_count": 8,
+      "observed_commercial_levels": [
+        "바쁜",
+        "보통",
+        "보통",
+        "한산한",
+        "보통",
+        "한산한",
+        "보통",
+        "한산한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "강동구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "observed_commercial_levels": [
+        "한산한",
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "강북구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "observed_commercial_levels": [
+        "한산한",
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "강서구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "바쁜",
+        "분주한",
+        "분주한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "관악구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "observed_commercial_levels": [
+        "보통",
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "광진구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "observed_commercial_levels": [
+        "보통",
+        "한산한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "구로구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "보통",
+        "한산한",
+        "분주한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "금천구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "observed_commercial_levels": [
+        "바쁜"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "노원구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "observed_commercial_levels": [
+        "바쁜"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "도봉구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "observed_commercial_levels": [
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "동대문구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "한산한",
+        "보통",
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "동작구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "바쁜",
+        "한산한",
+        "바쁜"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "마포구": {
+      "assigned_place_count": 5,
+      "valid_place_count": 5,
+      "observed_commercial_levels": [
+        "바쁜",
+        "보통",
+        "보통",
+        "바쁜",
+        "한산한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "서대문구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "보통",
+        "한산한",
+        "한산한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "서초구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "보통",
+        "한산한",
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "성동구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "바쁜",
+        "보통",
+        "바쁜"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "성북구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "observed_commercial_levels": [
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "송파구": {
+      "assigned_place_count": 7,
+      "valid_place_count": 7,
+      "observed_commercial_levels": [
+        "보통",
+        "분주한",
+        "한산한",
+        "보통",
+        "보통",
+        "보통",
+        "한산한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "양천구": {
+      "assigned_place_count": 2,
+      "valid_place_count": 2,
+      "observed_commercial_levels": [
+        "보통",
+        "한산한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "영등포구": {
+      "assigned_place_count": 3,
+      "valid_place_count": 3,
+      "observed_commercial_levels": [
+        "보통",
+        "보통",
+        "바쁜"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "용산구": {
+      "assigned_place_count": 6,
+      "valid_place_count": 6,
+      "observed_commercial_levels": [
+        "바쁜",
+        "바쁜",
+        "보통",
+        "보통",
+        "한산한",
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "은평구": {
+      "assigned_place_count": 1,
+      "valid_place_count": 1,
+      "observed_commercial_levels": [
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "종로구": {
+      "assigned_place_count": 10,
+      "valid_place_count": 10,
+      "observed_commercial_levels": [
+        "바쁜",
+        "보통",
+        "바쁜",
+        "바쁜",
+        "보통",
+        "보통",
+        "바쁜",
+        "바쁜",
+        "바쁜",
+        "한산한"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "중구": {
+      "assigned_place_count": 7,
+      "valid_place_count": 7,
+      "observed_commercial_levels": [
+        "바쁜",
+        "바쁜",
+        "바쁜",
+        "한산한",
+        "한산한",
+        "한산한",
+        "보통"
+      ],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "ok"
+    },
+    "중랑구": {
+      "assigned_place_count": 0,
+      "valid_place_count": 0,
+      "observed_commercial_levels": [],
+      "simple_average_candidate": null,
+      "oa21285_population_weighted_candidate": null,
+      "place_percentile_aggregation_candidate": null,
+      "source_status": "no_data"
+    }
+  }
+}

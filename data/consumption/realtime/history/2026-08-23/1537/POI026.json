@@ -1,0 +1,25 @@
+{
+  "area_cd": "POI026",
+  "area_nm": "미아사거리역",
+  "source_timestamp": "20260823 1520",
+  "received_at": "2026-08-23T15:37:30+09:00",
+  "AREA_CMRCL_LVL": "한산한",
+  "district_mapping": {
+    "area_cd": "POI026",
+    "area_nm": "미아사거리역",
+    "assigned_district": null,
+    "mapping_source": "OA-21285 verified geometry",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "강북구",
+        "intersection_ratio": 0.741668
+      },
+      {
+        "district": "성북구",
+        "intersection_ratio": 0.2595
+      }
+    ]
+  },
+  "source_status": "ok"
+}

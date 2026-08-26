@@ -1,0 +1,78 @@
+{
+  "area_cd": "POI048",
+  "area_nm": "장지역",
+  "source_timestamp": "20260823 1540",
+  "received_at": "2026-08-23T15:53:53+09:00",
+  "commercial_level": "바쁜",
+  "payment_count": 80.0,
+  "payment_amount_min": 1900000.0,
+  "payment_amount_max": 2000000.0,
+  "payment_amount_midpoint": 1950000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 11,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 34,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 8,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 67,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 41,
+      "RSB_SH_PAYMENT_AMT_MIN": 1600000,
+      "RSB_SH_PAYMENT_AMT_MAX": 1700000,
+      "RSB_MCT_CNT": 18,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "분주한",
+      "RSB_SH_PAYMENT_CNT": 16,
+      "RSB_SH_PAYMENT_AMT_MIN": 70000,
+      "RSB_SH_PAYMENT_AMT_MAX": 80000,
+      "RSB_MCT_CNT": 15,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "의료",
+      "RSB_MID_CTGR": "약국",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 20000,
+      "RSB_SH_PAYMENT_AMT_MAX": 30000,
+      "RSB_MCT_CNT": 13,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI048",
+    "area_nm": "장지역",
+    "assigned_district": "송파구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "송파구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

@@ -1,0 +1,605 @@
+{
+  "snapshot_quarter": "2026Q1",
+  "preview_only": true,
+  "production_scoring_connected": false,
+  "normalization_recommendation": "average_rank_percentile_0_100",
+  "distribution": {
+    "count": 25,
+    "mean": 2.7430229817808733,
+    "median": 2.744175100023535,
+    "std": 0.318701525009792,
+    "min": 2.167354715782788,
+    "max": 3.328502641297742,
+    "bottom_5": [
+      "중구",
+      "서초구",
+      "종로구",
+      "용산구",
+      "구로구"
+    ],
+    "top_5": [
+      "관악구",
+      "강북구",
+      "마포구",
+      "은평구",
+      "강서구"
+    ]
+  },
+  "districts": {
+    "강남구": {
+      "district": "강남구",
+      "district_code": "11680",
+      "total_store_count": 62644.0,
+      "closed_store_count": 1559.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.4886661132750145,
+      "closure_rate_percentile": 20.83,
+      "closure_rate_min_max_0_100": 27.67187456755168,
+      "closure_rate_z_score": -0.7981037069027008,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 27.166,
+        "candidate_b_fixed10_structural_0_10": 35.083,
+        "candidate_c_fixed15_structural_0_5": 39.0415
+      }
+    },
+    "강동구": {
+      "district": "강동구",
+      "district_code": "11740",
+      "total_store_count": 23949.0,
+      "closed_store_count": 683.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.8518936072487366,
+      "closure_rate_percentile": 62.5,
+      "closure_rate_min_max_0_100": 58.95363341947707,
+      "closure_rate_z_score": 0.34160685445266786,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 35.5,
+        "candidate_b_fixed10_structural_0_10": 39.25,
+        "candidate_c_fixed15_structural_0_5": 41.125
+      }
+    },
+    "강북구": {
+      "district": "강북구",
+      "district_code": "11305",
+      "total_store_count": 13625.0,
+      "closed_store_count": 445.0,
+      "service_industry_row_count": 99,
+      "source_status": "ok",
+      "closure_rate": 3.2660550458715596,
+      "closure_rate_percentile": 95.83,
+      "closure_rate_min_max_0_100": 94.62190871171839,
+      "closure_rate_z_score": 1.6411344880593723,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 42.166,
+        "candidate_b_fixed10_structural_0_10": 42.583,
+        "candidate_c_fixed15_structural_0_5": 42.7915
+      }
+    },
+    "강서구": {
+      "district": "강서구",
+      "district_code": "11500",
+      "total_store_count": 31341.0,
+      "closed_store_count": 962.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 3.0694617274496667,
+      "closure_rate_percentile": 83.33,
+      "closure_rate_min_max_0_100": 77.6909635580502,
+      "closure_rate_z_score": 1.024277325496838,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 39.666,
+        "candidate_b_fixed10_structural_0_10": 41.333,
+        "candidate_c_fixed15_structural_0_5": 42.1665
+      }
+    },
+    "관악구": {
+      "district": "관악구",
+      "district_code": "11620",
+      "total_store_count": 21391.0,
+      "closed_store_count": 712.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 3.328502641297742,
+      "closure_rate_percentile": 100.0,
+      "closure_rate_min_max_0_100": 100.0,
+      "closure_rate_z_score": 1.8370783117491511,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 43.0,
+        "candidate_b_fixed10_structural_0_10": 43.0,
+        "candidate_c_fixed15_structural_0_5": 43.0
+      }
+    },
+    "광진구": {
+      "district": "광진구",
+      "district_code": "11215",
+      "total_store_count": 20425.0,
+      "closed_store_count": 536.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.6242350061199513,
+      "closure_rate_percentile": 37.5,
+      "closure_rate_min_max_0_100": 39.34729419893187,
+      "closure_rate_z_score": -0.3727248423341316,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 30.5,
+        "candidate_b_fixed10_structural_0_10": 36.75,
+        "candidate_c_fixed15_structural_0_5": 39.875
+      }
+    },
+    "구로구": {
+      "district": "구로구",
+      "district_code": "11530",
+      "total_store_count": 24480.0,
+      "closed_store_count": 582.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.377450980392157,
+      "closure_rate_percentile": 16.67,
+      "closure_rate_min_max_0_100": 18.093841447134633,
+      "closure_rate_z_score": -1.1470669974907852,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 26.334,
+        "candidate_b_fixed10_structural_0_10": 34.667,
+        "candidate_c_fixed15_structural_0_5": 38.8335
+      }
+    },
+    "금천구": {
+      "district": "금천구",
+      "district_code": "11545",
+      "total_store_count": 18613.0,
+      "closed_store_count": 479.0,
+      "service_industry_row_count": 99,
+      "source_status": "ok",
+      "closure_rate": 2.5734701552678234,
+      "closure_rate_percentile": 33.33,
+      "closure_rate_min_max_0_100": 34.97534039902181,
+      "closure_rate_z_score": -0.532011343553629,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 29.666,
+        "candidate_b_fixed10_structural_0_10": 36.333,
+        "candidate_c_fixed15_structural_0_5": 39.6665
+      }
+    },
+    "노원구": {
+      "district": "노원구",
+      "district_code": "11350",
+      "total_store_count": 20268.0,
+      "closed_store_count": 569.0,
+      "service_industry_row_count": 99,
+      "source_status": "ok",
+      "closure_rate": 2.8073810933491217,
+      "closure_rate_percentile": 54.17,
+      "closure_rate_min_max_0_100": 55.120141327599605,
+      "closure_rate_z_score": 0.20193851148428285,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 33.834,
+        "candidate_b_fixed10_structural_0_10": 38.417,
+        "candidate_c_fixed15_structural_0_5": 40.7085
+      }
+    },
+    "도봉구": {
+      "district": "도봉구",
+      "district_code": "11320",
+      "total_store_count": 13101.0,
+      "closed_store_count": 386.0,
+      "service_industry_row_count": 99,
+      "source_status": "ok",
+      "closure_rate": 2.9463399740477825,
+      "closure_rate_percentile": 70.83,
+      "closure_rate_min_max_0_100": 67.08751237871132,
+      "closure_rate_z_score": 0.637954249703268,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 37.166,
+        "candidate_b_fixed10_structural_0_10": 40.083,
+        "candidate_c_fixed15_structural_0_5": 41.5415
+      }
+    },
+    "동대문구": {
+      "district": "동대문구",
+      "district_code": "11230",
+      "total_store_count": 21621.0,
+      "closed_store_count": 589.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.7242033208454743,
+      "closure_rate_percentile": 45.83,
+      "closure_rate_min_max_0_100": 47.956732542559664,
+      "closure_rate_z_score": -0.05905105391265627,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 32.166,
+        "candidate_b_fixed10_structural_0_10": 37.583,
+        "candidate_c_fixed15_structural_0_5": 40.2915
+      }
+    },
+    "동작구": {
+      "district": "동작구",
+      "district_code": "11590",
+      "total_store_count": 16693.0,
+      "closed_store_count": 473.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.8335230336069013,
+      "closure_rate_percentile": 58.33,
+      "closure_rate_min_max_0_100": 57.37152891425753,
+      "closure_rate_z_score": 0.2839649161492006,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 34.666,
+        "candidate_b_fixed10_structural_0_10": 38.833,
+        "candidate_c_fixed15_structural_0_5": 40.9165
+      }
+    },
+    "마포구": {
+      "district": "마포구",
+      "district_code": "11440",
+      "total_store_count": 32366.0,
+      "closed_store_count": 1030.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 3.182351850707533,
+      "closure_rate_percentile": 91.67,
+      "closure_rate_min_max_0_100": 87.41324964901497,
+      "closure_rate_z_score": 1.3784962871237012,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 41.334,
+        "candidate_b_fixed10_structural_0_10": 42.167,
+        "candidate_c_fixed15_structural_0_5": 42.5835
+      }
+    },
+    "서대문구": {
+      "district": "서대문구",
+      "district_code": "11410",
+      "total_store_count": 15303.0,
+      "closed_store_count": 385.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.515846566032804,
+      "closure_rate_percentile": 25.0,
+      "closure_rate_min_max_0_100": 30.012700586401543,
+      "closure_rate_z_score": -0.7128187282476588,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 28.0,
+        "candidate_b_fixed10_structural_0_10": 35.5,
+        "candidate_c_fixed15_structural_0_5": 39.25
+      }
+    },
+    "서초구": {
+      "district": "서초구",
+      "district_code": "11650",
+      "total_store_count": 40998.0,
+      "closed_store_count": 937.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.2854773403580664,
+      "closure_rate_percentile": 4.17,
+      "closure_rate_min_max_0_100": 10.172917849626472,
+      "closure_rate_z_score": -1.4356556386379042,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 23.834,
+        "candidate_b_fixed10_structural_0_10": 33.417,
+        "candidate_c_fixed15_structural_0_5": 38.2085
+      }
+    },
+    "성동구": {
+      "district": "성동구",
+      "district_code": "11200",
+      "total_store_count": 20520.0,
+      "closed_store_count": 528.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.5730994152046787,
+      "closure_rate_percentile": 29.17,
+      "closure_rate_min_max_0_100": 34.943411645156935,
+      "closure_rate_z_score": -0.5331746265442998,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 28.834,
+        "candidate_b_fixed10_structural_0_10": 35.917,
+        "candidate_c_fixed15_structural_0_5": 39.4585
+      }
+    },
+    "성북구": {
+      "district": "성북구",
+      "district_code": "11290",
+      "total_store_count": 18661.0,
+      "closed_store_count": 552.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.958040833824554,
+      "closure_rate_percentile": 75.0,
+      "closure_rate_min_max_0_100": 68.09520997861723,
+      "closure_rate_z_score": 0.6746684128263087,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 38.0,
+        "candidate_b_fixed10_structural_0_10": 40.5,
+        "candidate_c_fixed15_structural_0_5": 41.75
+      }
+    },
+    "송파구": {
+      "district": "송파구",
+      "district_code": "11710",
+      "total_store_count": 42490.0,
+      "closed_store_count": 1166.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.744175100023535,
+      "closure_rate_percentile": 50.0,
+      "closure_rate_min_max_0_100": 49.67673554469253,
+      "closure_rate_z_score": 0.003615038373683042,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 33.0,
+        "candidate_b_fixed10_structural_0_10": 38.0,
+        "candidate_c_fixed15_structural_0_5": 40.5
+      }
+    },
+    "양천구": {
+      "district": "양천구",
+      "district_code": "11470",
+      "total_store_count": 19939.0,
+      "closed_store_count": 580.0,
+      "service_industry_row_count": 99,
+      "source_status": "ok",
+      "closure_rate": 2.908872059782336,
+      "closure_rate_percentile": 66.67,
+      "closure_rate_min_max_0_100": 63.860712981138455,
+      "closure_rate_z_score": 0.5203899730205781,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 36.334,
+        "candidate_b_fixed10_structural_0_10": 39.667,
+        "candidate_c_fixed15_structural_0_5": 41.3335
+      }
+    },
+    "영등포구": {
+      "district": "영등포구",
+      "district_code": "11560",
+      "total_store_count": 29658.0,
+      "closed_store_count": 781.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.633353563962506,
+      "closure_rate_percentile": 41.67,
+      "closure_rate_min_max_0_100": 40.13259964039928,
+      "closure_rate_z_score": -0.344113250838689,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 31.334000000000003,
+        "candidate_b_fixed10_structural_0_10": 37.167,
+        "candidate_c_fixed15_structural_0_5": 40.0835
+      }
+    },
+    "용산구": {
+      "district": "용산구",
+      "district_code": "11170",
+      "total_store_count": 19698.0,
+      "closed_store_count": 453.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.299725860493451,
+      "closure_rate_percentile": 12.5,
+      "closure_rate_min_max_0_100": 11.40002421758263,
+      "closure_rate_z_score": -1.3909475998704495,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 25.5,
+        "candidate_b_fixed10_structural_0_10": 34.25,
+        "candidate_c_fixed15_structural_0_5": 38.625
+      }
+    },
+    "은평구": {
+      "district": "은평구",
+      "district_code": "11380",
+      "total_store_count": 19610.0,
+      "closed_store_count": 604.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 3.0800611932687403,
+      "closure_rate_percentile": 87.5,
+      "closure_rate_min_max_0_100": 78.60380726953277,
+      "closure_rate_z_score": 1.0575356094625263,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 40.5,
+        "candidate_b_fixed10_structural_0_10": 41.75,
+        "candidate_c_fixed15_structural_0_5": 42.375
+      }
+    },
+    "종로구": {
+      "district": "종로구",
+      "district_code": "11110",
+      "total_store_count": 24775.0,
+      "closed_store_count": 567.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.288597376387487,
+      "closure_rate_percentile": 8.33,
+      "closure_rate_min_max_0_100": 10.441620567071979,
+      "closure_rate_z_score": -1.4258658014875332,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 24.666,
+        "candidate_b_fixed10_structural_0_10": 33.833,
+        "candidate_c_fixed15_structural_0_5": 38.4165
+      }
+    },
+    "중구": {
+      "district": "중구",
+      "district_code": "11140",
+      "total_store_count": 37788.0,
+      "closed_store_count": 819.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 2.167354715782788,
+      "closure_rate_percentile": 0.0,
+      "closure_rate_min_max_0_100": 0.0,
+      "closure_rate_z_score": -1.8062927875239945,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 23.0,
+        "candidate_b_fixed10_structural_0_10": 33.0,
+        "candidate_c_fixed15_structural_0_5": 38.0
+      }
+    },
+    "중랑구": {
+      "district": "중랑구",
+      "district_code": "11260",
+      "total_store_count": 17687.0,
+      "closed_store_count": 539.0,
+      "service_industry_row_count": 100,
+      "source_status": "ok",
+      "closure_rate": 3.0474359699214113,
+      "closure_rate_percentile": 79.17,
+      "closure_rate_min_max_0_100": 75.79406850753479,
+      "closure_rate_z_score": 0.9551663994428172,
+      "risk_preview": {
+        "fixed_short_term_contributions": {
+          "content": 4.0,
+          "weather": 16.0,
+          "special_day": 3.0
+        },
+        "existing_base20": 43.0,
+        "candidate_a_structural_0_20": 38.834,
+        "candidate_b_fixed10_structural_0_10": 40.917,
+        "candidate_c_fixed15_structural_0_5": 41.9585
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "snapshots": {
+    "2026Q3": {
+      "snapshot_id": "commercial-stores-2026Q3",
+      "snapshot_quarter": "2026Q3",
+      "started_at": "2026-08-23T14:53:03+09:00",
+      "completed_at": "2026-08-23T14:58:35+09:00",
+      "district_count": 25,
+      "completed_district_count": 25,
+      "partial_district_count": 0,
+      "failed_district_count": 0,
+      "api_call_count": 568,
+      "raw_record_count": 554092,
+      "deduplicated_record_count": 554092,
+      "duplicate_count": 0,
+      "null_coordinate_count": 0,
+      "null_industry_count": 0,
+      "unknown_district_count": 0,
+      "large_count": 10,
+      "middle_count": 75,
+      "small_count": 247,
+      "source_status": "complete"
+    }
+  },
+  "latest_successful_quarter": "2026Q3"
+}

@@ -1,0 +1,102 @@
+{
+  "area_cd": "POI007",
+  "area_nm": "홍대 관광특구",
+  "received_at": "2026-08-22T21:55:58+09:00",
+  "population_time": "2026-08-22 21:25",
+  "source_status": "ok",
+  "current": {
+    "population": {
+      "min": 76000,
+      "max": 78000
+    },
+    "congestion": {
+      "level": "보통",
+      "message": "사람이 몰려있을 수 있지만 크게 붐비지는 않아요. 도보 이동에 큰 제약이 없어요."
+    },
+    "population_time": "2026-08-22 21:25",
+    "replace_yn": "N"
+  },
+  "forecast_yn": "Y",
+  "forecast": [
+    {
+      "time": "2026-08-22 22:00",
+      "population_min": 70000,
+      "population_max": 72000,
+      "congestion_level": "보통"
+    },
+    {
+      "time": "2026-08-22 23:00",
+      "population_min": 60000,
+      "population_max": 62000,
+      "congestion_level": "보통"
+    },
+    {
+      "time": "2026-08-23 00:00",
+      "population_min": 54000,
+      "population_max": 56000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 01:00",
+      "population_min": 48000,
+      "population_max": 50000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 02:00",
+      "population_min": 44000,
+      "population_max": 46000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 03:00",
+      "population_min": 42000,
+      "population_max": 44000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 04:00",
+      "population_min": 38000,
+      "population_max": 40000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 05:00",
+      "population_min": 36000,
+      "population_max": 38000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 06:00",
+      "population_min": 34000,
+      "population_max": 36000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 07:00",
+      "population_min": 32000,
+      "population_max": 34000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 08:00",
+      "population_min": 32000,
+      "population_max": 34000,
+      "congestion_level": "여유"
+    },
+    {
+      "time": "2026-08-23 09:00",
+      "population_min": 36000,
+      "population_max": 38000,
+      "congestion_level": "여유"
+    }
+  ],
+  "result_code": "INFO-000",
+  "result_message": "정상 처리되었습니다.",
+  "http_status": 200,
+  "diagnostics": {
+    "reference_name": "홍대 관광특구",
+    "live_name": "홍대 관광특구",
+    "name_mismatch": false
+  }
+}

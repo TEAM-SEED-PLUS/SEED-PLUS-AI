@@ -1,0 +1,275 @@
+{
+  "quarter": "2025Q2",
+  "district_count": 25,
+  "row_count": 35294,
+  "status": "complete",
+  "diagnostics": {
+    "duplicate_grain_count": 0,
+    "unknown_district_count": 0,
+    "dong_code_multiple_names_count": 0,
+    "industry_code_multiple_names_count": 0
+  },
+  "districts": {
+    "강남구": {
+      "district": "강남구",
+      "district_code": "11680",
+      "total_store_count": 63572.0,
+      "closed_store_count": 1427.0,
+      "row_count": 1887,
+      "source_status": "ok",
+      "dong_count": 22,
+      "closure_rate": 2.244698924054615
+    },
+    "강동구": {
+      "district": "강동구",
+      "district_code": "11740",
+      "total_store_count": 24323.0,
+      "closed_store_count": 666.0,
+      "row_count": 1485,
+      "source_status": "ok",
+      "dong_count": 18,
+      "closure_rate": 2.738149077005304
+    },
+    "강북구": {
+      "district": "강북구",
+      "district_code": "11305",
+      "total_store_count": 13958.0,
+      "closed_store_count": 478.0,
+      "row_count": 1060,
+      "source_status": "ok",
+      "dong_count": 13,
+      "closure_rate": 3.4245593924631037
+    },
+    "강서구": {
+      "district": "강서구",
+      "district_code": "11500",
+      "total_store_count": 31751.0,
+      "closed_store_count": 979.0,
+      "row_count": 1707,
+      "source_status": "ok",
+      "dong_count": 20,
+      "closure_rate": 3.0833674529936066
+    },
+    "관악구": {
+      "district": "관악구",
+      "district_code": "11620",
+      "total_store_count": 21831.0,
+      "closed_store_count": 683.0,
+      "row_count": 1743,
+      "source_status": "ok",
+      "dong_count": 21,
+      "closure_rate": 3.128578626723467
+    },
+    "광진구": {
+      "district": "광진구",
+      "district_code": "11215",
+      "total_store_count": 20671.0,
+      "closed_store_count": 525.0,
+      "row_count": 1329,
+      "source_status": "ok",
+      "dong_count": 15,
+      "closure_rate": 2.5397900440230274
+    },
+    "구로구": {
+      "district": "구로구",
+      "district_code": "11530",
+      "total_store_count": 25100.0,
+      "closed_store_count": 593.0,
+      "row_count": 1360,
+      "source_status": "ok",
+      "dong_count": 16,
+      "closure_rate": 2.362549800796813
+    },
+    "금천구": {
+      "district": "금천구",
+      "district_code": "11545",
+      "total_store_count": 19014.0,
+      "closed_store_count": 452.0,
+      "row_count": 832,
+      "source_status": "ok",
+      "dong_count": 10,
+      "closure_rate": 2.3771957504996317
+    },
+    "노원구": {
+      "district": "노원구",
+      "district_code": "11350",
+      "total_store_count": 20680.0,
+      "closed_store_count": 579.0,
+      "row_count": 1502,
+      "source_status": "ok",
+      "dong_count": 19,
+      "closure_rate": 2.7998065764023212
+    },
+    "도봉구": {
+      "district": "도봉구",
+      "district_code": "11320",
+      "total_store_count": 13321.0,
+      "closed_store_count": 338.0,
+      "row_count": 1119,
+      "source_status": "ok",
+      "dong_count": 14,
+      "closure_rate": 2.537347046017566
+    },
+    "동대문구": {
+      "district": "동대문구",
+      "district_code": "11230",
+      "total_store_count": 21826.0,
+      "closed_store_count": 619.0,
+      "row_count": 1191,
+      "source_status": "ok",
+      "dong_count": 14,
+      "closure_rate": 2.8360670759644457
+    },
+    "동작구": {
+      "district": "동작구",
+      "district_code": "11590",
+      "total_store_count": 16999.0,
+      "closed_store_count": 440.0,
+      "row_count": 1258,
+      "source_status": "ok",
+      "dong_count": 15,
+      "closure_rate": 2.5883875522089537
+    },
+    "마포구": {
+      "district": "마포구",
+      "district_code": "11440",
+      "total_store_count": 32699.0,
+      "closed_store_count": 927.0,
+      "row_count": 1425,
+      "source_status": "ok",
+      "dong_count": 16,
+      "closure_rate": 2.8349490810116516
+    },
+    "서대문구": {
+      "district": "서대문구",
+      "district_code": "11410",
+      "total_store_count": 15538.0,
+      "closed_store_count": 384.0,
+      "row_count": 1130,
+      "source_status": "ok",
+      "dong_count": 14,
+      "closure_rate": 2.471360535461449
+    },
+    "서초구": {
+      "district": "서초구",
+      "district_code": "11650",
+      "total_store_count": 41478.0,
+      "closed_store_count": 782.0,
+      "row_count": 1586,
+      "source_status": "ok",
+      "dong_count": 18,
+      "closure_rate": 1.8853368050532813
+    },
+    "성동구": {
+      "district": "성동구",
+      "district_code": "11200",
+      "total_store_count": 20685.0,
+      "closed_store_count": 522.0,
+      "row_count": 1379,
+      "source_status": "ok",
+      "dong_count": 17,
+      "closure_rate": 2.52356780275562
+    },
+    "성북구": {
+      "district": "성북구",
+      "district_code": "11290",
+      "total_store_count": 18946.0,
+      "closed_store_count": 508.0,
+      "row_count": 1595,
+      "source_status": "ok",
+      "dong_count": 20,
+      "closure_rate": 2.6813047608993985
+    },
+    "송파구": {
+      "district": "송파구",
+      "district_code": "11710",
+      "total_store_count": 43339.0,
+      "closed_store_count": 1076.0,
+      "row_count": 2211,
+      "source_status": "ok",
+      "dong_count": 27,
+      "closure_rate": 2.482752255474284
+    },
+    "양천구": {
+      "district": "양천구",
+      "district_code": "11470",
+      "total_store_count": 20286.0,
+      "closed_store_count": 520.0,
+      "row_count": 1461,
+      "source_status": "ok",
+      "dong_count": 18,
+      "closure_rate": 2.5633441782510107
+    },
+    "영등포구": {
+      "district": "영등포구",
+      "district_code": "11560",
+      "total_store_count": 30107.0,
+      "closed_store_count": 803.0,
+      "row_count": 1550,
+      "source_status": "ok",
+      "dong_count": 18,
+      "closure_rate": 2.6671538180489587
+    },
+    "용산구": {
+      "district": "용산구",
+      "district_code": "11170",
+      "total_store_count": 19900.0,
+      "closed_store_count": 459.0,
+      "row_count": 1289,
+      "source_status": "ok",
+      "dong_count": 16,
+      "closure_rate": 2.306532663316583
+    },
+    "은평구": {
+      "district": "은평구",
+      "district_code": "11380",
+      "total_store_count": 20135.0,
+      "closed_store_count": 585.0,
+      "row_count": 1345,
+      "source_status": "ok",
+      "dong_count": 16,
+      "closure_rate": 2.905388626769307
+    },
+    "종로구": {
+      "district": "종로구",
+      "district_code": "11110",
+      "total_store_count": 25050.0,
+      "closed_store_count": 465.0,
+      "row_count": 1272,
+      "source_status": "ok",
+      "dong_count": 17,
+      "closure_rate": 1.8562874251497008
+    },
+    "중구": {
+      "district": "중구",
+      "district_code": "11140",
+      "total_store_count": 38778.0,
+      "closed_store_count": 754.0,
+      "row_count": 1253,
+      "source_status": "ok",
+      "dong_count": 15,
+      "closure_rate": 1.944401464748053
+    },
+    "중랑구": {
+      "district": "중랑구",
+      "district_code": "11260",
+      "total_store_count": 17999.0,
+      "closed_store_count": 537.0,
+      "row_count": 1325,
+      "source_status": "ok",
+      "dong_count": 16,
+      "closure_rate": 2.9834990832824047
+    }
+  },
+  "source_provenance": {
+    "source_dataset": "OA-22172",
+    "source_file_or_api": "OA-22172_2025.zip",
+    "service_active": false,
+    "source_status": "historical_official",
+    "official_period": "2025Q2",
+    "collected_at": "2026-05-21 official file revision",
+    "source_period": "2025Q2",
+    "official_source": true,
+    "historical_only": true
+  }
+}

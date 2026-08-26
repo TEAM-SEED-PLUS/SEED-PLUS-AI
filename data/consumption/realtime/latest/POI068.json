@@ -1,0 +1,118 @@
+{
+  "area_cd": "POI068",
+  "area_nm": "성수카페거리",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "보통",
+  "payment_count": 118.0,
+  "payment_amount_min": 2600000.0,
+  "payment_amount_max": 2700000.0,
+  "payment_amount_midpoint": 2650000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 10,
+      "RSB_SH_PAYMENT_AMT_MIN": 400000,
+      "RSB_SH_PAYMENT_AMT_MAX": 450000,
+      "RSB_MCT_CNT": 207,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "일식/중식/양식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 6,
+      "RSB_SH_PAYMENT_AMT_MIN": 250000,
+      "RSB_SH_PAYMENT_AMT_MAX": 300000,
+      "RSB_MCT_CNT": 128,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 14,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 77,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 31,
+      "RSB_SH_PAYMENT_AMT_MIN": 500000,
+      "RSB_SH_PAYMENT_AMT_MAX": 550000,
+      "RSB_MCT_CNT": 197,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 21,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 35,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "의복/의류",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 14,
+      "RSB_SH_PAYMENT_AMT_MIN": 700000,
+      "RSB_SH_PAYMENT_AMT_MAX": 750000,
+      "RSB_MCT_CNT": 176,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "패션/잡화",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 13,
+      "RSB_SH_PAYMENT_AMT_MIN": 300000,
+      "RSB_SH_PAYMENT_AMT_MAX": 350000,
+      "RSB_MCT_CNT": 113,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "여가·오락",
+      "RSB_MID_CTGR": "스포츠/문화/레저",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 30000,
+      "RSB_SH_PAYMENT_AMT_MAX": 40000,
+      "RSB_MCT_CNT": 80,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "화장품",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 5,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 55,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI068",
+    "area_nm": "성수카페거리",
+    "assigned_district": "성동구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": false,
+    "effective_candidates": [
+      {
+        "district": "성동구",
+        "intersection_ratio": 1.0
+      }
+    ]
+  },
+  "source_status": "ok"
+}

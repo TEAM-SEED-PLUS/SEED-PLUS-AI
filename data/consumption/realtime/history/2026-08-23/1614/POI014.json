@@ -1,0 +1,142 @@
+{
+  "area_cd": "POI014",
+  "area_nm": "강남역",
+  "source_timestamp": "20260823 1600",
+  "received_at": "2026-08-23T16:14:32+09:00",
+  "commercial_level": "보통",
+  "payment_count": 226.0,
+  "payment_amount_min": 3900000.0,
+  "payment_amount_max": 4000000.0,
+  "payment_amount_midpoint": 3950000.0,
+  "industry_commerce": [
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "한식",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 11,
+      "RSB_SH_PAYMENT_AMT_MIN": 200000,
+      "RSB_SH_PAYMENT_AMT_MAX": 250000,
+      "RSB_MCT_CNT": 438,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "일식/중식/양식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 18,
+      "RSB_SH_PAYMENT_AMT_MIN": 650000,
+      "RSB_SH_PAYMENT_AMT_MAX": 700000,
+      "RSB_MCT_CNT": 201,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "제과/커피/패스트푸드",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 38,
+      "RSB_SH_PAYMENT_AMT_MIN": 350000,
+      "RSB_SH_PAYMENT_AMT_MAX": 400000,
+      "RSB_MCT_CNT": 122,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "음식·음료",
+      "RSB_MID_CTGR": "기타요식",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 30,
+      "RSB_SH_PAYMENT_AMT_MIN": 500000,
+      "RSB_SH_PAYMENT_AMT_MAX": 550000,
+      "RSB_MCT_CNT": 332,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "할인점/슈퍼마켓",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 7,
+      "RSB_SH_PAYMENT_AMT_MIN": 100000,
+      "RSB_SH_PAYMENT_AMT_MAX": 150000,
+      "RSB_MCT_CNT": 17,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "유통",
+      "RSB_MID_CTGR": "편의점",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 35,
+      "RSB_SH_PAYMENT_AMT_MIN": 150000,
+      "RSB_SH_PAYMENT_AMT_MAX": 200000,
+      "RSB_MCT_CNT": 59,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "의복/의류",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 13,
+      "RSB_SH_PAYMENT_AMT_MIN": 550000,
+      "RSB_SH_PAYMENT_AMT_MAX": 600000,
+      "RSB_MCT_CNT": 112,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "패션/잡화",
+      "RSB_PAYMENT_LVL": "보통",
+      "RSB_SH_PAYMENT_CNT": 7,
+      "RSB_SH_PAYMENT_AMT_MIN": 200000,
+      "RSB_SH_PAYMENT_AMT_MAX": 250000,
+      "RSB_MCT_CNT": 67,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "여가·오락",
+      "RSB_MID_CTGR": "스포츠/문화/레저",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 57,
+      "RSB_SH_PAYMENT_AMT_MIN": 350000,
+      "RSB_SH_PAYMENT_AMT_MAX": 400000,
+      "RSB_MCT_CNT": 203,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "패션·뷰티",
+      "RSB_MID_CTGR": "미용서비스",
+      "RSB_PAYMENT_LVL": "바쁜",
+      "RSB_SH_PAYMENT_CNT": 4,
+      "RSB_SH_PAYMENT_AMT_MIN": 600000,
+      "RSB_SH_PAYMENT_AMT_MAX": 650000,
+      "RSB_MCT_CNT": 204,
+      "RSB_MCT_TIME": "202607"
+    },
+    {
+      "RSB_LRG_CTGR": "의료",
+      "RSB_MID_CTGR": "약국",
+      "RSB_PAYMENT_LVL": "한산한",
+      "RSB_SH_PAYMENT_CNT": 6,
+      "RSB_SH_PAYMENT_AMT_MIN": 60000,
+      "RSB_SH_PAYMENT_AMT_MAX": 70000,
+      "RSB_MCT_CNT": 85,
+      "RSB_MCT_TIME": "202607"
+    }
+  ],
+  "district_mapping": {
+    "area_cd": "POI014",
+    "area_nm": "강남역",
+    "assigned_district": "강남구",
+    "mapping_source": "OA-21285 verified geometry",
+    "assignment_status": "assigned",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "강남구",
+        "intersection_ratio": 0.664823
+      },
+      {
+        "district": "서초구",
+        "intersection_ratio": 0.335179
+      }
+    ]
+  },
+  "source_status": "ok"
+}

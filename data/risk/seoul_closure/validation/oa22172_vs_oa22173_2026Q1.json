@@ -1,0 +1,158 @@
+{
+  "district_count": 25,
+  "exact_near_match_count": 25,
+  "mean_rate_difference_pp": 0.0,
+  "max_rate_difference_pp": 0.0,
+  "districts": {
+    "강남구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "강동구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "강북구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "강서구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "관악구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "광진구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "구로구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "금천구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "노원구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "도봉구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "동대문구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "동작구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "마포구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "서대문구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "서초구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "성동구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "성북구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "송파구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "양천구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "영등포구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "용산구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "은평구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "종로구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "중구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    },
+    "중랑구": {
+      "total_store_absolute_difference": 0.0,
+      "total_store_relative_difference": 0.0,
+      "closed_store_absolute_difference": 0.0,
+      "rate_difference_pp": 0.0
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "area_cd": "POI037",
+  "area_nm": "신논현역·논현역",
+  "source_timestamp": "20260823 1520",
+  "received_at": "2026-08-23T15:37:30+09:00",
+  "AREA_CMRCL_LVL": "한산한",
+  "district_mapping": {
+    "area_cd": "POI037",
+    "area_nm": "신논현역·논현역",
+    "assigned_district": null,
+    "mapping_source": "OA-21285 verified geometry",
+    "cross_boundary": true,
+    "effective_candidates": [
+      {
+        "district": "강남구",
+        "intersection_ratio": 0.721971
+      },
+      {
+        "district": "서초구",
+        "intersection_ratio": 0.278029
+      }
+    ]
+  },
+  "source_status": "ok"
+}
