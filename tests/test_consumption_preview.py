@@ -49,7 +49,7 @@ class QuarterlyBaselineTests(unittest.TestCase):
             preview = build_calibration_preview("2026Q1", data_dir=tmp)
             self.assertEqual(preview["districts"]["강남구"]["total_sales_percentile"], 50)
             self.assertFalse(preview["production_scoring_connected"])
-            self.assertNotIn("secret-key", Path(snapshot_paths(tmp, "2026Q1")["raw"]).read_text())
+            self.assertNotIn("secret-key", Path(snapshot_paths(tmp, "2026Q1")["raw"]).read_text(encoding="utf-8"))
 
     def test_quarter_snapshot_fallback(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -94,7 +94,7 @@ class RealtimePreviewTests(unittest.TestCase):
             self.assertNotEqual(paths["latest"], paths["history"])
             for path in (paths["latest"], paths["history"]):
                 self.assertTrue(path.is_file())
-                self.assertNotIn("secret-key", path.read_text())
+                self.assertNotIn("secret-key", path.read_text(encoding="utf-8"))
             loaded = load_realtime_latest("P1", data_dir=tmp,
                                           now=datetime(2026, 8, 23, 15, 11, tzinfo=ZoneInfo("Asia/Seoul")))
             self.assertEqual(loaded["age_minutes"], 10)

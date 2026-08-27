@@ -91,9 +91,9 @@ class SnapshotTests(unittest.TestCase):
     def test_probe_collector_skips_same_time(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); ref = root / "ref.json"; mapping = root / "map.json"
-            ref.write_text(json.dumps({"places": [{"area_cd": "P1"}]})); mapping.write_text(json.dumps({"mappings": []}))
+            ref.write_text(json.dumps({"places": [{"area_cd": "P1"}]}), encoding="utf-8"); mapping.write_text(json.dumps({"mappings": []}), encoding="utf-8")
             manifest = root / "realtime" / "manifest.json"; manifest.parent.mkdir(parents=True)
-            manifest.write_text(json.dumps({"latest_commerce_time": "20260823 1540"}))
+            manifest.write_text(json.dumps({"latest_commerce_time": "20260823 1540"}), encoding="utf-8")
             client = Mock(); client.realtime_commerce.return_value = {"source_status": "ok", "commercial": {"CMRCL_TIME": "20260823 1540"}}
             value = collect_realtime_once(client=client, data_dir=root, reference_path=ref, mapping_path=mapping)
             self.assertEqual((value["status"], value["api_call_count"]), ("unchanged", 1))

@@ -1,0 +1,10 @@
+-r requirements-geo.txt
+
+requests==2.33.1
+pandas==3.0.5
+beautifulsoup4
+playwright
+tzdata
+openai==2.31.0
+pyproj
+urllib3

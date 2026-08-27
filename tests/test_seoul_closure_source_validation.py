@@ -82,14 +82,14 @@ class SeoulClosureSourceValidationTests(unittest.TestCase):
     def test_source_provenance_artifact(self):
         import json
         from pathlib import Path
-        value = json.loads(Path("data/risk/seoul_closure/quarterly/2025Q2.json").read_text())
+        value = json.loads(Path("data/risk/seoul_closure/quarterly/2025Q2.json").read_text(encoding="utf-8"))
         self.assertEqual(value["source_provenance"]["source_dataset"], "OA-22172")
         self.assertFalse(value["source_provenance"]["service_active"])
 
     def test_future_source_is_unavailable(self):
         import json
         from pathlib import Path
-        value = json.loads(Path("data/risk/seoul_closure/manifest.json").read_text())
+        value = json.loads(Path("data/risk/seoul_closure/manifest.json").read_text(encoding="utf-8"))
         self.assertFalse(value["production_ready_source"])
         self.assertEqual(value["production_readiness"], "blocked")
 

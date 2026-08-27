@@ -58,7 +58,7 @@ class CommercialStoreSnapshotTests(unittest.TestCase):
             self.assertEqual(result["collected_pages"], [1, 2])
             self.assertEqual(result["deduplicated_count"], 3)
             self.assertEqual(result["duplicate_count"], 1)
-            raw = (snapshot_paths(tmp, "2026Q3")["raw"] / "강남구.jsonl").read_text()
+            raw = (snapshot_paths(tmp, "2026Q3")["raw"] / "강남구.jsonl").read_text(encoding="utf-8")
             self.assertNotIn("businessNumber", raw)
             self.assertNotIn("secret", raw)
 
@@ -88,11 +88,11 @@ class CommercialStoreSnapshotTests(unittest.TestCase):
             paths = snapshot_paths(tmp, "2026Q3")
             paths["raw"].mkdir(parents=True)
             for district, rows in {"강남구": [store("A"), store("B")], "종로구": [store("C", "종로구")]}.items():
-                with (paths["raw"] / f"{district}.jsonl").open("w") as handle:
+                with (paths["raw"] / f"{district}.jsonl").open("w", encoding="utf-8") as handle:
                     for row in rows:
                         handle.write(json.dumps(row, ensure_ascii=False) + "\n")
                 paths["checkpoints"].mkdir(parents=True, exist_ok=True)
-                (paths["checkpoints"] / f"{district}.json").write_text(json.dumps({"status": "complete"}))
+                (paths["checkpoints"] / f"{district}.json").write_text(json.dumps({"status": "complete"}), encoding="utf-8")
             artifacts = build_snapshot_artifacts(
                 "2026Q3", data_dir=tmp, district_areas={"강남구": 2.0, "종로구": 2.0}
             )
@@ -122,8 +122,8 @@ class CommercialStoreSnapshotTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             old = snapshot_paths(tmp, "2025Q1")
             old["aggregated"].parent.mkdir(parents=True)
-            old["aggregated"].write_text(json.dumps({"snapshot_quarter": "2025Q1", "districts": {}}))
-            old["manifest"].write_text(json.dumps({"snapshots": {"2025Q1": {"source_status": "complete"}}}))
+            old["aggregated"].write_text(json.dumps({"snapshot_quarter": "2025Q1", "districts": {}}), encoding="utf-8")
+            old["manifest"].write_text(json.dumps({"snapshots": {"2025Q1": {"source_status": "complete"}}}), encoding="utf-8")
             loaded = load_snapshot("2026Q3", data_dir=tmp)
             self.assertEqual(loaded["source_status"], "fallback")
             self.assertEqual(loaded["source_quarter"], "2025Q1")

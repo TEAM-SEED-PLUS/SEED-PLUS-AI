@@ -45,7 +45,7 @@ class AlignmentTests(unittest.TestCase):
             write_jsonl(store_paths(tmp, "2026Q1")["raw"],
                         [row("store", value=10), row("store", industry="B", value=0),
                          row("store", industry="D", value=4)])
-            external = Path(tmp) / "external.json"; external.write_text(json.dumps({"districts": {}}))
+            external = Path(tmp) / "external.json"; external.write_text(json.dumps({"districts": {}}), encoding="utf-8")
             result = exact_join("2026Q1", data_dir=tmp, external_snapshot_path=external)
             diag = result["diagnostics"]
             self.assertEqual((diag["matched_row_count"], diag["sales_only_count"], diag["store_only_count"]), (2, 1, 1))
@@ -73,7 +73,7 @@ class PaymentPreviewTests(unittest.TestCase):
             now = datetime(2026, 8, 23, 15, tzinfo=ZoneInfo("Asia/Seoul"))
             first = save_realtime(self.result(), {"assigned_district": "강남구"}, data_dir=tmp, received_at=now)
             second = save_realtime(self.result(), {"assigned_district": "강남구"}, data_dir=tmp, received_at=now)
-            payload = json.loads(first["latest"].read_text())
+            payload = json.loads(first["latest"].read_text(encoding="utf-8"))
             self.assertEqual((payload["payment_count"], payload["payment_amount_midpoint"]), (4, 200))
             self.assertEqual(payload["source_timestamp"], "20260823 1500")
             self.assertEqual(payload["industry_commerce"][0]["RSB_MCT_CNT"], 3)

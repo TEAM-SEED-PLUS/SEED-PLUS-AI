@@ -158,11 +158,11 @@ def corr(a: list[float], b: list[float]) -> float | None:
 
 
 def sources() -> dict[str, Any]:
-    cm = json.loads((ROOT/"data/commercial_stores/manifest.json").read_text())
-    con = json.loads((ROOT/"data/consumption/manifest.json").read_text())
-    rt = json.loads((ROOT/"data/consumption/realtime/manifest.json").read_text())
-    tour = json.loads((ROOT/"data/tourism/manifest.json").read_text())
-    oa_rows = [json.loads(p.read_text()) for p in sorted((ROOT/"data/oa21285/history/2026-08-22").glob("*.json"))]
+    cm = json.loads((ROOT/"data/commercial_stores/manifest.json").read_text(encoding="utf-8"))
+    con = json.loads((ROOT/"data/consumption/manifest.json").read_text(encoding="utf-8"))
+    rt = json.loads((ROOT/"data/consumption/realtime/manifest.json").read_text(encoding="utf-8"))
+    tour = json.loads((ROOT/"data/tourism/manifest.json").read_text(encoding="utf-8"))
+    oa_rows = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT/"data/oa21285/history/2026-08-22").glob("*.json"))]
     latest = max(str(row.get("population_time") or "") for row in oa_rows)
     oa_available = [d for d in DISTRICTS if load_available_oa_footfall(d, QA_DATE, "저녁") is not None]
     consumption = build_consumption_hybrid_input("강남구", "2026-08-23", "점심")

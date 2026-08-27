@@ -67,7 +67,7 @@ class SeoulClosureRiskPreviewTests(unittest.TestCase):
     def test_quarter_fallback(self):
         with tempfile.TemporaryDirectory() as temporary:
             path = Path(temporary) / "normalized" / "2026Q1.json"
-            path.parent.mkdir(parents=True); path.write_text("{}")
+            path.parent.mkdir(parents=True); path.write_text("{}", encoding="utf-8")
             result = load_preview("2026Q3", risk_dir=temporary)
             self.assertEqual((result["source_quarter"], result["age_quarters"], result["source_status"]),
                              ("2026Q1", 2, "fallback"))
@@ -82,7 +82,7 @@ class SeoulClosureRiskPreviewTests(unittest.TestCase):
             consumption = Path(temporary) / "consumption"
             raw = consumption / "baseline" / "oa22173_raw" / "2026Q1.jsonl"
             raw.parent.mkdir(parents=True)
-            raw.write_text(json.dumps(row()) + "\n")
+            raw.write_text(json.dumps(row()) + "\n", encoding="utf-8")
             preview = build_preview("2026Q1", consumption_dir=consumption,
                                     risk_dir=Path(temporary) / "risk")
             self.assertTrue(preview["preview_only"])
