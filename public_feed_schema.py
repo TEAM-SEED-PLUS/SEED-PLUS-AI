@@ -22,7 +22,7 @@ INSUFFICIENT_BADGE = "일부 데이터가 부족해 대체값 또는 기본값�
 
 def _clean_status(value: Any, default: str = "no_data") -> str:
     status = str(value or default)
-    return status if status in {"ok", "partial", "fallback", "no_data", "failed", "complete"} else default
+    return status if status in {"ok", "empty", "partial", "fallback", "no_data", "failed", "complete"} else default
 
 
 def _source(source: str, metadata: dict[str, Any] | None, **fields: Any) -> dict[str, Any]:
@@ -49,10 +49,13 @@ def _public_sources(result: dict[str, Any]) -> dict[str, Any]:
     return {
         "weather": _source("weather", statuses.get("weather")),
         "content": {
-            name: _source(name, statuses.get(name))
+            name: _source(name, statuses.get(name), item_count=(normalized.get(name) or {}).get("count"))
             for name in ("festival", "event", "performance", "sports")
         },
-        "special_day": _source("special_day", statuses.get("special_day")),
+        "special_day": _source(
+            "special_day", statuses.get("special_day"),
+            item_count=(normalized.get("special_day") or {}).get("count"),
+        ),
         "footfall": _source(
             str(footfall_sources.get("inflow") or footfall.get("provider") or "sdot"), footfall,
             source_time=footfall.get("latest_population_time"),
@@ -77,35 +80,77 @@ def _public_sources(result: dict[str, Any]) -> dict[str, Any]:
             "oa22385", {"status": realtime.get("source_status")},
             source_time=realtime.get("commerce_time"), age_minutes=realtime.get("age_minutes"),
             valid_place_count=realtime.get("valid_place_count"),
+            eligibility_reason=realtime.get("eligibility_reason"),
         ),
         "competition_sdot": _source("sdot", competition_status),
     }
 
 
-def _quality_status(result: dict[str, Any], sources: dict[str, Any]) -> str:
+def _flat_sources(sources: dict[str, Any]):
+    for name, value in sources.items():
+        if name == "content":
+            for child_name, child in value.items():
+                yield f"content.{child_name}", child
+        else:
+            yield name, value
+
+
+def _quality_groups(sources: dict[str, Any]) -> dict[str, list[str]]:
+    groups = {key: [] for key in (
+        "fallback_sources", "no_data_sources", "stale_sources",
+        "skipped_sources", "failed_sources", "empty_sources",
+    )}
+    for name, source in _flat_sources(sources):
+        status = source.get("status")
+        reason = str(source.get("fallback_reason") or "")
+        eligibility = str(source.get("eligibility_reason") or "")
+        requested = source.get("requested_month") or source.get("requested_quarter")
+        actual = source.get("source_month") or source.get("source_quarter")
+
+        if status == "failed":
+            groups["failed_sources"].append(name)
+        elif status == "empty":
+            groups["empty_sources"].append(name)
+        elif eligibility in {"different_date_or_time_band", "ineligible"}:
+            groups["skipped_sources"].append(name)
+        elif reason == "fallback_age_exceeded" or (
+            status == "no_data" and requested and actual and source.get("age_months") is not None
+        ):
+            groups["stale_sources"].append(name)
+        elif status == "fallback":
+            groups["fallback_sources"].append(name)
+        elif status in {"no_data", "partial"}:
+            groups["no_data_sources"].append(name)
+    return groups
+
+
+def _quality_status(result: dict[str, Any], groups: dict[str, list[str]]) -> str:
     if not result.get("data_insufficient"):
         return "ok"
-    flat = [value for value in sources.values() if isinstance(value, dict) and "status" in value]
-    flat.extend((sources.get("content") or {}).values())
-    statuses = {str(item.get("status")) for item in flat}
-    if "fallback" in statuses or "partial" in statuses:
-        return "fallback" if statuses <= {"ok", "complete", "fallback"} else "partial"
-    if statuses <= {"no_data", "failed"}:
+    shortage = (groups["no_data_sources"] + groups["stale_sources"]
+                + groups["skipped_sources"] + groups["failed_sources"])
+    if shortage:
+        if (groups["no_data_sources"] and not groups["fallback_sources"]
+                and not groups["stale_sources"] and not groups["skipped_sources"]
+                and not groups["failed_sources"]):
+            return "no_data"
+        return "partial"
+    if groups["fallback_sources"]:
+        return "fallback"
+    if result.get("data_insufficient"):
+        # A higher-level production policy can mark a source combination as
+        # insufficient even when each public component is individually valid.
+        return "partial"
+    if groups["no_data_sources"]:
         return "no_data"
-    return "partial"
+    return "ok"
 
 
 def serialize_public_feed(result: dict[str, Any], *, generated_at: str | None = None) -> dict[str, Any]:
     """Project one internal pipeline result into the immutable public v1 shape."""
     query, card, scores = result.get("query") or {}, result.get("card") or {}, result.get("scores") or {}
     sources = _public_sources(result)
-    fallback_sources: list[str] = []
-    for name, value in sources.items():
-        if name == "content":
-            fallback_sources.extend(f"content.{key}" for key, item in value.items()
-                                    if item.get("status") in {"fallback", "failed", "no_data", "partial"})
-        elif value.get("status") in {"fallback", "failed", "no_data", "partial"} or value.get("fallback"):
-            fallback_sources.append(name)
+    quality_groups = _quality_groups(sources)
     badges = []
     if result.get("notice") == NIGHT_BADGE:
         badges.append(NIGHT_BADGE)
@@ -131,9 +176,9 @@ def serialize_public_feed(result: dict[str, Any], *, generated_at: str | None = 
                       "judgement_sentence": str(card.get("judgement_sentence") or ""),
                       "basis_sentence": str(card.get("basis_sentence") or ""),
                       "recommended_actions": list(card.get("recommended_actions") or [])},
-        "data_quality": {"status": _quality_status(result, sources),
+        "data_quality": {"status": _quality_status(result, quality_groups),
                          "data_insufficient": bool(result.get("data_insufficient")),
-                         "badges": badges, "fallback_sources": fallback_sources,
+                         "badges": badges, **quality_groups,
                          "score_context": public_context},
         "sources": sources,
         "generated_at": generated_at or datetime.now(SEOUL_TZ).isoformat(timespec="seconds"),
@@ -143,4 +188,3 @@ def serialize_public_feed(result: dict[str, Any], *, generated_at: str | None = 
 def generate_public_market_feed(*args: Any, **kwargs: Any) -> dict[str, Any]:
     """Run the existing production path, then return only its public projection."""
     return serialize_public_feed(generate_market_feed(*args, **kwargs))
-

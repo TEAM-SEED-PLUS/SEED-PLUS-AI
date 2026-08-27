@@ -1,6 +1,7 @@
 import json
 import os
 import unittest
+from copy import deepcopy
 from unittest.mock import patch
 
 from feed_renderer import build_market_feed_card
@@ -73,6 +74,39 @@ class PublicFeedSchemaTests(unittest.TestCase):
         self.assertTrue(public["data_quality"]["fallback_sources"])
         self.assertNotIn("structural", json.dumps(public, ensure_ascii=False).lower())
         self.assertNotIn("kosis", json.dumps(public, ensure_ascii=False).lower())
+
+    def test_validated_snapshot_quality_categories_are_disjoint(self):
+        public = serialize_public_feed(self._internal())
+        quality = public["data_quality"]
+        self.assertEqual(quality["fallback_sources"], ["consumption_baseline"])
+        self.assertEqual(quality["stale_sources"], ["tourism"])
+        self.assertEqual(quality["skipped_sources"], ["realtime_commerce"])
+        self.assertEqual(quality["failed_sources"], [])
+        self.assertEqual(quality["empty_sources"], [])
+        self.assertEqual(quality["status"], "partial")
+        self.assertIn("weather", quality["no_data_sources"])
+        self.assertIn("competition_sdot", quality["no_data_sources"])
+
+    def test_successful_empty_content_and_special_day_are_not_no_data(self):
+        internal = deepcopy(self._internal())
+        for name in ("festival", "event", "performance", "sports", "special_day"):
+            internal["source_status"][name] = {"status": "empty", "source": name}
+            internal["normalized_data"][name]["source_status"] = {"status": "empty", "source": name}
+            internal["normalized_data"][name]["count"] = 0
+        quality = serialize_public_feed(internal)["data_quality"]
+        expected = {"content.festival", "content.event", "content.performance",
+                    "content.sports", "special_day"}
+        self.assertTrue(expected <= set(quality["empty_sources"]))
+        self.assertFalse(expected & set(quality["no_data_sources"]))
+        self.assertFalse(expected & set(quality["fallback_sources"]))
+
+    def test_failed_source_is_only_in_failed_sources(self):
+        internal = deepcopy(self._internal())
+        internal["source_status"]["weather"] = {"status": "failed", "source": "weather"}
+        quality = serialize_public_feed(internal)["data_quality"]
+        self.assertIn("weather", quality["failed_sources"])
+        self.assertNotIn("weather", quality["fallback_sources"])
+        self.assertNotIn("weather", quality["no_data_sources"])
 
     def test_public_generator_uses_existing_pipeline(self):
         with patch("market_feed_pipeline._get_all_city_info", return_value=replay_raw("강남구","2026-08-22","21:25")), \

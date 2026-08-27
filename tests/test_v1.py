@@ -189,7 +189,7 @@ class V1PolicyTests(unittest.TestCase):
     def test_collection_distinguishes_no_data_and_failed(self):
         no_data = collect_with_status("festival", lambda: {"count": 0, "items": []})
         failed = collect_with_status("festival", lambda: (_ for _ in ()).throw(RuntimeError("down")))
-        self.assertEqual(no_data["source_status"]["status"], "no_data")
+        self.assertEqual(no_data["source_status"]["status"], "empty")
         self.assertEqual(failed["source_status"]["status"], "failed")
 
     def test_missing_api_key_reports_rule_fallback(self):

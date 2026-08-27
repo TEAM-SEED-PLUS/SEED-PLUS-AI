@@ -39,6 +39,11 @@ internal result를 계속 반환한다.
     "data_insufficient": false,
     "badges": [],
     "fallback_sources": [],
+    "no_data_sources": [],
+    "stale_sources": [],
+    "skipped_sources": [],
+    "failed_sources": [],
+    "empty_sources": [],
     "score_context": {"basis": "requested_time"}
   },
   "sources": {
@@ -77,7 +82,12 @@ internal result를 계속 반환한다.
 | `data_quality.status` | 종합 상태: `ok/partial/fallback/no_data`다. |
 | `data_quality.data_insufficient` | internal pipeline이 확정한 데이터 부족 여부다. |
 | `badges` | 데이터 부족 및 심야 고지처럼 UI에 전달할 확정 문구다. |
-| `fallback_sources` | fallback·partial·no_data·failed 상태 source 이름이다. |
+| `fallback_sources` | 실제 대체 source 또는 이전 snapshot이 점수에 사용된 source다. |
+| `no_data_sources` | 필요한 데이터를 확보하지 못한 source다. 정상적인 0건 결과는 제외한다. |
+| `stale_sources` | snapshot은 있지만 허용 freshness를 초과해 점수에서 제외된 source다. |
+| `skipped_sources` | 날짜·시간대·eligibility 불일치로 점수에서 제외된 source다. |
+| `failed_sources` | API·파싱·처리 자체가 실패한 source다. |
+| `empty_sources` | 조회는 성공했지만 해당 날짜·지역의 matching item이 0건인 source다. |
 | `score_context` | 요청 시각 점수인지 심야 직전 저녁 reference인지 나타내는 기존 metadata다. |
 | `sources` | UI에 필요한 source/provider, 상태, source 시점·월·분기와 age만 축약한다. |
 | `generated_at` | public serialization 시각, Asia/Seoul ISO 8601이다. |
@@ -154,4 +164,3 @@ Historical/KOSIS structural risk도 production source로 노출하지 않는다.
 ```
 
 LLM 성공 여부와 무관하게 scores, opportunity score, weather grade, decision tags, sources와 quality metadata는 바뀌지 않는다.
-

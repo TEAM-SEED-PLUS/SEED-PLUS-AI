@@ -28,7 +28,9 @@ def collect_with_status(source: str, fetcher: Callable[..., Any], *args: Any) ->
             reason = ""
         else:
             items = block.get("items", [])
-            status = "ok" if isinstance(items, list) and items else "no_data"
+            # The collector completed successfully.  An empty matching set is
+            # a valid observation, distinct from an unavailable source.
+            status = "ok" if isinstance(items, list) and items else "empty"
             reason = ""
         block["source_status"] = {"status": status, "source": source}
         if reason:
