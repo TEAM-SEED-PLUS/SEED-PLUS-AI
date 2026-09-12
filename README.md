@@ -1,13 +1,17 @@
 # 상권날씨 (Weather Feed) v1
 
-상권날씨는 서울 25개 자치구의 외부 데이터를 수집·정규화하여  
-유입 압력, 소비 의도, 경쟁 압박, 운영 리스크**의 4개 지표를 계산하고,  
-이를 기반으로 상권날씨와 의사결정 태그를 생성하는 기능입니다.
+상권날씨는 서울 25개 자치구의 외부 데이터를 수집·정규화하여 다음 4개 지표를 계산하고, 이를 기반으로 상권날씨와 의사결정 태그를 생성하는 기능입니다.
+
+- 유입 압력
+- 소비 의도
+- 경쟁 압박
+- 운영 리스크
+
 점수, 상권날씨, 의사결정 태그는 룰 기반으로 계산됩니다.
-OpenAI API Key가 없는 환경에서도 정상 실행되며,  
-판단문장, 근거문장, 추천 액션은 `rule_fallback` 방식으로 생성됩니다.
-추후 OpenAI API Key가 등록되면 동일한 Feed Schema를 유지한 상태에서  
-판단문장, 근거문장, 추천 액션 생성에 LLM을 사용할 수 있습니다.
+
+OpenAI API Key가 없는 환경에서도 정상 실행되며, 판단문장·근거문장·추천 액션은 `rule_fallback` 방식으로 생성됩니다.
+
+추후 OpenAI API Key가 등록되면 동일한 Feed Schema v1을 유지하면서 문장 생성에 LLM을 사용할 수 있습니다.
 
 ---
 
@@ -15,11 +19,12 @@ OpenAI API Key가 없는 환경에서도 정상 실행되며,
 
 ```bash
 git clone https://github.com/TEAM-SEED-PLUS/SEED-PLUS-AI.git
+cd SEED-PLUS-AI
 ```
 
 ---
 
-## 2. ㅠㅠㅠPython 가상환경 생성
+## 2. Python 가상환경 생성
 
 ### macOS / Linux
 
@@ -53,7 +58,9 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Playwright 기반 수집 기능을 실제로 사용하는 경우 Chromium을 추가 설치합니다.
+Playwright는 Sports collector에서 사용합니다.
+
+로컬 환경에서 Sports collector까지 실행하려면 Chromium을 추가 설치합니다.
 
 ### macOS / Linux
 
@@ -66,6 +73,14 @@ python3 -m playwright install chromium
 ```cmd
 python -m playwright install chromium
 ```
+
+Linux production collector image에서는 Chromium OS dependency도 필요하므로 다음 방식 또는 이에 준하는 Dockerfile 구성을 사용합니다.
+
+```bash
+python -m playwright install --with-deps chromium
+```
+
+FastAPI request path에서는 Playwright/Chromium을 실행하지 않습니다. FastAPI는 생성된 Sports snapshot만 읽습니다.
 
 ---
 
@@ -85,7 +100,7 @@ cp .env.example .env
 copy .env.example .env
 ```
 
-현재 사용하는 환경변수는 다음과 같습니다.
+사용하는 환경변수는 다음과 같습니다.
 
 ```env
 DATA_GO_KR_SERVICE_KEY=
@@ -100,514 +115,979 @@ OPENAI_MODEL=
 
 실제 API Key는 Git repository에 commit하지 않습니다.
 
+### 환경변수 용도
+
+| 환경변수 | 주요 용도 | 필수 여부 |
+|---|---|---|
+| `DATA_GO_KR_SERVICE_KEY` | 기상청 날씨, 축제, 특일 데이터 | production 데이터 품질을 위해 권장 |
+| `SEOUL_OPEN_DATA_API_KEY` | 서울 문화행사, OA-21285, OA-22385, S-DoT 계열 | production collector 사용 시 필요 |
+| `KOPIS_API_KEY` | 공연정보 snapshot collector | 공연 콘텐츠 사용 시 필요 |
+| `TOURISM_DATA_API_KEY` | 관광 데이터 snapshot 갱신 | snapshot 갱신 시 필요 |
+| `COMMERCIAL_STORE_API_KEY` | 상가 관련 별도 수집/연구 경로 | 현재 local scoring snapshot 기반 request path의 필수 blocker는 아님 |
+| `KOSIS_API_KEY` | KOSIS refresh/probe | 관련 offline 작업 시 필요 |
+| `OPENAI_API_KEY` | LLM narrative 생성 | 선택 |
+| `OPENAI_MODEL` | OpenAI 사용 모델 | `OPENAI_API_KEY` 사용 시 설정 |
+
+`OPENAI_API_KEY`가 없으면 API 호출 없이 즉시 `rule_fallback` 문장을 생성합니다.
+
 ---
 
-## 5. 상권날씨 Feed 실행
+# 5. FastAPI 실행
+
+FastAPI는 Public Feed Schema v1 JSON을 wrapper 없이 반환하는 내부 AI/Data 서비스입니다.
+
+`.env`는 production pipeline module import 전에 로드합니다.
 
 ### macOS / Linux
 
 ```bash
-python3 demo_public_feed.py \
-  --district 강남구 \
-  --date 2026-08-22 \
-  --time 21:25
+python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
 ### Windows
 
 ```cmd
-python demo_public_feed.py --district 강남구 --date 2026-08-22 --time 21:25
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
 ```
 
----
-
-## 6. 입력값
-
-| 입력값 | 타입 | 필수 여부 | 형식 | 기본값 | 예시 |
-|---|---|---|---|---|---|
-| district | string | 필수 | 서울 자치구명 | 없음 | 강남구 |
-| date | string | 선택 | YYYY-MM-DD | 일반 pipeline에서는 Asia/Seoul 기준 현재 날짜 | 2026-08-22 |
-| time | string | 선택 | HH:MM | 일반 pipeline에서는 Asia/Seoul 기준 현재 시각(분 단위) | 21:25 |
-
-`date`, `time`은 요청 입력에서는 선택 사항입니다.
-
-일반 Feed pipeline에서 `date`, `time`을 생략하면  
-Asia/Seoul 기준 현재 날짜와 현재 시각을 사용합니다.
-
-단, 검증 및 캡처용 `demo_public_feed.py`에서는 재현 가능한 QA 결과를 제공하기 위해  
-생략 시 고정된 검증 날짜·시각을 기본값으로 사용합니다.
-
-응답의 `query.date`, `query.time`에는 입력 생략 여부와 관계없이  
-최종적으로 정규화된 날짜와 시간이 항상 포함됩니다.
-
-시간대는 다음 기준으로 구분합니다.
-
-- 심야: 00:00 ~ 06:00
-- 아침: 06:00 ~ 12:00
-- 점심: 12:00 ~ 17:00
-- 오후: 17:00 ~ 20:00
-- 저녁: 20:00 ~ 24:00
-
----
-
-## 7. 실행 결과 예시
+로컬 Swagger UI:
 
 ```text
-============================================================
-상권날씨 v1 · 실제 Feed 결과
-============================================================
-
-지역: 강남구
-기준: 2026-08-22 21:25
-시간대: 저녁
-Data mode: validated_snapshot
-
-오늘의 상권날씨: ☁️ 흐림
-기회점수: 52
-
-[핵심 지표]
-유입 압력      48
-소비 의도      30
-경쟁 압박      29
-운영 리스크    20
-
-[의사결정 태그]
-- 관망 권장
-
-[판단]
-뚜렷한 상승 신호가 강하지 않아,
-추가 집행보다는 관찰과 보수적 운영이 적합한 구간입니다.
-
-[근거]
-OA-21285 유동값은 동일 시점 서울 자치구 내 상대 위치를 이용한 지표이며,
-raw population을 정확한 방문자 수로 단정하지 않습니다.
-
-[추천 액션]
-1. 유입 압력 48점 기준으로 대형 광고보다 단골·예약 고객 대상 저비용 알림을 우선하세요.
-2. 소비 의도 30점 기준으로 고가 세트보다 진입 장벽 낮은 소액 메뉴를 먼저 제안하세요.
-3. 운영 리스크 20점이 낮은 편이므로 재고는 평시보다 소폭만 늘리고 회전율을 확인하세요.
-
-[데이터 상태]
-상태: partial
-
-실제 Fallback:
-- consumption_baseline
-
-데이터 없음:
-- weather
-- content.festival
-- content.event
-- content.performance
-- content.sports
-- special_day
-- competition_sdot
-
-오래되어 미적용:
-- tourism
-
-시점 불일치로 미적용:
-- realtime_commerce
-
-정상 조회 / 해당 항목 없음:
-- 없음
-
-실패:
-- 없음
-
-데이터 부족: True
-
-[문장 생성 방식]
-rule_fallback
-(OpenAI API 키 없이 룰 기반으로 생성)
-
-Data source: 최종 통합 QA에서 검증한 저장 snapshot replay
-============================================================
+http://localhost:8000/docs
 ```
 
-위 결과는 실제 프론트엔드 UI가 아니라  
-Feed Schema v1 결과를 사람이 확인하기 쉽게 터미널에 출력한 예시입니다.
-`Data mode: validated_snapshot`은 실시간 외부 API를 새로 호출한 결과가 아니라,  
-최종 통합 QA에서 검증하고 저장한 snapshot을 다시 사용하여 동일한 Feed 결과를 재현하는 방식입니다.
-따라서 위 demo 결과는 특정 검증 시점의 저장 데이터를 기준으로 한 재현 결과이며,  
-현재 시점의 실시간 상권 상태를 의미하지 않습니다.
-실제 Feed pipeline에서는 입력된 날짜·시간 또는  
-생략 시 Asia/Seoul 기준 현재 날짜·시간을 기준으로 처리됩니다.
+OpenAPI JSON:
+
+```text
+http://localhost:8000/openapi.json
+```
+
+Health check:
+
+```text
+GET /health
+```
+
+동일 Docker Compose network의 Spring container에서는 다음 주소 사용을 권장합니다.
+
+```text
+http://ai:8000
+```
+
+FastAPI `8000` port는 외부에 직접 공개하지 않고 Spring Backend에서만 접근하는 internal service 구성을 권장합니다.
+
+FastAPI 자체에는 현재 별도 JWT, `x-api-key`, CORS 설정이 없습니다.
 
 ---
 
-## 8. Feed Schema v1
+# 6. API
 
-Backend 및 Frontend에서는  
-`schema_version = "1.0"`인 Public Feed 결과를 기준으로 연동합니다.
+## 6.1 Health
 
-### Top-level Fields
+```http
+GET /health
+```
 
-| 필드 | 타입 | 필수 | 의미 |
-|---|---|---|---|
-| schema_version | string | 필수 | Feed Schema 버전 |
-| query | object | 필수 | 지역·날짜·시간·시간대 |
-| opportunity_score | number | 필수 | 최종 기회점수 |
-| market_weather | object | 필수 | 상권날씨 정보 |
-| indicators | object | 필수 | 4개 핵심 지표 |
-| decision_tags | string[] | 필수 | 의사결정 태그 |
-| narrative | object | 필수 | 판단·근거·추천 액션 |
-| data_quality | object | 필수 | 데이터 품질 및 fallback 상태 |
-| sources | object | 필수 | 사용 데이터 source의 public metadata |
-| generated_at | string | 필수 | Feed 생성 시각 |
+성공:
+
+```json
+{
+  "status": "ok"
+}
+```
 
 ---
 
-### indicators
+## 6.2 자치구 Detail Feed
+
+```http
+GET /api/v1/weather-feeds
+```
+
+### Query Parameters
+
+| 파라미터 | 필수 | 형식 | 예시 |
+|---|---:|---|---|
+| `district` | O | 서울 자치구명 | `강남구` |
+| `date` | X | `YYYY-MM-DD` | `2026-09-12` |
+| `time` | X | `HH:MM` | `14:00` |
+| `time_band` | X | `심야`, `아침`, `점심`, `오후`, `저녁` | `점심` |
+
+예:
+
+```http
+GET /api/v1/weather-feeds?district=강남구&date=2026-09-12&time_band=점심
+```
+
+성공 시 Public Feed Schema v1 raw JSON을 반환합니다.
+
+HTTP status:
+
+| Status | 의미 |
+|---|---|
+| `200` | 정상 Feed 반환 |
+| `422` | district/date/time/time_band 입력 오류 또는 time-time_band 불일치 |
+| `500` | 내부 pipeline 실행 실패 |
+
+외부 API 원문, API Key, exception detail은 오류 응답에 노출하지 않습니다.
+
+---
+
+## 6.3 서울 25개 자치구 Overview
+
+```http
+GET /api/v1/weather-feeds/overview
+```
+
+서울 지도 전체를 한 번에 렌더링하기 위한 snapshot 기반 API입니다.
+
+### Query Parameters
+
+| 파라미터 | 필수 | 형식 | 예시 |
+|---|---:|---|---|
+| `date` | X | `YYYY-MM-DD` | `2026-09-12` |
+| `time` | X | `HH:MM` | `10:38` |
+| `time_band` | X | `심야`, `아침`, `점심`, `오후`, `저녁` | `아침` |
+
+예:
+
+```http
+GET /api/v1/weather-feeds/overview?date=2026-09-12&time_band=아침
+```
+
+응답 예:
+
+```json
+{
+  "schema_version": "1.0",
+  "query": {
+    "date": "2026-09-12",
+    "time": "09:00",
+    "time_band": "아침"
+  },
+  "status": "ok",
+  "districts": [
+    {
+      "district": "강남구",
+      "opportunity_score": 67,
+      "grade": "구름",
+      "emoji": "⛅"
+    }
+  ],
+  "generated_at": "2026-09-12T15:16:41+09:00",
+  "source_time": "2026-09-12T15:13:34+09:00",
+  "age_minutes": 3.13,
+  "fresh_ttl_minutes": 10,
+  "is_fresh": true
+}
+```
+
+정상 snapshot은 `districts`에 서울 25개 자치구를 포함합니다.
+
+Overview HTTP 요청에서는 25개 Detail Feed를 새로 계산하지 않습니다.
+
+HTTP request path에서 collector를 실행하거나 외부 source를 호출해 Overview를 재생성하지 않습니다.
+
+---
+
+# 7. Time Band 계약
+
+공식 시간대는 다음과 같습니다.
+
+| time_band | 범위 | representative_time |
+|---|---|---:|
+| 심야 | `00:00 <= time < 06:00` | `03:00` |
+| 아침 | `06:00 <= time < 12:00` | `09:00` |
+| 점심 | `12:00 <= time < 17:00` | `14:00` |
+| 오후 | `17:00 <= time < 20:00` | `18:00` |
+| 저녁 | `20:00 <= time < 24:00` | `21:00` |
+
+### 입력 규칙
+
+`time`만 입력:
+
+```text
+입력한 실제 time 사용
+```
+
+`time_band`만 입력:
+
+```text
+해당 band의 representative_time 사용
+```
+
+둘 다 입력하고 일치:
+
+```text
+허용
+```
+
+예:
+
+```text
+time=10:38
+time_band=아침
+```
+
+둘 다 입력하지만 서로 불일치:
+
+```text
+HTTP 422
+```
+
+예:
+
+```text
+time=10:38
+time_band=저녁
+```
+
+둘 다 생략:
+
+```text
+Asia/Seoul 현재 날짜·시각 사용
+```
+
+### Detail과 Overview의 query.time 차이
+
+Detail Feed:
+
+```text
+실제 normalized 요청 time을 유지
+```
+
+예:
+
+```text
+10:38 + 아침
+→ query.time = 10:38
+```
+
+Overview:
+
+```text
+snapshot representative_time을 반환
+```
+
+예:
+
+```text
+10:38 + 아침
+→ query.time = 09:00
+```
+
+---
+
+# 8. Public Feed Schema v1
+
+Backend 및 Frontend에서는:
+
+```text
+schema_version = "1.0"
+```
+
+을 기준으로 연동합니다.
+
+## Top-level Fields
 
 | 필드 | 타입 | 의미 |
 |---|---|---|
-| inflow_pressure | number | 유입 압력 |
-| spending_intent | number | 소비 의도 |
-| competition_pressure | number | 경쟁 압박 |
-| operational_risk | number | 운영 리스크 |
+| `schema_version` | string | Feed Schema 버전 |
+| `query` | object | district/date/time/time_band |
+| `opportunity_score` | number | 최종 기회점수 |
+| `market_weather` | object | 상권날씨 score/grade/emoji |
+| `indicators` | object | 4개 핵심 지표 |
+| `decision_tags` | string[] | 의사결정 태그 |
+| `narrative` | object | 판단·근거·추천 액션 |
+| `data_quality` | object | 데이터 품질 상태 |
+| `sources` | object | source 상태 metadata |
+| `content` | object | Frontend 표시용 콘텐츠 |
+| `generated_at` | string | Feed 생성 시각 |
 
 ---
 
-### narrative
+## indicators
 
-| 필드 | 타입 | 의미 |
-|---|---|---|
-| generation_mode | string | 문장 생성 방식 |
-| judgement_sentence | string | 현재 상권 상태에 대한 판단 |
-| basis_sentence | string | 판단 근거 |
-| recommended_actions | string[] | 추천 액션 목록 |
+```json
+{
+  "inflow_pressure": 63,
+  "spending_intent": 60,
+  "competition_pressure": 46,
+  "operational_risk": 21
+}
+```
 
-`generation_mode`은 다음 값을 사용합니다.
+---
+
+## market_weather
+
+```json
+{
+  "score": 64,
+  "grade": "흐림",
+  "emoji": "☁️"
+}
+```
+
+---
+
+## narrative
+
+```json
+{
+  "generation_mode": "rule_fallback",
+  "judgement_sentence": "...",
+  "basis_sentence": "...",
+  "recommended_actions": [
+    "...",
+    "...",
+    "..."
+  ]
+}
+```
+
+`generation_mode`:
 
 ```text
 rule_fallback
 hybrid_llm
 ```
 
-- `rule_fallback`: OpenAI API를 사용하지 않고 룰 기반으로 문장을 생성한 경우
-- `hybrid_llm`: OpenAI 호출 및 결과 검증이 정상 완료되어 LLM 문장을 사용한 경우
+- `rule_fallback`: OpenAI API를 사용하지 않은 룰 기반 문장
+- `hybrid_llm`: OpenAI 호출 및 결과 검증이 정상 완료된 문장
 
-LLM 사용 여부와 관계없이  
-점수, 상권날씨, 의사결정 태그는 변경되지 않습니다.
-        
----
-
-### data_quality
-
-`data_quality`는 Feed 계산에 사용된 외부 데이터의 품질과  
-fallback 여부, 점수 기준 시각에 대한 정보를 제공합니다.
-
-| 필드 | 타입 | 의미 |
-|---|---|---|
-| status | string | 전체 데이터 품질 상태 (`ok`, `partial`, `fallback`, `no_data`) |
-| data_insufficient | boolean | 점수 계산에 필요한 데이터가 일부 부족한지 여부 |
-| badges | string[] | 심야 또는 데이터 부족 관련 안내 문구 |
-| fallback_sources | string[] | 대체값 또는 이전 snapshot을 실제 점수 계산에 사용한 source |
-| no_data_sources | string[] | 필요한 데이터를 확보하지 못한 source |
-| stale_sources | string[] | freshness 기준을 초과하여 점수에 사용하지 않은 source |
-| skipped_sources | string[] | 날짜·시간대·eligibility 조건 불일치로 점수에 반영하지 않은 source |
-| failed_sources | string[] | API 호출, 파싱 또는 처리 과정에서 실패한 source |
-| empty_sources | string[] | 정상 조회됐지만 해당 조건에서 결과가 0건인 source |
-| score_context | object | 점수 계산 기준 날짜·시간대 관련 metadata |
-
-`score_context`에는 값이 존재하는 항목만 포함되며 다음 필드를 가질 수 있습니다.
-
-| 필드 | 의미 |
-|---|---|
-| basis | 점수 기준 방식 |
-| reference_date | 점수 계산 기준 날짜 |
-| reference_time_band | 참조 시간대 |
-| reference_start | 참조 시작 시각 |
-| reference_end | 참조 종료 시각 |
-| representative_time | 대표 시각 |
+LLM은 점수, 상권날씨, 지표, decision tag를 변경하지 않습니다.
 
 ---
 
-### sources
+# 9. content.items
 
-`sources`는 점수 계산에 사용된 raw data 자체가 아니라,  
-각 데이터 source/provider의 **상태, 기준 기간, freshness, eligibility를 요약한 public metadata**입니다.
-
-API Key, secret, raw API response, exception detail 및 내부 contribution diagnostics는 포함되지 않습니다.
-
-`sources`는 Public Feed 응답에 항상 포함되지만,  
-프론트엔드에서 점수·날씨·태그를 표시하기 위해 반드시 소비해야 하는 핵심 필드라기보다는  
-데이터 출처와 상태를 확인하기 위한 참고용 metadata입니다.
-
-`sources`에는 다음 source key가 항상 생성됩니다.
-
-```text
-weather
-content.festival
-content.event
-content.performance
-content.sports
-special_day
-footfall
-tourism
-commercial_store
-consumption_baseline
-realtime_commerce
-competition_sdot
-```
-
-모든 개별 source 객체에는 다음 공통 필드가 존재합니다.
-
-| 필드 | 타입 | 필수 | 의미 |
-|---|---|---|---|
-| source | string | 필수 | 실제 public source/provider 이름 |
-| status | string | 필수 | 해당 source의 상태 |
-
-source의 `status`는 다음 값을 사용할 수 있습니다.
-
-```text
-ok
-empty
-partial
-fallback
-no_data
-failed
-complete
-```
-
-그 외 metadata는 source 종류에 따라 선택적으로 추가됩니다.
-
-| Source | 선택 Metadata |
-|---|---|
-| content.festival | `item_count` |
-| content.event | `item_count` |
-| content.performance | `item_count` |
-| content.sports | `item_count` |
-| special_day | `item_count` |
-| footfall | `source_time`, `snapshot_count`, `fallback` |
-| tourism | `requested_month`, `source_month`, `age_months`, `fallback` |
-| commercial_store | `mode`, `requested_quarter`, `source_quarter`, `age_quarters`, `fallback` |
-| consumption_baseline | `requested_quarter`, `source_quarter`, `age_quarters` |
-| realtime_commerce | `source_time`, `age_minutes`, `valid_place_count`, `eligibility_reason` |
-
-선택 metadata 값이 `None`인 경우 해당 필드는 응답에서 생략될 수 있습니다.
-
----
-
-## 9. JSON 응답 예시
-
-아래 JSON은 강남구 `validated_snapshot` demo에서 생성된 Public Feed 구조를 기준으로 한 예시입니다.
-
-`sources`는 실제 serializer가 반환하는 public metadata 구조를 사용합니다.
+Detail Feed는 Frontend에서 표시할 수 있도록 다음 콘텐츠 구조를 제공합니다.
 
 ```json
 {
-  "schema_version": "1.0",
-  "query": {
-    "district": "강남구",
-    "date": "2026-08-22",
-    "time": "21:25",
-    "time_band": "저녁"
-  },
-  "opportunity_score": 52,
-  "market_weather": {
-    "grade": "흐림",
-    "emoji": "☁️"
-  },
-  "indicators": {
-    "inflow_pressure": 48,
-    "spending_intent": 30,
-    "competition_pressure": 29,
-    "operational_risk": 20
-  },
-  "decision_tags": [
-    "관망 권장"
-  ],
-  "narrative": {
-    "generation_mode": "rule_fallback",
-    "judgement_sentence": "뚜렷한 상승 신호가 강하지 않아, 추가 집행보다는 관찰과 보수적 운영이 적합한 구간입니다.",
-    "basis_sentence": "OA-21285 유동값은 동일 시점 서울 자치구 내 상대 위치를 이용한 지표입니다.",
-    "recommended_actions": [
-      "유입 압력을 고려해 대형 광고보다 단골·예약 고객 대상 저비용 알림을 우선하세요.",
-      "소비 의도를 고려해 고가 세트보다 진입 장벽이 낮은 메뉴를 먼저 제안하세요.",
-      "운영 리스크를 고려해 재고는 평시보다 소폭만 늘리고 회전율을 확인하세요."
-    ]
-  },
-  "data_quality": {
-    "status": "partial",
-    "data_insufficient": true,
-    "badges": [],
-    "fallback_sources": [
-      "consumption_baseline"
-    ],
-    "no_data_sources": [
-      "weather",
-      "content.festival",
-      "content.event",
-      "content.performance",
-      "content.sports",
-      "special_day",
-      "competition_sdot"
-    ],
-    "stale_sources": [
-      "tourism"
-    ],
-    "skipped_sources": [
-      "realtime_commerce"
-    ],
-    "failed_sources": [],
-    "empty_sources": [],
-    "score_context": {}
-  },
-  "sources": {
-    "weather": {
-      "source": "weather",
-      "status": "no_data"
-    },
-    "content": {
-      "festival": {
-        "source": "festival",
-        "status": "no_data",
-        "item_count": 0
-      },
-      "event": {
-        "source": "event",
-        "status": "no_data",
-        "item_count": 0
-      },
-      "performance": {
-        "source": "performance",
-        "status": "no_data",
-        "item_count": 0
-      },
-      "sports": {
-        "source": "sports",
-        "status": "no_data",
-        "item_count": 0
+  "content": {
+    "items": [
+      {
+        "id": "3377038",
+        "type": "festival",
+        "title": "2026 국제선명상대회",
+        "period": "2026-04-03 ~ 2026-11-12",
+        "place": "서울특별시 강남구 봉은사로 531 (삼성동)",
+        "thumbnail_url": "https://..."
       }
-    },
-    "special_day": {
-      "source": "special_day",
-      "status": "no_data",
-      "item_count": 0
-    },
-    "footfall": {
-      "source": "oa21285",
-      "status": "ok",
-      "source_time": "2026-08-22 21:25",
-      "snapshot_count": 5,
-      "fallback": false
-    },
-    "tourism": {
-      "source": "tourapi",
-      "status": "no_data",
-      "requested_month": "202608",
-      "source_month": "202509",
-      "age_months": 11
-    },
-    "commercial_store": {
-      "source": "commercial_store",
-      "status": "complete",
-      "mode": "commercial_only",
-      "requested_quarter": "2026Q3",
-      "source_quarter": "2026Q3",
-      "age_quarters": 0
-    },
-    "consumption_baseline": {
-      "source": "OA-22176+OA-22173",
-      "status": "fallback",
-      "requested_quarter": "2026Q3",
-      "source_quarter": "2026Q1",
-      "age_quarters": 2
-    },
-    "realtime_commerce": {
-      "source": "oa22385",
-      "status": "no_data",
-      "source_time": "20260823 1600",
-      "age_minutes": 6009.39,
-      "valid_place_count": 0,
-      "eligibility_reason": "different_date_or_time_band"
-    },
-    "competition_sdot": {
-      "source": "sdot",
-      "status": "no_data"
-    }
-  },
-  "generated_at": "..."
+    ]
+  }
 }
 ```
 
-> `realtime_commerce.age_minutes`는 serializer 실행 시점을 기준으로 계산되는 값이므로  
-> 동일한 demo를 다른 시각에 실행하면 값이 달라질 수 있습니다.
+필드:
 
-상세 Schema는 다음 문서를 참고합니다.
+| 필드 | 타입 | 의미 |
+|---|---|---|
+| `id` | string | source ID 또는 deterministic ID |
+| `type` | string | 콘텐츠 종류 |
+| `title` | string | 제목 |
+| `period` | string/null | 기간 또는 일시 |
+| `place` | string/null | 장소 |
+| `thumbnail_url` | string/null | 이미지 URL |
+
+지원하는 `type`:
 
 ```text
-docs/weather_feed_schema_v1.md
+festival
+event
+performance
+sports
+```
+
+`video` type은 AI/Data Weather Feed API에서 생성하지 않습니다.
+
+### `sources.content`와 `content.items`의 차이
+
+`sources.content`:
+
+```text
+데이터 source 상태 및 품질 metadata
+```
+
+`content.items`:
+
+```text
+Frontend 표시용 whitelist projection
+```
+
+raw provider response, 내부 debug 정보, secret은 `content.items`에 포함하지 않습니다.
+
+---
+
+# 10. data_quality
+
+예:
+
+```json
+{
+  "status": "partial",
+  "data_insufficient": true,
+  "badges": [
+    "일부 데이터가 부족해 대체값 또는 기본값을 사용했습니다"
+  ],
+  "fallback_sources": [
+    "weather",
+    "consumption_baseline"
+  ],
+  "no_data_sources": [],
+  "stale_sources": [
+    "content.performance",
+    "content.sports",
+    "tourism"
+  ],
+  "skipped_sources": [
+    "realtime_commerce"
+  ],
+  "failed_sources": [],
+  "empty_sources": [
+    "special_day",
+    "footfall",
+    "competition_sdot"
+  ],
+  "score_context": {
+    "basis": "requested_time"
+  }
+}
+```
+
+### 주요 의미
+
+| 필드 | 의미 |
+|---|---|
+| `fallback_sources` | 대체값 또는 fallback을 실제 사용 |
+| `no_data_sources` | 필요한 데이터를 확보하지 못함 |
+| `stale_sources` | freshness 기준 초과 |
+| `skipped_sources` | 날짜/시간대/eligibility 불일치 |
+| `failed_sources` | source 호출/처리 실패 |
+| `empty_sources` | 정상 조회됐지만 해당 조건에서 결과 없음 |
+
+`sources`는 Frontend 필수 표시 데이터라기보다 source 상태 확인용 metadata입니다.
+
+---
+
+# 11. Overview Snapshot
+
+Snapshot 기본 경로:
+
+```text
+data/weather_overview/latest/
+```
+
+동일 날짜에 다음 5개 snapshot이 독립적으로 존재할 수 있습니다.
+
+```text
+YYYY-MM-DD_심야.json
+YYYY-MM-DD_아침.json
+YYYY-MM-DD_점심.json
+YYYY-MM-DD_오후.json
+YYYY-MM-DD_저녁.json
+```
+
+예:
+
+```text
+2026-09-12_심야.json
+2026-09-12_아침.json
+2026-09-12_점심.json
+2026-09-12_오후.json
+2026-09-12_저녁.json
+```
+
+특정 snapshot 생성:
+
+```bash
+python3 weather_overview_collector.py \
+  --date 2026-09-12 \
+  --time-band 아침
+```
+
+현재 Asia/Seoul 기준 active band 생성:
+
+```bash
+python3 weather_overview_collector.py --active
+```
+
+`--active`는 현재 time_band의 snapshot만 갱신합니다.
+
+다른 time_band snapshot은 삭제하거나 비활성화하지 않습니다.
+
+따라서 Frontend는 현재 시간이 아니더라도 이미 생성된 같은 날짜의 다른 time_band를 계속 조회할 수 있습니다.
+
+---
+
+# 12. Overview Freshness 정책
+
+Fresh TTL:
+
+```text
+10분
+```
+
+### Fresh
+
+```text
+age_minutes <= 10
+```
+
+응답:
+
+```json
+{
+  "status": "ok",
+  "is_fresh": true,
+  "fresh_ttl_minutes": 10
+}
+```
+
+### Stale
+
+```text
+age_minutes > 10
+```
+
+또는 snapshot `generated_at`이 없거나 파싱할 수 없는 경우:
+
+```json
+{
+  "status": "stale",
+  "is_fresh": false,
+  "fresh_ttl_minutes": 10
+}
+```
+
+stale snapshot도 마지막 25개 district 데이터를 유지합니다.
+
+즉 Frontend에서는:
+
+```text
+status=stale
+```
+
+을 `districts=[]`와 동일하게 취급하면 안 됩니다.
+
+필요하면 UI에 “업데이트 지연” 등의 freshness 상태를 표시할 수 있습니다.
+
+`generated_at`을 파싱할 수 없는 경우:
+
+```text
+source_time = 원본 값
+age_minutes = null
+is_fresh = false
+status = stale
+```
+
+snapshot 파일 자체가 없거나 읽을 수 없는 경우:
+
+```json
+{
+  "status": "no_data",
+  "districts": []
+}
 ```
 
 ---
 
-### OpenAI API Key가 없는 경우
+# 13. Production Collector 운영
+
+Collector는 HTTP request lifecycle과 분리된 CLI/job입니다.
+
+## Weather Overview
+
+```bash
+python3 weather_overview_collector.py --active
+```
+
+권장 실행 주기:
+
+```text
+5분
+```
+
+collector 실행 시간은 외부 API 상태와 로컬/서버 환경에 따라 달라질 수 있습니다.
+
+로컬 QA에서는 한 번의 active-band 생성에 약 1~2분 이상이 소요될 수 있었습니다.
+
+HTTP 요청에서 collector를 실행하지 않습니다.
+
+### Linux cron 예시
+
+중복 실행을 막기 위해 `flock -n` 사용을 권장합니다.
+
+```cron
+*/5 * * * * cd /srv/weatherfeed && /usr/bin/flock -n /tmp/weather-overview-collector.lock .venv/bin/python weather_overview_collector.py --active
+```
+
+이전 실행이 아직 진행 중이면 다음 실행은 skip됩니다.
+
+### Kubernetes
+
+CronJob 사용 시:
+
+```yaml
+concurrencyPolicy: Forbid
+```
+
+를 권장합니다.
+
+여러 host가 동일 snapshot volume에 쓰는 경우에는 host-local `/tmp` lock이 아닌 공유/distributed lock 또는 단일 CronJob 구성이 필요합니다.
+
+---
+
+## Sports
+
+```bash
+python3 sports_collector.py --date YYYY-MM-DD
+```
+
+권장 주기:
+
+```text
+10~15분
+```
+
+---
+
+## KOPIS Performance
+
+```bash
+python3 performance_collector.py --date YYYY-MM-DD
+```
+
+필요:
+
+```text
+KOPIS_API_KEY
+```
+
+권장 주기:
+
+```text
+30분
+```
+
+---
+
+## OA-21285
+
+```bash
+python3 oa21285_collector.py
+```
+
+필요:
+
+```text
+SEOUL_OPEN_DATA_API_KEY
+```
+
+권장 주기:
+
+```text
+약 5분
+```
+
+---
+
+## OA-22385 실시간 소비
+
+```bash
+python3 consumption_hybrid.py
+```
+
+필요:
+
+```text
+SEOUL_OPEN_DATA_API_KEY
+```
+
+권장 주기:
+
+```text
+약 5분
+```
+
+---
+
+# 14. Runtime Data / Volume
+
+FastAPI request path와 collector가 함께 사용하는 mutable snapshot은 production에서 writable volume으로 공유하는 구성을 권장합니다.
+
+주요 runtime 데이터:
+
+```text
+data/weather_overview/latest/
+data/sports/latest/
+data/performance/latest/
+data/oa21285/history/
+data/oa21285/cache/latest/
+data/consumption/realtime/latest/
+```
+
+정적 scoring/baseline snapshot:
+
+```text
+data/commercial_stores/scoring/
+data/consumption/baseline/aligned_normalized/
+data/tourism/normalized/
+```
+
+FastAPI request path에서는 KOPIS 또는 Playwright를 request-time heavy fallback으로 실행하지 않습니다.
+
+cache miss 또는 stale cache는 source 상태에 반영합니다.
+
+---
+
+# 15. Backend Integration
+
+권장 구조:
+
+```text
+Frontend
+   ↓
+Spring Boot Backend
+   ↓
+FastAPI AI/Data
+```
+
+FastAPI internal URL:
+
+```text
+http://ai:8000
+```
+
+Spring에서 호출할 AI/Data API:
+
+```text
+GET /health
+
+GET /api/v1/weather-feeds
+GET /api/v1/weather-feeds/overview
+```
+
+FastAPI는 raw Public Feed Schema v1을 반환합니다.
+
+Frontend-facing Spring API에서는 기존 Backend의 `ApiResponse<T>` convention에 맞게 wrapping하는 것을 권장합니다.
+
+예:
+
+```text
+Frontend
+→ Spring GET /api/v1/weather-feeds
+→ FastAPI GET /api/v1/weather-feeds
+→ Spring ApiResponse<T>
+```
+
+### Backend error 처리
+
+FastAPI:
+
+```text
+422 = 잘못된 입력
+500 = AI/Data pipeline 내부 오류
+```
+
+Spring:
+
+```text
+connection failure
+read timeout
+FastAPI 5xx
+```
+
+는 upstream service error로 구분해 처리하는 것을 권장합니다.
+
+v1에서는 동일 요청을 자동 retry하지 않는 방향을 권장합니다.
+
+### Timeout
+
+기존 Spring global RestClient timeout을 변경하지 않고 Weather Feed용 RestClient/configuration을 별도로 두는 것을 권장합니다.
+
+Detail API는 Overview보다 처리 시간이 길 수 있으므로 global 설정과 별도로 충분한 read timeout을 설정해야 합니다.
+
+로컬 QA에서는 Detail이 대체로 수 초 이내, Overview snapshot read는 매우 빠르게 응답했지만 이는 production SLA를 의미하지 않습니다.
+
+---
+
+# 16. Frontend Integration
+
+## 서울 지도
+
+사용:
+
+```http
+GET /api/v1/weather-feeds/overview
+```
+
+주요 필드:
+
+```text
+districts[].district
+districts[].opportunity_score
+districts[].grade
+districts[].emoji
+```
+
+지도 색상은 `grade` 기준으로 Frontend에서 매핑할 수 있습니다.
+
+---
+
+## 선택 자치구 Detail
+
+사용:
+
+```http
+GET /api/v1/weather-feeds
+```
+
+주요 표시 필드:
+
+```text
+opportunity_score
+
+market_weather.score
+market_weather.grade
+market_weather.emoji
+
+indicators.inflow_pressure
+indicators.spending_intent
+indicators.competition_pressure
+indicators.operational_risk
+
+decision_tags
+
+narrative.judgement_sentence
+narrative.basis_sentence
+narrative.recommended_actions
+
+content.items
+
+data_quality
+```
+
+### Content type
+
+Frontend는 다음 type을 지원해야 합니다.
+
+```text
+festival
+event
+performance
+sports
+```
+
+특히 `event`는 별도 type입니다.
+
+AI/Data API에서는 `video` type을 생성하지 않습니다.
+
+---
+
+## Overview stale 처리
+
+Overview가:
+
+```json
+{
+  "status": "stale",
+  "is_fresh": false,
+  "districts": [...]
+}
+```
+
+를 반환하더라도 district 데이터는 사용할 수 있습니다.
+
+`stale`을 곧바로 `no_data`로 처리하지 않습니다.
+
+파일이 없는 경우의:
+
+```json
+{
+  "status": "no_data",
+  "districts": []
+}
+```
+
+와 구분해야 합니다.
+
+---
+
+# 17. OpenAI
+
+## API Key가 없는 경우
 
 ```text
 generation_mode = rule_fallback
 ```
 
-점수, 상권날씨, 의사결정 태그와 함께  
-룰 기반 판단문장, 근거문장, 추천 액션이 생성됩니다.
+OpenAI network call 없이 룰 기반 문장을 반환합니다.
 
-### OpenAI API Key를 사용하는 경우
-
-`.env`에 다음 환경변수를 설정합니다.
+## API Key가 있는 경우
 
 ```env
-OPENAI_API_KEY=발급받은_API_KEY
-OPENAI_MODEL=사용할_모델
+OPENAI_API_KEY=...
+OPENAI_MODEL=...
 ```
 
-LLM 호출 및 결과 검증이 정상적으로 완료되면:
+정상 호출 및 validation 완료 시:
 
 ```text
 generation_mode = hybrid_llm
 ```
 
-으로 표시됩니다.
-LLM은 점수, 상권날씨, 의사결정 태그를 변경하지 않습니다.
+LLM 사용 여부와 관계없이 다음 값은 변경하지 않습니다.
+
+```text
+opportunity_score
+market_weather
+indicators
+decision_tags
+```
 
 ---
 
-## 11. Test
+# 18. Test
+
+현재 regression test는 `pytest`를 기준으로 실행합니다.
+
+개발/QA 환경에는 `pytest`가 설치되어 있어야 합니다.
 
 ### macOS / Linux
 
 ```bash
-python3 -m unittest discover -s tests
+PYTHONPATH=. pytest -q
+python3 -m compileall -q .
+git diff --check
 ```
 
-### Windows
-
-```cmd
-python -m unittest discover -s tests
-```
-
-현재 검증된 실행 결과:
+현재 최종 QA 기준:
 
 ```text
-Ran 213 tests in ...
-OK
+250 passed
+0 failed
 ```
 
-테스트가 추가될 경우 전체 테스트 개수는 증가할 수 있습니다.
+환경에 따라 FastAPI/Starlette/anyio TestClient 관련 deprecation warning이 출력될 수 있으며 이는 테스트 실패가 아닙니다.
+
+Dependency integrity 확인:
+
+```bash
+python3 -m pip check
+```
 
 ---
 
-## 12. Windows UTF-8
+# 19. Windows UTF-8
 
-프로젝트 내부 텍스트 파일 입출력에는 UTF-8 encoding을 명시하여  
-Windows 기본 `cp949` 인코딩에 암묵적으로 의존하지 않도록 구성했습니다.
+프로젝트 내부 텍스트 파일 입출력에는 UTF-8 encoding을 명시합니다.
 
-현재 코드 기준으로 `Path.open()`, `read_text()`, `write_text()` 등  
-프로젝트 내부 텍스트 파일 입출력의 encoding 누락 여부를 점검했으며,  
-관련 수정 후 전체 213개 테스트가 정상 통과했습니다.
+최신 코드에서는 별도의 `PYTHONUTF8=1` 설정 없이 동작하도록 구성되어 있습니다.
 
-이전 버전 코드에서 `cp949` 관련 오류가 발생하는 경우에는  
-임시로 다음 설정을 사용할 수 있습니다.
+이전 환경에서 `cp949` 관련 문제가 발생하는 경우 임시로 다음 설정을 사용할 수 있습니다.
 
 ### CMD
 
@@ -621,5 +1101,83 @@ set PYTHONUTF8=1
 $env:PYTHONUTF8="1"
 ```
 
-최신 코드에서는 별도의 `PYTHONUTF8=1` 설정 없이 실행할 수 있도록  
-파일 입출력 encoding을 명시하고 있습니다.
+---
+
+# 20. Handoff 요약
+
+## Backend
+
+필수 확인:
+
+```text
+FastAPI internal URL:
+http://ai:8000
+
+Detail:
+GET /api/v1/weather-feeds
+
+Overview:
+GET /api/v1/weather-feeds/overview
+
+Health:
+GET /health
+```
+
+FastAPI는 raw Schema v1을 반환합니다.
+
+Spring에서는 기존 `ApiResponse<T>` convention에 맞게 Frontend-facing 응답을 구성합니다.
+
+Weather Feed용 dedicated timeout 설정을 권장합니다.
+
+---
+
+## Frontend
+
+지도:
+
+```text
+overview.districts
+```
+
+선택 구 상세:
+
+```text
+detail Feed
+```
+
+Content type:
+
+```text
+festival
+event
+performance
+sports
+```
+
+`event` type 지원이 필요합니다.
+
+`video`는 AI/Data에서 제공하지 않습니다.
+
+Overview가 `stale`이어도 `districts`가 존재하면 표시할 수 있으며 `is_fresh=false`를 freshness 상태로 해석합니다.
+
+---
+
+## Infra
+
+FastAPI:
+
+```text
+0.0.0.0:8000
+```
+
+동일 Docker network에서 Spring:
+
+```text
+http://ai:8000
+```
+
+FastAPI는 internal-only 운영을 권장합니다.
+
+collector와 API가 사용하는 runtime snapshot directory는 공유 writable volume으로 구성합니다.
+
+Weather Overview collector는 권장 5분 주기로 실행하며 중복 실행을 방지합니다.
