@@ -1054,10 +1054,7 @@ decision_tags
 
 현재 regression test는 `pytest`를 기준으로 실행합니다.
 
-개발/QA 환경에서는 다음 명령으로 테스트 의존성을 설치합니다.
-
-```bash
-python3 -m pip install -r requirements-dev.txt
+개발/QA 환경에는 `pytest`가 설치되어 있어야 합니다.
 
 ### macOS / Linux
 
