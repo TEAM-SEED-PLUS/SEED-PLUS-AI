@@ -1,2 +1,2 @@
-# OA-21285 GeoJSON spatial candidate generation (optional runtime dependency)
-shapely>=2.0,<3
+# OA-21285 GeoJSON spatial candidate generation dependency
+shapely==2.1.2

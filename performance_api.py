@@ -62,6 +62,11 @@ class KOPISClient:
         )
         results = []
         for db in root.findall(".//db"):
+            error_code = self._safe_text(db, "returncode")
+            if error_code and error_code not in {"00", "INFO-000"}:
+                # KOPIS reports authentication and request errors as HTTP 200
+                # XML <db> records. Do not misclassify them as valid/empty data.
+                raise RuntimeError(f"KOPIS API failure: code={error_code}")
             results.append(
                 {
                     "mt20id": self._safe_text(db, "mt20id"),

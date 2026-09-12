@@ -61,7 +61,7 @@ def _normalize_content_item(item: dict[str, Any], source_kind: str) -> dict[str,
     category = _pick(item, ["category_name", "genre", "sport", "category", "source"])
     place = _pick(item, ["place", "stadium", "address", "administrative_district"])
     time_text = _pick(item, ["time_text", "time", "sensing_time", "date_text"])
-    start_date = _pick(item, ["event_start_date", "date_from", "date"])
+    start_date = _pick(item, ["event_start_date", "date_from", "date", "date_text"])
     end_date = _pick(item, ["event_end_date", "date_to"])
     detail = _pick(item, ["runtime", "price_text", "use_fee", "match", "detail", "original_time_text"])
     tags = _detect_content_tags(" ".join([title, category, place, detail]))
@@ -81,9 +81,13 @@ def _normalize_content_item(item: dict[str, Any], source_kind: str) -> dict[str,
 
 
 
-def _llm_brief(item: dict[str, Any]) -> str:
-    parts = [item.get("title", ""), item.get("category", ""), item.get("time_text", "")]
-    return " / ".join([normalize_text(p) for p in parts if normalize_text(p)])
+def _user_content_brief(item: dict[str, Any]) -> str:
+    """Build narrative text from user-meaningful fields, never provenance."""
+    title = normalize_text(item.get("title"))
+    place = normalize_text(item.get("place"))
+    if not title:
+        return ""
+    return f"{title}({place})" if place and place not in title else title
 
 
 
@@ -95,11 +99,10 @@ def _normalize_content_block(block: dict[str, Any], source_kind: str) -> dict[st
     story_lines = []
     llm_briefs = []
     for item in items[:5]:
-        parts = [item.get("title", ""), item.get("category", ""), item.get("place", ""), item.get("time_text", "")]
-        line = " / ".join([p for p in parts if p])
+        line = _user_content_brief(item)
         if line:
             story_lines.append(line)
-        brief = _llm_brief(item)
+        brief = _user_content_brief(item)
         if brief:
             llm_briefs.append(brief)
     return {

@@ -253,6 +253,7 @@ def get_festivals(
             "tel": normalize_text(item.get("tel")),
             "homepage": normalize_text(item.get("homepage")),
             "contentid": normalize_text(item.get("contentid")),
+            "firstimage": normalize_text(item.get("firstimage")),
             "mapx": normalize_text(item.get("mapx")),
             "mapy": normalize_text(item.get("mapy")),
         })

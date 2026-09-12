@@ -21,7 +21,7 @@ class PublicFeedSchemaTests(unittest.TestCase):
         public = serialize_public_feed(self._internal(), generated_at="2026-08-23T18:00:00+09:00")
         self.assertEqual(public["schema_version"], SCHEMA_VERSION)
         self.assertEqual(set(public), {"schema_version","query","opportunity_score","market_weather",
-            "indicators","decision_tags","narrative","data_quality","sources","generated_at"})
+            "indicators","decision_tags","narrative","data_quality","sources","content","generated_at"})
         text=json.dumps(public, ensure_ascii=False).lower()
         for forbidden in ("raw_data","normalized_data","contribution_map","api_key","servicekey","exception"):
             self.assertNotIn(forbidden, text)
@@ -114,6 +114,47 @@ class PublicFeedSchemaTests(unittest.TestCase):
             public=generate_public_market_feed("강남구","2026-08-22","21:25")
         self.assertEqual(public["schema_version"], "1.0")
         self.assertNotIn("raw_data", public)
+
+    def test_content_projection_all_source_types_and_whitelist(self):
+        internal = deepcopy(self._internal())
+        internal["normalized_data"].update({
+            "festival": {"count": 1, "items": [{"kind": "festival", "title": "축제",
+                "place": "광장", "start_date": "20260912", "end_date": "20260912",
+                "time_text": "19:30", "raw": {"contentid": "F1", "firstimage": "https://img/f.jpg",
+                "secret": "do-not-expose"}}]},
+            "event": {"count": 1, "items": [{"kind": "event", "title": "행사", "place": "회관",
+                "start_date": "2026-09-10", "end_date": "2026-09-15", "time_text": "",
+                "raw": {"event_id": "E1"}}]},
+            "performance": {"count": 1, "items": [{"kind": "performance", "title": "공연", "place": "극장",
+                "start_date": "2026-09-12", "end_date": "2026-09-12", "time_text": "",
+                "raw": {"mt20id": "PF1", "poster": "https://img/p.jpg"}}]},
+            "sports": {"count": 1, "items": [{"kind": "sports", "title": "A vs B", "place": "잠실",
+                "start_date": "2026-09-12", "end_date": "", "time_text": "18:30",
+                "raw": {"league": "KBO", "date": "2026-09-12", "time": "18:30",
+                "match": "A vs B", "stadium": "잠실"}}]},
+        })
+        public = serialize_public_feed(internal)
+        items = public["content"]["items"]
+        self.assertEqual([x["type"] for x in items], ["festival", "event", "performance", "sports"])
+        self.assertEqual(items[0], {"id": "F1", "type": "festival", "title": "축제",
+            "period": "2026-09-12 19:30", "place": "광장", "thumbnail_url": "https://img/f.jpg"})
+        self.assertEqual(items[1]["period"], "2026-09-10 ~ 2026-09-15")
+        self.assertEqual(items[2]["id"], "PF1")
+        self.assertEqual(items[3]["id"], items[3]["id"])
+        self.assertEqual(len(items[3]["id"]), 64)
+        self.assertNotIn("secret", json.dumps(public, ensure_ascii=False))
+
+    def test_period_format_regressions(self):
+        from public_feed_schema import _content_period
+        self.assertEqual(_content_period({"start_date": "2026-07-04~2026-10-10",
+                                         "time_text": "2026-07-04~2026-10-10"}),
+                         "2026-07-04 ~ 2026-10-10")
+        self.assertEqual(_content_period({"start_date": "20260403", "end_date": "20261112"}),
+                         "2026-04-03 ~ 2026-11-12")
+        self.assertEqual(_content_period({"start_date": "2026.09.12", "end_date": "2026.09.12",
+                                         "time_text": "19:30"}), "2026-09-12 19:30")
+        self.assertEqual(_content_period({"start_date": "2026-09-12", "time_text": "18:30"}),
+                         "2026-09-12 18:30")
 
 
 if __name__ == "__main__": unittest.main()

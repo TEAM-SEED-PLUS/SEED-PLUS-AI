@@ -86,6 +86,8 @@ def get_events(
             "use_fee": normalize_text(get_any(row, ["USE_FEE", "FEE", "IS_FREE"])),
             "org_name": normalize_text(get_any(row, ["ORG_NAME", "AGENCY", "HOST"])),
             "url": normalize_text(get_any(row, ["ORG_LINK", "HMPG_ADDR", "LINK_URL"])),
+            "event_id": normalize_text(get_any(row, ["EVENT_ID", "CULTCODE", "ID"])),
+            "thumbnail": normalize_text(get_any(row, ["MAIN_IMG", "IMAGE", "THUMBNAIL"])),
         })
 
     items.sort(key=lambda x: (x["time_text"] == "", x["time_text"], x["title"]))

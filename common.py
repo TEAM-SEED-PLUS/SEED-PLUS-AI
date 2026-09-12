@@ -208,6 +208,14 @@ TIME_BANDS = {
     "저녁": (20 * 60, 24 * 60),
 }
 
+TIME_BAND_REPRESENTATIVE_TIMES = {
+    "심야": "03:00",
+    "아침": "09:00",
+    "점심": "14:00",
+    "오후": "18:00",
+    "저녁": "21:00",
+}
+
 
 @dataclass
 class QueryContext:
@@ -324,6 +332,22 @@ def classify_time_band(t: time) -> str:
         if start <= minutes < end:
             return label
     raise ValueError(f"분류할 수 없는 시간입니다: {t}")
+
+
+def resolve_time_input(time_str: Optional[str] = None,
+                       time_band: Optional[str] = None) -> tuple[str, str]:
+    """Normalize the public time inputs without changing pipeline semantics."""
+    if time_band is not None and time_band not in TIME_BAND_REPRESENTATIVE_TIMES:
+        raise ValueError("지원하지 않는 time_band입니다.")
+    if time_str is None:
+        resolved = (TIME_BAND_REPRESENTATIVE_TIMES[time_band] if time_band
+                    else parse_time_input(None).strftime("%H:%M"))
+    else:
+        resolved = parse_time_input(time_str).strftime("%H:%M")
+    resolved_band = classify_time_band(parse_time_input(resolved))
+    if time_band is not None and resolved_band != time_band:
+        raise ValueError("time과 time_band가 일치하지 않습니다.")
+    return resolved, resolved_band
 
 
 def build_query_context(district: str, date_str: Optional[str] = None, time_str: Optional[str] = None) -> QueryContext:

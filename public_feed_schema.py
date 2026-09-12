@@ -6,6 +6,8 @@ projects its result into the credential-free contract consumed by a Backend.
 from __future__ import annotations
 
 from datetime import datetime
+import hashlib
+import re
 from typing import Any
 
 try:
@@ -49,7 +51,10 @@ def _public_sources(result: dict[str, Any]) -> dict[str, Any]:
     return {
         "weather": _source("weather", statuses.get("weather")),
         "content": {
-            name: _source(name, statuses.get(name), item_count=(normalized.get(name) or {}).get("count"))
+            name: _source(name, statuses.get(name), item_count=(normalized.get(name) or {}).get("count"),
+                          source_time=(statuses.get(name) or {}).get("source_time"),
+                          age_minutes=(statuses.get(name) or {}).get("age_minutes"),
+                          eligibility_reason=(statuses.get(name) or {}).get("eligibility_reason"))
             for name in ("festival", "event", "performance", "sports")
         },
         "special_day": _source(
@@ -86,6 +91,68 @@ def _public_sources(result: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _text(value: Any) -> str | None:
+    value = str(value).strip() if value is not None else ""
+    return value or None
+
+
+def _date_text(value: Any) -> str | None:
+    value = _text(value)
+    if not value:
+        return None
+    compact = value.replace(".", "").replace("-", "").replace("/", "")
+    if len(compact) == 8 and compact.isdigit():
+        return f"{compact[:4]}-{compact[4:6]}-{compact[6:]}"
+    return value
+
+
+def _content_period(item: dict[str, Any]) -> str | None:
+    start, end, time_text = (_date_text(item.get("start_date")),
+                             _date_text(item.get("end_date")), _text(item.get("time_text")))
+    # Seoul event DATE fields sometimes already contain the complete range and
+    # the same text is also copied into the time field. Treat it as one period.
+    combined = start or ""
+    dates = re.findall(r"(20\d{2})[-./](\d{1,2})[-./](\d{1,2})", combined)
+    if len(dates) >= 2:
+        first, last = dates[0], dates[-1]
+        return (f"{int(first[0]):04d}-{int(first[1]):02d}-{int(first[2]):02d} ~ "
+                f"{int(last[0]):04d}-{int(last[1]):02d}-{int(last[2]):02d}")
+    if start and end and start != end:
+        return f"{start} ~ {end}"
+    date_value = start or end
+    if date_value and time_text and time_text != date_value and not re.search(r"20\d{2}[-./]\d{1,2}[-./]\d{1,2}", time_text):
+        return f"{date_value} {time_text}"
+    return date_value or time_text
+
+
+def _public_content(result: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
+    """Whitelist display fields from the already-normalized content blocks."""
+    output = []
+    normalized = result.get("normalized_data") or {}
+    for kind in ("festival", "event", "performance", "sports"):
+        for item in (normalized.get(kind) or {}).get("items") or []:
+            raw = item.get("raw") if isinstance(item.get("raw"), dict) else {}
+            identifier = None
+            if kind == "performance":
+                identifier = raw.get("mt20id")
+            elif kind in {"festival", "event"}:
+                identifier = raw.get("contentid") or raw.get("content_id") or raw.get("event_id") or raw.get("id")
+            elif kind == "sports":
+                identifier = raw.get("id") or raw.get("game_id")
+            if not _text(identifier):
+                seed = "|".join(str(raw.get(key) or item.get(key) or "") for key in (
+                    "date", "league", "time", "match", "stadium", "title", "place"))
+                identifier = hashlib.sha256(f"{kind}|{seed}".encode("utf-8")).hexdigest()
+            thumbnail = (raw.get("poster") if kind == "performance" else
+                         raw.get("firstimage") or raw.get("image") or raw.get("thumbnail"))
+            output.append({"id": str(identifier), "type": kind,
+                           "title": _text(item.get("title")) or "",
+                           "period": _content_period(item),
+                           "place": _text(item.get("place")),
+                           "thumbnail_url": _text(thumbnail)})
+    return {"items": output}
+
+
 def _flat_sources(sources: dict[str, Any]):
     for name, value in sources.items():
         if name == "content":
@@ -111,6 +178,8 @@ def _quality_groups(sources: dict[str, Any]) -> dict[str, list[str]]:
             groups["failed_sources"].append(name)
         elif status == "empty":
             groups["empty_sources"].append(name)
+        elif eligibility == "stale_cache":
+            groups["stale_sources"].append(name)
         elif eligibility in {"different_date_or_time_band", "ineligible"}:
             groups["skipped_sources"].append(name)
         elif reason == "fallback_age_exceeded" or (
@@ -181,6 +250,7 @@ def serialize_public_feed(result: dict[str, Any], *, generated_at: str | None = 
                          "badges": badges, **quality_groups,
                          "score_context": public_context},
         "sources": sources,
+        "content": _public_content(result),
         "generated_at": generated_at or datetime.now(SEOUL_TZ).isoformat(timespec="seconds"),
     }
 

@@ -1,5 +1,6 @@
 import argparse
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 from common import DEFAULT_KOPIS_KEY, DEFAULT_PUBLIC_DATA_KEY, DEFAULT_SEOUL_KEY, build_query_context
@@ -7,9 +8,9 @@ from event_api import get_events
 from festival_api import get_festivals
 from footfall_api import get_footfall
 from oa21285_footfall import load_available_oa_footfall, resolve_indicator_footfall_sources
-from performance_api import get_performances
+from performance_cache import get_cached_performances
 from special_day_api import get_special_day_info
-from sports_api import get_sports
+from sports_cache import get_cached_sports
 from weather_api import get_weather
 from source_status import collect_with_status
 
@@ -65,16 +66,30 @@ def get_all_city_info(
         }
     }
 
-    result["weather"] = collect_with_status("weather", get_weather, ctx.district_ko, ctx.date_str, ctx.time_str, public_key)
-    result["festival"] = collect_with_status("festival", get_festivals, ctx.district_ko, ctx.date_str, ctx.time_str, public_key, culture_limit)
-    result["event"] = collect_with_status("event", get_events, ctx.district_ko, ctx.date_str, ctx.time_str, seoul_key, culture_limit)
-    result["performance"] = collect_with_status("performance", get_performances, ctx.district_ko, ctx.date_str, ctx.time_str, kopis_key, culture_limit)
-    result["sports"] = collect_with_status("sports", get_sports, ctx.district_ko, ctx.date_str, ctx.time_str, sports_limit)
+    live_jobs = {
+        "weather": (get_weather, (ctx.district_ko, ctx.date_str, ctx.time_str, public_key)),
+        "festival": (get_festivals, (ctx.district_ko, ctx.date_str, ctx.time_str, public_key, culture_limit)),
+        "event": (get_events, (ctx.district_ko, ctx.date_str, ctx.time_str, seoul_key, culture_limit)),
+        "special_day": (get_special_day_info, (public_key, ctx.date_str)),
+    }
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = {executor.submit(collect_with_status, name, fetcher, *args): name
+                   for name, (fetcher, args) in live_jobs.items()}
+        for future in as_completed(futures):
+            name = futures[future]
+            # collect_with_status contains source-local failures; keep this guard
+            # so an unexpected Future failure cannot cancel sibling sources.
+            try:
+                result[name] = future.result()
+            except Exception as exc:
+                result[name] = collect_with_status(name, lambda: (_ for _ in ()).throw(exc))
+    result["performance"] = get_cached_performances(
+        ctx.district_ko, ctx.date_str, ctx.time_str, kopis_key, culture_limit)
+    result["sports"] = get_cached_sports(ctx.district_ko, ctx.date_str, ctx.time_str, sports_limit)
     oa_footfall = load_available_oa_footfall(ctx.district_ko, ctx.date_str, ctx.time_band)
     result["footfall"] = resolve_indicator_footfall_sources(oa_footfall, lambda: collect_with_status(
-        "footfall", get_footfall, ctx.district_ko, ctx.date_str, ctx.time_str, seoul_key, footfall_limit
+        "footfall", get_footfall, ctx.district_ko, ctx.date_str, ctx.time_str, seoul_key, footfall_limit, False
     ))
-    result["special_day"] = collect_with_status("special_day", get_special_day_info, public_key, ctx.date_str)
     result["source_status"] = {
         key: result[key]["source_status"]
         for key in ("weather", "festival", "event", "performance", "sports", "footfall", "special_day")

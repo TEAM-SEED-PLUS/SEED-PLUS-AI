@@ -45,17 +45,27 @@ def _fetch_page(api_key: str, district_value: str, start: int, end: int) -> dict
     # 2) 실패 응답: { "RESULT": { ... } }
     if "RESULT" in data:
         result = data["RESULT"]
-        raise ValueError(f"API 오류: {result.get('CODE')} / {result.get('MESSAGE', '')}")
+        code = result.get("CODE")
+
+        if code == "INFO-200":
+            return {
+                "list_total_count" : 0,
+                "row" : [],
+                "_no_data" : True,
+                "RESULT" : result
+            }
+        raise ValueError(f"API 오류: {code} / {result.get('MESSAGE', '')}")
 
     # 3) 예상 밖 응답
     raise ValueError(f"예상하지 못한 응답 형식: {data}")
 
 
-def get_sdot_visitor_data(api_key: str, district: str, target_date: str, page_size: int = 1000) -> pd.DataFrame:
+def get_sdot_visitor_data(api_key: str, district: str, target_date: str, page_size: int = 1000,
+                          allow_english_fallback: bool = True) -> pd.DataFrame:
     target_date = normalize_date(target_date)
 
     district_candidates = [district]
-    if district in DISTRICT_MAP_EN:
+    if allow_english_fallback and district in DISTRICT_MAP_EN:
         district_candidates.append(DISTRICT_MAP_EN[district])
 
     rows = []
@@ -64,6 +74,8 @@ def get_sdot_visitor_data(api_key: str, district: str, target_date: str, page_si
     for district_value in district_candidates:
         try:
             first_root = _fetch_page(api_key, district_value, 1, 1)
+            if first_root.get("_no_data"):
+                return pd.DataFrame()
             total_count = int(first_root.get("list_total_count", 0))
             if total_count == 0:
                 continue
@@ -99,9 +111,11 @@ def get_footfall(
     time_str: str | None = None,
     seoul_key: str = DEFAULT_SEOUL_KEY,
     limit: int = 10,
+    allow_english_fallback: bool = True,
 ) -> dict[str, Any]:
     ctx = build_query_context(district, date_str, time_str)
-    df = get_sdot_visitor_data(seoul_key, ctx.district_ko, ctx.date_str)
+    df = get_sdot_visitor_data(seoul_key, ctx.district_ko, ctx.date_str,
+                               allow_english_fallback=allow_english_fallback)
 
     if df.empty:
         return {

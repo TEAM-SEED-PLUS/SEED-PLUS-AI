@@ -52,9 +52,13 @@ def _as_items(block: dict[str, Any], limit: int = 5) -> list[dict[str, Any]]:
     for item in items[:limit]:
         if not isinstance(item, dict):
             continue
+        category = item.get("category") or item.get("genre") or item.get("sport")
+        if category == item.get("source"):
+            category = None
         out.append({
             "title": item.get("title") or item.get("match") or item.get("dateName") or item.get("summary"),
-            "category": item.get("category") or item.get("genre") or item.get("sport") or item.get("source"),
+            # Provenance/provider names are not useful narrative material.
+            "category": category,
             "place": item.get("place") or item.get("stadium") or item.get("address") or item.get("administrative_district"),
             "time_text": item.get("time_text") or item.get("time") or item.get("date"),
             "detail": item.get("detail") or item.get("runtime") or item.get("price_text"),
