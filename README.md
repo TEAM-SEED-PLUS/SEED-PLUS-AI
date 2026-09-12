@@ -716,6 +716,32 @@ collector 실행 시간은 외부 API 상태와 로컬/서버 환경에 따라 �
 
 HTTP 요청에서 collector를 실행하지 않습니다.
 
+### 일별 5개 time_band snapshot 초기 생성
+
+Frontend에서 동일 날짜의 5개 time_band를 모두 선택할 수 있도록 운영하려면,
+해당 날짜의 snapshot을 최초 1회 생성해둘 수 있습니다.
+
+```bash
+python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 심야
+python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 아침
+python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 점심
+python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 오후
+python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 저녁
+```
+
+이후 정기 scheduler에서는:
+
+```bash
+python3 weather_overview_collector.py --active
+```
+
+를 사용하여 현재 active time_band만 5분 주기로 갱신합니다.
+
+이미 생성된 다른 time_band snapshot은 삭제하지 않습니다.
+
+> 5개 snapshot을 매 5분마다 모두 재생성하지 않습니다.
+> 정기 refresh 대상은 현재 active time_band 하나입니다.
+
 ### Linux cron 예시
 
 중복 실행을 막기 위해 `flock -n` 사용을 권장합니다.
@@ -1054,7 +1080,11 @@ decision_tags
 
 현재 regression test는 `pytest`를 기준으로 실행합니다.
 
-개발/QA 환경에는 `pytest`가 설치되어 있어야 합니다.
+개발/QA 환경에서는 다음 명령으로 테스트 의존성을 설치합니다.
+
+```bash
+python3 -m pip install -r requirements-dev.txt
+```
 
 ### macOS / Linux
 
