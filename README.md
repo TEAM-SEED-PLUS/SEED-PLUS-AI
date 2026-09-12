@@ -719,7 +719,7 @@ HTTP 요청에서 collector를 실행하지 않습니다.
 ### 일별 5개 time_band snapshot 초기 생성
 
 Frontend에서 동일 날짜의 5개 time_band를 모두 선택할 수 있도록 운영하려면,
-해당 날짜의 snapshot을 최초 1회 생성해둘 수 있습니다.
+해당 날짜의 5개 snapshot을 최초 1회 생성합니다.
 
 ```bash
 python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 심야
@@ -729,18 +729,14 @@ python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 오후
 python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 저녁
 ```
 
-이후 정기 scheduler에서는:
+이후 정기 scheduler에서는 현재 시간대만 갱신합니다. 
 
 ```bash
 python3 weather_overview_collector.py --active
 ```
 
-를 사용하여 현재 active time_band만 5분 주기로 갱신합니다.
-
-이미 생성된 다른 time_band snapshot은 삭제하지 않습니다.
-
-> 5개 snapshot을 매 5분마다 모두 재생성하지 않습니다.
-> 정기 refresh 대상은 현재 active time_band 하나입니다.
+이미 생성된 다른 time_band snapshot은 유지되며 삭제하거나 비활성화하지 않습니다.
+5개 snapshot 전체를 매 5분마다 재생성하지 않습니다.
 
 ### Linux cron 예시
 
