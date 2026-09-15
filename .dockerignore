@@ -1,0 +1,21 @@
+.git
+.gitignore
+.env
+.env.*
+.venv
+venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ruff_cache
+tests
+docs
+
+# Keep production snapshots/baselines in the image, but leave large collector
+# working sets on the host-mounted data volume used by Docker Compose.
+data/**/raw
+data/**/history
+data/**/checkpoints
+data/**/preview
+data/qa

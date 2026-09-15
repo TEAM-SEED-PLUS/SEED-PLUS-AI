@@ -178,6 +178,38 @@ FastAPI `8000` port는 외부에 직접 공개하지 않고 Spring Backend에서
 
 FastAPI 자체에는 현재 별도 JWT, `x-api-key`, CORS 설정이 없습니다.
 
+### Docker Compose
+
+`.env`를 컨테이너 이미지에 포함하지 않고 Compose 실행 시 런타임 환경변수로 주입합니다.
+
+```bash
+docker compose up --build -d
+docker compose ps
+docker compose logs -f ai
+```
+
+Compose가 생성하는 이미지 이름은 다음과 같습니다.
+
+```text
+judemin/seed-plus-ai
+```
+
+`./data`는 컨테이너의 `/app/data`에 bind mount되어 API와 collector가 같은 snapshot을 사용합니다.
+
+종료:
+
+```bash
+docker compose down
+```
+
+Docker Hub에 업로드할 때:
+
+```bash
+docker login
+docker compose build
+docker push judemin/seed-plus-ai
+```
+
 ---
 
 # 6. API
