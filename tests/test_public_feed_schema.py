@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 from feed_renderer import build_market_feed_card
 from llm_feed_writer import LLMFeedError
+from normalized_city_data import _normalize_content_item
 from public_feed_schema import SCHEMA_VERSION, generate_public_market_feed, serialize_public_feed
 from v1_final_qa import replay_raw
 
@@ -120,13 +121,16 @@ class PublicFeedSchemaTests(unittest.TestCase):
         internal["normalized_data"].update({
             "festival": {"count": 1, "items": [{"kind": "festival", "title": "축제",
                 "place": "광장", "start_date": "20260912", "end_date": "20260912",
-                "time_text": "19:30", "raw": {"contentid": "F1", "firstimage": "https://img/f.jpg",
+                "time_text": "19:30", "link_url": "https://festival.example/F1",
+                "raw": {"contentid": "F1", "firstimage": "https://img/f.jpg",
                 "secret": "do-not-expose"}}]},
             "event": {"count": 1, "items": [{"kind": "event", "title": "행사", "place": "회관",
                 "start_date": "2026-09-10", "end_date": "2026-09-15", "time_text": "",
+                "link_url": "https://event.example/E1",
                 "raw": {"event_id": "E1"}}]},
             "performance": {"count": 1, "items": [{"kind": "performance", "title": "공연", "place": "극장",
                 "start_date": "2026-09-12", "end_date": "2026-09-12", "time_text": "",
+                "link_url": "https://performance.example/PF1",
                 "raw": {"mt20id": "PF1", "poster": "https://img/p.jpg"}}]},
             "sports": {"count": 1, "items": [{"kind": "sports", "title": "A vs B", "place": "잠실",
                 "start_date": "2026-09-12", "end_date": "", "time_text": "18:30",
@@ -137,12 +141,61 @@ class PublicFeedSchemaTests(unittest.TestCase):
         items = public["content"]["items"]
         self.assertEqual([x["type"] for x in items], ["festival", "event", "performance", "sports"])
         self.assertEqual(items[0], {"id": "F1", "type": "festival", "title": "축제",
-            "period": "2026-09-12 19:30", "place": "광장", "thumbnail_url": "https://img/f.jpg"})
+            "period": "2026-09-12 19:30", "place": "광장", "thumbnail_url": "https://img/f.jpg",
+            "link_url": "https://festival.example/F1"})
         self.assertEqual(items[1]["period"], "2026-09-10 ~ 2026-09-15")
+        self.assertEqual(items[1]["link_url"], "https://event.example/E1")
         self.assertEqual(items[2]["id"], "PF1")
+        self.assertEqual(items[2]["link_url"], "https://performance.example/PF1")
+        self.assertIsNone(items[3]["link_url"])
         self.assertEqual(items[3]["id"], items[3]["id"])
         self.assertEqual(len(items[3]["id"]), 64)
         self.assertNotIn("secret", json.dumps(public, ensure_ascii=False))
+
+    def test_link_url_safety_missing_cache_and_thumbnail_separation(self):
+        internal = deepcopy(self._internal())
+        candidates = [
+            ("javascript:alert(1)", None),
+            ("data:text/html,bad", None),
+            ("file:///tmp/bad", None),
+            ("/relative/path", None),
+            ("https://apis.data.go.kr/B551011?serviceKey=secret", None),
+            ("https://example.com/detail?api_key=secret", None),
+            ("https://example.com/detail/1", "https://example.com/detail/1"),
+        ]
+        internal["normalized_data"]["event"] = {"count": len(candidates), "items": [
+            {"kind": "event", "title": f"행사 {index}", "place": "회관", "link_url": value,
+             "raw": {"event_id": f"E{index}", "thumbnail": "https://img.example/same.jpg",
+                     "provider_secret": "hidden"}}
+            for index, (value, _expected) in enumerate(candidates)
+        ]}
+        items = [x for x in serialize_public_feed(internal)["content"]["items"] if x["type"] == "event"]
+        self.assertEqual([x["link_url"] for x in items], [expected for _, expected in candidates])
+        self.assertTrue(all(x["thumbnail_url"] == "https://img.example/same.jpg" for x in items))
+        self.assertTrue(all(x["link_url"] != x["thumbnail_url"] for x in items))
+        self.assertNotIn("provider_secret", json.dumps(items))
+
+    def test_every_item_has_nullable_link_url_for_legacy_input(self):
+        internal = deepcopy(self._internal())
+        internal["normalized_data"]["festival"] = {"count": 1, "items": [
+            {"kind": "festival", "title": "이전 캐시", "raw": {"contentid": "old"}}
+        ]}
+        item = next(x for x in serialize_public_feed(internal)["content"]["items"] if x["id"] == "old")
+        self.assertIn("link_url", item)
+        self.assertIsNone(item["link_url"])
+
+    def test_source_link_fields_reach_normalized_items(self):
+        cases = [
+            ("event", {"url": "https://culture.example/event"}),
+            ("festival", {"homepage": "https://festival.example/home"}),
+            ("performance", {"link_url": "https://tickets.example/show"}),
+            ("sports", {}),
+        ]
+        normalized = [_normalize_content_item(value, kind) for kind, value in cases]
+        self.assertEqual([item["link_url"] for item in normalized], [
+            "https://culture.example/event", "https://festival.example/home",
+            "https://tickets.example/show", "",
+        ])
 
     def test_period_format_regressions(self):
         from public_feed_schema import _content_period

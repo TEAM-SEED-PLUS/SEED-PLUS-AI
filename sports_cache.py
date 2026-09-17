@@ -59,7 +59,7 @@ def get_cached_sports(district: str, date_str: str | None = None, time_str: str 
             continue
         items.append({"source": raw.get("league"), "sport": raw.get("sport"), "league": raw.get("league"),
                       "date": raw.get("date"), "time": raw.get("time"), "match": raw.get("match"),
-                      "stadium": stadium, "district": row_district})
+                      "stadium": stadium, "district": row_district, "link_url": raw.get("link_url")})
     items.sort(key=lambda x: (x.get("time") or "", x.get("league") or "", x.get("match") or ""))
     base.update({"count": len(items), "items": items[:limit],
                  "source_status": {"status": "ok" if items else "empty", **metadata}})

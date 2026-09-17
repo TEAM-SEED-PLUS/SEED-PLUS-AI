@@ -9,6 +9,7 @@ from datetime import datetime
 import hashlib
 import re
 from typing import Any
+from urllib.parse import parse_qsl, urlsplit
 
 try:
     from common import SEOUL_TZ
@@ -106,6 +107,37 @@ def _date_text(value: Any) -> str | None:
     return value
 
 
+_CREDENTIAL_QUERY_KEYS = {
+    "apikey", "api_key", "servicekey", "service_key", "secret", "client_secret",
+    "access_token", "token", "authorization", "auth",
+}
+
+
+def _safe_public_url(value: Any) -> str | None:
+    """Allow only absolute web links that cannot expose provider credentials."""
+    value = _text(value)
+    if not value:
+        return None
+    try:
+        parsed = urlsplit(value)
+        query_keys = {key.lower() for key, _ in parse_qsl(parsed.query, keep_blank_values=True)}
+    except (TypeError, ValueError):
+        return None
+    if parsed.scheme.lower() not in {"http", "https"} or not parsed.netloc:
+        return None
+    if parsed.username is not None or parsed.password is not None:
+        return None
+    if query_keys & _CREDENTIAL_QUERY_KEYS:
+        return None
+    hostname = (parsed.hostname or "").lower()
+    path = parsed.path.lower()
+    if hostname in {"apis.data.go.kr", "openapi.seoul.go.kr"}:
+        return None
+    if hostname.endswith("kopis.or.kr") and "/openapi/" in path:
+        return None
+    return value
+
+
 def _content_period(item: dict[str, Any]) -> str | None:
     start, end, time_text = (_date_text(item.get("start_date")),
                              _date_text(item.get("end_date")), _text(item.get("time_text")))
@@ -149,7 +181,8 @@ def _public_content(result: dict[str, Any]) -> dict[str, list[dict[str, Any]]]:
                            "title": _text(item.get("title")) or "",
                            "period": _content_period(item),
                            "place": _text(item.get("place")),
-                           "thumbnail_url": _text(thumbnail)})
+                           "thumbnail_url": _text(thumbnail),
+                           "link_url": _safe_public_url(item.get("link_url"))})
     return {"items": output}
 
 

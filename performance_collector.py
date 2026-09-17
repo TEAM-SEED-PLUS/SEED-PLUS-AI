@@ -67,6 +67,7 @@ def _enrich(rows: list[dict[str, Any]], client: KOPISClient, collection_district
                        "schedule_text": normalize_text(detail.get("dtguidance")),
                        "runtime": normalize_text(detail.get("prfruntime")),
                        "price_text": normalize_text(detail.get("pcseguidance")),
+                       "link_url": normalize_text(detail.get("relate")),
                        "openrun": normalize_text(row.get("openrun")), "poster": normalize_text(row.get("poster"))})
     return output
 

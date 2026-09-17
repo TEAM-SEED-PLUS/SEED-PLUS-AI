@@ -6,6 +6,7 @@ from unittest.mock import patch
 from fastapi.testclient import TestClient
 
 from app.main import app
+from app.models import PublicFeedV1
 from public_feed_schema import serialize_public_feed
 
 
@@ -27,6 +28,16 @@ class FastAPIAppTests(unittest.TestCase):
 
     def test_health(self):
         self.assertEqual(self.client.get("/health").json(), {"status": "ok"})
+
+    def test_detail_response_model_exposes_nullable_link_url(self):
+        value = sample_feed()
+        value["content"]["items"] = [{"id": "E1", "type": "event", "title": "행사",
+            "period": None, "place": None, "thumbnail_url": None, "link_url": "https://example.com/E1"}]
+        validated = PublicFeedV1.model_validate(value).model_dump()
+        self.assertEqual(validated["content"]["items"][0]["link_url"], "https://example.com/E1")
+        schema = app.openapi()
+        properties = schema["components"]["schemas"]["ContentItem"]["properties"]
+        self.assertIn("link_url", properties)
 
     @patch("app.main.generate_public_market_feed", side_effect=lambda **_: sample_feed())
     def test_valid_district_calls_pipeline(self, generate):

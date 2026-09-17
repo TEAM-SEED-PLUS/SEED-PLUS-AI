@@ -64,6 +64,7 @@ def _normalize_content_item(item: dict[str, Any], source_kind: str) -> dict[str,
     start_date = _pick(item, ["event_start_date", "date_from", "date", "date_text"])
     end_date = _pick(item, ["event_end_date", "date_to"])
     detail = _pick(item, ["runtime", "price_text", "use_fee", "match", "detail", "original_time_text"])
+    link_url = _pick(item, ["link_url", "url", "homepage", "relate"])
     tags = _detect_content_tags(" ".join([title, category, place, detail]))
     return {
         "kind": source_kind,
@@ -75,6 +76,7 @@ def _normalize_content_item(item: dict[str, Any], source_kind: str) -> dict[str,
         "start_date": start_date,
         "end_date": end_date,
         "detail": detail,
+        "link_url": link_url,
         "tags": tags,
         "raw": item,
     }

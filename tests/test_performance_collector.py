@@ -31,7 +31,8 @@ class FakeClient:
         if identifier in self.detail_fail:
             raise RuntimeError("detail down")
         return {"mt20id": identifier, "mt10id": f"F-{identifier}", "dtguidance": "10:00, 20:00",
-                "prfruntime": "90분", "pcseguidance": "10,000원", "genrenm": "연극"}
+                "prfruntime": "90분", "pcseguidance": "10,000원", "genrenm": "연극",
+                "relate": f"https://tickets.example/{identifier}"}
 
     def get_facility_detail(self, identifier):
         self.facility_calls.append(identifier)
@@ -60,6 +61,7 @@ class PerformanceCollectorTests(unittest.TestCase):
         self.assertEqual({x["district_from_address"] for x in result["items"]}, {"종로구", "강남구"})
         self.assertEqual(result["diagnostics"]["raw_list_count"], 3)
         self.assertEqual(result["diagnostics"]["unique_mt20id_count"], 3)
+        self.assertEqual(result["items"][0]["link_url"], "https://tickets.example/PF1")
 
     def test_detail_failure_preserves_list_item_and_is_not_empty(self):
         result = self.collect(FakeClient([row("PF1", "정상"), row("PF2", "상세 실패")], detail_fail={"PF2"}))

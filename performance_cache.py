@@ -50,7 +50,7 @@ def get_cached_performances(district: str, date_str: str | None = None, time_str
         chosen = closest_time_match(candidates, ctx.target_datetime.time())
         item = {key: raw.get(key) for key in (
             "source", "mt20id", "title", "genre", "place", "address", "district_from_address",
-            "date_from", "date_to", "runtime", "price_text", "openrun", "poster")}
+            "date_from", "date_to", "runtime", "price_text", "openrun", "poster", "link_url")}
         item["source"] = item.get("source") or "KOPIS"
         item["time_text"] = chosen.strftime("%H:%M") if chosen else guidance
         items.append(item)

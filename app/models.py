@@ -92,6 +92,7 @@ class ContentItem(SchemaModel):
     period: str | None
     place: str | None
     thumbnail_url: str | None
+    link_url: str | None
 
 
 class ContentBlock(SchemaModel):

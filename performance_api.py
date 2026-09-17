@@ -130,6 +130,8 @@ class KOPISClient:
             "dtguidance": self._safe_text(db, "dtguidance"),
             "sty": self._safe_text(db, "sty"),
             "genrenm": self._safe_text(db, "genrenm"),
+            # KOPIS defines `relate` as the performance-related homepage URL.
+            "relate": self._safe_text(db, "relate"),
         }
 
     def get_facility_detail(self, mt10id: str) -> dict[str, Any]:
@@ -228,6 +230,7 @@ def get_performances(
             "time_text": chosen.strftime("%H:%M") if chosen else dtguidance,
             "runtime": normalize_text(detail.get("prfruntime")),
             "price_text": normalize_text(detail.get("pcseguidance")),
+            "link_url": normalize_text(detail.get("relate")),
             "openrun": normalize_text(row.get("openrun")),
             "poster": normalize_text(row.get("poster")),
         })

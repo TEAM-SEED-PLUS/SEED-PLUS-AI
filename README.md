@@ -506,7 +506,8 @@ Detail Feed는 Frontend에서 표시할 수 있도록 다음 콘텐츠 구조를
         "title": "2026 국제선명상대회",
         "period": "2026-04-03 ~ 2026-11-12",
         "place": "서울특별시 강남구 봉은사로 531 (삼성동)",
-        "thumbnail_url": "https://..."
+        "thumbnail_url": "https://...",
+        "link_url": "https://..."
       }
     ]
   }
@@ -523,6 +524,10 @@ Detail Feed는 Frontend에서 표시할 수 있도록 다음 콘텐츠 구조를
 | `period` | string/null | 기간 또는 일시 |
 | `place` | string/null | 장소 |
 | `thumbnail_url` | string/null | 이미지 URL |
+| `link_url` | string/null | 사용자가 해당 행사·축제·공연·스포츠의 원본 상세 페이지로 이동할 수 있는 외부 URL |
+
+`link_url`은 source가 사용자용 상세 URL을 제공할 때만 포함되며, 제공하지 않거나 안전하지 않은
+URL이면 `null`입니다. Frontend에서 외부 링크로 사용할 수 있고 링크 유무는 source별로 다를 수 있습니다.
 
 지원하는 `type`:
 

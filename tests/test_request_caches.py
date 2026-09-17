@@ -57,6 +57,7 @@ class CacheLoaderTests(unittest.TestCase):
         ]))
         value = get_cached_sports("송파구", "2026-09-12", "18:00", data_dir=self.root)
         self.assertEqual([x["match"] for x in value["items"]], ["A vs B"])
+        self.assertIsNone(value["items"][0]["link_url"])
 
     def test_sports_miss_does_not_use_playwright(self):
         value = get_cached_sports("송파구", "2026-09-12", "18:00", data_dir=self.root)
@@ -71,6 +72,7 @@ class CacheLoaderTests(unittest.TestCase):
         ]))
         value = get_cached_performances("강남구", "2026-09-12", "18:00", data_dir=self.root)
         self.assertEqual([x["title"] for x in value["items"]], ["저녁 공연"])
+        self.assertIsNone(value["items"][0]["link_url"])
 
     @patch("performance_api.KOPISClient", side_effect=AssertionError("must not call network"))
     def test_performance_miss_does_not_use_kopis(self, client):
