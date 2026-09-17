@@ -8,7 +8,8 @@ from common import DISTRICT_KO_TO_EN, SEOUL_TZ
 from public_feed_schema import generate_public_market_feed
 from v1_final_qa import replay_raw
 from weather_overview_cache import load_weather_overview
-from weather_overview_collector import collect_weather_overview
+from weather_overview_collector import (collect_active_weather_overview,
+                                        collect_weather_overview)
 
 
 class WeatherOverviewTests(unittest.TestCase):
@@ -104,6 +105,15 @@ class WeatherOverviewTests(unittest.TestCase):
         self.assertEqual(stale["status"], "stale")
         self.assertFalse(stale["is_fresh"])
         self.assertEqual(len(stale["districts"]), 25)
+
+    def test_active_collector_reuses_current_seoul_band(self):
+        current = datetime(2026, 9, 17, 17, 5, tzinfo=SEOUL_TZ)
+        result = collect_active_weather_overview(
+            data_dir=self.root, now=current, generator=self.feed
+        )
+        self.assertEqual(result["source_date"], "2026-09-17")
+        self.assertEqual(result["time_band"], "오후")
+        self.assertEqual(result["representative_time"], "18:00")
 
 
 if __name__ == "__main__":

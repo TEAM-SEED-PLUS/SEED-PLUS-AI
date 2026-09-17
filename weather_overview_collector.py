@@ -63,6 +63,18 @@ def collect_weather_overview(date_str: str, time_band: str, *,
     return payload
 
 
+def collect_active_weather_overview(*, data_dir: str | Path | None = None,
+                                    now: datetime | None = None,
+                                    generator: Callable[..., dict[str, Any]] = generate_public_market_feed) -> dict[str, Any]:
+    """Collect the active Asia/Seoul time band using the regular collector."""
+    current = now or datetime.now(SEOUL_TZ)
+    if current.tzinfo is None:
+        current = current.replace(tzinfo=SEOUL_TZ)
+    date_str = current.astimezone(SEOUL_TZ).strftime("%Y-%m-%d")
+    _, time_band = resolve_time_input(current.astimezone(SEOUL_TZ).strftime("%H:%M"), None)
+    return collect_weather_overview(date_str, time_band, data_dir=data_dir, generator=generator)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Seoul 25-district weather overview collector")
     parser.add_argument("--date", help="YYYY-MM-DD (default: current Seoul date with --active)")
@@ -75,14 +87,11 @@ def main() -> None:
     if args.active:
         if args.date or args.time_band:
             parser.error("--active cannot be combined with --date or --time-band")
-        current = datetime.now(SEOUL_TZ)
-        date_str = current.strftime("%Y-%m-%d")
-        _, time_band = resolve_time_input(current.strftime("%H:%M"), None)
+        result = collect_active_weather_overview(data_dir=args.data_dir)
     else:
         if not args.date or not args.time_band:
             parser.error("--date and --time-band are required unless --active is used")
-        date_str, time_band = args.date, args.time_band
-    result = collect_weather_overview(date_str, time_band, data_dir=args.data_dir)
+        result = collect_weather_overview(args.date, args.time_band, data_dir=args.data_dir)
     print(json.dumps({key: value for key, value in result.items() if key != "districts"},
                      ensure_ascii=False, indent=2))
 

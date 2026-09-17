@@ -748,6 +748,38 @@ collector 실행 시간은 외부 API 상태와 로컬/서버 환경에 따라 �
 
 HTTP 요청에서 collector를 실행하지 않습니다.
 
+### Application-level Overview Scheduler
+
+FastAPI application scheduler는 기본적으로 비활성화되어 있습니다. Production에서는 다음 환경변수로 활성화합니다.
+
+```dotenv
+WEATHER_OVERVIEW_SCHEDULER_ENABLED=true
+WEATHER_OVERVIEW_INTERVAL_MINUTES=5
+WEATHER_OVERVIEW_RETENTION_DAYS=7
+```
+
+FastAPI startup이 완료되면 collector를 background thread에서 즉시 한 번 실행하고, 이후 기본 5분 간격으로 실행합니다. 동기 collector는 event loop 밖에서 실행되므로 FastAPI request 처리를 block하지 않습니다. 각 tick은 Asia/Seoul 기준 현재 active time band 하나만 갱신합니다.
+
+동일 process에서는 asyncio lock으로 중복 실행을 막고, 여러 Uvicorn worker/process 사이에서는 공유 data volume의 다음 file lock으로 한 collector만 실행되게 합니다.
+
+```text
+data/weather_overview/.collector.lock
+```
+
+lock이 사용 중이면 해당 tick만 skip합니다. Application scheduler와 별도의 host cron을 동시에 운영하면 서로 다른 lock을 사용할 수 있으므로 이중 수집 가능성이 있습니다.
+
+snapshot retention 기본값은 7일입니다. "7일 보존"은 오늘을 포함한 최근 7개 달력 날짜, 즉 오늘과 직전 6일을 보존한다는 뜻입니다. 파일명의 날짜가 이 범위보다 오래된 `YYYY-MM-DD_<time_band>.json` 파일만 삭제합니다. 오늘 및 보존 범위 안 snapshot, 잘못된 날짜나 pattern의 파일, temp 파일, `.collector.lock`, 다른 data 디렉터리는 삭제하지 않습니다.
+
+scheduler 중단 중 누락된 과거 time band는 자동 backfill하지 않습니다. 필요하면 기존 explicit collector CLI를 사용합니다.
+
+```bash
+python3 weather_overview_collector.py --date YYYY-MM-DD --time-band 점심
+```
+
+> Application scheduler 활성화 및 정상 동작 확인 전까지 기존 host cron을 제거하지 않습니다.
+
+> Application scheduler가 정상 동작하는 것을 확인한 후에는 중복 수집 방지를 위해 기존 host cron을 반드시 제거합니다.
+
 ### 일별 5개 time_band snapshot 초기 생성
 
 Frontend에서 동일 날짜의 5개 time_band를 모두 선택할 수 있도록 운영하려면,
@@ -770,7 +802,7 @@ python3 weather_overview_collector.py --active
 이미 생성된 다른 time_band snapshot은 유지되며 삭제하거나 비활성화하지 않습니다.
 5개 snapshot 전체를 매 5분마다 재생성하지 않습니다.
 
-### Linux cron 예시
+### Linux cron 예시 (Application scheduler 전환 전 운영 방식)
 
 중복 실행을 막기 위해 `flock -n` 사용을 권장합니다.
 

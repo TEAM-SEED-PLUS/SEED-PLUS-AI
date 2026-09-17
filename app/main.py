@@ -1,7 +1,10 @@
 """Internal FastAPI boundary for Public Feed Schema v1."""
 from __future__ import annotations
 
+import asyncio
+from contextlib import asynccontextmanager, suppress
 from datetime import datetime
+import logging
 import re
 from typing import Annotated, Literal
 
@@ -20,8 +23,30 @@ from app.models import HealthResponse, PublicFeedV1, WeatherFeedOverviewResponse
 from common import SEOUL_TZ, resolve_time_input, normalize_district
 from public_feed_schema import generate_public_market_feed
 from weather_overview_cache import load_weather_overview
+from weather_overview_scheduler import (WeatherOverviewScheduler,
+                                        WeatherOverviewSchedulerSettings)
 
-app = FastAPI(title="Weather Feed AI/Data API", version="1.0.0")
+LOGGER = logging.getLogger(__name__)
+
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    settings = WeatherOverviewSchedulerSettings.from_env()
+    task = None
+    if settings.enabled:
+        task = asyncio.create_task(WeatherOverviewScheduler(settings).run())
+    else:
+        LOGGER.info("Weather overview scheduler disabled")
+    try:
+        yield
+    finally:
+        if task is not None:
+            task.cancel()
+            with suppress(asyncio.CancelledError):
+                await task
+
+
+app = FastAPI(title="Weather Feed AI/Data API", version="1.0.0", lifespan=lifespan)
 
 DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 TIME_PATTERN = re.compile(r"^\d{2}:\d{2}$")
