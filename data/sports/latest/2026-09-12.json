@@ -1,0 +1,118 @@
+{
+  "requested_date": "2026-09-12",
+  "source_date": "2026-09-12",
+  "generated_at": "2026-09-12T11:34:37+09:00",
+  "received_at": "2026-09-12T11:34:37+09:00",
+  "source_status": "ok",
+  "item_count": 12,
+  "items": [
+    {
+      "sport": "Soccer",
+      "league": "K League 1",
+      "date": "2026-09-12",
+      "time": "16:30",
+      "match": "부천 vs 제주",
+      "stadium": "부천 종합",
+      "district": ""
+    },
+    {
+      "sport": "Soccer",
+      "league": "K League 1",
+      "date": "2026-09-12",
+      "time": "16:30",
+      "match": "울산 vs 인천",
+      "stadium": "울산 문수",
+      "district": ""
+    },
+    {
+      "sport": "Soccer",
+      "league": "K League 1",
+      "date": "2026-09-12",
+      "time": "16:30",
+      "match": "전북 vs 서울",
+      "stadium": "전주 월드컵",
+      "district": ""
+    },
+    {
+      "sport": "Soccer",
+      "league": "K League 2",
+      "date": "2026-09-12",
+      "time": "16:30",
+      "match": "대구 vs 용인",
+      "stadium": "대구iM뱅크PARK",
+      "district": ""
+    },
+    {
+      "sport": "Soccer",
+      "league": "K League 2",
+      "date": "2026-09-12",
+      "time": "16:30",
+      "match": "서울E vs 수원",
+      "stadium": "목동 종합",
+      "district": "양천구"
+    },
+    {
+      "sport": "Baseball",
+      "league": "KBO",
+      "date": "2026-09-12",
+      "time": "17:00",
+      "match": "KIAvsKT",
+      "stadium": "수원",
+      "district": ""
+    },
+    {
+      "sport": "Baseball",
+      "league": "KBO",
+      "date": "2026-09-12",
+      "time": "17:00",
+      "match": "LGvs삼성",
+      "stadium": "대구",
+      "district": ""
+    },
+    {
+      "sport": "Baseball",
+      "league": "KBO",
+      "date": "2026-09-12",
+      "time": "17:00",
+      "match": "NCvs두산",
+      "stadium": "잠실",
+      "district": "송파구"
+    },
+    {
+      "sport": "Baseball",
+      "league": "KBO",
+      "date": "2026-09-12",
+      "time": "17:00",
+      "match": "롯데vs키움",
+      "stadium": "고척",
+      "district": "구로구"
+    },
+    {
+      "sport": "Soccer",
+      "league": "K League 1",
+      "date": "2026-09-12",
+      "time": "19:00",
+      "match": "대전 vs 포항",
+      "stadium": "대전 월드컵",
+      "district": ""
+    },
+    {
+      "sport": "Soccer",
+      "league": "K League 2",
+      "date": "2026-09-12",
+      "time": "19:00",
+      "match": "안산 vs 화성",
+      "stadium": "안산 와스타디움",
+      "district": ""
+    },
+    {
+      "sport": "Soccer",
+      "league": "K League 2",
+      "date": "2026-09-12",
+      "time": "19:00",
+      "match": "충남아산 vs 충북청주",
+      "stadium": "아산 이순신",
+      "district": ""
+    }
+  ]
+}

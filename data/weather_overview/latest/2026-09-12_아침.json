@@ -1,0 +1,166 @@
+{
+  "source_date": "2026-09-12",
+  "time_band": "아침",
+  "representative_time": "09:00",
+  "generated_at": "2026-09-12T13:58:44+09:00",
+  "source_status": "ok",
+  "district_count": 25,
+  "districts": [
+    {
+      "district": "강남구",
+      "opportunity_score": 67,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "강동구",
+      "opportunity_score": 55,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "강북구",
+      "opportunity_score": 59,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "강서구",
+      "opportunity_score": 58,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "관악구",
+      "opportunity_score": 63,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "광진구",
+      "opportunity_score": 63,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "구로구",
+      "opportunity_score": 65,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "금천구",
+      "opportunity_score": 66,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "노원구",
+      "opportunity_score": 66,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "도봉구",
+      "opportunity_score": 66,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "동대문구",
+      "opportunity_score": 62,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "동작구",
+      "opportunity_score": 58,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "마포구",
+      "opportunity_score": 65,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "서대문구",
+      "opportunity_score": 61,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "서초구",
+      "opportunity_score": 61,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "성동구",
+      "opportunity_score": 64,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "성북구",
+      "opportunity_score": 66,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "송파구",
+      "opportunity_score": 67,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "양천구",
+      "opportunity_score": 58,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "영등포구",
+      "opportunity_score": 62,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "용산구",
+      "opportunity_score": 66,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "은평구",
+      "opportunity_score": 67,
+      "grade": "구름",
+      "emoji": "⛅"
+    },
+    {
+      "district": "종로구",
+      "opportunity_score": 63,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "중구",
+      "opportunity_score": 62,
+      "grade": "흐림",
+      "emoji": "☁️"
+    },
+    {
+      "district": "중랑구",
+      "opportunity_score": 57,
+      "grade": "흐림",
+      "emoji": "☁️"
+    }
+  ],
+  "failed_districts": [],
+  "diagnostics": {
+    "attempted_district_count": 25,
+    "no_data_district_count": 0,
+    "failure_types": {}
+  }
+}
