@@ -152,3 +152,42 @@ class WeatherFeedOverviewResponse(SchemaModel):
 
 class HealthResponse(SchemaModel):
     status: Literal["ok"]
+
+
+class HongdaeMarketFeedResponse(SchemaModel):
+    schema_version: Literal["1.0"]
+    location: dict
+    date: str
+    time: str
+    time_band: str
+    dynamic_signals: dict
+    structural_baseline: dict
+    indicators: dict
+    scoring: dict
+    opportunity_score: int | float | None
+    decision_tags: list[str]
+    data_quality: dict
+    narrative: dict
+    generated_at: str
+
+
+class HongdaeWeeklyBriefingResponse(SchemaModel):
+    location: dict
+    period: dict
+    weekly_average_score: int | float | None
+    week_over_week: int | float | None
+    best_day: dict
+    worst_day: dict
+    best_time_band: str | None
+    daily_scores: list[dict]
+    main_positive_factors: list[str]
+    main_negative_factors: list[str]
+    structural_baseline: dict
+    data_through: str
+    source_period: str | None
+    completeness: Literal["complete", "partial"]
+    data_quality: dict
+    narrative: dict
+    weekly_vitality: dict | None = None
+    structural_environment: dict | None = None
+    nearby_competition: dict | None = None

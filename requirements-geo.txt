@@ -1,2 +1,3 @@
 # OA-21285 GeoJSON spatial candidate generation dependency
 shapely==2.1.2
+pyshp>=3,<4

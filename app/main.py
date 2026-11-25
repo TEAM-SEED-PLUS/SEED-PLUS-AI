@@ -19,9 +19,14 @@ from fastapi.concurrency import run_in_threadpool
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
-from app.models import HealthResponse, PublicFeedV1, WeatherFeedOverviewResponse
+from app.models import (HealthResponse, HongdaeMarketFeedResponse,
+                        HongdaeWeeklyBriefingResponse, PublicFeedV1,
+                        WeatherFeedOverviewResponse)
 from common import SEOUL_TZ, resolve_time_input, normalize_district
+from hongdae_feed_pipeline import generate_hongdae_market_feed, load_hongdae_snapshot
 from public_feed_schema import generate_public_market_feed
+from snapshot_cache import read_snapshot
+from pathlib import Path
 from weather_overview_cache import load_weather_overview
 from weather_overview_scheduler import (WeatherOverviewScheduler,
                                         WeatherOverviewSchedulerSettings)
@@ -142,3 +147,44 @@ async def weather_feeds_overview(
         raise HTTPException(status_code=422, detail="time and time_band must agree.") from None
     return await run_in_threadpool(load_weather_overview, validated_date,
                                    resolved_time, resolved_band)
+
+
+@app.get("/api/v1/hongdae-market-feed", response_model=HongdaeMarketFeedResponse)
+async def hongdae_market_feed(
+    date: Annotated[str | None, Query(description="조회 날짜 (YYYY-MM-DD)")] = None,
+    time: Annotated[str | None, Query(description="조회 시각 (HH:MM, Asia/Seoul)")] = None,
+    time_band: Annotated[TimeBand | None, Query(description="시간대")] = None,
+) -> dict:
+    validated_date = _validate_date(date)
+    validated_time = _validate_time(time)
+    try:
+        _, resolved_band = resolve_time_input(validated_time, time_band)
+    except ValueError:
+        raise HTTPException(status_code=422, detail="time and time_band must agree.") from None
+    historical = bool(validated_date and validated_date < datetime.now(SEOUL_TZ).date().isoformat())
+    if historical:
+        snapshot = await run_in_threadpool(
+            load_hongdae_snapshot, validated_date, resolved_band, "data/hongdae/backfill")
+        if snapshot is not None:
+            return snapshot
+    try:
+        return await run_in_threadpool(generate_hongdae_market_feed, validated_date,
+                                       validated_time, time_band, historical=historical,
+                                       persist=not historical)
+    except Exception:
+        raise HTTPException(status_code=500, detail="Hongdae market feed generation failed.") from None
+
+
+@app.get("/api/v1/hongdae-weekly-briefing", response_model=HongdaeWeeklyBriefingResponse)
+async def hongdae_weekly_briefing(
+    start: Annotated[str, Query(description="분석 시작일 (YYYY-MM-DD)")],
+    end: Annotated[str, Query(description="분석 종료일 (YYYY-MM-DD)")],
+) -> dict:
+    validated_start, validated_end = _validate_date(start), _validate_date(end)
+    if validated_start > validated_end:
+        raise HTTPException(status_code=422, detail="start must not be after end.")
+    briefing = await run_in_threadpool(
+        read_snapshot, Path("data/hongdae/weekly") / f"{validated_start}_{validated_end}.json")
+    if briefing is None:
+        raise HTTPException(status_code=404, detail="Hongdae weekly briefing has not been generated.")
+    return briefing

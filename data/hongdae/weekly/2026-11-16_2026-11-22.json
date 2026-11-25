@@ -1,0 +1,1663 @@
+{
+  "location": {
+    "place_name": "홍대입구 거리",
+    "latitude": 37.5563,
+    "longitude": 126.9236,
+    "radius_m": 300,
+    "district": "마포구",
+    "administrative_dong": "서교동",
+    "road_address": "서울특별시 마포구 양화로 156",
+    "administrative_dong_code": "1144066000",
+    "spatial_scope": "circle_around_anchor_not_entire_street",
+    "coordinate_crs": "EPSG:4326"
+  },
+  "period": {
+    "start": "2026-11-16",
+    "end": "2026-11-22"
+  },
+  "weekly_average_score": 62.0,
+  "week_over_week": null,
+  "best_day": {
+    "date": "2026-11-19",
+    "time_band": "오후",
+    "score": 64.5
+  },
+  "worst_day": {
+    "date": "2026-11-17",
+    "time_band": "심야",
+    "score": 58.8
+  },
+  "best_time_band": "오후",
+  "daily_scores": [
+    {
+      "date": "2026-11-16",
+      "weekday": 0,
+      "score": 61.7,
+      "population_by_time_band": {
+        "심야": 3868.68,
+        "아침": 8253.09,
+        "오후": 18546.32,
+        "저녁": 11445.64,
+        "점심": 17715.0
+      },
+      "mean_hourly_population": 10946.96
+    },
+    {
+      "date": "2026-11-17",
+      "weekday": 1,
+      "score": 61.7,
+      "population_by_time_band": {
+        "심야": 3713.29,
+        "아침": 8243.2,
+        "오후": 18464.01,
+        "저녁": 11258.96,
+        "점심": 17791.56
+      },
+      "mean_hourly_population": 10880.19
+    },
+    {
+      "date": "2026-11-18",
+      "weekday": 2,
+      "score": 61.9,
+      "population_by_time_band": {
+        "심야": 3841.09,
+        "아침": 8380.67,
+        "오후": 19487.77,
+        "저녁": 11991.02,
+        "점심": 18855.29
+      },
+      "mean_hourly_population": 11418.1
+    },
+    {
+      "date": "2026-11-19",
+      "weekday": 3,
+      "score": 62.1,
+      "population_by_time_band": {
+        "심야": 3925.29,
+        "아침": 8457.89,
+        "오후": 20734.33,
+        "저녁": 13593.99,
+        "점심": 19413.44
+      },
+      "mean_hourly_population": 11997.72
+    },
+    {
+      "date": "2026-11-20",
+      "weekday": 4,
+      "score": 62.3,
+      "population_by_time_band": {
+        "심야": 4076.9,
+        "아침": 8205.77,
+        "오후": 22903.03,
+        "저녁": 16200.66,
+        "점심": 20080.31
+      },
+      "mean_hourly_population": 12817.05
+    },
+    {
+      "date": "2026-11-21",
+      "weekday": 5,
+      "score": 62.4,
+      "population_by_time_band": {
+        "심야": 4709.38,
+        "아침": 7204.73,
+        "오후": 27955.09,
+        "저녁": 18678.04,
+        "점심": 23647.64
+      },
+      "mean_hourly_population": 14512.51
+    }
+  ],
+  "main_positive_factors": [
+    "spending_intent",
+    "inflow_pressure"
+  ],
+  "main_negative_factors": [],
+  "structural_baseline": {
+    "estimated_sales": 364283677777,
+    "sales_transaction_count": 15338799,
+    "sales_by_dimension": {
+      "AGRDE_60_ABOVE_SELNG_CO": 1052324,
+      "WED_SELNG_CO": 1950967,
+      "AGRDE_60_ABOVE_SELNG_AMT": 27553794398,
+      "MDWK_SELNG_AMT": 238991387021,
+      "WKEND_SELNG_AMT": 125292290756,
+      "AGRDE_40_SELNG_AMT": 53787508154,
+      "AGRDE_10_SELNG_AMT": 8921392658,
+      "ML_SELNG_AMT": 149425090752,
+      "TMZON_06_11_SELNG_CO": 1345268,
+      "TMZON_14_17_SELNG_CO": 3373893,
+      "TMZON_11_14_SELNG_CO": 3320051,
+      "TMZON_11_14_SELNG_AMT": 69648001872,
+      "WED_SELNG_AMT": 44297107237,
+      "TMZON_06_11_SELNG_AMT": 21038086918,
+      "AGRDE_10_SELNG_CO": 510394,
+      "ML_SELNG_CO": 6449171,
+      "THUR_SELNG_CO": 1979788,
+      "SUN_SELNG_AMT": 52252077415,
+      "TMZON_21_24_SELNG_AMT": 50502833411,
+      "TUES_SELNG_AMT": 44726885757,
+      "TMZON_21_24_SELNG_CO": 1721358,
+      "TMZON_14_17_SELNG_AMT": 76802724837,
+      "AGRDE_20_SELNG_AMT": 114611161800,
+      "SUN_SELNG_CO": 2242383,
+      "TMZON_00_06_SELNG_AMT": 27001306643,
+      "TMZON_00_06_SELNG_CO": 1001941,
+      "AGRDE_20_SELNG_CO": 5721119,
+      "THUR_SELNG_AMT": 45909690856,
+      "MDWK_SELNG_CO": 10203881,
+      "TUES_SELNG_CO": 1959116,
+      "FRI_SELNG_CO": 2370095,
+      "AGRDE_30_SELNG_AMT": 88260115910,
+      "SAT_SELNG_AMT": 73040213341,
+      "MON_SELNG_AMT": 45389707106,
+      "AGRDE_30_SELNG_CO": 3805552,
+      "FRI_SELNG_AMT": 58667996065,
+      "AGRDE_40_SELNG_CO": 1947539,
+      "FML_SELNG_CO": 8456432,
+      "FML_SELNG_AMT": 195192648923,
+      "MON_SELNG_CO": 1943915,
+      "SAT_SELNG_CO": 2892535,
+      "AGRDE_50_SELNG_AMT": 51483766636,
+      "TMZON_17_21_SELNG_CO": 4576288,
+      "AGRDE_50_SELNG_CO": 1868713,
+      "TMZON_17_21_SELNG_AMT": 119290724096,
+      "WKEND_SELNG_CO": 5134918
+    },
+    "total_store_count": 8783,
+    "general_store_count": 8071,
+    "franchise_store_count": 712,
+    "opening_store_count": 262,
+    "closure_store_count": 250,
+    "opening_rate": 2.983,
+    "closure_rate": 2.846,
+    "industry_counts": {
+      "CS100008": 145,
+      "CS200005": 79,
+      "CS200015": 73,
+      "CS200016": 44,
+      "CS200020": 3,
+      "CS200038": 46,
+      "CS200046": 5,
+      "CS300017": 36,
+      "CS300027": 17,
+      "CS300036": 45,
+      "CS300038": 8,
+      "CS100006": 99,
+      "CS100007": 56,
+      "CS200006": 160,
+      "CS200025": 11,
+      "CS200033": 286,
+      "CS200035": 184,
+      "CS300005": 6,
+      "CS300011": 582,
+      "CS300012": 4,
+      "CS300023": 23,
+      "CS300034": 19,
+      "CS300041": 43,
+      "CS300043": 186,
+      "CS100002": 123,
+      "CS200011": 6,
+      "CS200017": 10,
+      "CS200021": 86,
+      "CS200022": 4,
+      "CS200032": 17,
+      "CS200040": 71,
+      "CS300001": 155,
+      "CS300002": 130,
+      "CS300010": 88,
+      "CS300014": 64,
+      "CS300015": 68,
+      "CS300018": 72,
+      "CS300019": 25,
+      "CS300020": 78,
+      "CS300021": 75,
+      "CS300029": 27,
+      "CS300031": 23,
+      "CS100005": 133,
+      "CS200001": 160,
+      "CS200002": 40,
+      "CS200034": 35,
+      "CS200036": 1,
+      "CS200037": 69,
+      "CS200039": 26,
+      "CS200043": 34,
+      "CS300004": 59,
+      "CS300025": 3,
+      "CS300039": 7,
+      "CS200004": 11,
+      "CS200009": 11,
+      "CS200023": 18,
+      "CS200026": 4,
+      "CS200042": 22,
+      "CS300003": 43,
+      "CS300013": 7,
+      "CS300016": 69,
+      "CS300022": 255,
+      "CS300032": 18,
+      "CS300040": 1,
+      "CS100004": 276,
+      "CS200003": 170,
+      "CS200008": 30,
+      "CS200012": 10,
+      "CS200044": 229,
+      "CS200047": 21,
+      "CS300007": 19,
+      "CS300009": 8,
+      "CS300033": 6,
+      "CS300035": 23,
+      "CS100003": 215,
+      "CS200007": 36,
+      "CS200010": 12,
+      "CS200019": 24,
+      "CS200029": 111,
+      "CS200030": 282,
+      "CS200041": 237,
+      "CS300008": 8,
+      "CS300026": 81,
+      "CS300028": 79,
+      "CS300037": 5,
+      "CS100001": 868,
+      "CS100009": 453,
+      "CS100010": 702,
+      "CS200013": 24,
+      "CS200014": 4,
+      "CS200018": 4,
+      "CS200024": 48,
+      "CS200027": 2,
+      "CS200028": 400,
+      "CS200031": 33,
+      "CS200045": 7,
+      "CS300006": 10,
+      "CS300024": 38
+    },
+    "matched_industry_count": 57,
+    "source_status": "ok",
+    "metadata": {
+      "source_period": "2026Q2",
+      "spatial_grain": "administrative_dong",
+      "grain": "administrative_dong",
+      "baseline_type": "quarterly",
+      "administrative_dong_code": "11440660",
+      "collected_at": "2026-11-25T20:20:33.501370+09:00",
+      "collected_at_basis": "api_collection",
+      "fallback": false,
+      "stores_source": "OA-22172 API",
+      "sales_status": "ok",
+      "published_at": "2026-09-11",
+      "publication_basis": "official_dataset_update",
+      "sales_source": "OA-22175 API"
+    },
+    "radius_competition": {
+      "radius_m": 300,
+      "source_status": "no_data",
+      "reason": "historical_inventory_unavailable"
+    },
+    "radius_inventory_reference": {
+      "source": "SEMAS published Seoul inventory",
+      "source_file": "소상공인시장진흥공단_상가(상권)정보_서울_202609.csv",
+      "source_status": "ok",
+      "source_updated_at": "2026-09-30",
+      "radius_m": 300,
+      "total_store_count": 2239,
+      "industry_counts": {
+        "과학·기술": 431,
+        "소매": 406,
+        "음식": 544,
+        "수리·개인": 242,
+        "교육": 171,
+        "보건의료": 96,
+        "부동산": 56,
+        "예술·스포츠": 53,
+        "시설관리·임대": 152,
+        "숙박": 88
+      },
+      "industry_share_pct": {
+        "과학·기술": 19.25,
+        "소매": 18.13,
+        "음식": 24.3,
+        "수리·개인": 10.81,
+        "교육": 7.64,
+        "보건의료": 4.29,
+        "부동산": 2.5,
+        "예술·스포츠": 2.37,
+        "시설관리·임대": 6.79,
+        "숙박": 3.93
+      },
+      "stores_per_km2": 7918.8,
+      "franchise_count": null,
+      "usage": "structural_reference_only_not_used_in_historical_score"
+    }
+  },
+  "data_through": "2026-11-21",
+  "source_period": "2026Q2",
+  "completeness": "partial",
+  "data_quality": {
+    "status": "partial",
+    "snapshot_count": 30,
+    "missing_time_bands": {
+      "2026-11-16": [
+        "심야"
+      ],
+      "2026-11-17": [
+        "심야"
+      ],
+      "2026-11-19": [
+        "심야"
+      ],
+      "2026-11-22": [
+        "심야",
+        "아침",
+        "점심",
+        "오후",
+        "저녁"
+      ]
+    },
+    "population_by_time_band": {
+      "심야": 4022.4,
+      "아침": 8124.2,
+      "오후": 21348.4,
+      "저녁": 13861.4,
+      "점심": 19583.9
+    },
+    "most_active_population_day": "2026-11-21",
+    "quietest_population_day": "2026-11-17",
+    "strongest_population_band": "오후",
+    "weakest_population_band": "심야",
+    "population_spatial_grain": "radius_grid_estimate",
+    "population_week_over_week_pct": null,
+    "weekly_vitality": {
+      "method": "equal_weight_same_weekday_and_time_band",
+      "matched_bands": 27,
+      "expected_bands": 35,
+      "status": "partial",
+      "population_change_pct": 0.17,
+      "opportunity_change_points": -0.01,
+      "matches": [
+        {
+          "date": "2026-11-16",
+          "previous_date": "2026-11-09",
+          "time_band": "아침",
+          "population": 8253.088398205962,
+          "previous_population": 8213.203486288006,
+          "population_change_pct": 0.49,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-16",
+          "previous_date": "2026-11-09",
+          "time_band": "오후",
+          "population": 18546.317337169086,
+          "previous_population": 18498.514099042502,
+          "population_change_pct": 0.26,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-16",
+          "previous_date": "2026-11-09",
+          "time_band": "저녁",
+          "population": 11445.636155320191,
+          "previous_population": 11504.779955324964,
+          "population_change_pct": -0.51,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-16",
+          "previous_date": "2026-11-09",
+          "time_band": "점심",
+          "population": 17715.00342807207,
+          "previous_population": 17436.741100063577,
+          "population_change_pct": 1.6,
+          "opportunity_change_points": 0.1
+        },
+        {
+          "date": "2026-11-17",
+          "previous_date": "2026-11-10",
+          "time_band": "아침",
+          "population": 8243.195045523915,
+          "previous_population": 8658.59308133904,
+          "population_change_pct": -4.8,
+          "opportunity_change_points": -0.1
+        },
+        {
+          "date": "2026-11-17",
+          "previous_date": "2026-11-10",
+          "time_band": "오후",
+          "population": 18464.00965858077,
+          "previous_population": 19370.46706231905,
+          "population_change_pct": -4.68,
+          "opportunity_change_points": -0.3
+        },
+        {
+          "date": "2026-11-17",
+          "previous_date": "2026-11-10",
+          "time_band": "저녁",
+          "population": 11258.959216736155,
+          "previous_population": 12459.956773203283,
+          "population_change_pct": -9.64,
+          "opportunity_change_points": -0.4
+        },
+        {
+          "date": "2026-11-17",
+          "previous_date": "2026-11-10",
+          "time_band": "점심",
+          "population": 17791.5605004123,
+          "previous_population": 18288.112363158907,
+          "population_change_pct": -2.72,
+          "opportunity_change_points": -0.2
+        },
+        {
+          "date": "2026-11-18",
+          "previous_date": "2026-11-11",
+          "time_band": "심야",
+          "population": 3841.0871742218283,
+          "previous_population": 3825.7790668817524,
+          "population_change_pct": 0.4,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-18",
+          "previous_date": "2026-11-11",
+          "time_band": "아침",
+          "population": 8380.67056574081,
+          "previous_population": 8315.8577911979,
+          "population_change_pct": 0.78,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-18",
+          "previous_date": "2026-11-11",
+          "time_band": "오후",
+          "population": 19487.77016688537,
+          "previous_population": 19885.009995870205,
+          "population_change_pct": -2.0,
+          "opportunity_change_points": -0.2
+        },
+        {
+          "date": "2026-11-18",
+          "previous_date": "2026-11-11",
+          "time_band": "저녁",
+          "population": 11991.024825408254,
+          "previous_population": 13339.08032839877,
+          "population_change_pct": -10.11,
+          "opportunity_change_points": -0.5
+        },
+        {
+          "date": "2026-11-18",
+          "previous_date": "2026-11-11",
+          "time_band": "점심",
+          "population": 18855.287246197367,
+          "previous_population": 18282.83040821342,
+          "population_change_pct": 3.13,
+          "opportunity_change_points": 0.2
+        },
+        {
+          "date": "2026-11-19",
+          "previous_date": "2026-11-12",
+          "time_band": "아침",
+          "population": 8457.888867155962,
+          "previous_population": 8451.003717215994,
+          "population_change_pct": 0.08,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-19",
+          "previous_date": "2026-11-12",
+          "time_band": "오후",
+          "population": 20734.333028946425,
+          "previous_population": 19947.559553856354,
+          "population_change_pct": 3.94,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-19",
+          "previous_date": "2026-11-12",
+          "time_band": "저녁",
+          "population": 13593.99268237308,
+          "previous_population": 13437.857062480802,
+          "population_change_pct": 1.16,
+          "opportunity_change_points": 0.1
+        },
+        {
+          "date": "2026-11-19",
+          "previous_date": "2026-11-12",
+          "time_band": "점심",
+          "population": 19413.439458394634,
+          "previous_population": 18319.568557416827,
+          "population_change_pct": 5.97,
+          "opportunity_change_points": 0.4
+        },
+        {
+          "date": "2026-11-20",
+          "previous_date": "2026-11-13",
+          "time_band": "심야",
+          "population": 4076.901917387153,
+          "previous_population": 4120.977170991825,
+          "population_change_pct": -1.07,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-20",
+          "previous_date": "2026-11-13",
+          "time_band": "아침",
+          "population": 8205.769034714496,
+          "previous_population": 8395.199018731793,
+          "population_change_pct": -2.26,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-20",
+          "previous_date": "2026-11-13",
+          "time_band": "오후",
+          "population": 22903.034684434224,
+          "previous_population": 22710.56021753524,
+          "population_change_pct": 0.85,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-20",
+          "previous_date": "2026-11-13",
+          "time_band": "저녁",
+          "population": 16200.663619884263,
+          "previous_population": 16743.20266738495,
+          "population_change_pct": -3.24,
+          "opportunity_change_points": -0.1
+        },
+        {
+          "date": "2026-11-20",
+          "previous_date": "2026-11-13",
+          "time_band": "점심",
+          "population": 20080.307168834388,
+          "previous_population": 19135.404055762578,
+          "population_change_pct": 4.94,
+          "opportunity_change_points": 0.3
+        },
+        {
+          "date": "2026-11-21",
+          "previous_date": "2026-11-14",
+          "time_band": "심야",
+          "population": 4709.375907992318,
+          "previous_population": 4836.308571434942,
+          "population_change_pct": -2.62,
+          "opportunity_change_points": -0.1
+        },
+        {
+          "date": "2026-11-21",
+          "previous_date": "2026-11-14",
+          "time_band": "아침",
+          "population": 7204.726139678007,
+          "previous_population": 7080.650915217906,
+          "population_change_pct": 1.75,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-21",
+          "previous_date": "2026-11-14",
+          "time_band": "오후",
+          "population": 27955.086101986388,
+          "previous_population": 25929.31796321571,
+          "population_change_pct": 7.81,
+          "opportunity_change_points": 0.0
+        },
+        {
+          "date": "2026-11-21",
+          "previous_date": "2026-11-14",
+          "time_band": "저녁",
+          "population": 18678.037579515774,
+          "previous_population": 17152.667774265545,
+          "population_change_pct": 8.89,
+          "opportunity_change_points": 0.5
+        },
+        {
+          "date": "2026-11-21",
+          "previous_date": "2026-11-14",
+          "time_band": "점심",
+          "population": 23647.63634787031,
+          "previous_population": 22277.69055150589,
+          "population_change_pct": 6.15,
+          "opportunity_change_points": 0.0
+        }
+      ]
+    },
+    "score_status": "provisional",
+    "historical_events_status": "no_data"
+  },
+  "weekly_vitality": {
+    "method": "equal_weight_same_weekday_and_time_band",
+    "matched_bands": 27,
+    "expected_bands": 35,
+    "status": "partial",
+    "population_change_pct": 0.17,
+    "opportunity_change_points": -0.01,
+    "matches": [
+      {
+        "date": "2026-11-16",
+        "previous_date": "2026-11-09",
+        "time_band": "아침",
+        "population": 8253.088398205962,
+        "previous_population": 8213.203486288006,
+        "population_change_pct": 0.49,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-16",
+        "previous_date": "2026-11-09",
+        "time_band": "오후",
+        "population": 18546.317337169086,
+        "previous_population": 18498.514099042502,
+        "population_change_pct": 0.26,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-16",
+        "previous_date": "2026-11-09",
+        "time_band": "저녁",
+        "population": 11445.636155320191,
+        "previous_population": 11504.779955324964,
+        "population_change_pct": -0.51,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-16",
+        "previous_date": "2026-11-09",
+        "time_band": "점심",
+        "population": 17715.00342807207,
+        "previous_population": 17436.741100063577,
+        "population_change_pct": 1.6,
+        "opportunity_change_points": 0.1
+      },
+      {
+        "date": "2026-11-17",
+        "previous_date": "2026-11-10",
+        "time_band": "아침",
+        "population": 8243.195045523915,
+        "previous_population": 8658.59308133904,
+        "population_change_pct": -4.8,
+        "opportunity_change_points": -0.1
+      },
+      {
+        "date": "2026-11-17",
+        "previous_date": "2026-11-10",
+        "time_band": "오후",
+        "population": 18464.00965858077,
+        "previous_population": 19370.46706231905,
+        "population_change_pct": -4.68,
+        "opportunity_change_points": -0.3
+      },
+      {
+        "date": "2026-11-17",
+        "previous_date": "2026-11-10",
+        "time_band": "저녁",
+        "population": 11258.959216736155,
+        "previous_population": 12459.956773203283,
+        "population_change_pct": -9.64,
+        "opportunity_change_points": -0.4
+      },
+      {
+        "date": "2026-11-17",
+        "previous_date": "2026-11-10",
+        "time_band": "점심",
+        "population": 17791.5605004123,
+        "previous_population": 18288.112363158907,
+        "population_change_pct": -2.72,
+        "opportunity_change_points": -0.2
+      },
+      {
+        "date": "2026-11-18",
+        "previous_date": "2026-11-11",
+        "time_band": "심야",
+        "population": 3841.0871742218283,
+        "previous_population": 3825.7790668817524,
+        "population_change_pct": 0.4,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-18",
+        "previous_date": "2026-11-11",
+        "time_band": "아침",
+        "population": 8380.67056574081,
+        "previous_population": 8315.8577911979,
+        "population_change_pct": 0.78,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-18",
+        "previous_date": "2026-11-11",
+        "time_band": "오후",
+        "population": 19487.77016688537,
+        "previous_population": 19885.009995870205,
+        "population_change_pct": -2.0,
+        "opportunity_change_points": -0.2
+      },
+      {
+        "date": "2026-11-18",
+        "previous_date": "2026-11-11",
+        "time_band": "저녁",
+        "population": 11991.024825408254,
+        "previous_population": 13339.08032839877,
+        "population_change_pct": -10.11,
+        "opportunity_change_points": -0.5
+      },
+      {
+        "date": "2026-11-18",
+        "previous_date": "2026-11-11",
+        "time_band": "점심",
+        "population": 18855.287246197367,
+        "previous_population": 18282.83040821342,
+        "population_change_pct": 3.13,
+        "opportunity_change_points": 0.2
+      },
+      {
+        "date": "2026-11-19",
+        "previous_date": "2026-11-12",
+        "time_band": "아침",
+        "population": 8457.888867155962,
+        "previous_population": 8451.003717215994,
+        "population_change_pct": 0.08,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-19",
+        "previous_date": "2026-11-12",
+        "time_band": "오후",
+        "population": 20734.333028946425,
+        "previous_population": 19947.559553856354,
+        "population_change_pct": 3.94,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-19",
+        "previous_date": "2026-11-12",
+        "time_band": "저녁",
+        "population": 13593.99268237308,
+        "previous_population": 13437.857062480802,
+        "population_change_pct": 1.16,
+        "opportunity_change_points": 0.1
+      },
+      {
+        "date": "2026-11-19",
+        "previous_date": "2026-11-12",
+        "time_band": "점심",
+        "population": 19413.439458394634,
+        "previous_population": 18319.568557416827,
+        "population_change_pct": 5.97,
+        "opportunity_change_points": 0.4
+      },
+      {
+        "date": "2026-11-20",
+        "previous_date": "2026-11-13",
+        "time_band": "심야",
+        "population": 4076.901917387153,
+        "previous_population": 4120.977170991825,
+        "population_change_pct": -1.07,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-20",
+        "previous_date": "2026-11-13",
+        "time_band": "아침",
+        "population": 8205.769034714496,
+        "previous_population": 8395.199018731793,
+        "population_change_pct": -2.26,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-20",
+        "previous_date": "2026-11-13",
+        "time_band": "오후",
+        "population": 22903.034684434224,
+        "previous_population": 22710.56021753524,
+        "population_change_pct": 0.85,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-20",
+        "previous_date": "2026-11-13",
+        "time_band": "저녁",
+        "population": 16200.663619884263,
+        "previous_population": 16743.20266738495,
+        "population_change_pct": -3.24,
+        "opportunity_change_points": -0.1
+      },
+      {
+        "date": "2026-11-20",
+        "previous_date": "2026-11-13",
+        "time_band": "점심",
+        "population": 20080.307168834388,
+        "previous_population": 19135.404055762578,
+        "population_change_pct": 4.94,
+        "opportunity_change_points": 0.3
+      },
+      {
+        "date": "2026-11-21",
+        "previous_date": "2026-11-14",
+        "time_band": "심야",
+        "population": 4709.375907992318,
+        "previous_population": 4836.308571434942,
+        "population_change_pct": -2.62,
+        "opportunity_change_points": -0.1
+      },
+      {
+        "date": "2026-11-21",
+        "previous_date": "2026-11-14",
+        "time_band": "아침",
+        "population": 7204.726139678007,
+        "previous_population": 7080.650915217906,
+        "population_change_pct": 1.75,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-21",
+        "previous_date": "2026-11-14",
+        "time_band": "오후",
+        "population": 27955.086101986388,
+        "previous_population": 25929.31796321571,
+        "population_change_pct": 7.81,
+        "opportunity_change_points": 0.0
+      },
+      {
+        "date": "2026-11-21",
+        "previous_date": "2026-11-14",
+        "time_band": "저녁",
+        "population": 18678.037579515774,
+        "previous_population": 17152.667774265545,
+        "population_change_pct": 8.89,
+        "opportunity_change_points": 0.5
+      },
+      {
+        "date": "2026-11-21",
+        "previous_date": "2026-11-14",
+        "time_band": "점심",
+        "population": 23647.63634787031,
+        "previous_population": 22277.69055150589,
+        "population_change_pct": 6.15,
+        "opportunity_change_points": 0.0
+      }
+    ],
+    "analysis_period": {
+      "start": "2026-11-16",
+      "end": "2026-11-22"
+    },
+    "comparison_period": {
+      "start": "2026-11-09",
+      "end": "2026-11-15"
+    },
+    "daily_population": [
+      {
+        "date": "2026-11-16",
+        "weekday": 0,
+        "score": 61.7,
+        "population_by_time_band": {
+          "심야": 3868.68,
+          "아침": 8253.09,
+          "오후": 18546.32,
+          "저녁": 11445.64,
+          "점심": 17715.0
+        },
+        "mean_hourly_population": 10946.96
+      },
+      {
+        "date": "2026-11-17",
+        "weekday": 1,
+        "score": 61.7,
+        "population_by_time_band": {
+          "심야": 3713.29,
+          "아침": 8243.2,
+          "오후": 18464.01,
+          "저녁": 11258.96,
+          "점심": 17791.56
+        },
+        "mean_hourly_population": 10880.19
+      },
+      {
+        "date": "2026-11-18",
+        "weekday": 2,
+        "score": 61.9,
+        "population_by_time_band": {
+          "심야": 3841.09,
+          "아침": 8380.67,
+          "오후": 19487.77,
+          "저녁": 11991.02,
+          "점심": 18855.29
+        },
+        "mean_hourly_population": 11418.1
+      },
+      {
+        "date": "2026-11-19",
+        "weekday": 3,
+        "score": 62.1,
+        "population_by_time_band": {
+          "심야": 3925.29,
+          "아침": 8457.89,
+          "오후": 20734.33,
+          "저녁": 13593.99,
+          "점심": 19413.44
+        },
+        "mean_hourly_population": 11997.72
+      },
+      {
+        "date": "2026-11-20",
+        "weekday": 4,
+        "score": 62.3,
+        "population_by_time_band": {
+          "심야": 4076.9,
+          "아침": 8205.77,
+          "오후": 22903.03,
+          "저녁": 16200.66,
+          "점심": 20080.31
+        },
+        "mean_hourly_population": 12817.05
+      },
+      {
+        "date": "2026-11-21",
+        "weekday": 5,
+        "score": 62.4,
+        "population_by_time_band": {
+          "심야": 4709.38,
+          "아침": 7204.73,
+          "오후": 27955.09,
+          "저녁": 18678.04,
+          "점심": 23647.64
+        },
+        "mean_hourly_population": 14512.51
+      }
+    ],
+    "excluded_bands": [
+      {
+        "date": "2026-11-16",
+        "previous_date": "2026-11-09",
+        "time_band": "심야",
+        "current_status": "partial",
+        "previous_status": "ok",
+        "reason": "source_missing_or_incomplete"
+      },
+      {
+        "date": "2026-11-17",
+        "previous_date": "2026-11-10",
+        "time_band": "심야",
+        "current_status": "partial",
+        "previous_status": "ok",
+        "reason": "source_missing_or_incomplete"
+      },
+      {
+        "date": "2026-11-19",
+        "previous_date": "2026-11-12",
+        "time_band": "심야",
+        "current_status": "partial",
+        "previous_status": "ok",
+        "reason": "source_missing_or_incomplete"
+      },
+      {
+        "date": "2026-11-22",
+        "previous_date": "2026-11-15",
+        "time_band": "심야",
+        "current_status": "missing",
+        "previous_status": "partial",
+        "reason": "source_missing_or_incomplete"
+      },
+      {
+        "date": "2026-11-22",
+        "previous_date": "2026-11-15",
+        "time_band": "아침",
+        "current_status": "missing",
+        "previous_status": "ok",
+        "reason": "source_missing_or_incomplete"
+      },
+      {
+        "date": "2026-11-22",
+        "previous_date": "2026-11-15",
+        "time_band": "점심",
+        "current_status": "missing",
+        "previous_status": "ok",
+        "reason": "source_missing_or_incomplete"
+      },
+      {
+        "date": "2026-11-22",
+        "previous_date": "2026-11-15",
+        "time_band": "오후",
+        "current_status": "missing",
+        "previous_status": "ok",
+        "reason": "source_missing_or_incomplete"
+      },
+      {
+        "date": "2026-11-22",
+        "previous_date": "2026-11-15",
+        "time_band": "저녁",
+        "current_status": "missing",
+        "previous_status": "ok",
+        "reason": "source_missing_or_incomplete"
+      }
+    ],
+    "matched_mean_population_change_pct": 0.91,
+    "full_week_population_change_pct": null,
+    "most_active_population_day": "2026-11-21",
+    "quietest_population_day": "2026-11-17",
+    "strongest_population_band": "오후",
+    "weakest_population_band": "심야"
+  },
+  "structural_environment": {
+    "estimated_sales": 364283677777,
+    "sales_transaction_count": 15338799,
+    "total_store_count": 8783,
+    "general_store_count": 8071,
+    "franchise_store_count": 712,
+    "opening_store_count": 262,
+    "opening_rate": 2.983,
+    "closure_store_count": 250,
+    "closure_rate": 2.846,
+    "administrative_dong_code": "11440660",
+    "administrative_dong": "서교동",
+    "source_period": "2026Q2",
+    "source_reference_date": "2026-09-11",
+    "sales_percentile": 98.24,
+    "sales_percentile_population": 425,
+    "percentile_method": "same_quarter_seoul_dong_midrank",
+    "industries": {
+      "CS100008": {
+        "store_count": 145,
+        "estimated_sales": 4205157099,
+        "sales_transaction_count": 314710,
+        "industry_name": "분식전문점"
+      },
+      "CS200005": {
+        "store_count": 79,
+        "estimated_sales": 763451731,
+        "sales_transaction_count": 1667,
+        "industry_name": "스포츠 강습"
+      },
+      "CS200015": {
+        "store_count": 73,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200016": {
+        "store_count": 44,
+        "estimated_sales": 420122071,
+        "sales_transaction_count": 21304,
+        "industry_name": "당구장"
+      },
+      "CS200020": {
+        "store_count": 3,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200038": {
+        "store_count": 46,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200046": {
+        "store_count": 5,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300017": {
+        "store_count": 36,
+        "estimated_sales": 524965974,
+        "sales_transaction_count": 1704,
+        "industry_name": "시계및귀금속"
+      },
+      "CS300027": {
+        "store_count": 17,
+        "estimated_sales": 5497442,
+        "sales_transaction_count": 18,
+        "industry_name": "섬유제품"
+      },
+      "CS300036": {
+        "store_count": 45,
+        "estimated_sales": 1520805832,
+        "sales_transaction_count": 36570,
+        "industry_name": "조명용품"
+      },
+      "CS300038": {
+        "store_count": 8,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS100006": {
+        "store_count": 99,
+        "estimated_sales": 3118538256,
+        "sales_transaction_count": 210678,
+        "industry_name": "패스트푸드점"
+      },
+      "CS100007": {
+        "store_count": 56,
+        "estimated_sales": 1346410856,
+        "sales_transaction_count": 31438,
+        "industry_name": "치킨전문점"
+      },
+      "CS200006": {
+        "store_count": 160,
+        "estimated_sales": 28775521907,
+        "sales_transaction_count": 337273,
+        "industry_name": "일반의원"
+      },
+      "CS200025": {
+        "store_count": 11,
+        "estimated_sales": 200397767,
+        "sales_transaction_count": 781,
+        "industry_name": "자동차수리"
+      },
+      "CS200033": {
+        "store_count": 286,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200035": {
+        "store_count": 184,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300005": {
+        "store_count": 6,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300011": {
+        "store_count": 582,
+        "estimated_sales": 42118688827,
+        "sales_transaction_count": 981945,
+        "industry_name": "일반의류"
+      },
+      "CS300012": {
+        "store_count": 4,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300023": {
+        "store_count": 23,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300034": {
+        "store_count": 19,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300041": {
+        "store_count": 43,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300043": {
+        "store_count": 186,
+        "estimated_sales": 2904822256,
+        "sales_transaction_count": 123190,
+        "industry_name": "전자상거래업"
+      },
+      "CS100002": {
+        "store_count": 123,
+        "estimated_sales": 5695300160,
+        "sales_transaction_count": 203209,
+        "industry_name": "중식음식점"
+      },
+      "CS200011": {
+        "store_count": 6,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200017": {
+        "store_count": 10,
+        "estimated_sales": 167837124,
+        "sales_transaction_count": 4263,
+        "industry_name": "골프연습장"
+      },
+      "CS200021": {
+        "store_count": 86,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200022": {
+        "store_count": 4,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200032": {
+        "store_count": 17,
+        "estimated_sales": 3000000,
+        "sales_transaction_count": 12,
+        "industry_name": "가전제품수리"
+      },
+      "CS200040": {
+        "store_count": 71,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300001": {
+        "store_count": 155,
+        "estimated_sales": 10376997312,
+        "sales_transaction_count": 796657,
+        "industry_name": "슈퍼마켓"
+      },
+      "CS300002": {
+        "store_count": 130,
+        "estimated_sales": 22519532796,
+        "sales_transaction_count": 2832821,
+        "industry_name": "편의점"
+      },
+      "CS300010": {
+        "store_count": 88,
+        "estimated_sales": 3638121772,
+        "sales_transaction_count": 446556,
+        "industry_name": "반찬가게"
+      },
+      "CS300014": {
+        "store_count": 64,
+        "estimated_sales": 3023812862,
+        "sales_transaction_count": 23353,
+        "industry_name": "신발"
+      },
+      "CS300015": {
+        "store_count": 68,
+        "estimated_sales": 309788973,
+        "sales_transaction_count": 14874,
+        "industry_name": "가방"
+      },
+      "CS300018": {
+        "store_count": 72,
+        "estimated_sales": 9611669672,
+        "sales_transaction_count": 557712,
+        "industry_name": "의약품"
+      },
+      "CS300019": {
+        "store_count": 25,
+        "estimated_sales": 146338118,
+        "sales_transaction_count": 401,
+        "industry_name": "의료기기"
+      },
+      "CS300020": {
+        "store_count": 78,
+        "estimated_sales": 1376234297,
+        "sales_transaction_count": 53603,
+        "industry_name": "서적"
+      },
+      "CS300021": {
+        "store_count": 75,
+        "estimated_sales": 4978085921,
+        "sales_transaction_count": 204972,
+        "industry_name": "문구"
+      },
+      "CS300029": {
+        "store_count": 27,
+        "estimated_sales": 153814671,
+        "sales_transaction_count": 1296,
+        "industry_name": "애완동물"
+      },
+      "CS300031": {
+        "store_count": 23,
+        "estimated_sales": 1081474336,
+        "sales_transaction_count": 625,
+        "industry_name": "가구"
+      },
+      "CS100005": {
+        "store_count": 133,
+        "estimated_sales": 4567247248,
+        "sales_transaction_count": 442856,
+        "industry_name": "제과점"
+      },
+      "CS200001": {
+        "store_count": 160,
+        "estimated_sales": 419458956,
+        "sales_transaction_count": 1134,
+        "industry_name": "일반교습학원"
+      },
+      "CS200002": {
+        "store_count": 40,
+        "estimated_sales": 666378826,
+        "sales_transaction_count": 2574,
+        "industry_name": "외국어학원"
+      },
+      "CS200034": {
+        "store_count": 35,
+        "estimated_sales": 254578567,
+        "sales_transaction_count": 2913,
+        "industry_name": "여관"
+      },
+      "CS200036": {
+        "store_count": 1,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200037": {
+        "store_count": 69,
+        "estimated_sales": 1754210306,
+        "sales_transaction_count": 146119,
+        "industry_name": "노래방"
+      },
+      "CS200039": {
+        "store_count": 26,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200043": {
+        "store_count": 34,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300004": {
+        "store_count": 59,
+        "estimated_sales": 1989938021,
+        "sales_transaction_count": 24204,
+        "industry_name": "핸드폰"
+      },
+      "CS300025": {
+        "store_count": 3,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300039": {
+        "store_count": 7,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200004": {
+        "store_count": 11,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200009": {
+        "store_count": 11,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200023": {
+        "store_count": 18,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200026": {
+        "store_count": 4,
+        "estimated_sales": 13979364,
+        "sales_transaction_count": 334,
+        "industry_name": "자동차미용"
+      },
+      "CS200042": {
+        "store_count": 22,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300003": {
+        "store_count": 43,
+        "estimated_sales": 36688834,
+        "sales_transaction_count": 91,
+        "industry_name": "컴퓨터및주변장치판매"
+      },
+      "CS300013": {
+        "store_count": 7,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300016": {
+        "store_count": 69,
+        "estimated_sales": 3529757506,
+        "sales_transaction_count": 52604,
+        "industry_name": "안경"
+      },
+      "CS300022": {
+        "store_count": 255,
+        "estimated_sales": 4810488444,
+        "sales_transaction_count": 222942,
+        "industry_name": "화장품"
+      },
+      "CS300032": {
+        "store_count": 18,
+        "estimated_sales": 4191281,
+        "sales_transaction_count": 14,
+        "industry_name": "가전제품"
+      },
+      "CS300040": {
+        "store_count": 1,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS100004": {
+        "store_count": 276,
+        "estimated_sales": 16774820120,
+        "sales_transaction_count": 434408,
+        "industry_name": "양식음식점"
+      },
+      "CS200003": {
+        "store_count": 170,
+        "estimated_sales": 12374514191,
+        "sales_transaction_count": 34635,
+        "industry_name": "예술학원"
+      },
+      "CS200008": {
+        "store_count": 30,
+        "estimated_sales": 3385459752,
+        "sales_transaction_count": 44671,
+        "industry_name": "한의원"
+      },
+      "CS200012": {
+        "store_count": 10,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200044": {
+        "store_count": 229,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200047": {
+        "store_count": 21,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300007": {
+        "store_count": 19,
+        "estimated_sales": 2517253201,
+        "sales_transaction_count": 56246,
+        "industry_name": "육류판매"
+      },
+      "CS300009": {
+        "store_count": 8,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300033": {
+        "store_count": 6,
+        "estimated_sales": 614293123,
+        "sales_transaction_count": 23098,
+        "industry_name": "철물점"
+      },
+      "CS300035": {
+        "store_count": 23,
+        "estimated_sales": 1366140691,
+        "sales_transaction_count": 20000,
+        "industry_name": "인테리어"
+      },
+      "CS100003": {
+        "store_count": 215,
+        "estimated_sales": 12930726308,
+        "sales_transaction_count": 385581,
+        "industry_name": "일식음식점"
+      },
+      "CS200007": {
+        "store_count": 36,
+        "estimated_sales": 3948743356,
+        "sales_transaction_count": 31292,
+        "industry_name": "치과의원"
+      },
+      "CS200010": {
+        "store_count": 12,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200019": {
+        "store_count": 24,
+        "estimated_sales": 484082628,
+        "sales_transaction_count": 108719,
+        "industry_name": "PC방"
+      },
+      "CS200029": {
+        "store_count": 111,
+        "estimated_sales": 474504992,
+        "sales_transaction_count": 7630,
+        "industry_name": "네일숍"
+      },
+      "CS200030": {
+        "store_count": 282,
+        "estimated_sales": 1625557938,
+        "sales_transaction_count": 20977,
+        "industry_name": "피부관리실"
+      },
+      "CS200041": {
+        "store_count": 237,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300008": {
+        "store_count": 8,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300026": {
+        "store_count": 81,
+        "estimated_sales": 1339786912,
+        "sales_transaction_count": 59224,
+        "industry_name": "완구"
+      },
+      "CS300028": {
+        "store_count": 79,
+        "estimated_sales": 1254836451,
+        "sales_transaction_count": 53291,
+        "industry_name": "화초"
+      },
+      "CS300037": {
+        "store_count": 5,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS100001": {
+        "store_count": 868,
+        "estimated_sales": 65151207230,
+        "sales_transaction_count": 1777643,
+        "industry_name": "한식음식점"
+      },
+      "CS100009": {
+        "store_count": 453,
+        "estimated_sales": 32398963482,
+        "sales_transaction_count": 956413,
+        "industry_name": "호프-간이주점"
+      },
+      "CS100010": {
+        "store_count": 702,
+        "estimated_sales": 29055188146,
+        "sales_transaction_count": 3099747,
+        "industry_name": "커피-음료"
+      },
+      "CS200013": {
+        "store_count": 24,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200014": {
+        "store_count": 4,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200018": {
+        "store_count": 4,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200024": {
+        "store_count": 48,
+        "estimated_sales": 285747968,
+        "sales_transaction_count": 949,
+        "industry_name": "스포츠클럽"
+      },
+      "CS200027": {
+        "store_count": 2,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS200028": {
+        "store_count": 400,
+        "estimated_sales": 9249490456,
+        "sales_transaction_count": 109812,
+        "industry_name": "미용실"
+      },
+      "CS200031": {
+        "store_count": 33,
+        "estimated_sales": 89234842,
+        "sales_transaction_count": 4183,
+        "industry_name": "세탁소"
+      },
+      "CS200045": {
+        "store_count": 7,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300006": {
+        "store_count": 10,
+        "estimated_sales": null,
+        "sales_transaction_count": null
+      },
+      "CS300024": {
+        "store_count": 38,
+        "estimated_sales": 1929820605,
+        "sales_transaction_count": 12863,
+        "industry_name": "운동/경기용품"
+      }
+    },
+    "metadata": {
+      "source_period": "2026Q2",
+      "spatial_grain": "administrative_dong",
+      "grain": "administrative_dong",
+      "baseline_type": "quarterly",
+      "administrative_dong_code": "11440660",
+      "collected_at": "2026-11-25T20:20:33.501370+09:00",
+      "collected_at_basis": "api_collection",
+      "fallback": false,
+      "stores_source": "OA-22172 API",
+      "sales_status": "ok",
+      "published_at": "2026-09-11",
+      "publication_basis": "official_dataset_update",
+      "sales_source": "OA-22175 API",
+      "usage": "quarterly_structural_reference"
+    },
+    "source_status": "ok"
+  },
+  "nearby_competition": {
+    "source_updated_at": "2026-09-30",
+    "total_store_count": 2239,
+    "stores_per_km2": 7918.8,
+    "industry_counts": {
+      "과학·기술": 431,
+      "소매": 406,
+      "음식": 544,
+      "수리·개인": 242,
+      "교육": 171,
+      "보건의료": 96,
+      "부동산": 56,
+      "예술·스포츠": 53,
+      "시설관리·임대": 152,
+      "숙박": 88
+    },
+    "industry_share_pct": {
+      "과학·기술": 19.25,
+      "소매": 18.13,
+      "음식": 24.3,
+      "수리·개인": 10.81,
+      "교육": 7.64,
+      "보건의료": 4.29,
+      "부동산": 2.5,
+      "예술·스포츠": 2.37,
+      "시설관리·임대": 6.79,
+      "숙박": 3.93
+    },
+    "source": "SEMAS published Seoul inventory",
+    "source_file": "소상공인시장진흥공단_상가(상권)정보_서울_202609.csv",
+    "latitude": 37.5563,
+    "longitude": 126.9236,
+    "radius_m": 300,
+    "source_status": "ok",
+    "method": "distance_filter_and_unique_store_id",
+    "usage": "dated_structural_reference_not_historical_daily_inventory"
+  },
+  "narrative": {
+    "generation_mode": "deterministic_fallback",
+    "summary": "2026-11-16~2026-11-22 분석은 partial이며, 잠정 평균 기회 점수는 62.0입니다. 확보한 관측에서 가장 활발한 날짜는 2026-11-21, 가장 활발한 시간대는 오후입니다. 같은 요일·시간대 27/35개 구간의 생활인구 변화율 평균은 +0.17%입니다. 2026Q2 서교동의 분기 기준 추정매출은 364,283,677,777원입니다. 2026-09-30 상가 원본의 반경 점포 2,239개는 구조적 경쟁 참고자료입니다."
+  }
+}

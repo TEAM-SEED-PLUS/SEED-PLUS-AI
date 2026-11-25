@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 import requests
+from urllib.parse import unquote
 
 
 BASE_URL = "https://apis.data.go.kr/B553077/api/open/sdsc2"
@@ -70,7 +71,7 @@ class CommercialStoreClient:
     ) -> None:
         if not service_key:
             raise ValueError("service_key is required")
-        self._service_key = service_key
+        self._service_key = unquote(service_key)
         self._session = session or requests.Session()
         self.timeout = timeout
         self.min_interval_seconds = min_interval_seconds
