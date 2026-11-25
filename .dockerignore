@@ -12,10 +12,15 @@ __pycache__
 tests
 docs
 
-# Keep production snapshots/baselines in the image, but leave large collector
-# working sets on the host-mounted data volume used by Docker Compose.
-data/**/raw
-data/**/history
-data/**/checkpoints
-data/**/preview
-data/qa
+# Include data/ in the image. Runtime scheduler checkpoints and temporary
+# writes belong to the running application, not the static dataset.
+data/**/.env
+data/**/.env.*
+data/**/*.tmp
+data/raw/living_population/.incoming-*.zip
+data/hongdae/scheduler_state.json
+data/hongdae/.*.lock
+data/weather_overview/.collector.lock
+data/weather_overview/.collector-state.json
+# Runtime retention removes expired snapshots. Do not seed them again.
+data/weather_overview/latest

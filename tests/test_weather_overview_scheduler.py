@@ -18,6 +18,7 @@ class SchedulerLifecycleTests(unittest.IsolatedAsyncioTestCase):
     async def test_scheduler_disabled_does_not_call_collector(self):
         settings = WeatherOverviewSchedulerSettings(enabled=False)
         with patch("app.main.WeatherOverviewSchedulerSettings.from_env", return_value=settings), \
+             patch("app.main.hongdae_scheduler.run"), \
              patch("weather_overview_collector.collect_active_weather_overview") as collector:
             async with lifespan(None):
                 await asyncio.sleep(0)
@@ -36,6 +37,7 @@ class SchedulerLifecycleTests(unittest.IsolatedAsyncioTestCase):
                 enabled=True, interval_minutes=5, data_dir=Path(temporary) / "latest"
             )
             with patch("app.main.WeatherOverviewSchedulerSettings.from_env", return_value=settings), \
+                 patch("app.main.hongdae_scheduler.run"), \
                  patch("weather_overview_collector.collect_active_weather_overview", side_effect=collect):
                 async with lifespan(None):
                     self.assertTrue(await asyncio.to_thread(called.wait, 2))
@@ -131,17 +133,13 @@ class RetentionTests(unittest.TestCase):
 
 
 class SchedulerSettingsTests(unittest.TestCase):
-    def test_retention_days_environment_parsing(self):
-        with patch.dict("os.environ", {"WEATHER_OVERVIEW_RETENTION_DAYS": "14"}, clear=True):
-            self.assertEqual(WeatherOverviewSchedulerSettings.from_env().retention_days, 14)
-        with patch.dict("os.environ", {"WEATHER_OVERVIEW_RETENTION_DAYS": "0"}, clear=True):
-            self.assertEqual(WeatherOverviewSchedulerSettings.from_env().retention_days, 7)
-
-    def test_interval_environment_parsing(self):
-        with patch.dict("os.environ", {"WEATHER_OVERVIEW_INTERVAL_MINUTES": "2.5"}, clear=True):
-            self.assertEqual(WeatherOverviewSchedulerSettings.from_env().interval_minutes, 2.5)
-        with patch.dict("os.environ", {"WEATHER_OVERVIEW_INTERVAL_MINUTES": "invalid"}, clear=True):
-            self.assertEqual(WeatherOverviewSchedulerSettings.from_env().interval_minutes, 5)
+    def test_operational_constants_without_environment_and_with_old_overrides(self):
+        overrides = {"WEATHER_OVERVIEW_RETENTION_DAYS": "14", "WEATHER_OVERVIEW_INTERVAL_MINUTES": "2.5",
+                     "WEATHER_OVERVIEW_SCHEDULER_ENABLED": "false"}
+        for environment in ({}, overrides):
+            with patch.dict("os.environ", environment, clear=True):
+                settings = WeatherOverviewSchedulerSettings.from_env()
+                self.assertEqual((settings.enabled, settings.interval_minutes, settings.retention_days), (True, 5, 7))
 
 
 if __name__ == "__main__":

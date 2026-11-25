@@ -1,0 +1,12 @@
+"""Application scheduler settings, independent of deployment environment."""
+from datetime import time
+
+WEATHER_OVERVIEW_ENABLED = True
+WEATHER_OVERVIEW_INTERVAL_MINUTES = 5
+WEATHER_OVERVIEW_RETENTION_DAYS = 7
+
+HONGDAE_DAILY_AT = time(15, 30)
+HONGDAE_WEEKLY_AT = time(15, 30)
+HONGDAE_WEEKLY_WEEKDAY = 3  # Thursday
+HONGDAE_PUBLICATION_LAG_DAYS = 4
+HONGDAE_POLL_SECONDS = 60

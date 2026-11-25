@@ -755,23 +755,17 @@ HTTP 요청에서 collector를 실행하지 않습니다.
 
 ### Application-level Overview Scheduler
 
-FastAPI application scheduler는 기본적으로 비활성화되어 있습니다. Production에서는 다음 환경변수로 활성화합니다.
-
-```dotenv
-WEATHER_OVERVIEW_SCHEDULER_ENABLED=true
-WEATHER_OVERVIEW_INTERVAL_MINUTES=5
-WEATHER_OVERVIEW_RETENTION_DAYS=7
-```
+FastAPI application scheduler는 기본 활성화되어 있습니다. 활성화 여부, 5분 실행 간격 및 7일 보존 기간은 `operations_settings.py`에서 관리합니다.
 
 FastAPI startup이 완료되면 collector를 background thread에서 즉시 한 번 실행하고, 이후 기본 5분 간격으로 실행합니다. 동기 collector는 event loop 밖에서 실행되므로 FastAPI request 처리를 block하지 않습니다. 각 tick은 Asia/Seoul 기준 현재 active time band 하나만 갱신합니다.
 
-동일 process에서는 asyncio lock으로 중복 실행을 막고, 여러 Uvicorn worker/process 사이에서는 공유 data volume의 다음 file lock으로 한 collector만 실행되게 합니다.
+운영은 단일 컨테이너와 Uvicorn worker 1개를 사용합니다. asyncio lock과 기존 bind mount의 파일 잠금으로 겹치는 실행을 제어합니다.
 
 ```text
 data/weather_overview/.collector.lock
 ```
 
-lock이 사용 중이면 해당 tick만 skip합니다. Application scheduler와 별도의 host cron을 동시에 운영하면 서로 다른 lock을 사용할 수 있으므로 이중 수집 가능성이 있습니다.
+lock이 사용 중이거나 저장 상태에 직전 5분 이내 실행 시도가 기록되어 있으면 해당 tick을 건너뜁니다. 홍대의 실행 주기와 기존 bind mount 조건은 [운영 가이드](docs/hongdae-operations.md)에 있습니다.
 
 snapshot retention 기본값은 7일입니다. "7일 보존"은 오늘을 포함한 최근 7개 달력 날짜, 즉 오늘과 직전 6일을 보존한다는 뜻입니다. 파일명의 날짜가 이 범위보다 오래된 `YYYY-MM-DD_<time_band>.json` 파일만 삭제합니다. 오늘 및 보존 범위 안 snapshot, 잘못된 날짜나 pattern의 파일, temp 파일, `.collector.lock`, 다른 data 디렉터리는 삭제하지 않습니다.
 
@@ -816,18 +810,6 @@ python3 weather_overview_collector.py --active
 ```
 
 이전 실행이 아직 진행 중이면 다음 실행은 skip됩니다.
-
-### Kubernetes
-
-CronJob 사용 시:
-
-```yaml
-concurrencyPolicy: Forbid
-```
-
-를 권장합니다.
-
-여러 host가 동일 snapshot volume에 쓰는 경우에는 host-local `/tmp` lock이 아닌 공유/distributed lock 또는 단일 CronJob 구성이 필요합니다.
 
 ---
 
@@ -907,7 +889,7 @@ SEOUL_OPEN_DATA_API_KEY
 
 # 14. Runtime Data / Volume
 
-FastAPI request path와 collector가 함께 사용하는 mutable snapshot은 production에서 writable volume으로 공유하는 구성을 권장합니다.
+FastAPI와 내부 collector가 사용하는 runtime 데이터는 기존 Compose의 쓰기 가능한 `./data:/app/data` bind mount에 저장합니다.
 
 주요 runtime 데이터:
 
@@ -1273,6 +1255,6 @@ http://ai:8000
 
 FastAPI는 internal-only 운영을 권장합니다.
 
-collector와 API가 사용하는 runtime snapshot directory는 공유 writable volume으로 구성합니다.
+collector와 API의 runtime snapshot은 기존 `./data:/app/data` bind mount에 저장합니다.
 
 Weather Overview collector는 권장 5분 주기로 실행하며 중복 실행을 방지합니다.

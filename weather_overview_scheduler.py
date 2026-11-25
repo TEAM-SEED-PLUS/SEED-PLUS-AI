@@ -7,7 +7,6 @@ from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 import logging
-import os
 from pathlib import Path
 import re
 import time
@@ -21,6 +20,9 @@ except ImportError:  # pragma: no cover - non-POSIX development only
 from common import SEOUL_TZ
 import weather_overview_collector
 from weather_overview_cache import DEFAULT_OVERVIEW_DIR
+from snapshot_cache import read_snapshot, write_snapshot
+from operations_settings import (WEATHER_OVERVIEW_ENABLED, WEATHER_OVERVIEW_INTERVAL_MINUTES,
+                                 WEATHER_OVERVIEW_RETENTION_DAYS)
 
 LOGGER = logging.getLogger(__name__)
 SNAPSHOT_PATTERN = re.compile(
@@ -28,56 +30,16 @@ SNAPSHOT_PATTERN = re.compile(
 )
 
 
-def _env_bool(name: str, default: bool) -> bool:
-    value = os.getenv(name)
-    if value is None:
-        return default
-    normalized = value.strip().lower()
-    if normalized in {"1", "true", "yes", "on"}:
-        return True
-    if normalized in {"0", "false", "no", "off"}:
-        return False
-    LOGGER.warning("Invalid %s; using default=%s", name, default)
-    return default
-
-
-def _env_positive_float(name: str, default: float) -> float:
-    try:
-        value = float(os.getenv(name, str(default)))
-        if value <= 0:
-            raise ValueError
-        return value
-    except ValueError:
-        LOGGER.warning("Invalid %s; using default=%s", name, default)
-        return default
-
-
-def _env_positive_int(name: str, default: int) -> int:
-    try:
-        raw = os.getenv(name, str(default))
-        value = int(raw)
-        if value <= 0:
-            raise ValueError
-        return value
-    except ValueError:
-        LOGGER.warning("Invalid %s; using default=%s", name, default)
-        return default
-
-
 @dataclass(frozen=True)
 class WeatherOverviewSchedulerSettings:
-    enabled: bool = False
-    interval_minutes: float = 5
-    retention_days: int = 7
+    enabled: bool = WEATHER_OVERVIEW_ENABLED
+    interval_minutes: float = WEATHER_OVERVIEW_INTERVAL_MINUTES
+    retention_days: int = WEATHER_OVERVIEW_RETENTION_DAYS
     data_dir: Path = DEFAULT_OVERVIEW_DIR
 
     @classmethod
     def from_env(cls) -> "WeatherOverviewSchedulerSettings":
-        return cls(
-            enabled=_env_bool("WEATHER_OVERVIEW_SCHEDULER_ENABLED", False),
-            interval_minutes=_env_positive_float("WEATHER_OVERVIEW_INTERVAL_MINUTES", 5),
-            retention_days=_env_positive_int("WEATHER_OVERVIEW_RETENTION_DAYS", 7),
-        )
+        return cls()
 
 
 @contextmanager
@@ -85,7 +47,7 @@ def _collector_file_lock(lock_path: Path) -> Iterator[bool]:
     lock_path.parent.mkdir(parents=True, exist_ok=True)
     with lock_path.open("a", encoding="utf-8") as lock_file:
         if fcntl is None:
-            yield True
+            raise RuntimeError("File locking is unavailable on this platform")
             return
         try:
             fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -129,6 +91,12 @@ def _run_locked_collector(settings: WeatherOverviewSchedulerSettings) -> bool:
         if not acquired:
             LOGGER.info("Weather overview collector already running; skip")
             return False
+        state_path = settings.data_dir.parent / ".collector-state.json"
+        now = datetime.now(SEOUL_TZ)
+        previous = (read_snapshot(state_path) or {}).get("attempted_at")
+        if previous and now - datetime.fromisoformat(previous) < timedelta(minutes=settings.interval_minutes):
+            return False
+        write_snapshot(state_path, {"attempted_at": now.isoformat()})
         started = time.monotonic()
         LOGGER.info("Weather overview collector run started")
         result = weather_overview_collector.collect_active_weather_overview(

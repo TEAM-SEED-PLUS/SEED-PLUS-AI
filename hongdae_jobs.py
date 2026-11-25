@@ -41,6 +41,7 @@ def calculate_days(days):
             statuses[day] = "missing"
             continue
         calendar = read_snapshot(ROOT / "events" / f"{day}.json") or {}
+        outputs = []
         for band in TIME_BANDS:
             result = generate_hongdae_market_feed(
                 day, time_band=band, historical=True, population_provider=population, persist=False,
@@ -49,9 +50,12 @@ def calculate_days(days):
             collected = source.get("collected_at") if source.get("sha256") in fingerprint["raw_sha256"] else None
             result["data_quality"].update(calculation_inputs=fingerprint, observation_date=day,
                                           collected_at=collected, calculated_at=result["generated_at"])
-            write_snapshot(snapshot_path(day, band, output), result)
+            outputs.append((snapshot_path(day, band, output), result))
+        for path, result in outputs:
+            write_snapshot(path, result)
         statuses[day] = "calculated"
     print(statuses)
+    return statuses
 
 
 def main():
@@ -66,9 +70,6 @@ def main():
     parser.add_argument("--refresh", action="append", default=[], type=date.fromisoformat)
     args = parser.parse_args()
     days = [(args.start + timedelta(days=offset)).isoformat() for offset in range(args.days)]
-    if args.job == "weekly":
-        build_weekly_briefing(days[0], days[-1], daily_dir=ROOT / "backfill", use_llm=args.llm)
-        return
     if args.job == "events":
         from special_day_api import get_special_day_info
         key = os.getenv("DATA_GO_KR_SERVICE_KEY")
@@ -88,6 +89,9 @@ def main():
     with _collector_file_lock(ROOT / ".population.lock") as acquired:
         if not acquired:
             raise SystemExit("Hongdae population job already running")
+        if args.job == "weekly":
+            build_weekly_briefing(days[0], days[-1], daily_dir=ROOT / "backfill", use_llm=args.llm)
+            return
         if args.job in ("population", "publish"):
             refresh = [day.isoformat() for day in args.refresh]
             retries = (read_snapshot(MANIFEST) or {}).get("retry_dates", [])[-7:]

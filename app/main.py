@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import asyncio
-from contextlib import asynccontextmanager, suppress
+from contextlib import asynccontextmanager
 from datetime import datetime
 import logging
 import re
@@ -24,6 +24,7 @@ from app.models import (HealthResponse, HongdaeMarketFeedResponse,
                         WeatherFeedOverviewResponse)
 from common import SEOUL_TZ, resolve_time_input, normalize_district
 from hongdae_feed_pipeline import generate_hongdae_market_feed, load_hongdae_snapshot
+import hongdae_scheduler
 from public_feed_schema import generate_public_market_feed
 from snapshot_cache import read_snapshot
 from pathlib import Path
@@ -37,6 +38,7 @@ LOGGER = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
     settings = WeatherOverviewSchedulerSettings.from_env()
+    hongdae_task = asyncio.create_task(hongdae_scheduler.run())
     task = None
     if settings.enabled:
         task = asyncio.create_task(WeatherOverviewScheduler(settings).run())
@@ -45,10 +47,10 @@ async def lifespan(_app: FastAPI):
     try:
         yield
     finally:
-        if task is not None:
-            task.cancel()
-            with suppress(asyncio.CancelledError):
-                await task
+        tasks = [runner for runner in (task, hongdae_task) if runner is not None]
+        for runner in tasks:
+            runner.cancel()
+        await asyncio.gather(*tasks, return_exceptions=True)
 
 
 app = FastAPI(title="Weather Feed AI/Data API", version="1.0.0", lifespan=lifespan)
