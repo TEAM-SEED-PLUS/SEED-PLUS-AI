@@ -1,0 +1,58 @@
+name: Dev CD Pipeline (AI)
+
+on:
+  workflow_run:
+    workflows: ["AI CI Pipeline"]
+    types: [completed]
+    branches: [develop]
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy-to-openstack:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Infra repository
+        uses: actions/checkout@v4
+        with:
+          repository: TEAM-SEED-PLUS/SEED-PLUS-INFRA
+          ref: main
+          token: ${{ secrets.INFRA_REPO_TOKEN }}
+          path: infra-repo
+
+      - name: Install Ansible
+        run: python -m pip install ansible
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.CD_DEV_OPST_ROLE_ARN }}
+          aws-region: ap-northeast-2
+
+      - name: Set up SSH key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.OPENSTACK_SSH_KEY }}
+          TARGET_IP: ${{ secrets.TARGET_IP }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p 2225 -H "$TARGET_IP" >> ~/.ssh/known_hosts
+
+      - name: Deploy AI to OpenStack App
+        env:
+          ANSIBLE_HOST_KEY_CHECKING: "False"
+          APP_ENV_CONTENT: ${{ secrets.ENV_FILE }}
+          TARGET_IP: ${{ secrets.TARGET_IP }}
+          ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+          IMAGE_TAG: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          cd infra-repo/openstack-cd
+          ansible-playbook -i "$TARGET_IP:2225," -u ubuntu \
+            -e "ecr_registry=$ECR_REGISTRY ecr_repository=$ECR_REPOSITORY image_tag=$IMAGE_TAG aws_region=ap-northeast-2" \
+            playbooks/os_ai_deploy.yml
