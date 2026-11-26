@@ -1,5 +1,9 @@
 name: Dev CD Pipeline (AI)
 
+concurrency:
+  group: ai-dev-deploy
+  cancel-in-progress: false
+
 on:
   workflow_run:
     workflows: ["AI CI Pipeline"]
